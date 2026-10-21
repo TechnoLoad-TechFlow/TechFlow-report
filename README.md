@@ -2492,16 +2492,17 @@ La combinación de estas herramientas permite mantener un entorno común entre l
 ![Estructura del proyecto](assets/evidence/repository/repository-develop-structure.jpeg)
 
 ### 5.1.2. Source Code Management
-  
+
 El código fuente y la documentación de TechnoLoad se administran mediante Git y GitHub. El uso de control de versiones permite mantener la trazabilidad de cada modificación realizada por el equipo, identificar la participación de los integrantes y recuperar versiones anteriores cuando sea necesario.
 
 Los repositorios correspondientes a los productos de TechnoLoad son:
 
 | Producto | Repositorio |
 |---|---|
-| Project Report | https://github.com/TechnoLoad-TechFlow/TechFlow |
-| Landing Page | https://github.com/TechnoLoad-TechFlow/TechFlow |
-| Frontend Web Application | https://github.com/TechnoLoad-TechFlow/TechFlow |
+| Project Report | https://github.com/TechnoLoad-TechFlow/TechFlow-report |
+| Landing Page | https://github.com/TechnoLoad-TechFlow/technoload-website |
+| Frontend Web Application | https://github.com/TechnoLoad-TechFlow/technoload-webapp |
+| Web Services / Mock REST API | https://github.com/TechnoLoad-TechFlow/technoload-platform |
 
 El repositorio correspondiente a los RESTful Web Services deberá incluir tanto el código fuente de la solución como los archivos correspondientes a las pruebas unitarias y de integración.
 
@@ -2598,6 +2599,8 @@ Ejemplos aplicados al proyecto:
 `docs(readme): add needfinding artifacts`
 
 `docs(chapter5): add software configuration management`
+
+Todos los integrantes del equipo deben registrar commits propios asociados a las tareas que desarrollan, permitiendo evidenciar su participación mediante el historial de GitHub.
 
 Con estas convenciones se busca facilitar la comprensión del historial de cambios y mantener consistencia entre los diferentes repositorios del proyecto.
 
