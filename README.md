@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="180"  alt="image" src="https://github.com/user-attachments/assets/2c3d0613-f51e-47d7-bd82-439b78384731" />
+  <img width="180" alt="UPC Logo" src="https://github.com/user-attachments/assets/2c3d0613-f51e-47d7-bd82-439b78384731" />
 </p>
 
 <div align="center">
@@ -25,31 +25,26 @@
 <br>
 
 ### Docente
-**Bautista Ubillús, Efraín Ricardo**
+**Bautista Ubillús, Efrain Ricardo**
 
 <br>
 
 ### Equipo
-**Technoload**
+**TechnoLoad**
 
 ### Proyecto
-**Techflow**
+**TechFlow**
 
 <br>
 
 ### Integrantes
 
-</div>
-
 | Código | Apellidos y Nombres |
-|---|---|
-| U202410728 | Edgar Daniel Diaz Caruzo |
-| U202412044 | Tantalean Granda, Nicolas |
-| U202410783 | Gutiérrez Lizarbe, Wilmer Sebastián |
-| U202323911 | Castillo Guevara, Mathias Alejandro |
-
-
-<div align="center">
+| :---: | :--- |
+| u202410783 | Castillo Guevara, Mathias Alejandro |
+| u202323911 | Díaz Caruzo, Edgard Daniel |
+| u202412044 | Gutiérrez Lizarbe, Wilmer Sebastián |
+| u202410728 | Tantalean Granda, Nicolas |
 
 <br>
 
@@ -57,7 +52,7 @@
 
 <br>
 
-### Octubre 2026
+### Noviembre 2026
 
 </div>
 
@@ -80,6 +75,7 @@ El presente registro resume las modificaciones relevantes realizadas al informe 
 | **1.8.0** | 2026-09-18 | Wilmer Gutierrez, Edgard Diaz | Redacción del Capítulo V: Software Configuration Management, registro del Sprint 1 y despliegue del Landing Page en GitHub Pages. |
 | **1.9.0** | 2026-09-19 | Todos los integrantes | Revisión general, incorporación de Conclusiones, Bibliografía según formato APA 7 y consolidación final del informe para la entrega AV1 (Semana 4). |
 | **2.0.0** | 2026-10-08 | Todos los integrantes | Documentación completa del Sprint 2: planificación, backlog, evidencias de desarrollo y ejecución; registro del despliegue en Microsoft Azure App Service (Landing Page y Web App); corrección sintáctica de diagramas Mermaid (palabra reservada 'end' y etiquetas C4); reestructuración y validación integral de anclas del Índice (TOC) y depuración de referencias. |
+| **2.1.0** | 2026-11-11 | Todos los integrantes | Corrección integral del informe según retroalimentación docente para AV2 (Semana 12): estandarización de carátula según plantilla oficial (NRC 10215, orden alfabético de integrantes por apellidos); adopción del formato oficial Scrum.org para Sprint Goals en Sprint Planning 1, 2 y 3; reemplazo de marcadores de posición [COLOCAR URL DEL WEB SERVICE] por URLs verificadas de despliegue en Microsoft Azure y repositorio technoload-platform; depuración y reparación integral de enlaces rotos (GitHub Pages, anclas de navegación del Índice y referencias cruzadas). |
 
 ---
 
@@ -87,7 +83,7 @@ El presente registro resume las modificaciones relevantes realizadas al informe 
 
 En esta sección, el equipo evidencia y detalla la dinámica de colaboración para la redacción, edición y consolidación del informe del proyecto durante el desarrollo del hito **AV1 (Semana 4)**.
 
-* **URL del repositorio del Project Report:** [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow)
+* **URL del repositorio del Project Report:** [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow-report)
 
 ### Dinamica de colaboración y gestión del informe
 La elaboración del informe se gestionó de forma colaborativa y continua bajo la plataforma **GitHub**, empleando Markdown como estándar de documentación técnica. Para garantizar la integridad y trazabilidad del documento, el equipo adoptó las siguientes prácticas de ingeniería:
@@ -113,105 +109,140 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
-
-## Capítulo I: Introducción
-- [1.1. Startup Profile](#11-startup-profile)
-  - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-  - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
-- [1.2. Solution Profile](#12-solution-profile)
-  - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
-  - [1.2.2. Lean UX Process](#122-lean-ux-process)
-    - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-    - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-    - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-    - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-- [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-
-## Capítulo II: Requirements Elicitation & Analysis
-- [2.1. Competidores](#21-competidores)
-  - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-  - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-- [2.2. Entrevistas](#22-entrevistas)
-  - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
-  - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
-  - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-- [2.3. Needfinding](#23-needfinding)
-  - [2.3.1. User Personas](#231-user-personas)
-  - [2.3.2. User Task Matrix](#232-user-task-matrix)
-  - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
-  - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-  - [2.3.5. Big Picture Event Storming](#235-big-picture-event-storming)
-- [2.4. Ubiquitous Language](#24-ubiquitous-language)
-
-## Capítulo III: Requirements Specification
-- [3.1. User Stories](#31-user-stories)
-- [3.2. Impact Mapping](#32-impact-mapping)
-- [3.3. Product Backlog](#33-product-backlog)
-
-## Capítulo IV: Product Design
-- [4.1. Style Guidelines](#41-style-guidelines)
-  - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
-  - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
-- [4.2. Information Architecture](#42-information-architecture)
-  - [4.2.1. Organization Systems](#421-organization-systems)
-  - [4.2.2. Labeling Systems](#422-labeling-systems)
-  - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
-  - [4.2.4. Searching Systems](#424-searching-systems)
-  - [4.2.5. Navigation Systems](#425-navigation-systems)
-- [4.3. Landing Page UI Design](#43-landing-page-ui-design)
-  - [4.3.1. Landing Page Wireframes](#431-landing-page-wireframes)
-  - [4.3.2. Landing Page Mock-ups](#432-landing-page-mock-ups)
-- [4.4. Web Applications UX/UI Design](#44-web-applications-uxui-design)
-  - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
-  - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
-  - [4.4.3. Web Applications Mock-ups](#443-web-applications-mock-ups)
-  - [4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams)
-- [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
-- [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
-  - [4.6.1. Design-Level Event Storming](#461-design-level-event-storming)
-  - [4.6.2. Software Architecture Context Diagram](#462-software-architecture-context-diagram)
-  - [4.6.3. Software Architecture Container Diagram](#463-software-architecture-container-diagram)
-  - [4.6.4. Software Architecture Components Diagrams](#464-software-architecture-components-diagrams)
-- [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
-  - [4.7.1. Class Diagrams](#471-class-diagrams)
-- [4.8. Database Design](#48-database-design)
-  - [4.8.1. Database Diagrams](#481-database-diagrams)
-  - [4.8.2. Script DDL](#482-script-ddl)
-
-## Capítulo V: Product Implementation, Validation & Deployment
-- [5.1. Software Configuration Management](#51-software-configuration-management)
-  - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
-  - [5.1.2. Source Code Management](#512-source-code-management)
-  - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide-conventions)
-  - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-- [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services-applications-implementation)
-  - [5.2.1. Sprint 1](#521-sprint-1)
-    - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
-    - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
-    - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
-    - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
-    - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
-    - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
-    - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
-    - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
-  - [5.2.2. Sprint 2](#522-sprint-2)
-    - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
-    - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
-    - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
-    - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
-    - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
-    - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
-    - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
-    - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
-
-## Conclusiones
-- [Conclusiones y recomendaciones](#conclusiones)
-
-## Bibliografía
+- [Student Outcome](#student-outcome)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
+  - [1.1. Startup Profile](#11-startup-profile)
+    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2. Solution Profile](#12-solution-profile)
+    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2. Lean UX Process](#122-lean-ux-process)
+      - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+      - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation-analysis)
+  - [2.1. Competidores](#21-competidores)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2. Entrevistas](#22-entrevistas)
+    - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3. Needfinding](#23-needfinding)
+    - [2.3.1. User Personas](#231-user-personas)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
+    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+    - [2.3.5. Big Picture Event Storming](#235-big-picture-event-storming)
+  - [2.4. Ubiquitous Language](#24-ubiquitous-language)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+  - [3.1. User Stories](#31-user-stories)
+  - [3.2. Impact Mapping](#32-impact-mapping)
+  - [3.3. Product Backlog](#33-product-backlog)
+- [Capítulo IV: Product Design](#capítulo-iv-product-design)
+  - [4.1. Style Guidelines](#41-style-guidelines)
+    - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
+    - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
+  - [4.2. Information Architecture](#42-information-architecture)
+    - [4.2.1. Organization Systems](#421-organization-systems)
+    - [4.2.2. Labeling Systems](#422-labeling-systems)
+    - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
+    - [4.2.4. Searching Systems](#424-searching-systems)
+    - [4.2.5. Navigation Systems](#425-navigation-systems)
+  - [4.3. Landing Page UI Design](#43-landing-page-ui-design)
+    - [4.3.1. Landing Page Wireframes](#431-landing-page-wireframes)
+    - [4.3.2. Landing Page Mock-ups](#432-landing-page-mock-ups)
+  - [4.4. Web Applications UX/UI Design](#44-web-applications-uxui-design)
+    - [4.4.1. Web Applications Wireframes](#441-web-applications-wireframes)
+    - [4.4.2. Web Applications Wireflow Diagrams](#442-web-applications-wireflow-diagrams)
+    - [4.4.3. Web Applications Mock-ups](#443-web-applications-mock-ups)
+    - [4.4.4. Web Applications User Flow Diagrams](#444-web-applications-user-flow-diagrams)
+  - [4.5. Web Applications Prototyping](#45-web-applications-prototyping)
+  - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
+    - [4.6.1. Design-Level Event Storming](#461-design-level-event-storming)
+    - [4.6.2. Software Architecture Context Diagram](#462-software-architecture-context-diagram)
+    - [4.6.3. Software Architecture Container Diagram](#463-software-architecture-container-diagram)
+    - [4.6.4. Software Architecture Components Diagrams](#464-software-architecture-components-diagrams)
+  - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
+    - [4.7.1. Class Diagrams](#471-class-diagrams)
+  - [4.8. Database Design](#48-database-design)
+    - [4.8.1. Database Diagrams](#481-database-diagrams)
+    - [4.8.2. Script DDL](#482-script-ddl)
+- [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation-deployment)
+  - [5.1. Software Configuration Management](#51-software-configuration-management)
+    - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
+    - [5.1.2. Source Code Management](#512-source-code-management)
+    - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide-conventions)
+    - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
+  - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services-applications-implementation)
+    - [5.2.1. Sprint 1](#521-sprint-1)
+      - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
+      - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+      - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
+      - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
+      - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
+      - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
+      - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
+      - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2. Sprint 2](#522-sprint-2)
+      - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+      - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+      - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+      - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+    - [5.2.3. Sprint 3](#523-sprint-3)
+      - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+      - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+      - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+      - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+      - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+      - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+      - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+      - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+  - [5.3. Validation Interviews](#53-validation-interviews)
+    - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+    - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+  - [5.4. Video About-the-Product](#54-video-about-the-product)
+- [Conclusiones](#conclusiones)
+- [Video About-the-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
-
-## Anexos
 - [Anexos](#anexos)
+
+---
+
+# Student Outcome
+
+El curso de Aplicaciones Web contribuye directamente al cumplimiento del Student Outcome ABET:
+
+> **ABET – EAC - Student Outcome 5:**  
+> *La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.*
+
+En la siguiente matriz se detallan las acciones realizadas y los enunciados de conclusiones por cada miembro del equipo TechnoLoad, sustentando el logro de los criterios específicos para los hitos evaluativos **AV1** y **AV2**:
+
+| Criterio específico | Integrante | Entrega | Acciones realizadas | Conclusiones |
+| :--- | :--- | :---: | :--- | :--- |
+| **Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Castillo Guevara, Mathias Alejandro** | **AV1** | Lideró la formulación de artefactos Lean UX (Problem Statements, Assumptions, Hypothesis) y la estructuración del repositorio en Markdown. Coordinó sesiones de sincronización para mantener la coherencia entre el informe y las entregas del sprint. | El liderazgo distribuido permitió alinear oportunamente las definiciones de negocio con los requisitos técnicos, evitando inconsistencias entre las expectativas del cliente y los entregables. |
+| | | **AV2** | Condujo el modelado arquitectural C4 de Contexto y Contenedor, así como la especificación de User Stories para el cálculo interactivo de ROI. Asumió la facilitación de la retrospectiva del Sprint 1 y la planificación del Sprint 2. | La alternancia del liderazgo técnico facilitó resolver bloqueos rápidamente y asegurar un enfoque modular en la integración entre la Landing Page y la Web Application. |
+| | **Díaz Caruzo, Edgard Daniel** | **AV1** | Asumió el liderazgo en la investigación de competidores y el diseño de guías estructuradas de entrevistas para los segmentos de alquiler de maquinaria y transporte. Moderó la discusión sobre estrategias de diferenciación frente al mercado local. | Dirigir el análisis competitivo temprano proporcionó al equipo argumentos sólidos para priorizar el control de horómetros y alertas de mantenimiento preventivo como valor diferencial. |
+| | | **AV2** | Lideró la implementación de componentes de interfaz para la presentación de planes de membresía y catálogo de maquinaria en la Web App y Landing Page. Coordinó la revisión cruzada de estilos y accesibilidad web. | Ejercer liderazgo en la capa visual garantizó consistencia semántica en la experiencia del usuario final, optimizando la adopción de las llamadas a la acción (CTA). |
+| | **Gutiérrez Lizarbe, Wilmer Sebastián** | **AV1** | Lideró el diseño de la arquitectura de información y la priorización del Product Backlog mediante Impact Mapping. Estableció las directrices de estimación ágil en Story Points y definición de criterios de aceptación en Gherkin. | La clarificación y priorización del backlog bajo un liderazgo visible facilitó al equipo enfocarse en las épicas críticas de inventario y estado operativo. |
+| | | **AV2** | Condujo la especificación y modelado de servicios backend RESTful (contratos OpenAPI / Swagger) y el diseño de la base de datos relacional en PostgreSQL. Lideró la definición de pruebas de endpoints para la gestión de flota. | El liderazgo en arquitectura de datos permitió contar con contratos claros entre backend y frontend antes de la integración definitiva en la nube. |
+| | **Tantalean Granda, Nicolas** | **AV1** | Asumió el rol de Scrum Master y líder de configuración de software (SCM). Estableció el flujo de trabajo GitFlow, las convenciones de Conventional Commits y supervisó el despliegue inicial en GitHub Pages. | La disciplina establecida en el control de versiones desde el inicio del proyecto garantizó trazabilidad completa en cada commit y Pull Request del equipo. |
+| | | **AV2** | Lideró la migración, configuración y despliegue continuo de los entornos cloud en Microsoft Azure App Service (Landing Page y Web Application), resolviendo incidencias de certificados SSL, HTTPS Only y rutas modulares. | Asumir la responsabilidad del despliegue cloud aseguró que el producto esté disponible públicamente y verificado bajo condiciones reales de producción para la entrega. |
+| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Castillo Guevara, Mathias Alejandro** | **AV1** | Participó activamente en la elaboración de Empathy Maps y Big Picture EventStorming. Apoyó a sus compañeros en la redacción técnica de requerimientos y promovió la toma de decisiones por consenso. | Mantener un ambiente abierto de debate conceptual permitió enriquecer el glosario de lenguaje ubicuo con la perspectiva de todos los participantes. |
+| | | **AV2** | Planificó las tareas de documentación de Sprint Planning 2 y Sprint Backlog 2 en el tablero colaborativo. Diseñó e implementó la herramienta interactiva de estimación de ROI en JavaScript, integrándola colaborativamente. | El establecimiento de metas claras y compromisos compartidos permitió culminar la totalidad de las tareas asignadas dentro de los plazos del Sprint 2. |
+| | **Díaz Caruzo, Edgard Daniel** | **AV1** | Realizó entrevistas cualitativas con usuarios potenciales, transcribió los hallazgos y facilitó sesiones conjuntas de Needfinding para consolidar los User Personas y Journey Maps. | La apertura para incorporar retroalimentación de los integrantes permitió refinar la descripción de dolores operativos de los administradores de flota. |
+| | | **AV2** | Planificó y ejecutó tareas de codificación de la Hero Section, catálogo interactivo de maquinaria y selector de membresías comerciales en la Web App, sincronizando sus ramas con el resto del equipo vía Pull Requests. | La colaboración constante mediante revisiones de código fortaleció la calidad del frontend y afianzó el cumplimiento de los estándares de estilo adoptados. |
+| | **Gutiérrez Lizarbe, Wilmer Sebastián** | **AV1** | Colaboró en la definición de perfiles de integrantes, elaboración del Style Guideline y diseño de componentes de UI. Participó puntualmente en todas las reuniones de planificación y revisión. | La colaboración inclusiva en la definición de estilos y paleta cromática favoreció un sentido de pertenencia y compromiso compartido con el diseño del producto. |
+| | | **AV2** | Estableció las metas técnicas del Sprint 2 para la consulta y filtrado de flota por disponibilidad. Implementó la lógica de filtrado de activos y colaboró con Tantalean en la conexión de módulos de datos. | La coordinación fluida y la asignación transparente de responsabilidades permitieron entregar incrementos de software funcionales sin fricciones operativas. |
+| | **Tantalean Granda, Nicolas** | **AV1** | Creó el repositorio central en la organización de GitHub, configuró permisos para todos los integrantes y brindó soporte técnico en la resolución de conflictos de merge en ramas locales. | Un entorno de trabajo accesible y con soporte mutuo fomenta la confianza del equipo para experimentar y contribuir con regularidad. |
+| | | **AV2** | Gestionó el tablero Kanban en GitHub Projects, estimando horas y monitoreando el avance del Sprint Backlog 2. Implementó el modal nativo de registro de activos y resolvió las incidencias de responsive design en móviles. | El monitoreo transparente del avance y la adaptación ágil ante imprevistos aseguraron el 100% de cumplimiento de los objetivos planificados para el Sprint 2. |
 
 # Capítulo I: Introducción
 
@@ -342,7 +373,7 @@ Cada hipótesis sigue la estructura de *feature hypothesis*: **resultado de nego
 
 ![Lean UX Canvas](./assets/evidence/ux/lean-ux-canva2.png)
 
-### 1.3. Segmentos objetivo
+## 1.3. Segmentos objetivo
 
 TechnoLoad está dirigido principalmente a empresas que necesitan mejorar la gestión de sus activos, reducir costos operativos y evitar periodos de inactividad ocasionados por fallas o una deficiente planificación del mantenimiento.
 
@@ -366,7 +397,7 @@ Los segmentos objetivo principales son los siguientes:
 
 Este capítulo documenta la obtención, análisis y validación de necesidades de los usuarios. La evidencia proviene del análisis competitivo, entrevistas y técnicas de needfinding; cada hallazgo se traduce posteriormente en requisitos verificables.
 
-### 2.1 Competidores
+## 2.1. Competidores
 
 ### 2.1.1. Análisis competitivo
 
@@ -391,7 +422,7 @@ Este capítulo documenta la obtención, análisis y validación de necesidades d
 | *SWOT - Amenazas* | Competidores internacionales, resistencia al cambio y problemas de conectividad. | Competencia de plataformas de telemática. | Competidores económicos y nuevas tecnologías. | Plataformas integrales y soluciones propias. | |
 
 ---
-#### 2.1.2. Estrategias y tácticas frente a competidores
+### 2.1.2. Estrategias y tácticas frente a competidores
 Para afrontar las fortalezas y debilidades identificadas en nuestros competidores, así como aprovechar las oportunidades y responder a las amenazas presentes en el mercado, TechnoLoad plantea las siguientes estrategias y tácticas preliminares:
 
 *1. Diferenciación mediante una plataforma integral:*
@@ -442,8 +473,8 @@ Para afrontar las fortalezas y debilidades identificadas en nuestros competidore
 
 *Táctica:* Iniciar con empresas de alquiler de maquinaria pesada y empresas de transporte y logística de carga, y posteriormente incorporar nuevas funcionalidades y segmentos de acuerdo con las necesidades identificadas en el mercado.
 
-### 2.2. Entrevistas
-### 2.2.1 Diseño de entrevistas
+## 2.2. Entrevistas
+### 2.2.1. Diseño de entrevistas
 
 Para la recolección de requerimientos se diseñaron guías de entrevista breves y estructuradas de 8 preguntas clave por segmento objetivo. Estas combinan datos demográficos/tecnológicos para el perfilamiento de arquetipos (User Personas) con preguntas profundas sobre la problemática operativa y de negocio.
 
@@ -473,7 +504,7 @@ Para la recolección de requerimientos se diseñaron guías de entrevista breves
 
 ---
 
-### 2.2.2 Registro de entrevistas
+### 2.2.2. Registro de entrevistas
 En esta sección se presentan las entrevistas realizadas a representantes de los segmentos objetivo de TechnoLoad.. Cada entrevista permite recopilar información sobre sus experiencias, necesidades, problemas y hábitos relacionados con la gestión y alquiler de maquinaria. Los resultados obtenidos servirán como base para el análisis de entrevistas y la construcción de los artefactos de Needfinding.
 #### Segmento 1: Propietarios y administradores de pequeñas empresas de alquiler de maquinaria
 
@@ -654,7 +685,7 @@ Asimismo, la falta de visibilidad en tiempo real de la ruta y del kilometraje ac
 En esta sección se presentan los principales artefactos obtenidos a partir del análisis de la información recolectada durante las entrevistas y el estudio de los segmentos objetivo de **TechnoLoad**. El proceso de Needfinding permite identificar las necesidades, comportamientos, objetivos y dificultades de los usuarios, sirviendo como base para la elaboración de los User Personas, User Task Matrix, User Journey Maps y Empathy Maps.
 
 A partir de las características objetivas y subjetivas identificadas en los dos segmentos clave (Empresas de alquiler de maquinaria pesada y Empresas de transporte y logística), se construyeron los artefactos correspondientes a cada arquetipo utilizando la herramienta UXPressia, asegurando una representación precisa del flujo de trabajo actual (*As-Is*) y del valor proyectado con la implementación de **TechnoLoad**.
-#### 2.3.1. User Personas
+### 2.3.1. User Personas
 
 A partir del análisis de las entrevistas se identificaron dos arquetipos principales que representan a los segmentos objetivo de TechnoLoad.
 
@@ -685,7 +716,7 @@ Renzo Huamán representa al contratista independiente que supervisa varias obras
 
 ![User Persona - Renzo Huamán](assets/research/personas/user-persona-renzo-huaman.png)
 
-#### 2.3.2. User Task Matrix
+### 2.3.2. User Task Matrix
 
 La siguiente matriz compara la frecuencia e importancia de las principales tareas realizadas actualmente por los dos User Personas identificados. Las tareas consideradas corresponden a actividades que los usuarios realizan independientemente de la existencia de TechnoLoad.
 
@@ -704,7 +735,7 @@ La matriz evidencia que ambos perfiles requieren conocer constantemente la dispo
 
 Estas diferencias permiten identificar necesidades particulares para cada segmento y sirven como base para definir posteriormente las funcionalidades de TechnoLoad.
 
-#### 2.3.3. User Journey Mapping
+### 2.3.3. User Journey Mapping
 
 Se elaboraron dos User Journey Maps en su estado actual (*As-Is*), uno para cada User Persona identificado. Estos diagramas representan los procesos que realizan actualmente los usuarios antes de utilizar TechnoLoad, permitiendo identificar dificultades, puntos de contacto y oportunidades de mejora.
 
@@ -737,7 +768,7 @@ El siguiente User Journey Map fue elaborado en la plataforma UXPressia para el U
 
 ![User Journey Map - Renzo Huamán](assets/research/journeys/user-journey-renzo-huaman.png)
 
-#### 2.3.4. Empathy Mapping
+### 2.3.4. Empathy Mapping
 
 A continuación se presentan los Empathy Mapping de los segmentos objetivos de TechnoLoad..
 
@@ -764,7 +795,7 @@ A continuación se presenta el Empathy Map elaborado en UXPressia para el User P
 
 ![Empathy Map - Renzo Huamán](assets/research/empathy-maps/empathy-map-renzo-huaman.png)
 
-#### 2.3.5. Big Picture Event Storming
+### 2.3.5. Big Picture Event Storming
 
 El Big Picture Event Storming permite visualizar de manera general los principales procesos del negocio de TechnoLoad, identificando actores, comandos, eventos del dominio, políticas y puntos críticos. En este proyecto se representan los flujos relacionados con la gestión de activos, el mantenimiento preventivo y la coordinación de transporte y logística, con el objetivo de comprender cómo se relacionan las principales actividades del dominio.
 
@@ -788,7 +819,7 @@ Las políticas hacen explícita la reacción del negocio ante un evento de domin
 | `SubscriptionPaymentConfirmed` | Cuando un pago de suscripción es confirmado, se habilita o renueva el acceso de la organización. | `ActivateSubscription` |
 | `ElectronicInvoiceRequested` | Toda factura aprobada debe enviarse al proveedor de facturación electrónica y conservar su estado de respuesta. | `SubmitElectronicInvoice` |
 
-### 2.4. Ubiquitous Language
+## 2.4. Ubiquitous Language
 
 En esta sección se presenta el Ubiquitous Language de TechnoLoad, compuesto por términos propios del dominio de gestión de flotas, mantenimiento de maquinaria pesada y transporte de carga. El objetivo es mantener un lenguaje común y sin ambigüedades entre los integrantes del equipo y los stakeholders involucrados en el proyecto.
 
@@ -825,7 +856,7 @@ Los términos se presentan en inglés debido a que serán utilizados de manera c
 
 Este capítulo formaliza los hallazgos del análisis en historias de usuario, criterios de aceptación, relaciones de impacto y backlog priorizado. Los requisitos funcionales cubren activos, lecturas, mantenimiento, alertas, disponibilidad y asignación; los no funcionales establecen seguridad, rendimiento, accesibilidad, internacionalización, trazabilidad y mantenibilidad.
 
-### 3.1. User Stories
+## 3.1. User Stories
 
 A partir del análisis de las entrevistas y de los artefactos de Needfinding, se identificaron las principales necesidades de los usuarios de TechnoLoad. Estas necesidades fueron transformadas en historias de usuario y organizadas según las épicas funcionales del producto.
 
@@ -898,11 +929,11 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 | US-044 | User Story | Consultar estado de la suscripción | Como propietario, quiero consultar el estado y el historial de pagos de mi suscripción, para verificar mi situación con la plataforma. | **Given:** el propietario tiene una suscripción registrada.<br>**When:** consulta su panel de cuenta.<br>**Then:** el sistema muestra el plan activo, la fecha de vencimiento y los pagos realizados. | EP-11 |
 | US-045 | User Story | Bloquear registro de maquinaria al superar el límite del plan | Como sistema, quiero impedir que un propietario registre más maquinarias que las permitidas por su plan, para hacer cumplir los límites comerciales de la suscripción. | **Given:** el propietario alcanzó el límite de maquinarias de su plan.<br>**When:** intenta registrar una maquinaria adicional.<br>**Then:** el sistema rechaza el registro e indica que debe actualizar su plan. | EP-11 |
 
-### 3.2. Impact Mapping
+## 3.2. Impact Mapping
 
 ![Impact Map - TechFlow](assets/research/impact-mapping/impact-mapping-maquicontrol.png)
 
-### 3.3. Product Backlog
+## 3.3. Product Backlog
 
 | Orden | User Story ID | Título | Descripción | Story Points |
 | :---: | :---: | :--- | :--- | :---: |
@@ -1329,7 +1360,7 @@ El mock-up de alta fidelidad aplica la jerarquía Inter, superficies claras, car
 
 ![Mock-up responsive de la Landing Page de TechnoLoad en vista Mobile](assets/ux/landing/landing-mockup-mobile.svg)
 
-### 4.4. Web Applications UX/UI Design
+## 4.4. Web Applications UX/UI Design
 
 El Dashboard y la Web App se diseñan a partir de los User Personas y User Stories. El administrador requiere visibilidad de activos y mantenimiento; el coordinador necesita conocer disponibilidad y asignar unidades sin perder trazabilidad.
 
@@ -1503,7 +1534,7 @@ flowchart TD
   class denied,correction,offline,rejected error
 ```
 
-### 4.5 Web Applications Prototyping
+## 4.5. Web Applications Prototyping
 
 En esta sección se presenta el prototipo interactivo de la Web Application de TechnoLoad, desarrollado a partir de los mock-ups y User Flow Diagrams definidos previamente.
 
@@ -1791,11 +1822,11 @@ flowchart LR
   class rentalService,rental,rentalRepository,operationService,operation,billingService,subscription,paymentAdapter,sunatAdapter component
 ```
 
-## 4.7 Software Object-Oriented Design
+## 4.7. Software Object-Oriented Design
 
 El diseño orientado a objetos de TechnoLoad representa las principales clases, interfaces, enumeraciones, atributos, operaciones y relaciones que conforman cada Bounded Context. Los modelos mantienen los límites definidos mediante Domain-Driven Design y utilizan identificadores para referenciar agregados pertenecientes a otros contextos, evitando el acoplamiento directo entre ellos.
 
-### 4.7.1 Class Diagrams
+### 4.7.1. Class Diagrams
 
 #### Canonical Domain Class Diagram
 
