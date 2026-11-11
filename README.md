@@ -2499,7 +2499,7 @@ Las principales herramientas utilizadas o previstas para el proyecto son las sig
 
 | Área | Herramienta / Tecnología | Propósito en TechnoLoad | Referencia |
 |---|---|---|---|
-| Project Management | [Trello / Jira / YouTrack - seleccionar el utilizado] | Organización del Product Backlog, Sprints, User Stories y tareas del equipo. | [COLOCAR URL DEL BOARD] |
+| Project Management | GitHub Projects | Organización del Product Backlog, Sprints, User Stories y tareas del equipo mediante tablero interactivo. | https://github.com/orgs/TechnoLoad-TechFlow/projects |
 | Requirements Management | GitHub + Markdown | Documentación colaborativa de requisitos, User Stories, Product Backlog y demás artefactos del informe. | https://github.com/TechnoLoad-TechFlow/TechFlow |
 | UX Research | UXPressia | Elaboración de User Personas, Empathy Maps, User Journey Maps e Impact Maps. | https://uxpressia.com/ |
 | UX/UI Design | Figma | Elaboración de Wireframes, Mock-ups y Prototipos de la experiencia web. | https://www.figma.com/ |
@@ -2793,8 +2793,8 @@ El proceso de despliegue de TechnoLoad comprende la publicación independiente d
 |---|---|---|---|
 | Landing Page | HTML5, CSS3 y JavaScript | `main` | GitHub Pages |
 | Frontend Web Application | HTML5, CSS3 y JavaScript (Vanilla ES6) | `main` | GitHub Pages |
-| RESTful Web Services | ASP.NET Core, Entity Framework Core y C# | `main` | [COLOCAR PLATAFORMA] |
-| Database | PostgreSQL | — | [COLOCAR PLATAFORMA] |
+| RESTful Web Services | ASP.NET Core / Node.js Mock API | `main` | Microsoft Azure App Service (Linux) |
+| Database | PostgreSQL | — | Microsoft Azure Database for PostgreSQL |
 
 #### Landing Page Deployment
 
@@ -2806,7 +2806,7 @@ Los archivos HTML, CSS, JavaScript y assets son obtenidos desde el repositorio c
 
 **Production URL:**
 
-[https://technoload-techflow.github.io/TechFlow/](https://technoload-techflow.github.io/TechFlow/)
+[https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/)
 
 #### Frontend Web Application Deployment
 
@@ -2822,7 +2822,7 @@ Las variables dependientes del entorno, especialmente la URL base de los RESTful
 
 **Production URL:**
 
-[https://technoload-techflow.github.io/TechFlow/](https://technoload-techflow.github.io/TechFlow/)
+[https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/)
 
 #### RESTful Web Services Deployment
 
@@ -2843,11 +2843,14 @@ Las credenciales, cadenas de conexión y demás información sensible no serán 
 
 **RESTful API Base URL:**
 
-[COLOCAR URL DEL WEB SERVICE]
+* **Producción Cloud (Azure App Service):** `https://technoload-api-u202410728.azurewebsites.net/api/v1`
+* **Entorno de Desarrollo y Pruebas Local:** `http://localhost:8080/api/v1`
+* **Repositorio de Código Fuente de Servicios:** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
 
-**Swagger / OpenAPI URL:**
+**Swagger / OpenAPI Documentation URL:**
 
-[COLOCAR URL DE SWAGGER]
+* **Swagger UI (Cloud desplegado):** `https://technoload-api-u202410728.azurewebsites.net/swagger`
+* **Especificación OpenAPI (Contratos y Esquemas):** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
 
 #### Database Deployment
 
