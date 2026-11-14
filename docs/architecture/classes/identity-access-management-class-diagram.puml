@@ -1,0 +1,157 @@
+@startuml
+title MaquiControl - Identity & Access Management Bounded Context\nGeneral Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+skinparam linetype ortho
+hide empty members
+
+package "Identity & Access Management" {
+
+  class UserAccount <<Aggregate Root>> {
+    - id: UserAccountId
+    - email: EmailAddress
+    - credential: Credential
+    - status: AccountStatus
+    - roles: Set<Role>
+    - createdAt: LocalDateTime
+    - lastLoginAt: LocalDateTime
+    + signUp(role: Role): void
+    + signIn(rawPassword: PlainPassword): Boolean
+    + signOut(): void
+    + hasRole(roleName: RoleName): Boolean
+  }
+
+  class Credential <<Value Object>> {
+    - passwordHash: PasswordHash
+    - changedAt: LocalDateTime
+    + matches(rawPassword: PlainPassword): Boolean
+    + update(passwordHash: PasswordHash): Credential
+  }
+
+  class Role <<Entity>> {
+    - id: RoleId
+    - name: RoleName
+    - description: Description
+    + isAdministrative(): Boolean
+  }
+
+  enum AccountStatus {
+    PENDING
+    ACTIVE
+    SUSPENDED
+    DISABLED
+  }
+
+  enum RoleName {
+    CONTRACTOR
+    FLEET_OWNER
+    FLEET_ADMINISTRATOR
+    OPERATOR
+    SYSTEM_ADMINISTRATOR
+  }
+
+  interface UserAccountRepository {
+    + save(account: UserAccount): UserAccount
+    + findById(id: UserAccountId): Optional<UserAccount>
+    + findByEmail(email: EmailAddress): Optional<UserAccount>
+    + existsByEmail(email: EmailAddress): Boolean
+  }
+
+  class IdentityAccessCommandService <<Application Service>> {
+    - accountRepository: UserAccountRepository
+    + handle(command: SignUpCommand): Optional<UserAccount>
+    + handle(command: SignInCommand): Optional<UserAccount>
+    + handle(command: SignOutCommand): void
+  }
+
+  class IdentityAccessQueryService <<Application Service>> {
+    - accountRepository: UserAccountRepository
+    + handle(query: GetSignedInAccountQuery): Optional<UserAccount>
+    + handle(query: ViewRolesQuery): List<Role>
+  }
+
+  package "Commands" {
+    class SignUpCommand <<Command>> {
+      - email: EmailAddress
+      - password: PlainPassword
+      - roleName: RoleName
+    }
+    class SignInCommand <<Command>> {
+      - email: EmailAddress
+      - password: PlainPassword
+    }
+    class SignOutCommand <<Command>> {
+      - userAccountId: UserAccountId
+    }
+  }
+
+  package "Queries" {
+    class GetSignedInAccountQuery <<Query>> {
+      - userAccountId: UserAccountId
+    }
+    class ViewRolesQuery <<Query>> {
+    }
+  }
+
+  class EmailAddress <<Value Object>> {
+    - value: String
+    + isValid(): Boolean
+  }
+
+  class PasswordHash <<Value Object>> {
+    - value: String
+  }
+
+  class PlainPassword <<Value Object>> {
+    - value: String
+    + meetsPolicy(): Boolean
+  }
+
+  class Description <<Value Object>> {
+    - value: String
+    + isEmpty(): Boolean
+  }
+
+  package "Identifiers" {
+    class RoleId <<Value Object>> {
+      - value: Long
+    }
+    class UserAccountId <<Value Object>> {
+      - value: Long
+    }
+  }
+}
+
+UserAccount "1" *-- "1" Credential : owns >
+UserAccount "1" o-- "1..*" Role : has >
+UserAccount --> AccountStatus : has >
+Role --> RoleName : identified by >
+IdentityAccessCommandService "1" --> "1" UserAccountRepository : uses >
+IdentityAccessQueryService "1" --> "1" UserAccountRepository : uses >
+UserAccountRepository ..> UserAccount : persists >
+
+UserAccount "1" *-- "1" EmailAddress : email >
+Credential "1" *-- "1" PasswordHash : passwordHash >
+Role "1" *-- "1" Description : description >
+
+IdentityAccessCommandService "1" ..> "1" SignUpCommand : handles >
+IdentityAccessCommandService "1" ..> "1" SignInCommand : handles >
+IdentityAccessCommandService "1" ..> "1" SignOutCommand : handles >
+IdentityAccessQueryService "1" ..> "1" GetSignedInAccountQuery : handles >
+IdentityAccessQueryService "1" ..> "1" ViewRolesQuery : handles >
+
+legend right
+  |= Symbol |= Meaning |
+  | + | Public |
+  | - | Private |
+  | *-- | Composition |
+  | o-- | Aggregation |
+  | --> | Association |
+  | ..> | Dependency |
+endlegend
+
+
+@enduml

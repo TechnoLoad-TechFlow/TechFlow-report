@@ -1,0 +1,177 @@
+@startuml
+title MaquiControl - Operations Management Bounded Context\nGeneral Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+skinparam linetype ortho
+hide empty members
+
+package "Operations Management" {
+
+  class ServiceOperation <<Aggregate Root>> {
+    - id: ServiceOperationId
+    - rentalId: RentalId
+    - machineryId: MachineryId
+    - operatorProfileId: ProfileId
+    - status: OperationStatus
+    - startedAt: LocalDateTime
+    - completedAt: LocalDateTime
+    - workedHours: List<WorkedHours>
+    + start(): void
+    + recordWorkedHours(record: WorkedHours): void
+    + validateWorkedHours(recordId: WorkedHoursId): void
+    + rejectWorkedHours(recordId: WorkedHoursId): void
+    + complete(): void
+    + calculateTotalHours(): HoursWorked
+    + isInProgress(): Boolean
+  }
+
+  class WorkedHours <<Entity>> {
+    - id: WorkedHoursId
+    - shift: WorkShift
+    - totalHours: HoursWorked
+    - status: WorkedHoursStatus
+    - observations: Notes
+    + calculateHours(): HoursWorked
+    + validate(): void
+    + reject(): void
+    + isValidated(): Boolean
+  }
+
+  enum OperationStatus {
+    SCHEDULED
+    IN_PROGRESS
+    COMPLETED
+    CANCELLED
+  }
+
+  enum WorkedHoursStatus {
+    PENDING
+    VALIDATED
+    REJECTED
+  }
+
+  interface ServiceOperationRepository {
+    + save(operation: ServiceOperation): ServiceOperation
+    + findById(id: ServiceOperationId): Optional<ServiceOperation>
+    + findByRentalId(rentalId: RentalId): Optional<ServiceOperation>
+    + findByMachineryId(machineryId: MachineryId): List<ServiceOperation>
+    + findByStatus(status: OperationStatus): List<ServiceOperation>
+  }
+
+  class OperationsManagementCommandService <<Application Service>> {
+    - operationRepository: ServiceOperationRepository
+    + handle(command: StartOperationCommand): Optional<ServiceOperation>
+    + handle(command: RecordWorkedHoursCommand): Optional<ServiceOperation>
+    + handle(command: ValidateWorkedHoursCommand): Optional<ServiceOperation>
+    + handle(command: RejectWorkedHoursCommand): Optional<ServiceOperation>
+    + handle(command: CompleteOperationCommand): Optional<ServiceOperation>
+  }
+
+  class OperationsManagementQueryService <<Application Service>> {
+    - operationRepository: ServiceOperationRepository
+    + handle(query: ViewServiceOperationQuery): Optional<ServiceOperation>
+    + handle(query: ViewWorkedHoursQuery): List<WorkedHours>
+  }
+
+  package "Commands" {
+    class StartOperationCommand <<Command>> {
+      - rentalId: RentalId
+      - machineryId: MachineryId
+      - operatorProfileId: ProfileId
+    }
+    class RecordWorkedHoursCommand <<Command>> {
+      - operationId: ServiceOperationId
+      - shift: WorkShift
+      - notes: Notes
+    }
+    class ValidateWorkedHoursCommand <<Command>> {
+      - operationId: ServiceOperationId
+      - workedHoursId: WorkedHoursId
+    }
+    class RejectWorkedHoursCommand <<Command>> {
+      - operationId: ServiceOperationId
+      - workedHoursId: WorkedHoursId
+    }
+    class CompleteOperationCommand <<Command>> {
+      - operationId: ServiceOperationId
+    }
+  }
+
+  package "Queries" {
+    class ViewServiceOperationQuery <<Query>> {
+      - rentalId: RentalId
+    }
+    class ViewWorkedHoursQuery <<Query>> {
+      - operationId: ServiceOperationId
+    }
+  }
+
+  class Notes <<Value Object>> {
+    - value: String
+  }
+
+  class HoursWorked <<Value Object>> {
+    - value: BigDecimal
+    + add(other: HoursWorked): HoursWorked
+    + isNonNegative(): Boolean
+  }
+
+  class WorkShift <<Value Object>> {
+    - workDate: LocalDate
+    - startTime: LocalTime
+    - endTime: LocalTime
+    + duration(): HoursWorked
+  }
+
+  package "Identifiers" {
+    class MachineryId <<Value Object>> {
+      - value: Long
+    }
+    class ProfileId <<Value Object>> {
+      - value: Long
+    }
+    class RentalId <<Value Object>> {
+      - value: Long
+    }
+    class ServiceOperationId <<Value Object>> {
+      - value: Long
+    }
+    class WorkedHoursId <<Value Object>> {
+      - value: Long
+    }
+  }
+}
+
+ServiceOperation "1" *-- "0..*" WorkedHours : records >
+ServiceOperation --> OperationStatus : has >
+WorkedHours --> WorkedHoursStatus : has >
+OperationsManagementCommandService "1" --> "1" ServiceOperationRepository : uses >
+OperationsManagementQueryService "1" --> "1" ServiceOperationRepository : uses >
+ServiceOperationRepository ..> ServiceOperation : persists >
+
+WorkedHours "1" *-- "1" WorkShift : shift >
+WorkedHours "1" *-- "1" HoursWorked : totalHours >
+WorkedHours "1" *-- "1" Notes : observations >
+
+OperationsManagementCommandService "1" ..> "1" StartOperationCommand : handles >
+OperationsManagementCommandService "1" ..> "1" RecordWorkedHoursCommand : handles >
+OperationsManagementCommandService "1" ..> "1" ValidateWorkedHoursCommand : handles >
+OperationsManagementCommandService "1" ..> "1" RejectWorkedHoursCommand : handles >
+OperationsManagementCommandService "1" ..> "1" CompleteOperationCommand : handles >
+OperationsManagementQueryService "1" ..> "1" ViewServiceOperationQuery : handles >
+OperationsManagementQueryService "1" ..> "1" ViewWorkedHoursQuery : handles >
+
+legend right
+  |= Symbol |= Meaning |
+  | + | Public |
+  | - | Private |
+  | *-- | Composition |
+  | --> | Association |
+  | ..> | Dependency |
+endlegend
+
+
+@enduml

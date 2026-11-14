@@ -1,0 +1,88 @@
+@startuml
+title MaquiControl - Maintenance Management Bounded Context\nDatabase Diagram
+
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+skinparam linetype ortho
+hide circle
+
+entity "maintenances" as maintenances {
+  * id : BIGINT <<PK, IDENTITY>>
+  --
+  * machinery_id : BIGINT <<EXTERNAL REF>>
+  * maintenance_type : VARCHAR(30) <<NOT NULL>>
+  * status : VARCHAR(30) <<NOT NULL>>
+  * description : VARCHAR(500) <<NOT NULL>>
+  * scheduled_date : TIMESTAMP <<NOT NULL>>
+  started_at : TIMESTAMP
+  completed_at : TIMESTAMP
+  technician_name : VARCHAR(150)
+  cost_amount : DECIMAL(12,2)
+  cost_currency : CHAR(3)
+  * created_at : TIMESTAMP <<NOT NULL>>
+  * updated_at : TIMESTAMP <<NOT NULL>>
+  * version : BIGINT <<NOT NULL, DEFAULT 0>>
+}
+
+entity "breakdown_reports" as breakdown_reports {
+  * id : BIGINT <<PK, IDENTITY>>
+  --
+  * maintenance_id : BIGINT <<FK, NOT NULL>>
+  * description : VARCHAR(500) <<NOT NULL>>
+  * severity : VARCHAR(20) <<NOT NULL>>
+  * reported_at : TIMESTAMP <<NOT NULL>>
+  resolved_at : TIMESTAMP
+  * resolved : BOOLEAN <<NOT NULL, DEFAULT FALSE>>
+}
+
+maintenances ||--o{ breakdown_reports : contains
+
+note right of maintenances
+  Constraints:
+  PK (id)
+  CHECK (maintenance_type IN
+    PREVENTIVE, CORRECTIVE, INSPECTION)
+  CHECK (status IN
+    SCHEDULED, IN_PROGRESS,
+    COMPLETED, CANCELLED)
+  CHECK (cost_amount IS NULL OR cost_amount >= 0)
+  CHECK (
+    (cost_amount IS NULL AND cost_currency IS NULL)
+    OR (cost_amount IS NOT NULL AND
+        cost_currency IN ('PEN', 'USD'))
+  )
+  CHECK (
+    status <> 'COMPLETED'
+    OR completed_at IS NOT NULL
+  )
+
+  machinery_id references Machinery
+  in Fleet Management.
+  No cross-context database FK is created.
+end note
+
+note right of breakdown_reports
+  Constraints:
+  PK (id)
+  FK (maintenance_id)
+    REFERENCES maintenances(id)
+    ON DELETE CASCADE
+  CHECK (severity IN
+    LOW, MEDIUM, HIGH, CRITICAL)
+  CHECK (
+    resolved = FALSE
+    OR resolved_at IS NOT NULL
+  )
+end note
+
+legend right
+  |= Mark |= Meaning |
+  | PK | Primary Key |
+  | IDENTITY | Database-generated numeric identifier |
+  | FK | Foreign Key |
+  | EXTERNAL REF | Identifier owned by another bounded context |
+  | NOT NULL | Mandatory column |
+endlegend
+
+@enduml

@@ -1,0 +1,225 @@
+@startuml
+title MaquiControl - Subscription Management Bounded Context\nGeneral Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+skinparam linetype ortho
+hide empty members
+
+package "Subscription Management" {
+
+  class SubscriptionPlan <<Aggregate Root>> {
+    - id: PlanId
+    - code: PlanCode
+    - name: PlanName
+    - machineryLimit: MachineryLimit
+    - price: Money
+    - billingCycle: BillingCycle
+    + allowsAdditionalMachinery(currentCount: MachineryCount): Boolean
+  }
+
+  class Subscription <<Aggregate Root>> {
+    - id: SubscriptionId
+    - ownerProfileId: ProfileId
+    - planId: PlanId
+    - status: SubscriptionStatus
+    - startedAt: LocalDateTime
+    - currentPeriodEnd: LocalDateTime
+    - payments: List<Payment>
+    - createdAt: LocalDateTime
+    - updatedAt: LocalDateTime
+    + registerPayment(payment: Payment): void
+    + activate(): void
+    + cancel(reason: Reason): void
+    + isActive(): Boolean
+  }
+
+  class Payment <<Entity>> {
+    - id: PaymentId
+    - provider: PaymentProviderName
+    - providerPaymentId: ProviderPaymentId
+    - amount: Money
+    - status: PaymentStatus
+    - paidAt: LocalDateTime
+    + approve(): void
+    + reject(): void
+    + isApproved(): Boolean
+  }
+
+  class Money <<Value Object>> {
+    - amount: BigDecimal
+    - currency: Currency
+    + add(other: Money): Money
+    + isNonNegative(): Boolean
+  }
+
+  enum Currency {
+    PEN
+    USD
+  }
+
+  enum PlanCode {
+    ESSENTIAL
+    PRO
+  }
+
+  enum BillingCycle {
+    MONTHLY
+    ANNUAL
+  }
+
+  enum SubscriptionStatus {
+    PENDING_PAYMENT
+    ACTIVE
+    CANCELLED
+  }
+
+  enum PaymentProviderName {
+    MERCADO_PAGO
+  }
+
+  enum PaymentStatus {
+    PENDING
+    IN_PROCESS
+    APPROVED
+    REJECTED
+    CANCELLED
+  }
+
+  interface SubscriptionRepository {
+    + save(subscription: Subscription): Subscription
+    + findById(id: SubscriptionId): Optional<Subscription>
+    + findByOwnerProfileId(ownerProfileId: ProfileId): Optional<Subscription>
+    + existsActiveByOwnerProfileId(ownerProfileId: ProfileId): Boolean
+  }
+
+  interface SubscriptionPlanRepository {
+    + findAll(): List<SubscriptionPlan>
+    + findByCode(code: PlanCode): Optional<SubscriptionPlan>
+  }
+
+  class SubscriptionManagementCommandService <<Application Service>> {
+    - subscriptionRepository: SubscriptionRepository
+    - planRepository: SubscriptionPlanRepository
+    + handle(command: SubscribeToPlanCommand): Optional<Subscription>
+    + handle(command: ConfirmCheckoutCommand): Optional<Subscription>
+    + handle(command: ActivateSubscriptionCommand): Optional<Subscription>
+    + handle(command: CancelSubscriptionCommand): Optional<Subscription>
+  }
+
+  class SubscriptionManagementQueryService <<Application Service>> {
+    - subscriptionRepository: SubscriptionRepository
+    - planRepository: SubscriptionPlanRepository
+    + handle(query: ViewPlansQuery): List<SubscriptionPlan>
+    + handle(query: ViewSubscriptionQuery): Optional<Subscription>
+    + handle(query: ViewPaymentsQuery): List<Payment>
+  }
+
+  package "Commands" {
+    class SubscribeToPlanCommand <<Command>> {
+      - ownerProfileId: ProfileId
+      - planCode: PlanCode
+    }
+    class ConfirmCheckoutCommand <<Command>> {
+      - subscriptionId: SubscriptionId
+      - providerPaymentId: ProviderPaymentId
+    }
+    class ActivateSubscriptionCommand <<Command>> {
+      - subscriptionId: SubscriptionId
+    }
+    class CancelSubscriptionCommand <<Command>> {
+      - subscriptionId: SubscriptionId
+      - reason: Reason
+    }
+  }
+
+  package "Queries" {
+    class ViewPlansQuery <<Query>> {
+    }
+    class ViewSubscriptionQuery <<Query>> {
+      - ownerProfileId: ProfileId
+    }
+    class ViewPaymentsQuery <<Query>> {
+      - subscriptionId: SubscriptionId
+    }
+  }
+
+  class Reason <<Value Object>> {
+    - value: String
+  }
+
+  class PlanName <<Value Object>> {
+    - value: String
+  }
+
+  class MachineryLimit <<Value Object>> {
+    - value: Integer
+    + allows(currentCount: MachineryCount): Boolean
+  }
+
+  class MachineryCount <<Value Object>> {
+    - value: Integer
+  }
+
+  class ProviderPaymentId <<Value Object>> {
+    - value: String
+  }
+
+  package "Identifiers" {
+    class PaymentId <<Value Object>> {
+      - value: Long
+    }
+    class PlanId <<Value Object>> {
+      - value: Long
+    }
+    class ProfileId <<Value Object>> {
+      - value: Long
+    }
+    class SubscriptionId <<Value Object>> {
+      - value: Long
+    }
+  }
+}
+
+Subscription "1" *-- "0..*" Payment : records >
+Subscription "1" --> "1" SubscriptionPlan : contracts >
+Payment "1" *-- "1" Money : amount >
+SubscriptionPlan "1" *-- "1" Money : price >
+Money --> Currency : expressed in >
+Subscription --> SubscriptionStatus : has >
+Payment --> PaymentStatus : has >
+Payment --> PaymentProviderName : processed by >
+SubscriptionPlan --> PlanCode : identified by >
+SubscriptionPlan --> BillingCycle : billed as >
+SubscriptionManagementCommandService "1" --> "1" SubscriptionRepository : uses >
+SubscriptionManagementQueryService "1" --> "1" SubscriptionRepository : uses >
+SubscriptionManagementCommandService "1" --> "1" SubscriptionPlanRepository : uses >
+SubscriptionManagementQueryService "1" --> "1" SubscriptionPlanRepository : uses >
+SubscriptionRepository ..> Subscription : persists >
+SubscriptionPlanRepository ..> SubscriptionPlan : persists >
+
+SubscriptionPlan "1" *-- "1" PlanName : name >
+SubscriptionPlan "1" *-- "1" MachineryLimit : machineryLimit >
+Payment "1" *-- "1" ProviderPaymentId : providerPaymentId >
+
+SubscriptionManagementCommandService "1" ..> "1" SubscribeToPlanCommand : handles >
+SubscriptionManagementCommandService "1" ..> "1" ConfirmCheckoutCommand : handles >
+SubscriptionManagementCommandService "1" ..> "1" ActivateSubscriptionCommand : handles >
+SubscriptionManagementCommandService "1" ..> "1" CancelSubscriptionCommand : handles >
+SubscriptionManagementQueryService "1" ..> "1" ViewPlansQuery : handles >
+SubscriptionManagementQueryService "1" ..> "1" ViewSubscriptionQuery : handles >
+SubscriptionManagementQueryService "1" ..> "1" ViewPaymentsQuery : handles >
+
+legend right
+  |= Symbol |= Meaning |
+  | + | Public |
+  | - | Private |
+  | *-- | Composition |
+  | --> | Association |
+  | ..> | Dependency |
+endlegend
+
+
+@enduml

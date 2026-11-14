@@ -1,0 +1,204 @@
+@startuml
+title MaquiControl - Profiles Management Bounded Context\nGeneral Class Diagram
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam roundcorner 8
+skinparam defaultFontName Arial
+skinparam linetype ortho
+hide empty members
+
+package "Profiles Management" {
+
+  class Profile <<Aggregate Root>> {
+    - id: ProfileId
+    - userAccountId: UserAccountId
+    - name: PersonName
+    - documentNumber: DocumentNumber
+    - contactInformation: ContactInformation
+    - organization: Organization
+    - createdAt: LocalDateTime
+    - updatedAt: LocalDateTime
+    + update(name: PersonName, documentNumber: DocumentNumber, contact: ContactInformation): void
+    + assignOrganization(organization: Organization): void
+    + fullName(): PersonName
+  }
+
+  class ContactInformation <<Value Object>> {
+    - phoneNumber: PhoneNumber
+    - secondaryEmail: EmailAddress
+    - address: StreetAddress
+    - district: String
+    - city: String
+    + isValid(): Boolean
+    + formattedAddress(): String
+  }
+
+  class Organization <<Entity>> {
+    - id: OrganizationId
+    - name: CompanyName
+    - taxId: TaxId
+    - type: OrganizationType
+    - address: StreetAddress
+    + update(name: CompanyName, taxId: TaxId, type: OrganizationType, address: StreetAddress): void
+    + isValidTaxId(): Boolean
+  }
+
+  enum OrganizationType {
+    INDEPENDENT_CONTRACTOR
+    RENTAL_COMPANY
+    CONSTRUCTION_COMPANY
+    OTHER
+  }
+
+  interface ProfileRepository {
+    + save(profile: Profile): Profile
+    + findById(id: ProfileId): Optional<Profile>
+    + findByUserAccountId(userAccountId: UserAccountId): Optional<Profile>
+    + findByDocumentNumber(documentNumber: DocumentNumber): Optional<Profile>
+    + existsByDocumentNumber(documentNumber: DocumentNumber): Boolean
+  }
+
+  class ProfilesManagementCommandService <<Application Service>> {
+    - profileRepository: ProfileRepository
+    + handle(command: CreateProfileCommand): Optional<Profile>
+    + handle(command: UpdateProfileCommand): Optional<Profile>
+    + handle(command: CreateOrganizationCommand): Optional<Organization>
+    + handle(command: UpdateOrganizationCommand): Optional<Organization>
+  }
+
+  class ProfilesManagementQueryService <<Application Service>> {
+    - profileRepository: ProfileRepository
+    + handle(query: ViewProfileQuery): Optional<Profile>
+    + handle(query: ViewOrganizationQuery): Optional<Organization>
+  }
+
+  package "Commands" {
+    class CreateProfileCommand <<Command>> {
+      - userAccountId: UserAccountId
+      - name: PersonName
+      - documentNumber: DocumentNumber
+      - contact: ContactInformation
+    }
+    class UpdateProfileCommand <<Command>> {
+      - profileId: ProfileId
+      - name: PersonName
+      - documentNumber: DocumentNumber
+      - contact: ContactInformation
+    }
+    class CreateOrganizationCommand <<Command>> {
+      - profileId: ProfileId
+      - name: CompanyName
+      - taxId: TaxId
+      - type: OrganizationType
+      - address: StreetAddress
+    }
+    class UpdateOrganizationCommand <<Command>> {
+      - organizationId: OrganizationId
+      - name: CompanyName
+      - taxId: TaxId
+      - type: OrganizationType
+      - address: StreetAddress
+    }
+  }
+
+  package "Queries" {
+    class ViewProfileQuery <<Query>> {
+      - userAccountId: UserAccountId
+    }
+    class ViewOrganizationQuery <<Query>> {
+      - profileId: ProfileId
+    }
+  }
+
+  class EmailAddress <<Value Object>> {
+    - value: String
+    + isValid(): Boolean
+  }
+
+  class PhoneNumber <<Value Object>> {
+    - value: String
+    + isValid(): Boolean
+  }
+
+  class PersonName <<Value Object>> {
+    - firstName: String
+    - lastName: String
+    + fullName(): String
+  }
+
+  class DocumentNumber <<Value Object>> {
+    - type: DocumentType
+    - value: String
+    + isValid(): Boolean
+  }
+
+  class TaxId <<Value Object>> {
+    - value: String
+    + isValidRuc(): Boolean
+  }
+
+  class CompanyName <<Value Object>> {
+    - legalName: String
+    - tradeName: String
+  }
+
+  class StreetAddress <<Value Object>> {
+    - value: String
+  }
+
+  enum DocumentType {
+    DNI
+    CE
+    PASSPORT
+  }
+
+  package "Identifiers" {
+    class OrganizationId <<Value Object>> {
+      - value: Long
+    }
+    class ProfileId <<Value Object>> {
+      - value: Long
+    }
+    class UserAccountId <<Value Object>> {
+      - value: Long
+    }
+  }
+}
+
+Profile "1" *-- "1" ContactInformation : contains >
+Profile "1" o-- "0..1" Organization : belongs to >
+Organization --> OrganizationType : classified as >
+ProfilesManagementCommandService "1" --> "1" ProfileRepository : uses >
+ProfilesManagementQueryService "1" --> "1" ProfileRepository : uses >
+ProfileRepository ..> Profile : persists >
+
+Profile "1" *-- "1" PersonName : name >
+Profile "1" *-- "1" DocumentNumber : documentNumber >
+ContactInformation "1" *-- "1" PhoneNumber : phoneNumber >
+ContactInformation "1" *-- "1" EmailAddress : secondaryEmail >
+ContactInformation "1" *-- "1" StreetAddress : address >
+Organization "1" *-- "1" CompanyName : name >
+Organization "1" *-- "1" TaxId : taxId >
+Organization "1" *-- "1" StreetAddress : address >
+DocumentNumber --> DocumentType : type >
+
+ProfilesManagementCommandService "1" ..> "1" CreateProfileCommand : handles >
+ProfilesManagementCommandService "1" ..> "1" UpdateProfileCommand : handles >
+ProfilesManagementCommandService "1" ..> "1" CreateOrganizationCommand : handles >
+ProfilesManagementCommandService "1" ..> "1" UpdateOrganizationCommand : handles >
+ProfilesManagementQueryService "1" ..> "1" ViewProfileQuery : handles >
+ProfilesManagementQueryService "1" ..> "1" ViewOrganizationQuery : handles >
+
+legend right
+  |= Symbol |= Meaning |
+  | + | Public |
+  | - | Private |
+  | *-- | Composition |
+  | o-- | Aggregation |
+  | --> | Association |
+  | ..> | Dependency |
+endlegend
+
+
+@enduml
