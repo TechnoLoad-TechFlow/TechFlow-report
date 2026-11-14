@@ -60,7 +60,7 @@
 
 # Registro de Versiones del Informe
 
-El presente registro resume las modificaciones relevantes realizadas al informe durante el ciclo de vida del proyecto para las entregas de los hitos AV1 (Semana 4) y AV2 (Sprint 2).
+El presente registro resume las modificaciones relevantes realizadas al informe durante el ciclo de vida del proyecto para las entregas de los hitos **AV1 (Semana 4)** y **AV2 (Semana 12 / Sprint 3)**.
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---: | :---: | :--- | :--- |
@@ -74,18 +74,19 @@ El presente registro resume las modificaciones relevantes realizadas al informe 
 | **1.7.0** | 2026-09-17 | Nicolas Tantalean, Mathias Castillo | Diseño de Wireframes, Mock-ups de alta fidelidad y prototipos en Figma; elaboración de diagramas de arquitectura C4 (Contexto, Contenedor y Componentes) y modelo relacional de base de datos. |
 | **1.8.0** | 2026-09-18 | Wilmer Gutierrez, Edgard Diaz | Redacción del Capítulo V: Software Configuration Management, registro del Sprint 1 y despliegue del Landing Page en GitHub Pages. |
 | **1.9.0** | 2026-09-19 | Todos los integrantes | Revisión general, incorporación de Conclusiones, Bibliografía según formato APA 7 y consolidación final del informe para la entrega AV1 (Semana 4). |
-| **2.0.0** | 2026-10-08 | Todos los integrantes | Documentación completa del Sprint 2: planificación, backlog, evidencias de desarrollo y ejecución; registro del despliegue en Microsoft Azure App Service (Landing Page y Web App); corrección sintáctica de diagramas Mermaid (palabra reservada 'end' y etiquetas C4); reestructuración y validación integral de anclas del Índice (TOC) y depuración de referencias. |
-| **2.1.0** | 2026-11-11 | Todos los integrantes | Corrección integral del informe según retroalimentación docente para AV2 (Semana 12): estandarización de carátula según plantilla oficial (NRC 10215, orden alfabético de integrantes por apellidos); adopción del formato oficial Scrum.org para Sprint Goals en Sprint Planning 1, 2 y 3; reemplazo de marcadores de posición [COLOCAR URL DEL WEB SERVICE] por URLs verificadas de despliegue en Microsoft Azure y repositorio technoload-platform; depuración y reparación integral de enlaces rotos (GitHub Pages, anclas de navegación del Índice y referencias cruzadas). |
+| **2.0.0** | 2026-10-08 | Todos los integrantes | Documentación del Sprint 2: planificación, backlog, evidencias de desarrollo y ejecución; registro del despliegue en Microsoft Azure App Service (Landing Page y Web App); validación de anclas del Índice (TOC) y depuración de referencias. |
+| **2.1.0** | 2026-11-11 | Todos los integrantes | Estandarización de carátula según plantilla oficial (`1ASI0730`, NRC `8093`, orden alfabético por apellidos); adopción del formato oficial Scrum.org para los Sprint Goals en Sprint Planning 1, 2 y 3; actualización de URLs de despliegue en Microsoft Azure y repositorio `technoload-platform`. |
+| **2.2.0** | 2026-11-14 | Todos los integrantes | Consolidación final de AV2 (Sprint 3): actualización de Big Picture Event Storming (`2.3.5`) y diagramas renderizados de las secciones `4.4.4` a `4.8` (User Flows `UF-01`–`UF-06`, Design-Level Event Storming, C4, Diagramas de Clases DDD y Base de Datos sin bloques Mermaid sin renderizar); registro de commits y métricas reales de los 4 repositorios; documentación de integración Angular 21 + Node.js / ASP.NET Core 8 / Spring Boot; formato Anexo D en heurísticas, Video About-the-Product y About-the-Team, Student Outcome y corrección terminológica según Anexo E. |
 
 ---
 
 # Project Report Collaboration Insights
 
-En esta sección, el equipo evidencia y detalla la dinámica de colaboración para la redacción, edición y consolidación del informe del proyecto durante el desarrollo del hito **AV1 (Semana 4)**.
+En esta sección, el equipo evidencia y detalla la dinámica de colaboración para la redacción, edición y consolidación del informe del proyecto durante los hitos **AV1 (Semana 4)** y **AV2 (Semana 12)**.
 
-* **URL del repositorio del Project Report:** [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow-report)
+* **URL del repositorio del Project Report:** [https://github.com/TechnoLoad-TechFlow/TechFlow-report](https://github.com/TechnoLoad-TechFlow/TechFlow-report)
 
-### Dinamica de colaboración y gestión del informe
+### Dinámica de colaboración y gestión del informe
 La elaboración del informe se gestionó de forma colaborativa y continua bajo la plataforma **GitHub**, empleando Markdown como estándar de documentación técnica. Para garantizar la integridad y trazabilidad del documento, el equipo adoptó las siguientes prácticas de ingeniería:
 1. **Flujo de trabajo basado en ramas (GitFlow):** La rama `main` se reservó para versiones estables e hitos consolidados. Los integrantes trabajaron en ramas dedicadas (`feature/report-chapter-i`, `feature/report-needfinding`, `feature/report-c4-diagrams`, etc.), integrando los avances hacia `develop` mediante *Pull Requests* revisados por pares.
 2. **Convención de commits (Conventional Commits):** Se estandarizó el uso de mensajes con prefijos semánticos como `docs(cap-1): ...`, `docs(ux): ...`, `feat(report): ...` y `fix(grammar): ...`, permitiendo un historial claro y auditable.
@@ -93,8 +94,7 @@ La elaboración del informe se gestionó de forma colaborativa y continua bajo l
 
 ### Evidencias de colaboración y analíticas en GitHub
 
-A continuación, se presentan los espacios para las capturas de pantalla de los analíticos de colaboración, historial de commits y contribuciones por miembro del equipo en el repositorio del informe (`TechFlow`), demostrando la participación activa y conjunta durante las semanas de trabajo:
-
+A continuación, se presentan las capturas de pantalla de los analíticos de colaboración, historial de commits y contribuciones por miembro del equipo en el repositorio del informe (`TechFlow-report`), demostrando la participación activa y conjunta durante las semanas de trabajo:
 
 #### Historial de Commits y Registro de Actividad (GitHub Network / Commits Graph)
 
@@ -122,7 +122,7 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation-analysis)
+- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
     - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
@@ -170,13 +170,13 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
   - [4.8. Database Design](#48-database-design)
     - [4.8.1. Database Diagrams](#481-database-diagrams)
     - [4.8.2. Script DDL](#482-script-ddl)
-- [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation-deployment)
+- [Capítulo V: Product Implementation, Validation & Deployment](#capítulo-v-product-implementation-validation--deployment)
   - [5.1. Software Configuration Management](#51-software-configuration-management)
     - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
     - [5.1.2. Source Code Management](#512-source-code-management)
-    - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide-conventions)
+    - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
-  - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services-applications-implementation)
+  - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
     - [5.2.1. Sprint 1](#521-sprint-1)
       - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
       - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
@@ -210,9 +210,12 @@ A continuación, se presentan los espacios para las capturas de pantalla de los 
     - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
   - [5.4. Video About-the-Product](#54-video-about-the-product)
 - [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Video About-the-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+  - [Anexo: Repositorios y productos desplegados](#anexo-repositorios-y-productos-desplegados)
+  - [Anexo: Videos de Exposiciones](#anexo-videos-de-exposiciones)
 
 ---
 
@@ -228,21 +231,21 @@ En la siguiente matriz se detallan las acciones realizadas y los enunciados de c
 | Criterio específico | Integrante | Entrega | Acciones realizadas | Conclusiones |
 | :--- | :--- | :---: | :--- | :--- |
 | **Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Castillo Guevara, Mathias Alejandro** | **AV1** | Lideró la formulación de artefactos Lean UX (Problem Statements, Assumptions, Hypothesis) y la estructuración del repositorio en Markdown. Coordinó sesiones de sincronización para mantener la coherencia entre el informe y las entregas del sprint. | El liderazgo distribuido permitió alinear oportunamente las definiciones de negocio con los requisitos técnicos, evitando inconsistencias entre las expectativas del cliente y los entregables. |
-| | | **AV2** | Condujo el modelado arquitectural C4 de Contexto y Contenedor, así como la especificación de User Stories para el cálculo interactivo de ROI. Asumió la facilitación de la retrospectiva del Sprint 1 y la planificación del Sprint 2. | La alternancia del liderazgo técnico facilitó resolver bloqueos rápidamente y asegurar un enfoque modular en la integración entre la Landing Page y la Web Application. |
+| | | **AV2** | Condujo la actualización arquitectural completa del Capítulo IV (User Flows `UF-01`–`UF-06`, Design-Level Event Storming, diagramas C4, Clases DDD y Base de Datos renderizados), además de liderar el diseño de entrevistas de validación y la calculadora interactiva de ROI. | La alternancia del liderazgo técnico en arquitectura y validación facilitó corregir las observaciones de AV1 y asegurar trazabilidad directa entre el dominio y los servicios implementados. |
 | | **Díaz Caruzo, Edgard Daniel** | **AV1** | Asumió el liderazgo en la investigación de competidores y el diseño de guías estructuradas de entrevistas para los segmentos de alquiler de maquinaria y transporte. Moderó la discusión sobre estrategias de diferenciación frente al mercado local. | Dirigir el análisis competitivo temprano proporcionó al equipo argumentos sólidos para priorizar el control de horómetros y alertas de mantenimiento preventivo como valor diferencial. |
-| | | **AV2** | Lideró la implementación de componentes de interfaz para la presentación de planes de membresía y catálogo de maquinaria en la Web App y Landing Page. Coordinó la revisión cruzada de estilos y accesibilidad web. | Ejercer liderazgo en la capa visual garantizó consistencia semántica en la experiencia del usuario final, optimizando la adopción de las llamadas a la acción (CTA). |
+| | | **AV2** | Lideró el rediseño visual y navegación de la Landing Page (`technoload-website`), la implementación del modal de autenticación y gestión de usuarios, así como la evaluación heurística según el formato oficial Anexo D. | Ejercer liderazgo en la capa visual y de experiencia de usuario garantizó coherencia semántica entre la Landing Page y la Web Application, optimizando las rutas de conversión hacia la plataforma. |
 | | **Gutiérrez Lizarbe, Wilmer Sebastián** | **AV1** | Lideró el diseño de la arquitectura de información y la priorización del Product Backlog mediante Impact Mapping. Estableció las directrices de estimación ágil en Story Points y definición de criterios de aceptación en Gherkin. | La clarificación y priorización del backlog bajo un liderazgo visible facilitó al equipo enfocarse en las épicas críticas de inventario y estado operativo. |
-| | | **AV2** | Condujo la especificación y modelado de servicios backend RESTful (contratos OpenAPI / Swagger) y el diseño de la base de datos relacional en PostgreSQL. Lideró la definición de pruebas de endpoints para la gestión de flota. | El liderazgo en arquitectura de datos permitió contar con contratos claros entre backend y frontend antes de la integración definitiva en la nube. |
+| | | **AV2** | Condujo la implementación de los RESTful Web Services en `technoload-platform`, desarrollando las capas DDD en ASP.NET Core 8 (`dotnet/` con EF Core y pruebas unitarias) y Spring Boot (`spring/` con contextos `fleet`, `maintenance` y `rental`), además de documentar la autenticación Bearer de la API Node.js. | El liderazgo en servicios backend y DDD permitió establecer contratos claros, validaciones consistentes y pruebas unitarias antes y durante la integración en la nube. |
 | | **Tantalean Granda, Nicolas** | **AV1** | Asumió el rol de Scrum Master y líder de configuración de software (SCM). Estableció el flujo de trabajo GitFlow, las convenciones de Conventional Commits y supervisó el despliegue inicial en GitHub Pages. | La disciplina establecida en el control de versiones desde el inicio del proyecto garantizó trazabilidad completa en cada commit y Pull Request del equipo. |
-| | | **AV2** | Lideró la migración, configuración y despliegue continuo de los entornos cloud en Microsoft Azure App Service (Landing Page y Web Application), resolviendo incidencias de certificados SSL, HTTPS Only y rutas modulares. | Asumir la responsabilidad del despliegue cloud aseguró que el producto esté disponible públicamente y verificado bajo condiciones reales de producción para la entrega. |
-| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Castillo Guevara, Mathias Alejandro** | **AV1** | Participó activamente en la elaboración de Empathy Maps y Big Picture EventStorming. Apoyó a sus compañeros en la redacción técnica de requerimientos y promovió la toma de decisiones por consenso. | Mantener un ambiente abierto de debate conceptual permitió enriquecer el glosario de lenguaje ubicuo con la perspectiva de todos los participantes. |
-| | | **AV2** | Planificó las tareas de documentación de Sprint Planning 2 y Sprint Backlog 2 en el tablero colaborativo. Diseñó e implementó la herramienta interactiva de estimación de ROI en JavaScript, integrándola colaborativamente. | El establecimiento de metas claras y compromisos compartidos permitió culminar la totalidad de las tareas asignadas dentro de los plazos del Sprint 2. |
+| | | **AV2** | Lideró el desarrollo de la Web Application en Angular 21 (`technoload-webapp`) conectada a la API de plataforma, integrando autenticación real de servidor, separación de roles (`ADMIN`/`USER`), checkout sandbox de suscripciones y el despliegue en Microsoft Azure App Service. | Asumir la responsabilidad de la integración frontend-servidor y del despliegue cloud aseguró la operación integrada de la Landing Page, Web Application y RESTful API bajo HTTPS. |
+| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Castillo Guevara, Mathias Alejandro** | **AV1** | Participó activamente en la elaboración de Empathy Maps y Big Picture Event Storming. Apoyó a sus compañeros en la redacción técnica de requisitos y promovió la toma de decisiones por consenso. | Mantener un ambiente abierto de debate conceptual permitió enriquecer el glosario de lenguaje ubicuo con la perspectiva de todos los participantes. |
+| | | **AV2** | Planificó la actualización de artefactos de Sprint 2 y Sprint 3 en el tablero colaborativo, unificó los Sprint Goals bajo el formato oficial Scrum.org y depuró los enlaces, anclas del Índice y terminología según Anexo E en `TechFlow-report`. | El establecimiento de metas claras y estándares editoriales compartidos permitió entregar un informe técnico consistente y alineado con las observaciones docentes. |
 | | **Díaz Caruzo, Edgard Daniel** | **AV1** | Realizó entrevistas cualitativas con usuarios potenciales, transcribió los hallazgos y facilitó sesiones conjuntas de Needfinding para consolidar los User Personas y Journey Maps. | La apertura para incorporar retroalimentación de los integrantes permitió refinar la descripción de dolores operativos de los administradores de flota. |
-| | | **AV2** | Planificó y ejecutó tareas de codificación de la Hero Section, catálogo interactivo de maquinaria y selector de membresías comerciales en la Web App, sincronizando sus ramas con el resto del equipo vía Pull Requests. | La colaboración constante mediante revisiones de código fortaleció la calidad del frontend y afianzó el cumplimiento de los estándares de estilo adoptados. |
+| | | **AV2** | Planificó y ejecutó mejoras de diseño responsivo en `technoload-website`, colaboró en la definición de criterios de accesibilidad e internacionalización y consolidó los hallazgos de Usabilidad, Diseño Inclusivo y Arquitectura de Información para el Sprint 3. | La colaboración constante entre diseño UX/UI y desarrollo frontend fortaleció la calidad percibida de las interfaces y el cumplimiento de estándares de accesibilidad. |
 | | **Gutiérrez Lizarbe, Wilmer Sebastián** | **AV1** | Colaboró en la definición de perfiles de integrantes, elaboración del Style Guideline y diseño de componentes de UI. Participó puntualmente en todas las reuniones de planificación y revisión. | La colaboración inclusiva en la definición de estilos y paleta cromática favoreció un sentido de pertenencia y compromiso compartido con el diseño del producto. |
-| | | **AV2** | Estableció las metas técnicas del Sprint 2 para la consulta y filtrado de flota por disponibilidad. Implementó la lógica de filtrado de activos y colaboró con Tantalean en la conexión de módulos de datos. | La coordinación fluida y la asignación transparente de responsabilidades permitieron entregar incrementos de software funcionales sin fricciones operativas. |
+| | | **AV2** | Estableció las metas técnicas de persistencia y dominio del Sprint 3, coordinando con Tantalean los contratos JSON entre `technoload-platform` y `technoload-webapp` para el registro de maquinaria, solicitudes de alquiler y pago sandbox. | La coordinación fluida y la asignación transparente de responsabilidades permitieron entregar incrementos de software funcionales y verificables mediante pruebas unitarias. |
 | | **Tantalean Granda, Nicolas** | **AV1** | Creó el repositorio central en la organización de GitHub, configuró permisos para todos los integrantes y brindó soporte técnico en la resolución de conflictos de merge en ramas locales. | Un entorno de trabajo accesible y con soporte mutuo fomenta la confianza del equipo para experimentar y contribuir con regularidad. |
-| | | **AV2** | Gestionó el tablero Kanban en GitHub Projects, estimando horas y monitoreando el avance del Sprint Backlog 2. Implementó el modal nativo de registro de activos y resolvió las incidencias de responsive design en móviles. | El monitoreo transparente del avance y la adaptación ágil ante imprevistos aseguraron el 100% de cumplimiento de los objetivos planificados para el Sprint 2. |
+| | | **AV2** | Gestionó la configuración de entorno `.env.production` en `technoload-webapp`, coordinó las entregas de Landing Page, Web App y API en Azure App Service y dio seguimiento a la integración continua en ramas de desarrollo y producción. | El monitoreo transparente del avance y la adaptación ágil ante incidencias de despliegue aseguraron el cumplimiento de los objetivos planificados para el Sprint 3. |
 
 # Capítulo I: Introducción
 
@@ -476,7 +479,7 @@ Para afrontar las fortalezas y debilidades identificadas en nuestros competidore
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
 
-Para la recolección de requerimientos se diseñaron guías de entrevista breves y estructuradas de 8 preguntas clave por segmento objetivo. Estas combinan datos demográficos/tecnológicos para el perfilamiento de arquetipos (User Personas) con preguntas profundas sobre la problemática operativa y de negocio.
+Para la obtención de requisitos se diseñaron guías de entrevista breves y estructuradas de 8 preguntas clave por segmento objetivo. Estas combinan datos demográficos/tecnológicos para el perfilamiento de arquetipos (User Personas) con preguntas profundas sobre la problemática operativa y de negocio.
 
 #### **Segmento 1: Propietarios y administradores de empresas de alquiler de maquinaria pesada**
 
@@ -797,27 +800,17 @@ A continuación se presenta el Empathy Map elaborado en UXPressia para el User P
 
 ### 2.3.5. Big Picture Event Storming
 
-El Big Picture Event Storming permite visualizar de manera general los principales procesos del negocio de TechnoLoad, identificando actores, comandos, eventos del dominio, políticas y puntos críticos. En este proyecto se representan los flujos relacionados con la gestión de activos, el mantenimiento preventivo y la coordinación de transporte y logística, con el objetivo de comprender cómo se relacionan las principales actividades del dominio.
+El Big Picture Event Storming de TechnoLoad fue elaborado con el objetivo de representar de manera visual los principales procesos, eventos, actores, sistemas externos y problemas identificados dentro del dominio de alquiler y gestión de maquinaria pesada y flotas operativas. El análisis toma como base la problemática definida en el proyecto, las entrevistas realizadas, los User Personas, el User Task Matrix y los principales hallazgos del proceso de Needfinding.
 
-![Big Picture Event Storming 1 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-1.jpg)
-![Big Picture Event Storming 2 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-2.jpg)
-![Big Picture Event Storming 3 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-3.jpg)
-![Big Picture Event Storming 4 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-4.jpg)
-![Big Picture Event Storming 5 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-5.jpg)
-![Big Picture Event Storming 6 - TechFlow](assets/architecture/big-picture-event-storming/big-picture-event-storming-6.jpg)
-A partir del mapa se reconocen áreas de dominio candidatas como Discovery and Availability, Rental and Reservation Management, Fleet and Maintenance Management, Service Execution and Hour Control, Subscription Management, Billing and SUNAT Compliance, Operational Notifications y Dashboard and Analytics. Estas áreas todavía no representan Bounded Contexts definitivos, ya que su refinamiento se realizará posteriormente mediante Design-Level Event Storming.
+Durante la sesión se identificaron eventos relacionados con la búsqueda y disponibilidad de maquinaria, gestión de reservas, control de flota, mantenimiento, ejecución del servicio, validación de horas trabajadas, facturación electrónica, suscripciones, alertas operativas y visualización de información mediante dashboards. Por tratarse de una vista estratégica del dominio, el Big Picture se concentra en eventos de dominio, actores, sistemas externos y hotspots; los comandos y las políticas se reservan para el modelado detallado posterior mediante Design-Level Event Storming.
 
-Las políticas hacen explícita la reacción del negocio ante un evento de dominio. No son eventos ni comandos: son reglas que, al cumplirse una condición, ordenan la siguiente acción dentro del contexto responsable o mediante una integración controlada.
+El mapa se lee de izquierda a derecha como una línea de tiempo y se organiza en cuatro fases consecutivas: (1) suscripción del propietario y registro de su flota, (2) descubrimiento de maquinaria y gestión de la reserva, (3) ejecución del servicio y mantenimiento, y (4) facturación y cierre del alquiler. Cada fase continúa la línea de tiempo de la anterior; los actores se ubican debajo del evento que originan, y los hotspots y sistemas externos junto al evento al que afectan.
 
-| Domain Event | Policy / Business Rule | Resulting Command or Integration |
-| :--- | :--- | :--- |
-| `MeterReadingRecorded` | Si la lectura alcanza o supera el umbral de un plan de mantenimiento activo, se debe generar una intervención preventiva. | `CreateMaintenanceOrder` |
-| `MaintenanceOrderScheduled` | Si el mantenimiento está programado dentro del horizonte de alerta, el activo debe dejar de mostrarse como asignable para el periodo intervenido. | `ReserveAssetForMaintenance` |
-| `MaintenanceOrderCompleted` | Si la inspección de cierre es satisfactoria, el activo recupera su disponibilidad operativa. | `SetAssetStatus(AVAILABLE)` |
-| `BreakdownReported` | Si la avería es crítica, se debe bloquear toda asignación nueva y notificar al responsable de operaciones. | `SetAssetStatus(OUT_OF_SERVICE)` and `SendOperationalNotification` |
-| `RentalRequestApproved` | La reserva solo se confirma cuando el activo está disponible y no existen periodos superpuestos. | `ConfirmRental` and `SetAssetStatus(RESERVED)` |
-| `SubscriptionPaymentConfirmed` | Cuando un pago de suscripción es confirmado, se habilita o renueva el acceso de la organización. | `ActivateSubscription` |
-| `ElectronicInvoiceRequested` | Toda factura aprobada debe enviarse al proveedor de facturación electrónica y conservar su estado de respuesta. | `SubmitElectronicInvoice` |
+Asimismo, se identificaron hotspots relevantes como las reservas duplicadas, información de disponibilidad desactualizada, fallas mecánicas inesperadas, dispersión de información entre WhatsApp y Excel, discrepancias en el registro de horas trabajadas y retrasos en la facturación. Estos hallazgos permiten comprender el dominio de negocio a alto nivel y sirven como base para posteriores actividades de modelado mediante Domain-Driven Design.
+
+![Big Picture Event Storming - TechnoLoad](assets/architecture/big-picture-event-storming/big-picture-event-storming.png)
+
+A partir del mapa se reconocen áreas de dominio candidatas como Discovery and Availability, Rental and Reservation Management, Fleet and Maintenance Management, Service Execution and Hour Control, Subscription Management, Billing and SUNAT Compliance, Operational Notifications y Dashboard and Analytics. Estas áreas todavía no representan Bounded Contexts definitivos, ya que su refinamiento se realiza posteriormente mediante Design-Level Event Storming.
 
 ## 2.4. Ubiquitous Language
 
@@ -886,12 +879,12 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 | US-010 | User Story | Registrar horas trabajadas | Como administrador, quiero registrar las horas trabajadas por cada maquinaria, para calcular correctamente el costo del servicio. | **Given:** existe una reserva activa o finalizada.<br>**When:** el administrador registra las horas trabajadas.<br>**Then:** el sistema guarda las horas y calcula el importe correspondiente. | EP-04 |
 | US-011 | User Story | Validar horas trabajadas | Como propietario, quiero validar las horas registradas, para asegurar que los cobros se basen en información correcta. | **Given:** existen horas registradas para una reserva.<br>**When:** el propietario revisa los datos.<br>**Then:** el sistema permite aprobarlas o indicar que requieren corrección. | EP-04 |
 | US-012 | User Story | Generar resumen de facturación | Como propietario, quiero obtener un resumen de facturación, para controlar los ingresos generados por los alquileres. | **Given:** existen reservas finalizadas y horas validadas.<br>**When:** el propietario solicita el resumen.<br>**Then:** el sistema muestra el cliente, la maquinaria, las horas y el importe total. | EP-04 |
-| US-022 | User Story | Emitir comprobante de pago | Como propietario, quiero generar comprobantes electrónicos, para cumplir con los requerimientos fiscales. | **Given:** las horas trabajadas están validadas.<br>**When:** el propietario presiona emitir comprobante.<br>**Then:** el sistema genera la factura con los datos del contrato. | EP-04 |
+| US-022 | User Story | Emitir comprobante de pago | Como propietario, quiero generar comprobantes electrónicos, para cumplir con los requisitos fiscales. | **Given:** las horas trabajadas están validadas.<br>**When:** el propietario presiona emitir comprobante.<br>**Then:** el sistema genera la factura con los datos del contrato. | EP-04 |
 | US-023 | User Story | Aplicar penalizaciones por mora | Como propietario, quiero aplicar cargos por entrega tardía, para compensar retrasos no acordados. | **Given:** el equipo es devuelto fuera del tiempo pactado.<br>**When:** se liquida la reserva.<br>**Then:** el sistema añade el recargo por mora al importe final. | EP-04 |
-| EP-05 | Epic | Landing Page de MaquiControl | Presentar la propuesta de valor y los servicios de MaquiControl a visitantes interesados. | El sitio debe mostrar información clara para empresas de alquiler y contratistas. | — |
-| US-013 | User Story | Mostrar propuesta de valor | Como visitante, quiero conocer la propuesta de valor de MaquiControl, para identificar cómo puede ayudar a mi empresa. | **Given:** el visitante accede a la Landing Page.<br>**When:** consulta el contenido principal.<br>**Then:** el sitio presenta los beneficios y servicios de MaquiControl. | EP-05 |
-| US-014 | User Story | Mostrar información por segmento | Como visitante, quiero consultar información relacionada con mi tipo de negocio, para determinar si MaquiControl se adapta a mis necesidades. | **Given:** el visitante accede al contenido del sitio.<br>**When:** consulta la información de los segmentos.<br>**Then:** el sitio presenta información para empresas de alquiler y contratistas. | EP-05 |
-| US-015 | User Story | Solicitar contacto o demostración | Como visitante, quiero enviar una solicitud de contacto, para obtener más información sobre MaquiControl. | **Given:** el visitante desea recibir información adicional.<br>**When:** envía sus datos de contacto válidos.<br>**Then:** el sistema registra la solicitud y confirma su recepción. | EP-05 |
+| EP-05 | Epic | Landing Page de TechnoLoad | Presentar la propuesta de valor y los servicios de TechnoLoad a visitantes interesados. | El sitio debe mostrar información clara para empresas de alquiler y contratistas. | — |
+| US-013 | User Story | Mostrar propuesta de valor | Como visitante, quiero conocer la propuesta de valor de TechnoLoad, para identificar cómo puede ayudar a mi empresa. | **Given:** el visitante accede a la Landing Page.<br>**When:** consulta el contenido principal.<br>**Then:** el sitio presenta los beneficios y servicios de TechnoLoad. | EP-05 |
+| US-014 | User Story | Mostrar información por segmento | Como visitante, quiero consultar información relacionada con mi tipo de negocio, para determinar si TechnoLoad se adapta a mis necesidades. | **Given:** el visitante accede al contenido del sitio.<br>**When:** consulta la información de los segmentos.<br>**Then:** el sitio presenta información para empresas de alquiler y contratistas. | EP-05 |
+| US-015 | User Story | Solicitar contacto o demostración | Como visitante, quiero enviar una solicitud de contacto, para obtener más información sobre TechnoLoad. | **Given:** el visitante desea recibir información adicional.<br>**When:** envía sus datos de contacto válidos.<br>**Then:** el sistema registra la solicitud y confirma su recepción. | EP-05 |
 | US-024 | User Story | Calculadora de ahorro / ROI | Como visitante, quiero simular mi ahorro operativo según el tamaño de mi flota, para evaluar la compra del SaaS. | **Given:** el visitante ingresa a la sección comercial.<br>**When:** ingresa el número de maquinarias que gestiona.<br>**Then:** el sistema despliega el cálculo de horas y costos ahorrados. | EP-05 |
 | US-025 | User Story | Chat de soporte comercial | Como visitante, quiero enviar preguntas directas en la landing, para resolver dudas antes de registrarme. | **Given:** el visitante explora la web.<br>**When:** interactúa con el widget de chat.<br>**Then:** el sistema conecta la conversación con un asesor comercial. | EP-05 |
 | EP-06 | Epic | Gestión de usuarios y acceso | Gestionar el ciclo de vida de las cuentas de usuario y la seguridad de acceso a la plataforma. | Controlar la autenticación y los permisos por rol dentro del sistema. | — |
@@ -913,7 +906,7 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 | US-038 | User Story | Consultar reporte de utilización | Como propietario, quiero visualizar el porcentaje de uso de mi flota, para identificar los equipos más rentables. | **Given:** existen reservas acumuladas.<br>**When:** se accede al módulo de analítica.<br>**Then:** el sistema calcula el ratio de ocupación por maquinaria. | EP-09 |
 | US-039 | User Story | Exportar reportes en Excel/PDF | Como administrador, quiero descargar la lista de reservas y facturas, para realizar auditorías externas. | **Given:** se genera una consulta en pantalla.<br>**When:** se selecciona exportar a Excel/PDF.<br>**Then:** el sistema entrega el archivo en el formato deseado. | EP-09 |
 | US-040 | User Story | Calificar servicio y maquinaria | Como contratista, quiero puntuar el desempeño del equipo rentado, para retroalimentar la calidad del servicio. | **Given:** la reserva está finalizada.<br>**When:** el usuario califica del 1 al 5 y comenta.<br>**Then:** el sistema registra la valoración en el perfil de la máquina. | EP-09 |
-| EP-10 | Epic | API RESTful de MaquiControl | Proporcionar servicios REST para que otros sistemas puedan consultar y gestionar información de MaquiControl. | La API debe validar solicitudes, devolver respuestas estructuradas y utilizar códigos HTTP adecuados. | — |
+| EP-10 | Epic | API RESTful de TechnoLoad | Proporcionar servicios REST para que otros sistemas puedan consultar y gestionar información de TechnoLoad. | La API debe validar solicitudes, devolver respuestas estructuradas y utilizar códigos HTTP adecuados. | — |
 | TS-001 | Technical Story | Consultar maquinarias mediante API | Como desarrollador, quiero consultar las maquinarias mediante `GET /api/machinery`, para integrar el inventario con otros sistemas. | **Given:** existen maquinarias registradas.<br>**When:** se realiza una solicitud válida a `GET /api/machinery`.<br>**Then:** la API responde con código `200` y una lista de maquinarias. | EP-10 |
 | TS-002 | Technical Story | Registrar reservas mediante API | Como desarrollador, quiero registrar reservas mediante `POST /api/reservations`, para permitir que otros sistemas creen reservas. | **Given:** se envían datos válidos y no existe conflicto de fechas.<br>**When:** se realiza una solicitud `POST /api/reservations`.<br>**Then:** la API crea la reserva y responde con código `201`. | EP-10 |
 | TS-003 | Technical Story | Validar conflictos de reservas en la API | Como desarrollador, quiero validar los conflictos de fechas en la API, para mantener la consistencia de la disponibilidad. | **Given:** ya existe una reserva para el periodo solicitado.<br>**When:** se envía una solicitud para reservar el mismo periodo.<br>**Then:** la API rechaza la solicitud y responde con código `409`. | EP-10 |
@@ -922,9 +915,9 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 | TS-006 | Technical Story | Registro masivo de horómetros | Como desarrollador, quiero procesar lotes de lecturas mediante `POST /api/horometers/batch`, para sincronización móvil offline. | **Given:** una lista de datos de horómetro capturada sin conexión.<br>**When:** el cliente envía la petición en lote.<br>**Then:** la API actualiza los datos y responde `200 OK`. | EP-10 |
 | TS-007 | Technical Story | Endpoint para facturación fiscal | Como desarrollador, quiero integrar la API con el WebService del PSE/SUNAT, para tramitar la emisión de facturas. | **Given:** la solicitud de facturación incluye RUC y datos válidos.<br>**When:** se ejecuta `POST /api/invoices/issue`.<br>**Then:** la API responde con código `200` y el CDR firmado. | EP-10 |
 | TS-008 | Technical Story | Webhooks de eventos de reserva | Como desarrollador, quiero notificar eventos vía Webhook, para mantener sincronizados sistemas externos. | **Given:** una reserva cambia de estado.<br>**When:** el evento ocurre en el sistema.<br>**Then:** la API realiza un callback HTTP POST a los endpoints suscritos. | EP-10 |
-| EP-11 | Epic | Gestión de suscripciones y pagos | Permitir que los propietarios contraten, paguen y administren su plan de suscripción a MaquiControl. | El sistema debe gestionar los planes disponibles, el estado de la suscripción y el procesamiento de pagos mediante el proveedor externo. | — |
+| EP-11 | Epic | Gestión de suscripciones y pagos | Permitir que los propietarios contraten, paguen y administren su plan de suscripción a TechnoLoad. | El sistema debe gestionar los planes disponibles, el estado de la suscripción y el procesamiento de pagos mediante el proveedor externo. | — |
 | US-041 | User Story | Consultar planes de suscripción | Como propietario, quiero ver los planes de suscripción disponibles (Essential, Pro), para elegir el que se ajuste al tamaño de mi flota. | **Given:** el propietario no tiene una suscripción activa.<br>**When:** consulta los planes disponibles.<br>**Then:** el sistema muestra el límite de maquinarias y el precio de cada plan. | EP-11 |
-| US-042 | User Story | Contratar un plan de suscripción | Como propietario, quiero seleccionar y pagar un plan de suscripción mediante el proveedor de pagos, para habilitar la gestión de mi flota en MaquiControl. | **Given:** el propietario seleccionó un plan.<br>**When:** completa el pago a través del proveedor de pagos (sandbox).<br>**Then:** el sistema activa la suscripción y la vincula a la organización del propietario. | EP-11 |
+| US-042 | User Story | Contratar un plan de suscripción | Como propietario, quiero seleccionar y pagar un plan de suscripción mediante el proveedor de pagos, para habilitar la gestión de mi flota en TechnoLoad. | **Given:** el propietario seleccionó un plan.<br>**When:** completa el pago a través del proveedor de pagos (sandbox).<br>**Then:** el sistema activa la suscripción y la vincula a la organización del propietario. | EP-11 |
 | US-043 | User Story | Renovar suscripción | Como propietario, quiero que mi suscripción se renueve automáticamente al vencer el periodo contratado, para mantener el acceso sin interrupciones. | **Given:** la suscripción está próxima a vencer.<br>**When:** el proveedor de pagos aprueba el cobro de renovación.<br>**Then:** el sistema extiende la fecha de vencimiento de la suscripción. | EP-11 |
 | US-044 | User Story | Consultar estado de la suscripción | Como propietario, quiero consultar el estado y el historial de pagos de mi suscripción, para verificar mi situación con la plataforma. | **Given:** el propietario tiene una suscripción registrada.<br>**When:** consulta su panel de cuenta.<br>**Then:** el sistema muestra el plan activo, la fecha de vencimiento y los pagos realizados. | EP-11 |
 | US-045 | User Story | Bloquear registro de maquinaria al superar el límite del plan | Como sistema, quiero impedir que un propietario registre más maquinarias que las permitidas por su plan, para hacer cumplir los límites comerciales de la suscripción. | **Given:** el propietario alcanzó el límite de maquinarias de su plan.<br>**When:** intenta registrar una maquinaria adicional.<br>**Then:** el sistema rechaza el registro e indica que debe actualizar su plan. | EP-11 |
@@ -949,16 +942,16 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 | 10 | **US-010** | Registrar horas trabajadas | Como administrador, quiero registrar las horas trabajadas por cada maquinaria, para calcular correctamente el costo del servicio. | 3 |
 | 11 | **US-011** | Validar horas trabajadas | Como propietario, quiero validar las horas registradas, para asegurar que los cobros se basen en información correcta. | 3 |
 | 12 | **US-012** | Generar resumen de facturación | Como propietario, quiero obtener un resumen de facturación, para controlar los ingresos generados por los alquileres. | 3 |
-| 13 | **US-013** | Mostrar propuesta de valor | Como visitante, quiero conocer la propuesta de valor de MaquiControl, para identificar cómo puede ayudar a mi empresa. | 1 |
-| 14 | **US-014** | Mostrar información por segmento | Como visitante, quiero consultar información relacionada con mi tipo de negocio, para determinar si MaquiControl se adapta a mis necesidades. | 1 |
-| 15 | **US-015** | Solicitar contacto o demostración | Como visitante, quiero enviar una solicitud de contacto, para obtener más información sobre MaquiControl. | 1 |
+| 13 | **US-013** | Mostrar propuesta de valor | Como visitante, quiero conocer la propuesta de valor de TechnoLoad, para identificar cómo puede ayudar a mi empresa. | 1 |
+| 14 | **US-014** | Mostrar información por segmento | Como visitante, quiero consultar información relacionada con mi tipo de negocio, para determinar si TechnoLoad se adapta a mis necesidades. | 1 |
+| 15 | **US-015** | Solicitar contacto o demostración | Como visitante, quiero enviar una solicitud de contacto, para obtener más información sobre TechnoLoad. | 1 |
 | 16 | **US-016** | Editar datos de maquinaria | Como propietario, quiero modificar los datos técnicos de un equipo, para mantener la información actualizada. | 2 |
 | 17 | **US-017** | Dar de baja maquinaria | Como propietario, quiero desactivar una maquinaria fuera de servicio, para retirarla del inventario activo. | 1 |
 | 18 | **US-018** | Modificar fechas de reserva | Como contratista, quiero solicitar la extensión de una reserva activa, para continuar mis trabajos en obra. | 3 |
 | 19 | **US-019** | Aprobar o rechazar reservas | Como administrador, quiero revisar las solicitudes pendientes de alquiler, para confirmar o rechazar contratos. | 2 |
 | 20 | **US-020** | Filtrar maquinaria por categoría | Como contratista, quiero filtrar equipos por tipo de máquina, para agilizar la búsqueda de equipos específicos. | 1 |
 | 21 | **US-021** | Buscar maquinaria por ubicación | Como contratista, quiero buscar equipos según su ubicación, para reducir costos de flete. | 2 |
-| 22 | **US-022** | Emitir comprobante de pago | Como propietario, quiero generar comprobantes electrónicos, para cumplir con los requerimientos fiscales. | 3 |
+| 22 | **US-022** | Emitir comprobante de pago | Como propietario, quiero generar comprobantes electrónicos, para cumplir con los requisitos fiscales. | 3 |
 | 23 | **US-023** | Aplicar penalizaciones por mora | Como propietario, quiero aplicar cargos por entrega tardía, para compensar retrasos no acordados. | 2 |
 | 24 | **US-024** | Calculadora de ahorro / ROI | Como visitante, quiero simular mi ahorro operativo según el tamaño de mi flota, para evaluar la compra del SaaS. | 2 |
 | 25 | **US-025** | Chat de soporte comercial | Como visitante, quiero enviar preguntas directas en la Landing Page, para resolver dudas antes de registrarme. | 2 |
@@ -986,7 +979,7 @@ Las historias de usuario siguen la estructura: **Como [tipo de usuario], deseo [
 | 47 | **TS-007** | Endpoint para facturación fiscal | Como desarrollador, quiero integrar la API con el servicio del PSE/SUNAT, para tramitar la emisión de facturas. | 3 |
 | 48 | **TS-008** | Webhooks de eventos de reserva | Como desarrollador, quiero notificar eventos mediante webhooks, para mantener sincronizados los sistemas externos. | 3 |
 | 49 | **US-041** | Consultar planes de suscripción | Como propietario, quiero ver los planes de suscripción disponibles (Essential, Pro), para elegir el que se ajuste al tamaño de mi flota. | 1 |
-| 50 | **US-042** | Contratar un plan de suscripción | Como propietario, quiero seleccionar y pagar un plan de suscripción mediante el proveedor de pagos, para habilitar la gestión de mi flota en MaquiControl. | 3 |
+| 50 | **US-042** | Contratar un plan de suscripción | Como propietario, quiero seleccionar y pagar un plan de suscripción mediante el proveedor de pagos, para habilitar la gestión de mi flota en TechnoLoad. | 3 |
 | 51 | **US-043** | Renovar suscripción | Como propietario, quiero que mi suscripción se renueve automáticamente al vencer el periodo contratado, para mantener el acceso sin interrupciones. | 3 |
 | 52 | **US-044** | Consultar estado de la suscripción | Como propietario, quiero consultar el estado y el historial de pagos de mi suscripción, para verificar mi situación con la plataforma. | 2 |
 | 53 | **US-045** | Bloquear registro de maquinaria al superar el límite del plan | Como sistema, quiero impedir que un propietario registre más maquinarias que las permitidas por su plan, para hacer cumplir los límites comerciales de la suscripción. | 2 |
@@ -1418,121 +1411,42 @@ A continuación, se presentan los mock-ups correspondientes a las principales vi
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-Los User Flow Diagrams representan los recorridos que realizan los usuarios para completar las principales tareas dentro de la Web Application de TechnoLoad.
+Los User Flow Diagrams representan los recorridos que realizan los usuarios para completar las principales tareas dentro de la Web Application de TechnoLoad. Fueron definidos tomando como referencia las User Stories y las necesidades identificadas para los User Personas de TechnoLoad.
 
-Estos diagramas muestran las acciones, decisiones y transiciones entre diferentes vistas, permitiendo comprender cómo cada tipo de usuario interactúa con la plataforma para alcanzar un objetivo determinado.
+Cada flujo documenta el camino exitoso y también las decisiones, validaciones, estados vacíos, conflictos, cancelaciones y mecanismos de recuperación relevantes. De esta manera, la navegación no se limita al *happy path* y permite anticipar la respuesta de la interfaz ante datos inválidos, indisponibilidad o errores de persistencia.
 
-Los flujos fueron definidos tomando como referencia las User Stories y las necesidades identificadas para los User Personas de TechnoLoad.
+| Flujo | Objetivo principal | Alternativas y errores cubiertos |
+| :--- | :--- | :--- |
+| UF-01 | Acceder a la plataforma | Campos inválidos, credenciales incorrectas, cuenta inactiva, recuperación y reintento. |
+| UF-02 | Registrar maquinaria | Datos incompletos, equipo duplicado, cancelación y error de guardado. |
+| UF-03 | Programar mantenimiento | Datos inválidos, conflicto con reserva, cambio de fecha y fallo de persistencia. |
+| UF-04 | Revisar solicitud de alquiler | Rechazo, indisponibilidad, alternativa y conflicto concurrente. |
+| UF-05 | Buscar y reservar maquinaria | Sin resultados, modificación de filtros, conflicto de fechas, autenticación y fallo de registro. |
+| UF-06 | Liquidar servicio | Lecturas inválidas, borrador, rechazo de horas y discrepancia del importe. |
 
-A continuación, se presentan los principales User Flow Diagrams de la aplicación.
+#### UF-01: Acceder a la plataforma
 
----
+![User Flow para acceder a la plataforma](assets/ux/user-flows/uf-01-access-platform.png)
 
-#### **Seis User Flows**
+#### UF-02: Registrar maquinaria
 
-![Web Applications User Flow Diagrams TechnoLoad](assets/ux/web-app/web-app-userflows.svg)
+![User Flow para registrar maquinaria](assets/ux/user-flows/uf-02-register-machinery.png)
 
-Los siguientes diagramas complementan el artefacto visual existente. Cada flujo documenta el recorrido principal y alternativas que el sistema debe resolver sin perder el trabajo del usuario.
+#### UF-03: Programar mantenimiento
 
-#### Registro de maquinaria
+![User Flow para programar mantenimiento](assets/ux/user-flows/uf-03-schedule-maintenance.png)
 
-```mermaid
-flowchart TD
-  start([Start]) --> assets["Open Assets module"]
-  assets --> permission{"Has create permission?"}
-  permission -->|No| denied["Show access denied and request access"] --> endDenied([End])
-  permission -->|Yes| form["Open New Asset form"]
-  form --> fill["Enter identification, type and status"]
-  fill --> complete{"Required data complete?"}
-  complete -->|No| validation["Highlight fields and preserve entered data"] --> fill
-  complete -->|Yes| save["Save asset"]
-  save --> connection{"Connection available?"}
-  connection -->|No| offline["Show retry option; keep draft locally"] --> retry{"Retry now?"}
-  retry -->|Yes| save
-  retry -->|No| endDraft([Draft retained])
-  connection -->|Yes| duplicate{"Asset code already exists?"}
-  duplicate -->|Yes| duplicateError["Show duplicate-code error"] --> fill
-  duplicate -->|No| created["Show success and asset detail"] --> endSuccess([End])
-  classDef decision fill:#FFF3CD,stroke:#B7791F,color:#5F370E
-  classDef error fill:#FDE2E2,stroke:#C53030,color:#742A2A
-  class permission,complete,connection,retry,duplicate decision
-  class denied,validation,offline,duplicateError error
-```
+#### UF-04: Revisar solicitud de alquiler
 
-#### Asignación de unidad a una operación
+![User Flow para revisar una solicitud de alquiler](assets/ux/user-flows/uf-04-review-rental-request.png)
 
-```mermaid
-flowchart TD
-  start([Start]) --> operations["Open Operations module"]
-  operations --> selectOperation["Select planned operation"]
-  selectOperation --> permission{"Has assignment permission?"}
-  permission -->|No| denied["Show access denied"] --> endDenied([End])
-  permission -->|Yes| availability["View available assets"]
-  availability --> assetsFound{"Available asset found?"}
-  assetsFound -->|No| noAsset["Show alternatives or reschedule option"] --> reschedule{"Reschedule operation?"}
-  reschedule -->|Yes| selectOperation
-  reschedule -->|No| cancelled([Operation unchanged])
-  assetsFound -->|Yes| choose["Select asset and confirm assignment"]
-  choose --> cancel{"Cancel assignment?"}
-  cancel -->|Yes| cancelled
-  cancel -->|No| connection{"Connection available?"}
-  connection -->|No| offline["Show retry; do not create assignment"] --> choose
-  connection -->|Yes| conflict{"Asset still available?"}
-  conflict -->|No| conflictError["Show conflict and refresh availability"] --> availability
-  conflict -->|Yes| assigned["Create assignment and show confirmation"] --> endSuccess([End])
-  classDef decision fill:#FFF3CD,stroke:#B7791F,color:#5F370E
-  classDef error fill:#FDE2E2,stroke:#C53030,color:#742A2A
-  class permission,assetsFound,reschedule,cancel,connection,conflict decision
-  class denied,noAsset,offline,conflictError error
-```
+#### UF-05: Buscar y reservar maquinaria
 
-#### Reporte de mantenimiento
+![User Flow para buscar y reservar maquinaria](assets/ux/user-flows/uf-05-search-and-book.png)
 
-```mermaid
-flowchart TD
-  start([Start]) --> maintenance["Open Maintenance module"]
-  maintenance --> report["Select Report Maintenance"]
-  report --> permission{"Has maintenance permission?"}
-  permission -->|No| denied["Show access denied"] --> endDenied([End])
-  permission -->|Yes| selectAsset["Select asset and enter report"]
-  selectAsset --> valid{"Data complete and valid?"}
-  valid -->|No| validation["Show inline validation and preserve draft"] --> selectAsset
-  valid -->|Yes| severity{"Critical severity?"}
-  severity -->|Yes| lock["Mark asset out of service"] --> notify["Notify operations coordinator"]
-  severity -->|No| submit["Create maintenance order"]
-  notify --> submit
-  submit --> connection{"Connection available?"}
-  connection -->|No| offline["Keep draft and offer retry"] --> submit
-  connection -->|Yes| created["Show maintenance order and status"] --> endSuccess([End])
-  classDef decision fill:#FFF3CD,stroke:#B7791F,color:#5F370E
-  classDef error fill:#FDE2E2,stroke:#C53030,color:#742A2A
-  class permission,valid,severity,connection decision
-  class denied,validation,offline error
-```
+#### UF-06: Liquidar servicio
 
-#### Facturación electrónica
-
-```mermaid
-flowchart TD
-  start([Start]) --> completed["Open completed service operation"]
-  completed --> permission{"Has billing permission?"}
-  permission -->|No| denied["Show access denied"] --> endDenied([End])
-  permission -->|Yes| review["Review customer, tax and amount data"]
-  review --> valid{"Invoice data valid?"}
-  valid -->|No| correction["Show validation errors and edit data"] --> review
-  valid -->|Yes| confirm{"Confirm electronic invoice?"}
-  confirm -->|No| draft["Save draft or cancel"] --> endDraft([End])
-  confirm -->|Yes| connection{"Connection available?"}
-  connection -->|No| offline["Queue request and show pending status"] --> endPending([Pending])
-  connection -->|Yes| sunat["Submit to electronic invoicing service"]
-  sunat --> accepted{"Accepted by SUNAT?"}
-  accepted -->|Yes| success["Store reference and show invoice"] --> endSuccess([End])
-  accepted -->|No| rejected["Show rejection reason and retry option"] --> review
-  classDef decision fill:#FFF3CD,stroke:#B7791F,color:#5F370E
-  classDef error fill:#FDE2E2,stroke:#C53030,color:#742A2A
-  class permission,valid,confirm,connection,accepted decision
-  class denied,correction,offline,rejected error
-```
+![User Flow para liquidar un servicio](assets/ux/user-flows/uf-06-settle-service.png)
 
 ## 4.5. Web Applications Prototyping
 
@@ -1556,7 +1470,7 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 
 En esta sección se presenta la arquitectura de software de TechnoLoad desde una perspectiva orientada al dominio.
 
-La propuesta arquitectónica toma como referencia los procesos de negocio identificados previamente, el Ubiquitous Language, el Big Picture Event Storming y los principales requerimientos funcionales de la plataforma.
+La propuesta arquitectónica toma como referencia los procesos de negocio identificados previamente, el Ubiquitous Language, el Big Picture Event Storming y los principales requisitos funcionales de la plataforma.
 
 A partir de estos elementos se identifican los principales límites del dominio, las responsabilidades del sistema y las relaciones entre los diferentes componentes que conforman la solución.
 
@@ -1566,918 +1480,542 @@ La arquitectura se documenta mediante Design-Level Event Storming y diagramas C4
 
 En esta sección se presenta el Design-Level Event Storming de TechnoLoad, desarrollado a partir del Big Picture Event Storming realizado previamente.
 
-El objetivo de esta etapa es profundizar en el dominio del problema e identificar los principales Bounded Contexts, Aggregates, Commands, Domain Events, Queries y Read Models de la solución.
+El objetivo de esta etapa es profundizar en el dominio del problema e identificar los principales Bounded Contexts, Aggregates, Commands, Domain Events, Policies, Queries y Read Models de la solución. Las políticas expresan reglas reactivas con la estructura evento ocurrido, política aplicada y comando desencadenado.
 
-A partir del análisis realizado se identificaron los siguientes Bounded Contexts principales: Fleet Management, Rental Management, Maintenance Management, Operations Management, Identity & Access Management y Profiles Management.
+La sesión se realizó en equipo tomando como punto de partida los eventos del Big Picture. Para cada Bounded Context se ubicaron los Domain Events en orden temporal, se identificó el actor y el Command que origina cada evento, se agruparon los Commands en el Aggregate que valida sus reglas de negocio y se definieron las Policies que reaccionan a eventos propios o de otros Bounded Contexts. Finalmente se definieron los Read Models que cada actor necesita consultar y se marcaron como hotspots los riesgos pendientes. Los modelos se contrastaron con la implementación de la aplicación web y los servicios backend para que los Aggregates, estados y reglas coincidan con el código.
+
+Cada diagrama se lee de izquierda a derecha como una línea de tiempo y cada fila representa un flujo. El actor se ubica debajo del Command que ejecuta, el Command actúa sobre el Aggregate y el Aggregate publica un Domain Event. Cuando el sistema debe reaccionar, una Policy escucha ese evento y ejecuta automáticamente el siguiente Command, y así sucesivamente hasta que el flujo termina. El último paso de cada flujo es un Command que modifica un Aggregate sin publicar un nuevo evento, porque ya no hay ninguna reacción pendiente. Las cadenas pueden continuar en otro Bounded Context (por ejemplo, `Maintenance Started` dispara `Change Machinery Status` en Fleet Management); en ese caso el nombre del contexto aparece entre paréntesis. Los eventos en color claro provienen de otro Bounded Context, los Read Models indican la query que los consulta y el Aggregate del que se obtienen, y los recuadros de reglas de negocio resumen las invariantes de cada Aggregate.
+
+A partir del análisis realizado se identificaron los siguientes Bounded Contexts principales: **Fleet Management**, **Rental Management**, **Maintenance Management** y **Operations Management** como *core*; **Profiles Management**, **Subscription Management** y **Billing Management** como *soporte*; e **Identity & Access Management** como *genérico*.
 
 #### Fleet Management Bounded Context
 
-Este Bounded Context concentra las responsabilidades relacionadas con la gestión de la maquinaria, incluyendo su registro, actualización de información, cambio de estado, consulta de inventario y disponibilidad.
+Este Bounded Context concentra la gestión de la maquinaria y de sus categorías. El propietario o administrador de flota ejecuta los comandos `Register Machinery`, `Update Machinery`, `Change Machinery Status` y `Delete Machinery` sobre el agregado `Machinery`, y `Create Category`, `Rename Category` y `Delete Category` sobre el agregado `Category`. Las reglas exigen datos técnicos obligatorios, tarifa por hora no negativa, categorías con nombre único que no se pueden eliminar si tienen maquinaria, y no permiten eliminar maquinaria con alquileres activos. Sus políticas ejecutan `Change Machinery Status` a partir de eventos propios y de otros contextos: dejan la maquinaria disponible al registrarse, la marcan como reservada cuando Rental Management confirma una reserva, la liberan cuando se cancela y la pasan a mantenimiento mientras Maintenance Management la atiende. Los read models `Machinery Catalog`, `Machinery Availability` y `Category Catalog` informan al contratista y al propietario.
 
-![Fleet Management Event Storming](assets/architecture/event-storming-rendered/fleet-management-design-level.svg)
+![Fleet Management Design-Level Event Storming](assets/architecture/event-storming-rendered/fleet-management-design-level.png)
 
 #### Rental Management Bounded Context
 
-Este Bounded Context gestiona las solicitudes y reservas de maquinaria, incluyendo la creación de solicitudes, confirmación, cancelación y actualización de las fechas asociadas al alquiler.
+Este Bounded Context gestiona las solicitudes y reservas de maquinaria. El contratista ejecuta `Request Rental` y `Cancel Reservation`, y el propietario o administrador de flota ejecuta `Confirm Reservation` o `Reject Reservation` sobre una solicitud pendiente. Su agregado `Rental` controla el periodo de alquiler, evita reservas superpuestas sobre la misma maquinaria, solo permite las transiciones `REQUESTED`, `CONFIRMED`, `IN_PROGRESS` y `COMPLETED`, y registra el motivo cuando una reserva termina como `REJECTED` o `CANCELLED`. Los comandos `Start Rental` y `Complete Rental` no tienen actor humano: los ejecutan las políticas que reaccionan a Operations Management cuando la operación inicia (`Operation Started`) y cuando termina (`Operation Completed`). Los read models `Pending Rental Requests` y `My Reservations` informan al propietario y al contratista, y el hotspot identificado es la posibilidad de solicitudes superpuestas antes de la confirmación.
 
-![Rental Management Event Storming](assets/architecture/event-storming-rendered/rental-management-design-level.svg)
+![Rental Management Design-Level Event Storming](assets/architecture/event-storming-rendered/rental-management-design-level.png)
 
 #### Maintenance Management Bounded Context
 
-Este Bounded Context agrupa las responsabilidades relacionadas con el mantenimiento de la maquinaria. Incluye la programación y finalización de mantenimientos, el reporte de averías y la actualización del estado de mantenimiento. Su agregado principal es Maintenance y permite además consultar el historial, los mantenimientos pendientes y el detalle de cada intervención realizada.
+Este Bounded Context agrupa la programación, ejecución y cierre de los mantenimientos, junto con el reporte de averías. El propietario o administrador de flota ejecuta `Schedule Maintenance`, `Start Maintenance`, `Cancel Maintenance` y `Complete Maintenance`, y el contratista ejecuta `Report Breakdown` desde la obra. Su agregado `Maintenance` exige descripción, tipo preventivo, correctivo o de inspección, costo no negativo, solo permite cancelar un mantenimiento que aún no empezó y registra la fecha de cierre al completarse. Sus políticas ejecutan `Schedule Maintenance` de forma automática: un mantenimiento correctivo cuando se reporta una avería y uno preventivo cuando las horas validadas en Operations Management alcanzan el umbral definido. Los read models `Maintenance Schedule`, `Breakdown Reports` y `Maintenance History` informan al propietario y al contratista.
 
-![Maintenance Management Event Storming](assets/architecture/event-storming-rendered/maintenance-management-design-level.svg)
+![Maintenance Management Design-Level Event Storming](assets/architecture/event-storming-rendered/maintenance-management-design-level.png)
 
 #### Operations Management Bounded Context
 
-Este Bounded Context representa la ejecución operativa de los servicios realizados con la maquinaria. Incluye el inicio y finalización de un servicio, el registro de horas trabajadas y la validación de dichas horas. Su agregado principal es Service Operation y permite consultar el estado del servicio, el resumen de horas trabajadas y el historial de operaciones.
+Este Bounded Context representa la ejecución del servicio de una reserva confirmada. El operador ejecuta `Start Operation` y `Record Worked Hours`, y el propietario de flota ejecuta `Validate Worked Hours` o `Reject Worked Hours` sobre cada registro y, al final, `Complete Operation`. Su agregado `Service Operation` exige una reserva confirmada para iniciar, horas no negativas y que ningún registro quede pendiente antes de completar. Sus políticas habilitan la operación cuando Rental Management confirma una reserva, solicitan la validación o el rechazo de cada registro de horas y permiten completar la operación cuando no quedan registros pendientes. Los read models `Service Operation Status` y `Worked Hours Summary` informan al propietario y al operador, y el hotspot es la diferencia entre las horas registradas manualmente y el horómetro.
 
-![Operations Management Event Storming](assets/architecture/event-storming-rendered/operations-management-design-level.svg)
-
-#### Identity & Access Management Bounded Context
-
-Este Bounded Context se encarga de la gestión de identidad, autenticación y control de acceso de los usuarios de TechnoLoad. Incluye el registro de cuentas, la autenticación, la asignación de roles y el cambio de contraseñas. Su agregado principal es User Account y permite consultar los datos de la cuenta, los roles asignados y el estado de autenticación.
-
-![Identity & Access Management Event Storming](assets/architecture/event-storming-rendered/identity-access-management-design-level.svg)
+![Operations Management Design-Level Event Storming](assets/architecture/event-storming-rendered/operations-management-design-level.png)
 
 #### Profiles Management Bounded Context
 
-Este Bounded Context gestiona la información asociada a los perfiles de los usuarios. Incluye la creación y actualización de perfiles, datos de contacto e información de la organización. Su agregado principal es Profile y permite consultar la información personal, de contacto y organizacional asociada a cada usuario.
+Este Bounded Context gestiona el perfil de cada usuario y la organización a la que pertenece. Sus comandos son `Create Profile`, `Update Profile`, `Create Organization` y `Update Organization`. El agregado `Profile` exige nombres, documento e información de contacto válida, y la entidad `Organization` exige razón social, RUC y dirección. Cuando Identity & Access Management registra una nueva cuenta, su política solicita al usuario los datos del perfil, que este registra con `Create Profile`, y luego solicita los datos de la organización. Los read models `Profile Details` y `Organization Details` informan al usuario, y el hotspot es que el RUC todavía no se verifica contra SUNAT.
 
-![Profiles Management Event Storming](assets/architecture/event-storming-rendered/profiles-management-design-level.svg)
+![Profiles Management Design-Level Event Storming](assets/architecture/event-storming-rendered/profiles-management-design-level.png)
 
-#### Policies and Business Rules
+#### Subscription Management Bounded Context
 
-Las siguientes políticas completan el Design-Level Event Storming y definen la automatización reactiva entre agregados. Los comandos se ejecutan de forma idempotente y conservan la referencia del evento que los originó para asegurar trazabilidad.
+Este Bounded Context gestiona la contratación, activación y cancelación de la suscripción de un propietario de flota. El propietario ejecuta `Subscribe to Plan` (Essential o Pro) y es redirigido a la pasarela de pago (Checkout Pro / Sandbox); al volver, la aplicación ejecuta `Confirm Checkout`, que registra el pago. Si el pago es aprobado, una política ejecuta `Activate Subscription`. El propietario puede ejecutar `Cancel Subscription` sobre una suscripción activa. Los estados de la suscripción son `PENDING_PAYMENT`, `ACTIVE` y `CANCELLED`, y los del pago siguen los del proveedor (`PENDING`, `IN_PROCESS`, `APPROVED`, `REJECTED` y `CANCELLED`). El límite de maquinarias del plan se aplica en Fleet Management al registrar maquinaria. Los read models `Plan Catalog`, `Subscription Status` y `Payment History` informan al propietario.
 
-| Triggering Domain Event | Policy | Action | Owning Bounded Context |
-| :--- | :--- | :--- | :--- |
-| `MeterReadingRecorded` | EvaluateMaintenanceThreshold | Crear una orden preventiva si la lectura alcanza el umbral configurado. | Maintenance Management |
-| `MaintenanceOrderStarted` | LockAssetForMaintenance | Cambiar el estado del activo a `IN_MAINTENANCE` e impedir su asignación. | Fleet Management |
-| `MaintenanceOrderCompleted` | RestoreAssetAvailability | Cambiar el activo a `AVAILABLE` solo si no tiene reserva ni otra intervención activa. | Fleet Management |
-| `RentalRequestSubmitted` | ValidateRentalAvailability | Rechazar o aprobar la solicitud según disponibilidad y periodos superpuestos. | Rental Management |
-| `RentalConfirmed` | CreateServiceOperation | Crear una operación programada asociada a la reserva confirmada. | Operations Management |
-| `ServiceOperationCompleted` | RequestElectronicInvoice | Solicitar la emisión de la factura electrónica correspondiente al servicio cerrado. | Billing and Compliance |
-| `PaymentConfirmed` | ActivateOrganizationSubscription | Activar o renovar la suscripción de la organización cliente. | Subscription Management |
+![Subscription Management Design-Level Event Storming](assets/architecture/event-storming-rendered/subscription-management-design-level.png)
 
-```mermaid
-flowchart LR
-  recordReading["Command: RecordMeterReading"] --> readingRecorded(("Event: MeterReadingRecorded"))
-  readingRecorded --> thresholdPolicy{"Policy: EvaluateMaintenanceThreshold"}
-  thresholdPolicy -->|threshold reached| createOrder["Command: CreateMaintenanceOrder"]
-  createOrder --> orderScheduled(("Event: MaintenanceOrderScheduled"))
-  orderScheduled --> reservePolicy{"Policy: ReserveAssetForMaintenance"}
-  reservePolicy --> reserveAsset["Command: SetAssetStatus(IN_MAINTENANCE)"]
-  reserveAsset --> assetUnavailable(("Event: AssetMarkedInMaintenance"))
-  assetUnavailable --> notify["Command: SendOperationalNotification"]
-  classDef command fill:#B3E5FC,stroke:#0277BD,color:#01579B
-  classDef event fill:#FFCCBC,stroke:#D84315,color:#BF360C
-  classDef policy fill:#FFF9C4,stroke:#F9A825,color:#6D4C41
-  class recordReading,createOrder,reserveAsset,notify command
-  class readingRecorded,orderScheduled,assetUnavailable event
-  class thresholdPolicy,reservePolicy policy
-```
+#### Billing Management Bounded Context
+
+Este Bounded Context concentra el cálculo del monto de alquiler, la emisión de comprobantes electrónicos ante SUNAT y la aplicación de penalidades por mora. Sus agregados son `Invoice` y `Late Penalty`, ambos referenciando el alquiler mediante su identificador. `Calculate Rental Amount` y `Apply Late Penalty` se ejecutan por políticas: el monto se calcula cuando Operations Management completa la operación (`Operation Completed`) y la penalidad se aplica cuando Rental Management completa un alquiler después de la fecha pactada. `Issue Invoice` lo ejecuta el propietario de flota desde la aplicación una vez calculado el monto. Los read models `Invoice Details`, `Invoice History` y `Late Penalties` informan al propietario y al contratista, y el hotspot es el rechazo o la demora de SUNAT.
+
+![Billing Management Design-Level Event Storming](assets/architecture/event-storming-rendered/billing-management-design-level.png)
+
+#### Identity & Access Management Bounded Context
+
+Este Bounded Context se encarga del registro, la autenticación y los roles de los usuarios de TechnoLoad. El visitante ejecuta `Sign Up` indicando su correo, contraseña y su rol (propietario de flota, administrador de flota, contratista u operador; el rol de administrador del sistema no se puede elegir), y el usuario ejecuta `Sign In` y `Sign Out`. Como el rol se elige dentro de `Sign Up`, no existe un comando separado de asignación de roles. Su agregado `User Account` exige un correo válido y único, una credencial y un rol al registrarse, y solo permite iniciar sesión a cuentas activas. El evento `User Signed Up` es consumido por Profiles Management, que pide al usuario completar su perfil. El read model `Current Session` alimenta los guards de rutas, y el hotspot es que el token JWT debe expirar y descartarse en el cliente al cerrar sesión.
+
+![Identity and Access Management Design-Level Event Storming](assets/architecture/event-storming-rendered/identity-access-management-design-level.png)
+
+#### Catálogo de comandos y trazabilidad
+
+La siguiente tabla es la referencia única de los comandos de TechnoLoad. Cada comando conserva el mismo nombre en el Design-Level Event Storming, en el diagrama de clases (clase `<Comando>Command` atendida por el `CommandService` del contexto), en el endpoint de los Web Services y en la Frontend Web Application (método del store y botón de la vista). Los comandos marcados como *Política* no tienen botón: los ejecuta el sistema al reaccionar a un evento. Cuando la columna Domain Event muestra *— (fin del flujo)*, el comando cierra su flujo en el Aggregate y no publica un evento, porque ningún otro paso reacciona a él.
+
+| Bounded Context | Command | Actor | Domain Event | Endpoint (Web Services) | Frontend Web Application |
+| --- | --- | --- | --- | --- | --- |
+| Fleet Management | Register Machinery | Fleet Owner | Machinery Registered | `POST /api/v1/machinery` | `registerMachinery()` · botón *Register machinery* |
+| Fleet Management | Update Machinery | Fleet Owner | — (fin del flujo) | `PUT /api/v1/machinery/{machineryId}` | `updateMachinery()` · botón *Save* |
+| Fleet Management | Change Machinery Status | Fleet Owner / Política | — (fin del flujo) | `PATCH /api/v1/machinery/{machineryId}/status` | `changeMachineryStatus()` · selector de estado |
+| Fleet Management | Delete Machinery | Fleet Owner | — (fin del flujo) | `DELETE /api/v1/machinery/{machineryId}` | `deleteMachinery()` · botón *Delete* |
+| Fleet Management | Create Category | Fleet Owner | — (fin del flujo) | `POST /api/v1/categories` | `createCategory()` · botón *Create category* |
+| Fleet Management | Rename Category | Fleet Owner | — (fin del flujo) | `PUT /api/v1/categories/{categoryId}` | `renameCategory()` · botón *Rename* |
+| Fleet Management | Delete Category | Fleet Owner | — (fin del flujo) | `DELETE /api/v1/categories/{categoryId}` | `deleteCategory()` · botón *Delete* |
+| Identity & Access Management | Sign Up | Visitor | User Signed Up | `POST /api/v1/authentication/sign-up` | `signUp()` · botón *Create account* |
+| Identity & Access Management | Sign In | User | — (fin del flujo) | `POST /api/v1/authentication/sign-in` | `signIn()` · botón *Sign in* |
+| Identity & Access Management | Sign Out | User | — (fin del flujo) | No aplica (el cliente descarta el token JWT) | `signOut()` · botón *Sign out* |
+| Rental Management | Request Rental | Contractor | Rental Requested | `POST /api/v1/rentals` | `requestRental()` · botón *Request rental* |
+| Rental Management | Confirm Reservation | Fleet Owner | Reservation Confirmed | `PATCH /api/v1/rentals/{rentalId}/status` (`CONFIRMED`) | `confirmReservation()` · botón *Confirm* |
+| Rental Management | Reject Reservation | Fleet Owner | — (fin del flujo) | `PATCH /api/v1/rentals/{rentalId}/status` (`REJECTED`, motivo) | `rejectReservation()` · botón *Reject* |
+| Rental Management | Cancel Reservation | Contractor | Reservation Cancelled | `PATCH /api/v1/rentals/{rentalId}/status` (`CANCELLED`, motivo) | `cancelReservation()` · botón *Cancel request* |
+| Rental Management | Start Rental | Política | — (fin del flujo) | No aplica (reacciona a Operation Started) | Estado *In progress* en *My reservations* |
+| Rental Management | Complete Rental | Política | Rental Completed | No aplica (reacciona a Operation Completed) | Estado *Completed* en *My reservations* |
+| Maintenance Management | Schedule Maintenance | Fleet Owner / Política | — (fin del flujo) | `POST /api/v1/maintenances` | `scheduleMaintenance()` · botón *Schedule* |
+| Maintenance Management | Start Maintenance | Fleet Owner | Maintenance Started | `PATCH /api/v1/maintenances/{maintenanceId}/status` (`IN_PROGRESS`) | `startMaintenance()` · botón *Start* |
+| Maintenance Management | Cancel Maintenance | Fleet Owner | — (fin del flujo) | `PATCH /api/v1/maintenances/{maintenanceId}/status` (`CANCELLED`) | `cancelMaintenance()` · botón *Cancel* |
+| Maintenance Management | Complete Maintenance | Fleet Owner | Maintenance Completed | `PATCH /api/v1/maintenances/{maintenanceId}/status` (`COMPLETED`, costo) | `completeMaintenance()` · botón *Complete* |
+| Maintenance Management | Report Breakdown | Contractor | Breakdown Reported | `POST /api/v1/breakdown-reports` | `reportBreakdown()` · botón *Report breakdown* |
+| Operations Management | Start Operation | Operator | Operation Started | `POST /api/v1/service-operations` | `startOperation()` · botón *Start operation* |
+| Operations Management | Record Worked Hours | Operator | Worked Hours Recorded | `POST /api/v1/service-operations/{operationId}/worked-hours` | `recordWorkedHours()` · botón *Record* |
+| Operations Management | Validate Worked Hours | Fleet Owner | Worked Hours Validated | `PATCH /api/v1/service-operations/{operationId}/worked-hours/{workedHoursId}/status` (`VALIDATED`) | `validateWorkedHours()` · botón *Validate* |
+| Operations Management | Reject Worked Hours | Fleet Owner | — (fin del flujo) | `PATCH /api/v1/service-operations/{operationId}/worked-hours/{workedHoursId}/status` (`REJECTED`) | `rejectWorkedHours()` · botón *Reject* |
+| Operations Management | Complete Operation | Fleet Owner | Operation Completed | `PATCH /api/v1/service-operations/{operationId}/status` (`COMPLETED`) | `completeOperation()` · botón *Complete operation* |
+| Profiles Management | Create Profile | User (tras User Signed Up) | Profile Created | `POST /api/v1/profiles` | `createProfile()` · botón *Save profile* |
+| Profiles Management | Update Profile | User | — (fin del flujo) | `PUT /api/v1/profiles/{profileId}` | `updateProfile()` · botón *Save profile* |
+| Profiles Management | Create Organization | User | — (fin del flujo) | `POST /api/v1/organizations` | `createOrganization()` · botón *Save organization* |
+| Profiles Management | Update Organization | User | — (fin del flujo) | `PUT /api/v1/organizations/{organizationId}` | `updateOrganization()` · botón *Save organization* |
+| Subscription Management | Subscribe to Plan | Fleet Owner | Subscription Requested | `POST /api/v1/subscriptions` | `subscribeToPlan()` · botón *Subscribe* |
+| Subscription Management | Confirm Checkout | Fleet Owner (retorno de pago) | Subscription Payment Approved | `POST /api/v1/subscriptions/{subscriptionId}/payments` | `confirmCheckout()` · vista *Checkout result* |
+| Subscription Management | Activate Subscription | Política | — (fin del flujo) | No aplica (reacciona a Subscription Payment Approved) | Estado *Active* en *My subscription* |
+| Subscription Management | Cancel Subscription | Fleet Owner | — (fin del flujo) | `PATCH /api/v1/subscriptions/{subscriptionId}/status` (`CANCELLED`) | `cancelSubscription()` · botón *Cancel subscription* |
+| Billing Management | Calculate Rental Amount | Política | Rental Amount Calculated | No aplica (reacciona a Operation Completed) | Monto visible en *Invoices* |
+| Billing Management | Issue Invoice | Fleet Owner | — (fin del flujo) | `PATCH /api/v1/invoices/{invoiceId}/status` (`ISSUED`) | `issueInvoice()` · botón *Issue invoice* |
+| Billing Management | Apply Late Penalty | Política | — (fin del flujo) | No aplica (reacciona a Rental Completed) | Penalidad visible en *Invoices* |
+
+Las queries siguen la misma regla: cada read model del Event Storming corresponde a una clase `<Query>Query` atendida por el `QueryService` del contexto y a un endpoint `GET` del recurso correspondiente. Por ejemplo, las queries de Rental Management son:
+
+| Query | Actor | Endpoint (Web Services) | Frontend Web Application |
+| --- | --- | --- | --- |
+| View My Reservations | Contractor | `GET /api/v1/rentals/my-reservations` | `loadRentals()` · vista *Reservations* |
+| View Pending Requests | Fleet Owner | `GET /api/v1/rentals/pending-requests` | `loadRentals()` · contador *pending* |
+| View Fleet Rentals | Fleet Owner | `GET /api/v1/rentals/fleet-rentals` | `loadRentals()` · vista *Reservations* |
+| Check Machinery Availability | Contractor | `GET /api/v1/rentals/availability` | Validación en *Request rental* |
+| Get Rental By Id | Participante | `GET /api/v1/rentals/{rentalId}` | Vista *Service operation* |
 
 ### 4.6.2. Software Architecture Context Diagram
 
-El Software Architecture Context Diagram presenta a TechnoLoad como el sistema principal de la solución y delimita sus fronteras operativas respecto a los actores humanos y sistemas externos con los que interactúa dentro del ecosistema de gestión y alquiler de maquinaria pesada.
+El Software Architecture Context Diagram presenta el sistema central de la solución y define su frontera respecto a los actores humanos y a los sistemas externos que interactúan con la plataforma TechnoLoad.
 
-Los usuarios clave del sistema son:
-- **Fleet Administrator**: Administra el inventario de maquinaria pesada, configura tarifas y especificaciones técnicas, autoriza solicitudes de alquiler y supervisa los programas de mantenimiento preventivo y correctivo.
-- **Contractor / Site Manager**: Consulta la disponibilidad de maquinaria en tiempo real, solicita y contrata servicios de alquiler para frentes de obra, y monitorea el estado operativo de los equipos asignados.
-- **Maintenance Technician**: Registra intervenciones mecánicas, reporta averías y documenta inspecciones y lecturas de horómetros en campo.
-- **Operations Coordinator**: Planifica la asignación logística de maquinaria y operadores, valida partes de horas trabajadas y coordina la entrega y recepción de equipos.
-- **Public Visitor**: Potencial cliente que accede al portal web público para explorar el catálogo de soluciones, consultar información comercial y tarifas, y solicitar demostraciones o registrarse en la plataforma.
+- **Fleet Administrator**: Utiliza la plataforma para administrar el inventario de maquinaria pesada, programar y registrar tareas de mantenimiento preventivo y correctivo, evaluar solicitudes de alquiler y supervisar las operaciones en campo.
+- **Contractor / Site Manager**: Utiliza la plataforma para consultar el catálogo de maquinaria disponible por categoría y ubicación, enviar solicitudes de alquiler, realizar seguimiento a sus reservas activas y verificar la ejecución de los servicios contratados.
+- **SUNAT**: Sistema gubernamental tributario con el cual la plataforma se comunica mediante HTTPS para la emisión, validación y control de comprobantes de pago electrónicos generados en la facturación de servicios.
+- **Payment Provider (Mercado Pago)**: Plataforma externa (Checkout Pro, en modo sandbox durante el desarrollo) encargada del procesamiento seguro de cobros recurrentes y transacciones electrónicas asociadas a los planes de suscripción de las empresas cliente.
 
-Asimismo, TechnoLoad se integra con los siguientes sistemas externos:
-- **Payment Gateway**: Procesa transacciones electrónicas de pago seguro de alquileres y suscripciones corporativas.
-- **Electronic Invoicing / SUNAT**: Emisión y validación tributaria de comprobantes de pago electrónicos conforme a la normativa fiscal.
-- **Notification Service**: Envío automatizado de alertas operativas, avisos de mantenimiento preventivo y notificaciones de estado por correo electrónico y mensajería push.
-- **GPS / Telematics Provider**: Suministra datos telemétricos en tiempo real (posicionamiento satelital, lecturas de horómetro y alertas de motor) mediante enlaces de telemetría e IoT.
+Este diagrama de nivel 1 del modelo C4 permite dimensionar el alcance funcional del ecosistema, estableciendo con claridad las fronteras del sistema sin profundizar en decisiones internas de tecnología o implementación.
 
----
-
-#### **Diagrama de Contexto (Modelo C4 - Nivel 1)**
-
-![Software Architecture Context Diagram TechnoLoad](assets/architecture/c4/c4-context-diagram.svg)
-
+![TechnoLoad Software Architecture Context Diagram](assets/architecture/c4/context.png)
 
 ### 4.6.3. Software Architecture Container Diagram
 
-El Software Architecture Container Diagram muestra la estructura de alto nivel de TechnoLoad y la distribución de responsabilidades entre los principales elementos de la solución.
+El Software Architecture Container Diagram detalla la arquitectura de alto nivel del ecosistema, ilustrando las unidades de despliegue independientes (*containers*), las responsabilidades asignadas a cada una y los protocolos de comunicación utilizados.
 
-La solución arquitectónica se descompone en los siguientes contenedores de despliegue:
-1. **Landing Web Application (Vue 3 + Vite)**: Aplicación web orientada al público general y potenciales clientes. Presenta la propuesta de valor comercial de TechnoLoad, catálogo referencial de maquinaria, planes de suscripción y formularios de contacto. Desde sus llamadas a la acción (*Call to Action* - CTA), redirige al usuario a la vista correspondiente dentro de la Single Page Application (SPA). Consume endpoints públicos de la API para consultar catálogos y registrar prospectos.
-2. **Single Page Application (SPA) (Vue 3 + PrimeVue)**: Aplicación web enriquecida para usuarios autenticados. Proporciona la interfaz interactiva para el **Fleet Administrator**, el **Contractor / Site Manager**, el **Maintenance Technician** y el **Operations Coordinator**. Permite la administración integral de inventario de maquinaria, solicitud y aprobación de alquileres, calendario de mantenimientos preventivos, reporte de fallas mecánicas, registro de horas de servicio y configuración de cuentas y perfiles. Se comunica con la Backend REST API mediante HTTPS consumiendo recursos en formato JSON con autenticación basada en tokens JWT.
-3. **Backend REST API (ASP.NET Core 8 / C#)**: Núcleo de servicios del lado servidor estructurado según los principios de *Domain-Driven Design (DDD)* y arquitectura en capas limpias (*Clean Architecture*). Expone endpoints RESTful para los Bounded Contexts de Identity & Access, Profiles, Fleet, Rental, Maintenance y Operations. Gestiona la autenticación, la autorización basada en roles (RBAC), la orquestación de casos de uso y la lógica de negocio.
-4. **Database (PostgreSQL 16)**: Sistema gestor de base de datos relacional encargado de la persistencia transaccional y la integridad referencial de todas las entidades del dominio. La Backend REST API accede a la base de datos a través de Entity Framework Core (EF Core) mediante una conexión TCP sobre el puerto 5432.
+La solución se compone de los siguientes containers principales:
+- **Web Application (Azure Static Web Apps / App Service)**: Servicio de hospedaje web con HTTPS responsable de alojar y servir los artefactos compilados (HTML, JavaScript, CSS y assets) de la aplicación cliente hacia los navegadores mediante HTTPS.
+- **Single Page Application (Angular)**: Ejecuta la lógica de presentación e interactividad directamente en el navegador del usuario cliente. Proporciona una interfaz reactiva desarrollada con TypeScript, componentes modulares y manejo reactivo de estado.
+- **REST API (Backend Services)**: Container de backend que concentra la lógica de negocio, reglas de dominio y casos de uso organizados bajo principios de Domain-Driven Design (DDD). Expone servicios web RESTful seguros mediante HTTPS y serialización JSON, con persistencia en base de datos relacional.
+- **Database (Relational Database)**: Almacena de forma estructurada y persistente las entidades de la plataforma (cuentas de usuario, perfiles, maquinaria, alquileres, órdenes de mantenimiento, partes operativos de servicio, facturas y suscripciones).
 
-Asimismo, la Backend REST API se integra con los servicios externos:
-- **Payment Gateway**: Integración REST para el procesamiento seguro de pagos con tarjeta de crédito/débito en reservas de maquinaria.
-- **Electronic Invoicing / SUNAT**: Integración de facturación electrónica para la generación, firma y envío de comprobantes de pago (facturas y boletas) conforme a la regulación tributaria.
-- **Notification Service**: Servicio de envío de correos electrónicos transaccionales y notificaciones de mantenimiento preventivo.
-- **GPS / Telematics Provider**: Ingesta continua de datos telemétricos de horómetros y geolocalización mediante webhooks seguros.
+**Flujo de interacción y comunicaciones:**
+1. Tanto el **Fleet Administrator** como el **Contractor / Site Manager** acceden inicialmente al **Web Application Server** a través de HTTPS para descargar los artefactos estáticos de la aplicación.
+2. Una vez cargada en el navegador web, ambos usuarios interactúan de forma directa y continua con la **Single Page Application**, ejecutando allí sus operaciones cotidianas (búsqueda de flota, gestión de reservas, asignación de mantenimiento y registro de operaciones).
+3. La **Single Page Application** se comunica con la **REST API** mediante peticiones asíncronas HTTPS/JSON para autenticar usuarios y coordinar las transacciones de negocio.
+4. La **REST API** persiste y consulta los datos en la base de datos relacional mediante el ORM de acceso a datos configurado.
+5. Finalmente, la **REST API** gestiona la integración externa con **SUNAT** para la emisión de comprobantes electrónicos y con **Mercado Pago** para la recaudación de suscripciones.
 
-> [!NOTE]
-> **Interacción de Actores y Contenedores:** Los usuarios operativos (**Fleet Administrator** y **Contractor / Site Manager**) interactúan directamente con la **Single Page Application (SPA)** para ejecutar sus flujos de trabajo especializados. De igual manera, ambos actores pueden visitar inicialmente la **Landing Web Application** para consultar novedades, tarifas y enlaces públicos, desde donde son derivados a la SPA al iniciar sesión o registrarse.
-
----
-
-#### **Diagrama de Contenedores (Modelo C4 - Nivel 2)**
-
-![Software Architecture Container Diagram TechnoLoad](assets/architecture/c4/c4-container-diagram.svg)
-
+![TechnoLoad Software Architecture Container Diagram](assets/architecture/c4/container.png)
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-En esta sección se presentan los Component Diagrams (C4 Modelo - Nivel 3) para cada uno de los contenedores que componen la arquitectura de software de TechnoLoad: la **Single Page Application (Frontend)** y la **Backend REST API**. 
+En esta sección se presentan los diagramas de componentes (Nivel 3 de C4 Model) de TechnoLoad, desagregando internamente tanto la **Single Page Application (Frontend)** como la **REST API (Backend)** en sus capas y artefactos de código (componentes UI, almacenes de estado reactivo, modelos de dominio, servicios HTTP, controladores REST, servicios de aplicación y repositorios).
 
-Estos diagramas reflejan la descomposición interna de cada contenedor en bloques estructurales cohesivos, detallando sus responsabilidades, capas arquitecturales, dependencias tecnológicas e interfaces de comunicación según los principios de *Domain-Driven Design (DDD)* y *Clean Architecture*.
-
----
+En los diagramas de componentes del frontend, la capa Presentation se divide en **Views**, que son las páginas con ruta propia, y **Components**, que son las piezas de interfaz que se muestran dentro de esas páginas. Los Bounded Contexts se presentan en este orden: primero los core (Fleet, Rental, Maintenance y Operations), luego los de soporte (Profiles, Subscription y Billing) y al final el genérico (Identity & Access Management).
 
 #### 4.6.4.1. Single Page Application (Frontend) Component Diagrams
 
-La Frontend Web Application de TechnoLoad está construida bajo una arquitectura modular y desacoplada en **Vue 3** y **PrimeVue**, organizada en cuatro capas alineadas a DDD:
-1. **Presentation Layer**: Compuesta por vistas (`*.vue` views) y componentes reutilizables (`*.vue` components) que implementan la interfaz visual adaptativa con componentes de PrimeVue (`pv-input-text`, `pv-button`, `pv-data-table`, `pv-card`, etc.), Composition API (`<script setup>`) y gestión de eventos locales (`defineEmits`, `defineProps`).
-2. **Application Layer**: Stores reactivos (`*.store.js`) creados con Composition API (`reactive`, `computed`, `readonly`). Orquestan los casos de uso del frontend, gestionan el estado global reactivo del cliente y sincronizan los flujos de negocio.
-3. **Infrastructure Layer**: Módulos encargados de la comunicación externa, incluyendo clientes API HTTP (`*-api.js`), interceptores de red (`auth.interceptor.js`, `error.interceptor.js`) y ensambladores (*Assemblers* `*.assembler.js`) que transforman las respuestas del API (DTOs) en entidades y modelos de dominio.
-4. **Domain Layer**: Entidades (`*.entity.js`) y objetos de valor (`*.vo.js`) que encapsulan atributos y reglas de validación en el cliente.
+##### Single Page Application Component Diagram
 
-##### Identity & Access Management Frontend Component Diagram
+Presenta la descomposición de alto nivel de la Single Page Application en carpetas por Bounded Context, tal como está organizado el código fuente en `src/app`. Cada Bounded Context se divide en las capas `presentation`, `application`, `domain` e `infrastructure`:
 
-Este diagrama detalla la arquitectura interna del módulo frontend de autenticación y control de acceso. Todos los componentes, funciones y archivos siguen con exactitud los estándares y nombres reales de código:
+- **fleet-management**: catálogo de maquinaria, formulario de maquinaria y gestión de categorías.
+- **rental-management**: solicitud de alquiler y listado de reservas propias.
+- **maintenance-management**: programación de mantenimientos y reporte de averías.
+- **operations-management**: operación de servicio y registro y validación de horas trabajadas.
+- **profiles-management**: perfil del usuario y organización.
+- **subscription-management**: planes de suscripción y pago con Checkout Pro (sandbox).
+- **identity-access-management**: inicio de sesión, registro con rol de propietario de flota o contratista, guards de rutas por sesión y rol, e interceptor HTTP.
+- **shared**: layout, selector de idioma, páginas compartidas y clases base de infraestructura (`BaseApi`, `BaseApiEndpoint`, `BaseAssembler`).
 
-- **Vistas y Componentes de Presentación**:
-  - `LogInView.vue`: Vista principal de inicio de sesión que gestiona la interacción del usuario. Contiene las funciones de controlador `logIn(credentials)`, `handleLogInSubmit(event)`, `validateCredentialsForm()` y `navigateToRegister()`.
-  - `LogInForm.vue`: Componente reutilizable de formulario. Recibe propiedades como `isLoading` y `errorMessage`, expone el evento emitido `@submit(credentials)` y define métodos internos como `onFormSubmit()`, `clearInputs()` y `onPasswordToggle()`.
-  - `RegisterView.vue`: Vista de registro para contratistas y administradores. Implementa funciones como `registerUser(accountData)`, `handleRegisterSubmit(event)`, `validateAccountPayload()` y `navigateToLogIn()`.
-  - `RegisterForm.vue`: Componente desacoplado de formulario de registro que emite `@submit(accountData)`.
-  - Componentes PrimeVue integrados: `<pv-input-text>`, `<pv-password>`, `<pv-button>`, `<pv-message>`, `<pv-toast>`, `<pv-card>`.
-- **Capa de Aplicación (State Store)**:
-  - `identity.store.js` (`authStore`): Store reactivo que mantiene el estado de autenticación (`currentUser`, `token`, `isAuthenticated`, `roles`, `isLoading`, `errorMessage`). Expone acciones reactivas como `async logIn(email, password)`, `async register(accountData)`, `logOut()`, `restoreSession()`, `hasRole(roleName): Boolean` y `clearAuthError()`.
-- **Capa de Infraestructura**:
-  - `identity-api.js`: Cliente HTTP que encapsula las peticiones REST: `postSignIn(credentials)`, `postSignUp(userData)` y `postRefreshToken(token)`.
-  - `user-account.assembler.js`: Ensamblador con métodos de transformación `toDomain(apiResource)`, `toDomainCollection(resources)` y `toDto(entity)`.
-  - `auth.interceptor.js`: Middleware HTTP que intercepta peticiones salientes para inyectar la cabecera `Authorization: Bearer <jwt>` e intercepta errores `401 Unauthorized` ejecutando `redirectToLogIn()`.
-- **Capa de Dominio**:
-  - `user-account.entity.js`: Entidad con propiedades `id`, `email`, `roles`, `status` y métodos de validación `hasRole(roleName)`, `isContractor()` e `isFleetAdmin()`.
-  - `credential.vo.js`: Value object con métodos de validación de sintaxis y fortaleza `isValidEmail()` e `isStrongPassword()`.
+Todos los Bounded Contexts consumen la **REST API** mediante HTTPS y JSON bajo el prefijo `/api/v1`.
 
-![Identity & Access Management Frontend Component Diagram](assets/architecture/c4/c4-frontend-identity-component.svg)
+![TechnoLoad Single Page Application Component Diagram](assets/architecture/c4/spa-components.png)
 
+##### Fleet Frontend Component Diagram
 
-##### Fleet Management Frontend Component Diagram
+- **Presentation Layer**:
+  - `MachineryList`: catálogo de maquinaria para propietarios y contratistas; permite eliminar maquinaria propia o solicitar su alquiler.
+  - `MachineryForm`: registro y edición de maquinaria mediante `createMachinery()` y `updateMachinery()`.
+  - `CategoryManagement`: creación, renombrado y eliminación de categorías, validando nombres únicos y categorías en uso.
+- **Application Layer**:
+  - `FleetManagementStore`: mantiene las señales `machinery()` y `categories()` y expone `loadMachinery()`, `createMachinery()`, `updateMachinery()`, `deleteMachinery()`, `changeMachineryStatus()` y las operaciones de categorías.
+- **Domain Layer**:
+  - `Machinery` (`isAvailable()`, `isInMaintenance()`, `withStatus()`), `Category`, los Value Objects `MachineryLocation` y `Money`, y el enum `MachineryStatus`.
+- **Infrastructure Layer**:
+  - `FleetManagementApi`, `MachineryApiEndpoint` y `CategoryApiEndpoint`: llamadas HTTP a `/api/v1/machinery` y `/api/v1/categories`, con sus assemblers.
 
-Este diagrama representa la estructura del módulo frontend de gestión de flota de maquinaria pesada, alineado directamente con la implementación en `src/fleet`:
+![Fleet Frontend Component Diagram](assets/architecture/c4/fleet-frontend-components.png)
 
-- **Vistas y Componentes**:
-  - `asset-list.vue`: Componente contenedor principal. Maneja las funciones `selectAsset(asset)`, `retryLoad()` y ejecuta `onMounted() -> fleetStore.loadAssets()`.
-  - `asset-item.vue`: Componente de presentación individual de maquinaria. Recibe la prop `asset: Asset`, emite `@select` y define `onCardClick()`, `getStatusSeverity()` y `formatHourlyRate()`.
-  - `asset-summary.vue`: Componente de métricas operativas con funciones `calculateAvailableCount()`, `calculateInMaintenance()` y `calculateRentedCount()`.
-  - PrimeVue: `<pv-button>`, `<pv-skeleton>`, `<pv-message>`, `<pv-tag>` y `<pv-data-table>`.
-- **Capa de Aplicación**:
-  - `fleet.store.js`: Store reactivo que gestiona el estado (`assets`, `maintenanceOrders`, `selectedAsset`, `isLoading`, `errorMessage`) y provee las acciones `loadAssets()`, `loadMaintenanceOrders()`, `selectAsset(asset)` y `clearSelectedAsset()`.
-- **Capa de Infraestructura**:
-  - `fleet-api.js`: Cliente HTTP que consume la API REST mediante `getAssets()`, `getMaintenanceOrders()` y `postAsset(assetData)`.
-  - `asset.assembler.js`: Transforma DTOs en entidades con `toDomainCollection(resources)` y `toDomain(resource)`.
-  - `maintenance-order.assembler.js`: Transforma DTOs de órdenes de mantenimiento en entidades del dominio.
-- **Capa de Dominio**:
-  - `asset.entity.js`: Entidad `Asset` con atributos (`id`, `name`, `serialNumber`, `status`, `hourMeter`) y métodos (`isAvailable()`, `requiresMaintenance()`).
-  - `maintenance-order.entity.js`: Entidad `MaintenanceOrder` con métodos (`isPending()`, `complete()`).
+##### Rental Frontend Component Diagram
 
-![Fleet Management Frontend Component Diagram](assets/architecture/c4/c4-frontend-fleet-component.svg)
+- **Presentation Layer**:
+  - `RentalRequestPage`: selección de fechas para alquilar una maquinaria disponible mediante `requestRental()`.
+  - `ReservationList`: listado de las reservas del usuario, con confirmación y cancelación mediante `confirmReservation()` y `cancelReservation()`.
+- **Application Layer**:
+  - `RentalManagementStore`: expone `loadRentals()`, `requestRental()`, `confirmReservation()`, `cancelReservation()` y `hasOverlappingActiveRental()`.
+- **Domain Layer**:
+  - `Rental` (`calculateTotal()`, `isActive()`, `isPending()`), los Value Objects `RentalPeriod` y `Money`, y el enum `RentalStatus`.
+- **Infrastructure Layer**:
+  - `RentalManagementApi` y `RentalApiEndpoint`: llamadas HTTP a `/api/v1/rentals`, con `RentalAssembler`.
 
+![Rental Frontend Component Diagram](assets/architecture/c4/rental-frontend-components.png)
 
----
+##### Maintenance Frontend Component Diagram
+
+- **Presentation Layer**:
+  - `MaintenanceSchedulePage`: programa, inicia y completa mantenimientos, y actualiza el estado de la maquinaria en Fleet Management.
+  - `BreakdownReportForm`: reporte de averías mediante `reportBreakdown()`.
+- **Application Layer**:
+  - `MaintenanceManagementStore`: expone `loadMaintenances()`, `scheduleMaintenance()`, `startMaintenance()`, `completeMaintenance()` y `reportBreakdown()`.
+- **Domain Layer**:
+  - `Maintenance`, `BreakdownReport`, el Value Object `Money` y los enums `MaintenanceType`, `MaintenanceStatus` y `BreakdownSeverity`.
+- **Infrastructure Layer**:
+  - `MaintenanceManagementApi` y `MaintenanceApiEndpoint`: llamadas HTTP a `/api/v1/maintenances`, con `MaintenanceAssembler`.
+
+![Maintenance Frontend Component Diagram](assets/architecture/c4/maintenance-frontend-components.png)
+
+##### Operations Frontend Component Diagram
+
+- **Presentation Layer**:
+  - `ServiceOperationPage`: inicia y completa la operación de servicio de un alquiler confirmado y valida las horas trabajadas.
+  - `WorkedHoursForm`: captura las horas trabajadas de un día y las envía a la página.
+- **Application Layer**:
+  - `OperationsManagementStore`: expone `loadOperations()`, `startOperation()`, `recordWorkedHours()`, `validateWorkedHours()` y `completeOperation()`.
+- **Domain Layer**:
+  - `ServiceOperation` (`calculateTotalHours()`), `WorkedHours` (`isValidated()`) y los enums `OperationStatus` y `WorkedHoursStatus`.
+- **Infrastructure Layer**:
+  - `OperationsManagementApi` y `ServiceOperationApiEndpoint`: llamadas HTTP a `/api/v1/service-operations`, con `ServiceOperationAssembler`.
+
+![Operations Frontend Component Diagram](assets/architecture/c4/operations-frontend-components.png)
+
+##### Profiles Frontend Component Diagram
+
+- **Presentation Layer**:
+  - `ProfilePage`: muestra y edita el perfil del usuario mediante `saveProfile()`.
+  - `OrganizationForm`: registra la empresa del usuario mediante `saveOrganization()`.
+- **Application Layer**:
+  - `ProfilesManagementStore`: expone `loadProfiles()`, `loadOrganizations()`, `saveProfile()` y `saveOrganization()`.
+- **Domain Layer**:
+  - `Profile`, `Organization`, el Value Object `ContactInformation` y el enum `OrganizationType`.
+- **Infrastructure Layer**:
+  - `ProfilesManagementApi`, `ProfileApiEndpoint` y `OrganizationApiEndpoint`: llamadas HTTP a `/api/v1/profiles` y `/api/v1/organizations`, con sus assemblers.
+
+![Profiles Frontend Component Diagram](assets/architecture/c4/profiles-frontend-components.png)
+
+##### Subscription Frontend Component Diagram
+
+- **Presentation Layer**:
+  - `Plans`: muestra los planes Essential y Pro a los propietarios de flota e inicia la suscripción mediante `subscribe()`.
+  - `CheckoutResult`: recibe el retorno de la pasarela de pago y confirma el pago mediante `confirmCheckout()`.
+- **Application Layer**:
+  - `SubscriptionManagementStore`: expone `loadPlans()`, `loadSubscriptions()`, `subscribe()` y `confirmCheckout()`.
+- **Domain Layer**:
+  - `Plan`, `Subscription` (`activate()`, `cancel()`, `isActive()`, `isPendingPayment()`), `Payment`, el Value Object `Money` y los enums `PlanCode`, `SubscriptionStatus` y `PaymentStatus`.
+- **Infrastructure Layer**:
+  - `SubscriptionManagementApi`, `PlanApiEndpoint`, `SubscriptionApiEndpoint` y `PaymentApiEndpoint`: llamadas HTTP a `/api/v1/plans`, `/api/v1/subscriptions` y `/api/v1/payments`.
+
+![Subscription Frontend Component Diagram](assets/architecture/c4/subscription-frontend-components.png)
+
+##### Identity & Access Frontend Component Diagram
+
+- **Presentation Layer**:
+  - `SignInForm`: formulario de inicio de sesión que invoca `signIn()` del store.
+  - `SignUpForm`: formulario de registro que permite elegir el rol de contratista o propietario de flota e invoca `signUp()`.
+  - `AuthenticationSection`: muestra al usuario autenticado en la barra superior e invoca `signOut()`.
+- **Application Layer**:
+  - `IdentityAccessStore`: store basado en signals reactivos que mantiene la sesión y expone `signIn()`, `signUp()`, `signOut()`, `loadRoles()`, `hasRole()` y `hasAnyRole()`.
+- **Domain Layer**:
+  - `UserAccount`, `Role` y `Credential`, junto con los comandos `SignInCommand` y `SignUpCommand`.
+- **Infrastructure Layer**:
+  - `IdentityAccessApi`: expone `signIn()`, `signUp()`, `getRoles()` y `userAccountExists()`.
+  - `SignInPort`: token de inyección que selecciona el adaptador de autenticación según el entorno.
+  - `SignUpApiEndpoint` y `RoleApiEndpoint`: llamadas HTTP a `/api/v1/authentication/sign-up` y `/api/v1/roles`.
+  - `identityAccessGuard`, `roleGuard` e `identityAccessInterceptor`: protegen las rutas por sesión y rol, y adjuntan el token en las solicitudes.
+
+![Identity and Access Frontend Component Diagram](assets/architecture/c4/identity-access-frontend-components.png)
+
+##### Shared Frontend Component Diagram
+
+- **Presentation Layer**:
+  - `Layout`: estructura de la aplicación con barra superior, navegación según el rol, `router-outlet` y pie de página.
+  - `LanguageSwitcher`: cambia el idioma entre inglés y español mediante `useLanguage()`.
+  - `FooterContent`, `Home`, `PageNotFound` y `TermsOfService`: componentes y páginas compartidas.
+- **Application Layer**:
+  - `TranslatedTitleStrategy`: traduce el título del navegador en cada ruta.
+- **Domain Layer**:
+  - `BaseEntity`: contrato común de identificador para todas las entidades.
+- **Infrastructure Layer**:
+  - `BaseApi`, `BaseApiEndpoint` (`getAll()`, `getById()`, `create()`, `update()`, `delete()`) y `BaseAssembler`: clases base que reutilizan todos los Bounded Contexts.
+
+![Shared Frontend Component Diagram](assets/architecture/c4/shared-frontend-components.png)
 
 #### 4.6.4.2. Backend API Component Diagrams
 
-La Backend REST API está implementada con **ASP.NET Core 8** y **C#**, aplicando la estructura de capas de Domain-Driven Design:
-- **Interfaces Layer**: Controladores RESTful (`*Controller.cs`) que exponen recursos JSON bajo versionamiento `/api/v1/*`, validan los modelos de solicitud y transforman códigos de estado HTTP.
-- **Application Layer**: Servicios de aplicación y manejadores de comandos/consultas (*Command and Query Handlers*) que orquestan las transacciones y publican eventos de dominio.
-- **Domain Layer**: Agregados raíz, entidades, objetos de valor y reglas de negocio puras sin dependencias de infraestructura ni de frameworks externos.
-- **Infrastructure Layer**: Contexto de datos `AppDbContext` de Entity Framework Core, repositorios concretos (`*Repository.cs`), adaptadores hacia PostgreSQL y clientes de integración con pasarelas de pago, SUNAT, notificaciones y telemetría.
+Los siguientes diagramas detallan la estructura interna de la REST API organizada bajo Domain-Driven Design. El primero es la vista general y muestra los Bounded Contexts y su interconexión sin sus capas internas. Después, cada Bounded Context tiene su propio diagrama que muestra sus cuatro capas (`interfaces`, `application`, `domain` e `infrastructure`) y los módulos o packages en que se divide cada capa. Como el nivel de componentes es una vista estructural de módulos, las clases detalladas se presentan en los diagramas de clases de la sección 4.7. En todos los contextos, los controladores de `interfaces.rest` envían comandos y queries a `application`, la implementación de los servicios ejecuta el comportamiento de los agregados de `domain` y los adaptadores de `infrastructure.persistence` implementan los repositorios del dominio.
 
 ##### API Application Component Diagram
 
-El siguiente diagrama muestra la organización general de la REST API de TechnoLoad en ASP.NET Core y los Bounded Contexts que forman parte de la solución: Identity & Access Management, Profiles Management, Fleet Management, Rental Management, Maintenance Management, Operations Management y el Shared Bounded Context.
+Presenta la visión global de la REST API y la interconexión de sus ocho Bounded Contexts principales con la Single Page Application, la base de datos relacional y los sistemas externos:
+- **Identity & Access Management**: Registro con rol, inicio de sesión con JWT, cuentas y roles mediante `/api/v1/authentication/*`, `/api/v1/user-accounts` y `/api/v1/roles`.
+- **Profiles Management**: Gestión de datos de perfiles personales y empresas mediante `/api/v1/profiles/*` y `/api/v1/organizations/*`.
+- **Fleet Management**: Administración de maquinaria, categorías, disponibilidad y tarifas horarias mediante `/api/v1/machinery/*` y `/api/v1/categories/*`.
+- **Rental Management**: Gestión de solicitudes y reservas de alquiler mediante `/api/v1/rentals/*`.
+- **Maintenance Management**: Programación de mantenimientos y reporte de averías mediante `/api/v1/maintenances/*` y `/api/v1/breakdown-reports/*`.
+- **Operations Management**: Registro y validación de horas trabajadas y cierre de operaciones mediante `/api/v1/service-operations/*`.
+- **Subscription Management**: Planes, suscripciones y pagos mediante `/api/v1/plans/*` y `/api/v1/subscriptions/*`.
+- **Billing Management**: Cálculo del monto de alquiler, emisión de comprobantes electrónicos ante SUNAT y penalidades por mora mediante `/api/v1/invoices/*` y `/api/v1/late-penalties/*`.
+- **Shared Kernel Bounded Context**: Clases transversales, Value Objects base y utilitarios compartidos.
 
-![API Application Component Diagram TechnoLoad](assets/architecture/c4/c4-api-component-diagram.svg)
+![TechnoLoad API Application Component Diagram](assets/architecture/c4/c4-api-component-diagram.png)
 
-##### Identity & Access Management Bounded Context Component Diagram
+##### Fleet Management Bounded Context Component Diagram
 
-Este diagrama representa la estructura interna del Identity & Access Management Bounded Context en ASP.NET Core. Este contexto se encarga de la autenticación, autorización basada en roles (RBAC), emisión de tokens JWT y gestión de credenciales seguras.
+Muestra las capas y packages del Bounded Context de Fleet Management:
+- `interfaces`: `rest` (controladores de `/api/v1/machinery` y `/api/v1/categories`, con los subpackages `resources` y `transform`), `acl` (facade que usan Rental y Maintenance para consultar dueño, estado y tarifa de la maquinaria).
+- `application`: `commandservices` y `queryservices` (contratos de los servicios), `internal.commandservices` e `internal.queryservices` (sus implementaciones), `internal.eventhandlers` (reaccionan a los eventos de integración de Rental y Maintenance y envían `Change Machinery Status`) y `acl` (implementación del facade).
+- `domain`: `model.aggregates` (`Machinery` y `Category`), `model.valueobjects`, `model.commands`, `model.queries`, `model.events` y `repositories`.
+- `infrastructure`: `persistence.jpa` con `adapters`, `assemblers`, `entities` y `repositories`.
 
-![Identity & Access Management Component Diagram](assets/architecture/c4/c4-identity-component.svg)
+![Fleet Management Component Diagram](assets/architecture/c4/c4-fleet-management-component-diagram.png)
+
+##### Rental Management Bounded Context Component Diagram
+
+Muestra las capas y packages del Bounded Context de Rental Management:
+- `interfaces`: `rest` (controladores de `/api/v1/rentals`, con los subpackages `resources` y `transform`), `acl` (facade para leer los alquileres y saber quién participa en ellos) y `events` (eventos de integración `Reservation Confirmed`, `Reservation Cancelled`, `Rental Started` y `Rental Completed`).
+- `application`: `commandservices` y `queryservices` (contratos de los servicios), `internal.commandservices` e `internal.queryservices` (sus implementaciones), `internal.eventhandlers` (traducen los eventos de dominio a eventos de integración y escuchan `Operation Started` y `Operation Completed`), `internal.policies` (`Start Rental` y `Complete Rental`), `internal.outboundservices.acl` (consulta la maquinaria en Fleet Management) y `acl`.
+- `domain`: `model.aggregates` (`Rental`), `model.valueobjects`, `model.commands`, `model.queries`, `model.events` y `repositories`.
+- `infrastructure`: `persistence.jpa` con `adapters`, `assemblers`, `entities` y `repositories`.
+
+![Rental Management Component Diagram](assets/architecture/c4/c4-rental-management-component-diagram.png)
+
+##### Maintenance Management Bounded Context Component Diagram
+
+Muestra las capas y packages del Bounded Context de Maintenance Management:
+- `interfaces`: `rest` (controladores de `/api/v1/maintenances` y `/api/v1/breakdown-reports`, con los subpackages `resources` y `transform`) y `events` (eventos de integración `Maintenance Started` y `Maintenance Completed`).
+- `application`: `commandservices` y `queryservices` (contratos de los servicios), `internal.commandservices` e `internal.queryservices` (sus implementaciones), `internal.eventhandlers` (traducen los eventos de dominio a eventos de integración y, ante `Worked Hours Validated`, programan el mantenimiento preventivo) e `internal.outboundservices.acl` (consulta Fleet Management, Rental Management y Operations Management).
+- `domain`: `model.aggregates` (`Maintenance`), `model.entities` (`BreakdownReport`), `model.valueobjects`, `model.commands`, `model.queries`, `model.events` y `repositories`.
+- `infrastructure`: `persistence.jpa` con `adapters`, `assemblers`, `entities` y `repositories`.
+
+![Maintenance Management Component Diagram](assets/architecture/c4/c4-maintenance-management-component-diagram.png)
+
+##### Operations Management Bounded Context Component Diagram
+
+Muestra las capas y packages del Bounded Context de Operations Management:
+- `interfaces`: `rest` (controladores de `/api/v1/service-operations`, con los subpackages `resources` y `transform`), `acl` (facade para leer operaciones completadas y horas validadas) y `events` (eventos de integración `Operation Started`, `Worked Hours Validated` y `Operation Completed`).
+- `application`: `commandservices` y `queryservices` (contratos de los servicios), `internal.commandservices` e `internal.queryservices` (sus implementaciones), `internal.eventhandlers` (publican los eventos de integración), `internal.outboundservices.acl` (consulta Rental Management y Fleet Management) y `acl`.
+- `domain`: `model.aggregates` (`ServiceOperation`), `model.entities` (`WorkedHours`), `model.valueobjects`, `model.commands`, `model.queries`, `model.events` y `repositories`.
+- `infrastructure`: `persistence.jpa` con `adapters`, `assemblers`, `entities` y `repositories`.
+
+![Operations Management Component Diagram](assets/architecture/c4/c4-operations-management-component-diagram.png)
 
 ##### Profiles Management Bounded Context Component Diagram
 
-Este diagrama muestra la estructura interna del Profiles Management Bounded Context en ASP.NET Core, encargado de gestionar los perfiles de usuario, números de identificación fiscal/documentos de identidad, datos de contacto e información organizacional de las empresas contratistas y proveedoras de maquinaria.
+Muestra las capas y packages del Bounded Context de Profiles Management:
+- `interfaces`: `rest` (controladores de `/api/v1/profiles` y `/api/v1/organizations`, con los subpackages `resources` y `transform`) y `acl` (facade para obtener el perfil de un usuario).
+- `application`: `commandservices` y `queryservices` (contratos de los servicios), `internal.commandservices` e `internal.queryservices` (sus implementaciones), `internal.outboundservices.acl` (consulta la cuenta en Identity & Access Management) y `acl`.
+- `domain`: `model.aggregates` (`Profile` y `Organization`), `model.valueobjects`, `model.commands`, `model.queries`, `model.events` y `repositories`.
+- `infrastructure`: `persistence.jpa` con `adapters`, `assemblers`, `entities` y `repositories`.
 
-![Profiles Management Component Diagram](assets/architecture/c4/c4-profiles-component.svg)  
+![Profiles Management Component Diagram](assets/architecture/c4/c4-profiles-management-component-diagram.png)
 
-##### Backend API Component Diagrams (maintainable source)
+##### Identity & Access Management Bounded Context Component Diagram
 
-Los siguientes diagramas especifican la estructura de los controladores y servicios principales de la API backend en C# y ASP.NET Core:
+Muestra las capas y packages del Bounded Context de Identity & Access Management:
+- `interfaces`: `rest` (controladores de `/api/v1/authentication`, `/api/v1/user-accounts` y `/api/v1/roles`, con los subpackages `resources` y `transform`) y `acl` (facade para buscar cuentas y roles por correo).
+- `application`: `commandservices` y `queryservices` (contratos de los servicios), `internal.commandservices` e `internal.queryservices` (sus implementaciones), `internal.eventhandlers` (crea los roles al iniciar), `internal.outboundservices` (contratos de `hashing` y `tokens`) y `acl`.
+- `domain`: `model.aggregates` (`UserAccount`), `model.entities` (`Role`), `model.valueobjects`, `model.commands`, `model.queries`, `model.events` y `repositories`.
+- `infrastructure`: `persistence.jpa` con `adapters`, `assemblers`, `entities` y `repositories`, `hashing.bcrypt` (BCrypt), `tokens.jwt` (JWT) y `authorization.sfs` (configuración de seguridad y filtro del token).
 
-```mermaid
-flowchart LR
-  subgraph api["Backend API [ASP.NET Core 8 / C#]"]
-    controllers["Controllers (Interfaces Layer)<br/><i>Authentication · Profiles · Fleet · Rental · Maintenance · Operations</i>"] --> services["Application Services & Handlers<br/><i>Use Case Orchestration</i>"]
-    services --> domain["Domain Aggregates & Rules<br/><i>UserAccount · Profile · Asset · Rental · MaintenanceOrder · ServiceOperation</i>"]
-    services --> dispatcher["Domain Event Dispatcher<br/><i>In-Memory Event Bus</i>"]
-    services --> repositories["Repository Interfaces & EF Core Adapters"]
-  end
-  repositories --> database[("PostgreSQL 16 Database")]
-  classDef layer fill:#1E40AF,stroke:#1D4ED8,color:#FFFFFF
-  class controllers,services,domain,dispatcher,repositories layer
-```
+![Identity and Access Management Component Diagram](assets/architecture/c4/c4-identity-access-management-component-diagram.png)
 
-```mermaid
-flowchart LR
-  assetService["Asset Application Service<br/>(C#)"] --> asset["Asset Aggregate Root<br/>(Domain Entity)"]
-  assetService --> assetRepository["IAssetRepository<br/>(Domain Port)"]
-  maintenanceService["Maintenance Application Service<br/>(C#)"] --> maintenancePlan["Maintenance Plan Aggregate"]
-  maintenanceService --> maintenanceOrder["Maintenance Order Aggregate"]
-  maintenanceService --> maintenanceRepository["IMaintenanceRepository<br/>(Domain Port)"]
-  maintenanceOrder -->|publishes MaintenanceDueEvent| notificationPort["INotificationService Port"]
-  assetRepository --> adapters["PostgreSQL EF Core Adapters<br/>(Infrastructure)"]
-  maintenanceRepository --> adapters
-  classDef component fill:#065F46,stroke:#047857,color:#FFFFFF
-  class assetService,asset,assetRepository,maintenanceService,maintenancePlan,maintenanceOrder,maintenanceRepository,notificationPort,adapters component
-```
+##### Subscription Management Bounded Context Component Diagram
 
-```mermaid
-flowchart LR
-  rentalService["Rental Application Service<br/>(C#)"] --> rental["Rental Request Aggregate Root"]
-  rentalService --> rentalRepository["IRentalRepository<br/>(Domain Port)"]
-  rental -->|RentalConfirmedDomainEvent| operationService["Operation Application Service<br/>(C#)"]
-  operationService --> operation["Service Operation Aggregate Root"]
-  operation -->|ServiceOperationCompletedEvent| billingService["Billing Application Service<br/>(C#)"]
-  billingService --> subscription["Subscription Aggregate Root"]
-  billingService --> paymentAdapter["Payment Gateway Adapter<br/>(Infrastructure)"]
-  billingService --> sunatAdapter["SUNAT Invoice Adapter<br/>(Infrastructure)"]
-  classDef component fill:#4C1D95,stroke:#5B21B6,color:#FFFFFF
-  class rentalService,rental,rentalRepository,operationService,operation,billingService,subscription,paymentAdapter,sunatAdapter component
-```
+Muestra las capas y packages del Bounded Context de Subscription Management:
+- `interfaces`: `rest` (controladores de `/api/v1/plans` y `/api/v1/subscriptions`, con los subpackages `resources` y `transform`), `acl` (facade para saber si hay una suscripción activa y leer el límite de maquinarias de su plan) y `events` (eventos de integración `Subscription Activated` y `Subscription Cancelled`).
+- `application`: `commandservices` y `queryservices` (contratos de los servicios), `internal.commandservices` e `internal.queryservices` (sus implementaciones), `internal.eventhandlers` (traducen los eventos de dominio a eventos de integración), `internal.outboundservices.acl` (Anti-Corruption Layer frente a Checkout Pro) y `acl`.
+- `domain`: `model.aggregates` (`Subscription` y `SubscriptionPlan`), `model.entities` (`Payment`), `model.valueobjects`, `model.commands`, `model.queries`, `model.events` y `repositories`.
+- `infrastructure`: `persistence.jpa` con `adapters`, `assemblers`, `entities` y `repositories` y `seeding` (crea los planes Essential y Pro al iniciar).
+
+![Subscription Management Component Diagram](assets/architecture/c4/c4-subscription-management-component-diagram.png)
+
+##### Billing Management Bounded Context Component Diagram
+
+Muestra las capas y packages del Bounded Context de Billing Management:
+- `interfaces`: `rest` (controladores de `/api/v1/invoices` y `/api/v1/late-penalties`, con los subpackages `resources` y `transform`).
+- `application`: `commandservices` y `queryservices` (contratos de los servicios), `internal.commandservices` e `internal.queryservices` (sus implementaciones), `internal.eventhandlers` (reaccionan a `Operation Completed` y `Rental Completed`) e `internal.outboundservices.acl` (consulta Rental Management y Fleet Management, y Anti-Corruption Layer para enviar comprobantes a SUNAT).
+- `domain`: `model.aggregates` (`Invoice` y `LatePenalty`), `model.valueobjects`, `model.commands`, `model.queries`, `model.events` y `repositories`.
+- `infrastructure`: `persistence.jpa` con `adapters`, `assemblers`, `entities` y `repositories`.
+
+![Billing Management Component Diagram](assets/architecture/c4/c4-billing-management-component-diagram.png)
 
 ## 4.7. Software Object-Oriented Design
 
-El diseño orientado a objetos de TechnoLoad representa las principales clases, interfaces, enumeraciones, atributos, operaciones y relaciones que conforman cada Bounded Context. Los modelos mantienen los límites definidos mediante Domain-Driven Design y utilizan identificadores para referenciar agregados pertenecientes a otros contextos, evitando el acoplamiento directo entre ellos.
+El diseño orientado a objetos de TechnoLoad representa las principales clases, interfaces, enumeraciones, atributos, operaciones y relaciones que conforman cada Bounded Context. Los modelos mantienen los límites definidos mediante Domain-Driven Design y evitan los tipos de datos primitivos en los atributos y parámetros del dominio. Cada identificador se modela como un Value Object propio (`MachineryId`, `RentalId`, `ProfileId`, entre otros), de modo que un agregado de otro contexto se referencia por su identificador tipado y no por un número sin significado, evitando el acoplamiento directo entre contextos. Los conceptos del dominio que antes se representaban como texto o números también se modelan como Value Objects que validan su propio formato, por ejemplo `EmailAddress`, `PhoneNumber`, `PersonName`, `DocumentNumber`, `TaxId`, `MachinerySpecification`, `HoursWorked`, `WorkShift`, `InvoiceNumber` y `MachineryLimit`. Los valores monetarios se modelan mediante el Value Object `Money`, que encapsula el importe y su moneda. Los tipos primitivos solo aparecen dentro de los Value Objects, que son los responsables de validarlos. Los identificadores de cada contexto se agrupan en el paquete `Identifiers` de su diagrama.
+
+La capa de aplicación de cada contexto se divide en un `CommandService` y un `QueryService`. El `CommandService` tiene un método `handle` por cada comando del Design-Level Event Storming, y cada comando se modela como una clase propia agrupada en el paquete `Commands` (por ejemplo `RegisterMachineryCommand` o `RejectReservationCommand`). Del mismo modo, el `QueryService` atiende una clase por cada query de los read models, agrupadas en el paquete `Queries`. Así, los nombres del diagrama de clases coinciden uno a uno con el Catálogo de comandos de la sección 4.6.1 y con la implementación de los servicios backend.
+
+Para reducir la complejidad, cada Bounded Context tiene primero un diagrama general con todas sus clases y, cuando tiene más de un agregado, un diagrama por cada agregado. El agregado es el límite de consistencia transaccional y también la unidad en que se programa, por lo que cada diagrama de agregado agrupa solo su raíz, sus entidades, sus Value Objects, los comandos y queries que lo usan y su repositorio. Los Bounded Contexts con un solo agregado (Rental, Maintenance, Operations, Profiles e Identity & Access Management) se presentan con su diagrama general, que corresponde a ese único agregado.
 
 ### 4.7.1. Class Diagrams
 
-#### Canonical Domain Class Diagram
-
-Este diagrama consolida las clases del alcance actual. Todos los nombres de tipos se expresan en inglés con `PascalCase`; atributos y operaciones utilizan `camelCase`. Los límites entre agregados se mantienen con identificadores (`UUID`) en lugar de referencias de objetos entre contextos.
-
-```mermaid
-classDiagram
-  class Organization {
-    +UUID id
-    +String legalName
-    +String taxId
-  }
-  class UserAccount {
-    +UUID id
-    +UUID organizationId
-    +String email
-    +AccountStatus status
-  }
-  class UserProfile {
-    +UUID id
-    +UUID userAccountId
-    +String firstName
-    +String lastName
-  }
-  class Role {
-    +UUID id
-    +String name
-  }
-  class Asset {
-    +UUID id
-    +UUID organizationId
-    +String assetCode
-    +AssetStatus status
-  }
-  class MeterReading {
-    +UUID id
-    +UUID assetId
-    +Decimal readingValue
-  }
-  class MaintenanceOrder {
-    +UUID id
-    +UUID assetId
-    +MaintenanceStatus status
-  }
-  class RentalRequest {
-    +UUID id
-    +UUID organizationId
-    +RentalStatus status
-  }
-  class ServiceOperation {
-    +UUID id
-    +UUID rentalRequestId
-    +OperationStatus status
-  }
-  class Subscription {
-    +UUID id
-    +UUID organizationId
-    +SubscriptionStatus status
-  }
-  class Payment {
-    +UUID id
-    +UUID subscriptionId
-    +PaymentStatus status
-  }
-  Organization "1" --> "many" UserAccount : owns
-  UserAccount "1" --> "1" UserProfile : has
-  UserAccount "many" --> "many" Role : has
-  Organization "1" --> "many" Asset : owns
-  Asset "1" --> "many" MeterReading : records
-  Asset "1" --> "many" MaintenanceOrder : receives
-  RentalRequest "1" --> "1" ServiceOperation : creates
-  Organization "1" --> "many" Subscription : has
-  Subscription "1" --> "many" Payment : receives
-```
-
 #### Fleet Management Bounded Context Class Diagram
 
-El diagrama de Fleet Management representa el agregado Machinery, responsable del registro, actualización, clasificación, ubicación, estado y disponibilidad de la maquinaria. También incluye el objeto de valor MachineryLocation, las enumeraciones correspondientes y los servicios e interfaces necesarios para coordinar y persistir las operaciones del contexto.
+El diagrama general de Fleet Management representa los agregados `Machinery` y `Category`. El agregado `Machinery` es responsable del registro, actualización, clasificación, ubicación, estado y disponibilidad de la maquinaria. También incluye los objetos de valor `MachineryLocation` y `Money`; este último representa la tarifa por hora mediante un importe y una moneda.
 
-```mermaid
-classDiagram
-    class FleetManagementService {
-        -MachineryRepository machineryRepository
-        +registerMachinery(machinery) Machinery
-        +updateMachineryInformation(id, name, description, hourlyRate) Machinery
-        +updateMachineryStatus(id, status) Machinery
-        +viewMachineryInventory() List~Machinery~
-        +checkMachineryAvailability(id) Boolean
-    }
-    class MachineryRepository {
-        <<interface>>
-        +save(machinery) Machinery
-        +findById(id) Optional~Machinery~
-        +findAll() List~Machinery~
-        +findAvailable() List~Machinery~
-        +existsById(id) Boolean
-    }
-    class Machinery {
-        <<Aggregate Root>>
-        -UUID id
-        -UUID ownerProfileId
-        -String name
-        -String description
-        -MachineryType type
-        -String brand
-        -String model
-        -Integer year
-        -BigDecimal hourlyRate
-        -MachineryStatus status
-        -MachineryLocation location
-        -LocalDateTime createdAt
-        -LocalDateTime updatedAt
-        +register() void
-        +updateInformation(name, description, hourlyRate) void
-        +changeStatus(status) void
-        +updateLocation(location) void
-        +isAvailable() Boolean
-    }
-    class MachineryLocation {
-        <<Value Object>>
-        -String department
-        -String province
-        -String district
-        -String address
-        -Double latitude
-        -Double longitude
-        +fullAddress() String
-        +isValid() Boolean
-    }
-    class MachineryType {
-        <<enumeration>>
-        EXCAVATOR
-        BACKHOE_LOADER
-        LOADER
-        CRANE
-        BULLDOZER
-        OTHER
-    }
-    class MachineryStatus {
-        <<enumeration>>
-        AVAILABLE
-        RESERVED
-        RENTED
-        IN_MAINTENANCE
-        OUT_OF_SERVICE
-    }
+![Fleet Management Class Diagram](assets/architecture/classes/fleet-management-class-diagram.png)
 
-    FleetManagementService --> MachineryRepository : uses
-    MachineryRepository --> Machinery : persists
-    Machinery *-- MachineryLocation : contains
-    Machinery --> MachineryType : classified as
-    Machinery --> MachineryStatus : has
-```
+##### Machinery Aggregate Class Diagram
+
+Agrupa la raíz `Machinery`, sus Value Objects (`MachinerySpecification`, `MachineryLocation`, `Money`), el estado `MachineryStatus`, los comandos `Register Machinery`, `Update Machinery`, `Change Machinery Status` y `Delete Machinery`, sus queries y `MachineryRepository`. La categoría se referencia solo por `CategoryId`.
+
+![Fleet Management - Machinery Aggregate Class Diagram](assets/architecture/classes/fleet-management-machinery-aggregate-class-diagram.png)
+
+##### Category Aggregate Class Diagram
+
+Agrupa la raíz `Category`, los Value Objects `CategoryCode` y `CategoryName`, los comandos `Create Category`, `Rename Category` y `Delete Category`, la query `View Categories` y `CategoryRepository`.
+
+![Fleet Management - Category Aggregate Class Diagram](assets/architecture/classes/fleet-management-category-aggregate-class-diagram.png)
 
 #### Rental Management Bounded Context Class Diagram
 
-```mermaid
-classDiagram
-    class RentalManagementService {
-        -RentalRepository rentalRepository
-        +requestRental(rental) Rental
-        +confirmReservation(id) Rental
-        +cancelReservation(id, reason) Rental
-        +updateRentalDates(id, period) Rental
-        +viewRentalRequests() List~Rental~
-        +viewMyReservations(profileId) List~Rental~
-        +checkReservationDetails(id) Rental
-    }
-    class RentalRepository {
-        <<interface>>
-        +save(rental) Rental
-        +findById(id) Optional~Rental~
-        +findByContractorProfileId(profileId) List~Rental~
-        +findByMachineryId(machineryId) List~Rental~
-        +findByStatus(status) List~Rental~
-        +existsOverlappingRental(machineryId, period) Boolean
-    }
-    class Rental {
-        <<Aggregate Root>>
-        -UUID id
-        -UUID machineryId
-        -UUID contractorProfileId
-        -RentalPeriod period
-        -RentalStatus status
-        -BigDecimal totalAmount
-        -LocalDateTime requestedAt
-        -LocalDateTime confirmedAt
-        -LocalDateTime cancelledAt
-        +request() void
-        +confirm() void
-        +cancel(reason) void
-        +updateDates(period) void
-        +calculateTotal(hourlyRate) BigDecimal
-        +isActive() Boolean
-    }
-    class RentalPeriod {
-        <<Value Object>>
-        -LocalDate startDate
-        -LocalDate endDate
-        +durationInDays() Long
-        +overlaps(other) Boolean
-        +isValid() Boolean
-    }
-    class RentalStatus {
-        <<enumeration>>
-        REQUESTED
-        CONFIRMED
-        IN_PROGRESS
-        COMPLETED
-        CANCELLED
-    }
+El diagrama de Rental Management representa el agregado `Rental` y los objetos de valor `RentalPeriod` y `Money`. Este modelo administra las solicitudes de alquiler, confirmaciones, cancelaciones, fechas de reserva y estados del proceso, además de calcular el importe total sin perder la moneda asociada.
 
-    RentalManagementService --> RentalRepository : uses
-    RentalRepository --> Rental : persists
-    Rental *-- RentalPeriod : contains
-    Rental --> RentalStatus : has
-```
+![Rental Management Class Diagram](assets/architecture/classes/rental-management-class-diagram.png)
 
 #### Maintenance Management Bounded Context Class Diagram
 
-```mermaid
-classDiagram
-    class MaintenanceManagementService {
-        -MaintenanceRepository maintenanceRepository
-        +scheduleMaintenance(maintenance) Maintenance
-        +completeMaintenance(id, cost) Maintenance
-        +reportBreakdown(id, report) Maintenance
-        +updateMaintenanceStatus(id, status) Maintenance
-        +viewMaintenanceHistory(machineryId) List~Maintenance~
-        +viewPendingMaintenance() List~Maintenance~
-        +checkMaintenanceDetails(id) Maintenance
-    }
-    class MaintenanceRepository {
-        <<interface>>
-        +save(maintenance) Maintenance
-        +findById(id) Optional~Maintenance~
-        +findByMachineryId(machineryId) List~Maintenance~
-        +findByStatus(status) List~Maintenance~
-        +findCompletedByMachineryId(machineryId) List~Maintenance~
-    }
-    class Maintenance {
-        <<Aggregate Root>>
-        -UUID id
-        -UUID machineryId
-        -MaintenanceType type
-        -MaintenanceStatus status
-        -String description
-        -LocalDateTime scheduledDate
-        -LocalDateTime startedAt
-        -LocalDateTime completedAt
-        -String technicianName
-        -BigDecimal cost
-        -List~BreakdownReport~ breakdownReports
-        +schedule() void
-        +start() void
-        +complete(cost) void
-        +updateStatus(status) void
-        +reportBreakdown(report) void
-        +isPending() Boolean
-    }
-    class BreakdownReport {
-        <<Entity>>
-        -UUID id
-        -String description
-        -BreakdownSeverity severity
-        -LocalDateTime reportedAt
-        -LocalDateTime resolvedAt
-        -Boolean resolved
-        +resolve() void
-        +isCritical() Boolean
-    }
-    class MaintenanceType {
-        <<enumeration>>
-        PREVENTIVE
-        CORRECTIVE
-        INSPECTION
-    }
-    class MaintenanceStatus {
-        <<enumeration>>
-        SCHEDULED
-        IN_PROGRESS
-        COMPLETED
-        CANCELLED
-    }
-    class BreakdownSeverity {
-        <<enumeration>>
-        LOW
-        MEDIUM
-        HIGH
-        CRITICAL
-    }
+El diagrama de Maintenance Management representa el agregado `Maintenance`, las entidades asociadas a los reportes de averías y el objeto de valor `Money` para registrar el costo del mantenimiento con su moneda. Permite programar, iniciar, cancelar y completar mantenimientos y conservar el historial técnico de cada maquinaria.
 
-    MaintenanceManagementService --> MaintenanceRepository : uses
-    MaintenanceRepository --> Maintenance : persists
-    Maintenance *-- BreakdownReport : contains
-    Maintenance --> MaintenanceType : classified as
-    Maintenance --> MaintenanceStatus : has
-    BreakdownReport --> BreakdownSeverity : has
-```
+![Maintenance Management Class Diagram](assets/architecture/classes/maintenance-management-class-diagram.png)
 
 #### Operations Management Bounded Context Class Diagram
 
-```mermaid
-classDiagram
-    class OperationsManagementService {
-        -ServiceOperationRepository operationRepository
-        +startService(operation) ServiceOperation
-        +recordWorkedHours(operationId, record) ServiceOperation
-        +validateWorkedHours(operationId, recordId) ServiceOperation
-        +completeService(operationId) ServiceOperation
-        +viewServiceStatus(id) OperationStatus
-        +viewWorkedHours(id) List~WorkedHours~
-        +viewOperationHistory(machineryId) List~ServiceOperation~
-    }
-    class ServiceOperationRepository {
-        <<interface>>
-        +save(operation) ServiceOperation
-        +findById(id) Optional~ServiceOperation~
-        +findByRentalId(rentalId) Optional~ServiceOperation~
-        +findByMachineryId(machineryId) List~ServiceOperation~
-        +findByStatus(status) List~ServiceOperation~
-    }
-    class ServiceOperation {
-        <<Aggregate Root>>
-        -UUID id
-        -UUID rentalId
-        -UUID machineryId
-        -UUID operatorProfileId
-        -OperationStatus status
-        -LocalDateTime startedAt
-        -LocalDateTime completedAt
-        -List~WorkedHours~ workedHours
-        +start() void
-        +recordWorkedHours(record) void
-        +validateWorkedHours(recordId) void
-        +complete() void
-        +calculateTotalHours() BigDecimal
-        +isInProgress() Boolean
-    }
-    class WorkedHours {
-        <<Entity>>
-        -UUID id
-        -LocalDate workDate
-        -LocalTime startTime
-        -LocalTime endTime
-        -BigDecimal totalHours
-        -WorkedHoursStatus status
-        -String observations
-        +calculateHours() BigDecimal
-        +validate() void
-        +reject() void
-        +isValidated() Boolean
-    }
-    class OperationStatus {
-        <<enumeration>>
-        SCHEDULED
-        IN_PROGRESS
-        COMPLETED
-        CANCELLED
-    }
-    class WorkedHoursStatus {
-        <<enumeration>>
-        PENDING
-        VALIDATED
-        REJECTED
-    }
+El diagrama de Operations Management representa el agregado `ServiceOperation` y los registros de horas trabajadas. El modelo permite iniciar y finalizar servicios, registrar horas de operación, validar los registros realizados y consultar el historial operativo de una maquinaria.
 
-    OperationsManagementService --> ServiceOperationRepository : uses
-    ServiceOperationRepository --> ServiceOperation : persists
-    ServiceOperation *-- WorkedHours : records
-    ServiceOperation --> OperationStatus : has
-    WorkedHours --> WorkedHoursStatus : has
-```
-
-#### Identity & Access Management Bounded Context Class Diagram
-
-```mermaid
-classDiagram
-    class IdentityAccessService {
-        -UserAccountRepository accountRepository
-        +registerUser(account) UserAccount
-        +authenticateUser(email, password) UserAccount
-        +assignRole(accountId, role) UserAccount
-        +removeRole(accountId, role) UserAccount
-        +changePassword(accountId, passwordHash) void
-        +activate(accountId) void
-        +suspend(accountId) void
-        +hasRole(roleName) Boolean
-    }
-    class UserAccountRepository {
-        <<interface>>
-        +save(account) UserAccount
-        +findById(id) Optional~UserAccount~
-        +findByEmail(email) Optional~UserAccount~
-        +existsByEmail(email) Boolean
-    }
-    class UserAccount {
-        <<Aggregate Root>>
-        -UUID id
-        -String email
-        -Credential credential
-        -AccountStatus status
-        -Set~Role~ roles
-        -LocalDateTime createdAt
-        -LocalDateTime lastLoginAt
-        +register() void
-        +authenticate(rawPassword) Boolean
-        +assignRole(role) void
-        +removeRole(role) void
-        +changePassword(passwordHash) void
-        +activate() void
-        +suspend() void
-        +hasRole(roleName) Boolean
-    }
-    class Credential {
-        <<Value Object>>
-        -String passwordHash
-        -LocalDateTime changedAt
-        +matches(rawPassword) Boolean
-        +update(passwordHash) Credential
-    }
-    class Role {
-        <<Entity>>
-        -UUID id
-        -RoleName name
-        -String description
-        +isAdministrative() Boolean
-    }
-    class AccountStatus {
-        <<enumeration>>
-        PENDING
-        ACTIVE
-        SUSPENDED
-        DISABLED
-    }
-    class RoleName {
-        <<enumeration>>
-        CONTRACTOR
-        FLEET_OWNER
-        FLEET_ADMINISTRATOR
-        OPERATOR
-        SYSTEM_ADMINISTRATOR
-    }
-
-    IdentityAccessService --> UserAccountRepository : uses
-    UserAccountRepository --> UserAccount : persists
-    UserAccount *-- Credential : owns
-    UserAccount o-- Role : has
-    UserAccount --> AccountStatus : has
-    Role --> RoleName : identified by
-```
+![Operations Management Class Diagram](assets/architecture/classes/operations-management-class-diagram.png)
 
 #### Profiles Management Bounded Context Class Diagram
 
-```mermaid
-classDiagram
-    class ProfilesManagementService {
-        -ProfileRepository profileRepository
-        +createProfile(profile) Profile
-        +updateProfileInformation(id, firstName, lastName, documentNumber) Profile
-        +updateContactInformation(id, contact) Profile
-        +updateOrganizationInformation(id, organization) Profile
-        +viewProfile(id) Profile
-        +viewContactInformation(id) ContactInformation
-        +viewOrganizationInformation(id) Organization
-    }
-    class ProfileRepository {
-        <<interface>>
-        +save(profile) Profile
-        +findById(id) Optional~Profile~
-        +findByUserAccountId(userAccountId) Optional~Profile~
-        +findByDocumentNumber(documentNumber) Optional~Profile~
-        +existsByDocumentNumber(documentNumber) Boolean
-    }
-    class Profile {
-        <<Aggregate Root>>
-        -UUID id
-        -UUID userAccountId
-        -String firstName
-        -String lastName
-        -String documentNumber
-        -ContactInformation contactInformation
-        -Organization organization
-        -LocalDateTime createdAt
-        -LocalDateTime updatedAt
-        +create() void
-        +updatePersonalInformation(firstName, lastName, documentNumber) void
-        +updateContactInformation(contact) void
-        +updateOrganizationInformation(organization) void
-        +fullName() String
-    }
-    class ContactInformation {
-        <<Value Object>>
-        -String phoneNumber
-        -String secondaryEmail
-        -String address
-        -String district
-        -String city
-        +isValid() Boolean
-        +formattedAddress() String
-    }
-    class Organization {
-        <<Entity>>
-        -UUID id
-        -String legalName
-        -String tradeName
-        -String taxId
-        -OrganizationType type
-        -String address
-        +updateInformation(legalName, tradeName, address) void
-        +isValidTaxId() Boolean
-    }
-    class OrganizationType {
-        <<enumeration>>
-        INDEPENDENT_CONTRACTOR
-        RENTAL_COMPANY
-        CONSTRUCTION_COMPANY
-        OTHER
-    }
+El diagrama de Profiles Management representa el agregado `Profile`, la información de contacto y la organización asociada al usuario. Este modelo permite administrar los datos personales, de contacto y organizacionales sin acoplar el contexto de perfiles con la gestión de credenciales.
 
-    ProfilesManagementService --> ProfileRepository : uses
-    ProfileRepository --> Profile : persists
-    Profile *-- ContactInformation : contains
-    Profile o-- Organization : belongs to
-    Organization --> OrganizationType : classified as
-```
+![Profiles Management Class Diagram](assets/architecture/classes/profiles-management-class-diagram.png)
+
+#### Subscription Management Bounded Context Class Diagram
+
+El diagrama de Subscription Management representa los agregados `Subscription` y `SubscriptionPlan`, y los pagos (`Payment`) registrados como parte del ciclo de vida de la suscripción. Utiliza el Value Object `Money` para el precio del plan y el importe de cada pago, evitando operar montos sin su moneda asociada.
+
+![Subscription Management Class Diagram](assets/architecture/classes/subscription-management-class-diagram.png)
+
+##### Subscription Aggregate Class Diagram
+
+Agrupa la raíz `Subscription`, la entidad `Payment`, sus estados, el Value Object `Money`, los comandos `Subscribe to Plan`, `Confirm Checkout`, `Activate Subscription` y `Cancel Subscription`, sus queries y `SubscriptionRepository`. El plan se referencia solo por `PlanId`.
+
+![Subscription Management - Subscription Aggregate Class Diagram](assets/architecture/classes/subscription-management-subscription-aggregate-class-diagram.png)
+
+##### Subscription Plan Aggregate Class Diagram
+
+Agrupa la raíz `SubscriptionPlan`, su precio (`Money`), `PlanName`, `MachineryLimit`, el código y el ciclo de facturación, la query `View Plans` y `SubscriptionPlanRepository`.
+
+![Subscription Management - Subscription Plan Aggregate Class Diagram](assets/architecture/classes/subscription-management-subscription-plan-aggregate-class-diagram.png)
+
+#### Billing Management Bounded Context Class Diagram
+
+El diagrama de Billing Management representa los agregados `Invoice` y `Late Penalty`, ambos referenciando el alquiler correspondiente mediante un identificador externo. Atiende los comandos `Calculate Rental Amount`, `Issue Invoice` y `Apply Late Penalty`, y registra el rechazo de SUNAT cuando ocurre, utilizando el Value Object `Money` para los importes involucrados.
+
+![Billing Management Class Diagram](assets/architecture/classes/billing-management-class-diagram.png)
+
+##### Invoice Aggregate Class Diagram
+
+Agrupa la raíz `Invoice`, sus Value Objects (`InvoiceNumber`, `SunatCdr`, `Money`), el estado `InvoiceStatus`, los comandos `Calculate Rental Amount` e `Issue Invoice`, sus queries y `InvoiceRepository`.
+
+![Billing Management - Invoice Aggregate Class Diagram](assets/architecture/classes/billing-management-invoice-aggregate-class-diagram.png)
+
+##### Late Penalty Aggregate Class Diagram
+
+Agrupa la raíz `LatePenalty`, su monto (`Money`) y motivo (`Reason`), el comando `Apply Late Penalty`, la query `View Late Penalties` y `LatePenaltyRepository`.
+
+![Billing Management - Late Penalty Aggregate Class Diagram](assets/architecture/classes/billing-management-late-penalty-aggregate-class-diagram.png)
+
+#### Identity & Access Management Bounded Context Class Diagram
+
+El diagrama de Identity & Access Management representa el agregado `UserAccount`, sus credenciales y los roles asignados. El modelo concentra las operaciones de registro, autenticación, cambio de contraseña, asignación de roles y control del estado de las cuentas.
+
+![Identity and Access Management Class Diagram](assets/architecture/classes/identity-access-management-class-diagram.png)
 
 ## 4.8. Database Design
 
+El diseño de base de datos de TechnoLoad se organiza según los límites definidos para cada Bounded Context. Cada modelo especifica las tablas, columnas, tipos de datos, claves primarias, claves foráneas, restricciones y cardinalidades necesarias para persistir la información de sus agregados y entidades.
+
+Para conservar la independencia entre Bounded Contexts, las asociaciones internas utilizan claves foráneas, mientras que las relaciones con agregados pertenecientes a otros contextos se representan mediante identificadores externos. De esta manera se evita el acoplamiento directo entre los modelos de persistencia y se mantiene una responsabilidad claramente definida sobre los datos.
+
+Las entidades utilizan claves primarias numéricas `BIGINT` generadas por la base de datos en lugar de UUID. Los valores monetarios se persisten como pares de columnas de importe y código de moneda, manteniendo en la base de datos la semántica definida por el patrón `Money` del modelo de dominio.
+
 ### 4.8.1. Database Diagrams
 
-El modelo relacional usa nombres plurales en `snake_case`, atributos en `snake_case` y claves foráneas con el sufijo `_id`. Las relaciones preservan la trazabilidad de activos, lecturas, mantenimiento, alquileres, operaciones, suscripciones, pagos y facturación electrónica.
+#### Fleet Management Bounded Context Database Diagram
 
-```mermaid
-erDiagram
-  organizations ||--o{ user_accounts : owns
-  user_accounts ||--|| user_profiles : has
-  user_accounts ||--o{ user_account_roles : receives
-  roles ||--o{ user_account_roles : grants
-  organizations ||--o{ assets : owns
-  assets ||--o{ meter_readings : receives
-  assets ||--o{ telemetry_readings : reports
-  assets ||--o{ maintenance_plans : follows
-  assets ||--o{ maintenance_orders : receives
-  organizations ||--o{ rental_requests : creates
-  rental_requests ||--|{ rental_items : contains
-  assets ||--o{ rental_items : reserves
-  rental_requests ||--o| service_operations : creates
-  service_operations ||--o{ unit_assignments : contains
-  assets ||--o{ unit_assignments : uses
-  organizations ||--o{ subscriptions : has
-  subscriptions ||--o{ payments : receives
-  service_operations ||--o| electronic_invoices : generates
-  organizations {
-    uuid id PK
-    varchar legal_name
-    varchar tax_id UK
-    varchar status
-  }
-  user_accounts {
-    uuid id PK
-    uuid organization_id FK
-    varchar email UK
-    varchar status
-  }
-  user_profiles {
-    uuid id PK
-    uuid user_account_id FK
-    varchar first_name
-    varchar last_name
-  }
-  roles {
-    uuid id PK
-    varchar role_name UK
-  }
-  user_account_roles {
-    uuid user_account_id FK
-    uuid role_id FK
-  }
-  assets {
-    uuid id PK
-    uuid organization_id FK
-    varchar asset_code UK
-    varchar asset_type
-    varchar status
-  }
-  meter_readings {
-    uuid id PK
-    uuid asset_id FK
-    numeric reading_value
-    varchar meter_unit
-    timestamptz recorded_at
-  }
-  telemetry_readings {
-    uuid id PK
-    uuid asset_id FK
-    numeric latitude
-    numeric longitude
-    timestamptz recorded_at
-  }
-  maintenance_plans {
-    uuid id PK
-    uuid asset_id FK
-    numeric threshold_value
-    varchar meter_unit
-  }
-  maintenance_orders {
-    uuid id PK
-    uuid asset_id FK
-    varchar maintenance_type
-    varchar status
-    timestamptz scheduled_at
-  }
-  rental_requests {
-    uuid id PK
-    uuid organization_id FK
-    varchar status
-  }
-  rental_items {
-    uuid id PK
-    uuid rental_request_id FK
-    uuid asset_id FK
-  }
-  service_operations {
-    uuid id PK
-    uuid rental_request_id FK
-    varchar status
-  }
-  unit_assignments {
-    uuid id PK
-    uuid service_operation_id FK
-    uuid asset_id FK
-    timestamptz assigned_at
-  }
-  subscriptions {
-    uuid id PK
-    uuid organization_id FK
-    varchar status
-  }
-  payments {
-    uuid id PK
-    uuid subscription_id FK
-    numeric amount
-    varchar status
-  }
-  electronic_invoices {
-    uuid id PK
-    uuid service_operation_id FK
-    varchar status
-  }
-```
+El modelo de Fleet Management almacena el catálogo de categorías y la información principal de cada maquinaria y su ubicación. La tabla `categories` administra las categorías disponibles, `machinery` conserva los datos técnicos, la tarifa y el estado operativo referenciando su categoría mediante `category_id`, mientras que `machinery_locations` representa la ubicación asociada mediante una relación uno a uno. El propietario se referencia mediante un identificador externo perteneciente a Profiles Management.
+
+![Fleet Management Database Diagram](assets/architecture/database/fleet-management-database-diagram.png)
+
+#### Rental Management Bounded Context Database Diagram
+
+El modelo de Rental Management almacena las solicitudes y reservas de maquinaria. La tabla `rentals` conserva el estado, importe y fechas de seguimiento del alquiler, mientras que `rental_periods` define el intervalo reservado. La maquinaria y el perfil del contratista se mantienen como referencias externas para respetar los límites entre contextos.
+
+![Rental Management Database Diagram](assets/architecture/database/rental-management-database-diagram.png)
+
+#### Maintenance Management Bounded Context Database Diagram
+
+El modelo de Maintenance Management almacena los mantenimientos programados y los reportes de averías relacionados. Una maquinaria puede contar con múltiples registros de mantenimiento y cada mantenimiento puede contener cero o varios reportes. Las restricciones controlan los estados, tipos, severidad, costos y finalización de las intervenciones.
+
+![Maintenance Management Database Diagram](assets/architecture/database/maintenance-management-database-diagram.png)
+
+#### Operations Management Bounded Context Database Diagram
+
+El modelo de Operations Management conserva la ejecución de los servicios y los registros de horas trabajadas. Cada operación puede incluir múltiples registros de horas, los cuales contienen fecha, hora de inicio, hora de fin, duración, observaciones y estado de validación. Las reservas, maquinarias y perfiles de operadores se identifican mediante referencias externas.
+
+![Operations Management Database Diagram](assets/architecture/database/operations-management-database-diagram.png)
+
+#### Profiles Management Bounded Context Database Diagram
+
+El modelo de Profiles Management almacena perfiles, información de contacto y organizaciones. Cada perfil posee un único registro de contacto y puede pertenecer opcionalmente a una organización. El identificador de la cuenta de usuario se conserva como una referencia externa a Identity & Access Management.
+
+![Profiles Management Database Diagram](assets/architecture/database/profiles-management-database-diagram.png)
+
+#### Subscription Management Bounded Context Database Diagram
+
+El modelo de Subscription Management almacena los planes de suscripción disponibles, las suscripciones contratadas y los pagos asociados. La tabla `subscription_plans` define el límite de maquinarias y el precio de cada plan, `subscriptions` conserva el estado y vigencia de la suscripción contratada por un propietario, y `payments` registra cada transacción procesada mediante el proveedor de pagos externo.
+
+![Subscription Management Database Diagram](assets/architecture/database/subscription-management-database-diagram.png)
+
+#### Billing Management Bounded Context Database Diagram
+
+El modelo de Billing Management almacena los comprobantes electrónicos y las penalidades por mora. La tabla `invoices` conserva el monto, estado y datos de emisión ante SUNAT, mientras que `late_penalties` registra los recargos aplicados por devoluciones tardías. Ambas tablas referencian el alquiler correspondiente mediante un identificador externo perteneciente a Rental Management.
+
+![Billing Management Database Diagram](assets/architecture/database/billing-management-database-diagram.png)
+
+#### Identity & Access Management Bounded Context Database Diagram
+
+El modelo de Identity & Access Management almacena cuentas, credenciales y roles. Las credenciales mantienen una relación uno a uno con cada cuenta, mientras que la relación muchos a muchos entre cuentas y roles se resuelve mediante la tabla intermedia `user_account_roles`. Las restricciones garantizan correos únicos, estados válidos y una asignación no duplicada de roles.
+
+![Identity and Access Management Database Diagram](assets/architecture/database/identity-access-management-database-diagram.png)
+
 
 ### 4.8.2. Script DDL
 
@@ -2492,33 +2030,32 @@ La gestión de configuración de software de TechnoLoad establece las herramient
 Para ello, se utilizan herramientas de gestión de proyectos, diseño UX/UI, desarrollo de software, documentación, control de versiones y despliegue. Git y GitHub permiten registrar los cambios realizados por los integrantes del equipo, mientras que GitFlow, Conventional Commits y Semantic Versioning proporcionan un esquema organizado para la evolución del código fuente.
 
 ### 5.1.1. Software Development Environment Configuration
-  
+
 El desarrollo de TechnoLoad requiere diferentes herramientas que permiten cubrir las actividades de gestión del proyecto, especificación de requisitos, diseño UX/UI, implementación, documentación, control de versiones y despliegue.
 
-Las principales herramientas utilizadas o previstas para el proyecto son las siguientes:
+Las principales herramientas utilizadas para el proyecto son las siguientes:
 
 | Área | Herramienta / Tecnología | Propósito en TechnoLoad | Referencia |
 |---|---|---|---|
 | Project Management | GitHub Projects | Organización del Product Backlog, Sprints, User Stories y tareas del equipo mediante tablero interactivo. | https://github.com/orgs/TechnoLoad-TechFlow/projects |
-| Requirements Management | GitHub + Markdown | Documentación colaborativa de requisitos, User Stories, Product Backlog y demás artefactos del informe. | https://github.com/TechnoLoad-TechFlow/TechFlow |
+| Requirements Management | GitHub + Markdown | Documentación colaborativa de requisitos, User Stories, Product Backlog y demás artefactos del informe. | https://github.com/TechnoLoad-TechFlow/TechFlow-report |
 | UX Research | UXPressia | Elaboración de User Personas, Empathy Maps, User Journey Maps e Impact Maps. | https://uxpressia.com/ |
 | UX/UI Design | Figma | Elaboración de Wireframes, Mock-ups y Prototipos de la experiencia web. | https://www.figma.com/ |
+| Diagramming | PlantUML | Generación versionable de diagramas de User Flows, Design-Level Event Storming, C4, Clases y Base de Datos. | https://plantuml.com/ |
 | Version Control | Git | Control distribuido de versiones del código fuente y documentación. | https://git-scm.com/ |
 | Source Code Management | GitHub | Almacenamiento de repositorios, gestión de ramas, commits y colaboración del equipo. | https://github.com/ |
-| Development Environment | JetBrains Rider | Edición, ejecución y depuración del código fuente. | https://www.jetbrains.com/rider/ |
-| Frontend Runtime | Node.js | Entorno de ejecución utilizado para instalar y administrar las dependencias del Frontend Web Application. | https://nodejs.org/ |
-| Frontend Framework | Vue | Framework utilizado para desarrollar la Frontend Web Application. | https://vuejs.org/ |
-| Frontend Build Tool | Vite | Herramienta utilizada para gestionar el entorno de desarrollo y generar el build de producción del frontend. | https://vite.dev/ |
-| UI Components | PrimeVue | Biblioteca de componentes basada en Material Design utilizada para construir la interfaz de usuario. | https://primevue.org/ |
-| Backend Framework | ASP.NET Core | Framework utilizado para implementar los RESTful Web Services de TechnoLoad. | https://dotnet.microsoft.com/apps/aspnet |
-| Programming Language | C# | Lenguaje utilizado para implementar la lógica del lado servidor. | https://learn.microsoft.com/dotnet/csharp/ |
-| ORM | Entity Framework Core | Gestión de persistencia y acceso a datos desde los Web Services. | https://learn.microsoft.com/ef/core/ |
-| DBMS | PostgreSQL | Sistema gestor de base de datos relacional utilizado para almacenar la información del dominio. | https://www.postgresql.org/ |
-| API Documentation | OpenAPI / Swagger | Documentación e interacción con los endpoints de los RESTful Web Services. | https://swagger.io/ |
+| Development Environment | JetBrains Rider / WebStorm / IntelliJ IDEA | Edición, ejecución, pruebas y depuración del código fuente frontend y backend. | https://www.jetbrains.com/ |
+| Frontend Runtime | Node.js | Entorno de ejecución utilizado para instalar dependencias y ejecutar los scripts de construcción de la Web Application. | https://nodejs.org/ |
+| Landing Page | HTML5, CSS3 & JavaScript (ES6) | Implementación del sitio público de presentación, selector de segmentos, modal de autenticación y calculadora ROI. | https://developer.mozilla.org/ |
+| Frontend Web Framework | Angular 21 (`@angular/core ^21.2.25`) & TypeScript (`~5.9.2`) | Framework y lenguaje utilizados para desarrollar la Frontend Web Application (`technoload-webapp`). | https://angular.dev/ |
+| Reactive Extensions | RxJS (`7.8.1`) | Manejo reactivo de flujos asíncronos y consumo de servicios HTTP en el cliente Angular. | https://rxjs.dev/ |
+| Backend Services (Cloud Demo & DDD) | Node.js (`server.js`), ASP.NET Core 8 (C# / EF Core) & Spring Boot (Java) | Implementación de los RESTful Web Services en `technoload-platform` para autenticación, activos, mantenimiento, alquileres y pagos. | https://learn.microsoft.com/aspnet/core/ |
+| DBMS & Persistence | MySQL 8 / PostgreSQL / `db.json` | Persistencia relacional para los backends DDD (.NET 8 / Spring Boot) y almacenamiento JSON para el servicio Node.js desplegado. | https://www.mysql.com/ |
+| API Documentation | OpenAPI 3.0 / Swagger UI | Documentación e interacción con los endpoints de los RESTful Web Services. | https://swagger.io/ |
 | Software Documentation | Markdown | Elaboración del Project Report y documentación técnica dentro de GitHub. | https://www.markdownguide.org/ |
-| Software Deployment | GitHub Pages | Publicación del Landing Page y del prototipo de Frontend Web Application. | https://pages.github.com/ |
+| Software Deployment | Microsoft Azure App Service & GitHub Pages | Publicación en la nube de Landing Page, Frontend Web Application y RESTful Web Services. | https://azure.microsoft.com/ |
 
-La combinación de estas herramientas permite mantener un entorno común entre los integrantes del equipo. El frontend es desarrollado con Vue y PrimeVue, mientras que los servicios del lado servidor se implementan mediante ASP.NET Core, Entity Framework Core y C#. PostgreSQL proporciona la persistencia relacional de la información correspondiente a activos, lecturas, mantenimientos y operaciones.
+La combinación de estas herramientas permite mantener un entorno común entre los integrantes del equipo. El Landing Page emplea HTML5, CSS3 y JavaScript ES6; la Frontend Web Application está construida con Angular 21 y TypeScript; y los RESTful Web Services en `technoload-platform` combinan el servicio Node.js publicado en Azure con las implementaciones DDD en ASP.NET Core 8 (C# / EF Core) y Spring Boot (Java).
 
 ![Estructura del proyecto](assets/evidence/repository/repository-develop-structure.jpeg)
 
@@ -2533,9 +2070,9 @@ Los repositorios correspondientes a los productos de TechnoLoad son:
 | Project Report | https://github.com/TechnoLoad-TechFlow/TechFlow-report |
 | Landing Page | https://github.com/TechnoLoad-TechFlow/technoload-website |
 | Frontend Web Application | https://github.com/TechnoLoad-TechFlow/technoload-webapp |
-| Web Services / Mock REST API | https://github.com/TechnoLoad-TechFlow/technoload-platform |
+| Web Services (RESTful API) | https://github.com/TechnoLoad-TechFlow/technoload-platform |
 
-El repositorio correspondiente a los RESTful Web Services deberá incluir tanto el código fuente de la solución como los archivos correspondientes a las pruebas unitarias y de integración.
+El repositorio correspondiente a los RESTful Web Services (`technoload-platform`) incluye tanto el código fuente de los servicios como las pruebas unitarias de dominio y aplicación (`MachineServiceTests` en .NET y pruebas unitarias de flota en Spring Boot).
 
 ![Landing Page de TechnoLoad](assets/ux/landing/landing-page-technoload.jpeg)
 
@@ -2553,29 +2090,15 @@ Las ramas principales consideradas son:
 | `release/*` | Preparación y estabilización de una nueva versión antes de integrarla en `main`. |
 | `hotfix/*` | Correcciones urgentes sobre una versión publicada en producción. |
 
-Los feature branches deben utilizar nombres descriptivos escritos en inglés y en formato kebab-case.
+Los feature branches utilizan nombres descriptivos escritos en inglés y en formato kebab-case:
 
-Ejemplos:
+- `feature/fleet-management`
+- `feature/maintenance-alerts`
+- `feature/asset-registration`
+- `feature/reservation-management`
+- `feature/sandbox-payments`
 
-`feature/fleet-management`
-
-`feature/maintenance-alerts`
-
-`feature/asset-registration`
-
-`feature/reservation-management`
-
-`feature/landing-page`
-
-Las ramas de release utilizarán Semantic Versioning:
-
-`release/v1.0.0`
-
-`release/v1.1.0`
-
-Las correcciones urgentes seguirán el mismo esquema:
-
-`hotfix/v1.0.1`
+Las ramas de release utilizan Semantic Versioning (`release/v1.0.0`, `release/v1.1.0`) y las correcciones urgentes siguen el mismo esquema (`hotfix/v1.0.1`).
 
 ![Estructura del repositorio en la rama develop](assets/evidence/repository/repository-develop-structure.jpeg)
 
@@ -2583,29 +2106,17 @@ Las correcciones urgentes seguirán el mismo esquema:
 
 #### Semantic Versioning
 
-Las versiones de TechnoLoad seguirán el esquema:
-
-`MAJOR.MINOR.PATCH`
+Las versiones de TechnoLoad siguen el esquema `MAJOR.MINOR.PATCH`:
 
 - `MAJOR`: cambios incompatibles con versiones anteriores.
 - `MINOR`: nuevas funcionalidades compatibles con versiones anteriores.
 - `PATCH`: correcciones de errores compatibles con versiones anteriores.
 
-Ejemplos:
-
-`v1.0.0`
-
-`v1.1.0`
-
-`v1.1.1`
+Ejemplos: `v1.0.0`, `v1.1.0`, `v1.1.1`.
 
 #### Conventional Commits
 
-Los mensajes de commit siguen la estructura:
-
-`<type>(<scope>): <description>`
-
-Los principales tipos utilizados son:
+Los mensajes de commit siguen la estructura `<type>(<scope>): <description>`:
 
 | Type | Uso |
 |---|---|
@@ -2619,28 +2130,19 @@ Los principales tipos utilizados son:
 
 Ejemplos aplicados al proyecto:
 
-`feat(fleet): add asset registration`
+- `feat(auth): replace local login with server authentication`
+- `feat(payments): add sandbox payment form`
+- `feat(dotnet): add DDD domain model`
+- `feat(spring): add fleet DDD context and REST API`
+- `docs(readme): update course code`
 
-`feat(maintenance): add preventive maintenance alerts`
-
-`feat(operations): add unit assignment`
-
-`fix(reservations): prevent duplicate reservations`
-
-`docs(readme): add needfinding artifacts`
-
-`docs(chapter5): add software configuration management`
-
-Todos los integrantes del equipo deben registrar commits propios asociados a las tareas que desarrollan, permitiendo evidenciar su participación mediante el historial de GitHub.
-
-Con estas convenciones se busca facilitar la comprensión del historial de cambios y mantener consistencia entre los diferentes repositorios del proyecto.
-
+Todos los integrantes del equipo registran commits propios asociados a las tareas que desarrollan, permitiendo evidenciar su participación mediante el historial de GitHub.
 
 ### 5.1.3. Source Code Style Guide & Conventions
-  
+
 TechnoLoad adopta convenciones de programación para mantener un código consistente, legible y mantenible entre todos los integrantes del equipo.
 
-Los nombres utilizados en código fuente deben escribirse en inglés, evitando abreviaturas ambiguas y manteniendo una terminología consistente con el Ubiquitous Language del proyecto.
+Los nombres utilizados en código fuente se escriben en inglés, evitando abreviaturas ambiguas y manteniendo una terminología consistente con el Ubiquitous Language del proyecto.
 
 #### HTML
 
@@ -2656,153 +2158,64 @@ Para HTML5 se aplican las siguientes convenciones:
 
 #### CSS
 
-Las clases CSS deben utilizar nombres descriptivos en inglés y formato kebab-case.
+Las clases CSS utilizan nombres descriptivos en inglés y formato kebab-case (por ejemplo: `.asset-card`, `.maintenance-alert`, `.fleet-dashboard`, `.primary-button`, `.reservation-form`), evitando nombres genéricos como `.box1` o `.section2`. Los estilos mantienen coherencia con el Design System establecido en el Capítulo IV.
 
-Ejemplos:
+#### JavaScript, TypeScript y Angular
 
-`.asset-card`
+Para JavaScript, TypeScript y Angular se establecen las siguientes convenciones:
 
-`.maintenance-alert`
+- Variables y funciones: `camelCase` (`assetList`, `getAvailableAssets()`).
+- Clases, interfaces, tipos y componentes: `PascalCase` (`AppComponent`, `MachineAsset`, `PaymentCheckout`).
+- Constantes globales: `UPPER_SNAKE_CASE` (`MAX_RETRY_ATTEMPTS`, `API_BASE_URL`).
+- Utilizar `const` por defecto, `let` cuando el valor requiera modificación y evitar `var`.
+- Tipado estricto en TypeScript mediante interfaces en `src/app/models.ts` y separación de lógica de estado y consumo HTTP.
 
-`.fleet-dashboard`
+#### C# (.NET 8) y Java (Spring Boot)
 
-`.primary-button`
+Para los servicios backend en C# y Java se adoptan las convenciones oficiales de Microsoft y Spring:
 
-`.reservation-form`
-
-Se debe evitar el uso de nombres poco descriptivos como:
-
-`.box1`
-
-`.red-button`
-
-`.section2`
-
-Los estilos deben mantener coherencia con el Design System establecido en el Capítulo IV.
-
-#### JavaScript
-
-Para JavaScript se establecen las siguientes convenciones:
-
-- Variables y funciones: `camelCase`.
-- Clases y componentes: `PascalCase`.
-- Constantes globales: `UPPER_SNAKE_CASE`.
-- Utilizar `const` por defecto y `let` cuando el valor requiera modificación.
-- Evitar `var`.
-- Mantener funciones pequeñas y orientadas a una responsabilidad específica.
-
-Ejemplos:
-
-`assetList`
-
-`getAvailableAssets()`
-
-`MAX_RETRY_ATTEMPTS`
-
-#### Vue
-
-Los componentes Vue deben utilizar nombres descriptivos y mantener una responsabilidad claramente delimitada.
-
-Ejemplos:
-
-`AssetList.vue`
-
-`AssetDetail.vue`
-
-`MaintenanceBoard.vue`
-
-`ReservationForm.vue`
-
-`FleetDashboard.vue`
-
-Los componentes reutilizables deben separarse de las vistas específicas del dominio y mantenerse organizados según el módulo al que pertenecen.
-
-#### C#
-
-Para C# se adoptan las convenciones recomendadas por Microsoft:
-
-- Clases, interfaces, métodos y propiedades públicas: `PascalCase`.
-- Variables locales y parámetros: `camelCase`.
-- Interfaces con prefijo `I`.
-- Namespaces escritos en PascalCase.
-- Clases con una responsabilidad claramente definida.
-
-Ejemplos:
-
-`AssetController`
-
-`MaintenanceService`
-
-`ReservationRepository`
-
-`IAssetRepository`
-
-`GetAvailableAssetsAsync()`
+- Clases, interfaces, registros y métodos públicos en C#: `PascalCase` (`MachinesController`, `MachineService`, `IMachineRepository`, `CreateMachineRequest`).
+- Clases e interfaces en Java: `PascalCase` (`MachineryController`, `MachineryCommandServiceImpl`), métodos y variables en `camelCase`.
+- Separación estricta por capas DDD (`Domain`, `Application`, `Infrastructure`, `Interfaces/Api`), exponiendo únicamente DTOs o Resources y nunca entidades de dominio directamente en los controladores.
 
 #### RESTful Web Services
 
-Los endpoints deben representar recursos mediante sustantivos escritos en inglés y mantener una estructura consistente.
+Los endpoints representan recursos mediante sustantivos escritos en inglés, en plural y en versión `/api/v1/`:
 
-Ejemplos:
+- `GET /api/v1/health`
+- `POST /api/v1/auth/login`
+- `GET /api/v1/assets` y `POST /api/v1/assets`
+- `GET /api/v1/machines` y `POST /api/v1/machines` (.NET 8)
+- `GET /api/v1/machinery` y `POST /api/v1/machinery` (Spring Boot)
+- `GET /api/v1/maintenance-orders` y `POST /api/v1/maintenance-orders`
+- `GET /api/v1/rentals` y `POST /api/v1/rentals`
 
-`GET /api/v1/assets`
-
-`POST /api/v1/assets`
-
-`GET /api/v1/assets/{id}`
-
-`GET /api/v1/maintenance-orders`
-
-`POST /api/v1/reservations`
-
-Se utilizarán correctamente los códigos de estado HTTP, entre ellos:
-
-`200 OK`
-
-`201 Created`
-
-`400 Bad Request`
-
-`401 Unauthorized`
-
-`404 Not Found`
-
-`409 Conflict`
-
-`500 Internal Server Error`
+Se utilizan códigos de estado HTTP estándar: `200 OK`, `201 Created`, `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, `409 Conflict` y `500 Internal Server Error`.
 
 #### Internationalization and Accessibility
 
-La experiencia web deberá considerar internacionalización mediante los idiomas:
-
-`en_US` — English
-
-`es_419` — Latin American Spanish
-
-El idioma predeterminado será inglés.
-
-Asimismo, el Landing Page y la Frontend Web Application deberán considerar prácticas de accesibilidad como HTML semántico, atributos ARIA, navegación mediante teclado, texto alternativo en imágenes, contraste adecuado y feedback comprensible para las acciones del usuario.
+La experiencia web contempla internacionalización para inglés (`en_US`) y español latinoamericano (`es_419`), manteniendo el inglés como idioma predeterminado en las aplicaciones. Asimismo, el Landing Page y la Frontend Web Application aplican prácticas de accesibilidad como HTML semántico, atributos ARIA, navegación por teclado, texto alternativo en imágenes, contraste adecuado y mensajes de retroalimentación comprensibles.
 
 ---
 
 ### 5.1.4. Software Deployment Configuration
-  
+
 El proceso de despliegue de TechnoLoad comprende la publicación independiente de los tres productos principales que conforman la solución: Landing Page, Frontend Web Application y RESTful Web Services.
 
 | Producto | Tecnología | Branch de producción | Plataforma |
 |---|---|---|---|
-| Landing Page | HTML5, CSS3 y JavaScript | `main` | GitHub Pages |
-| Frontend Web Application | HTML5, CSS3 y JavaScript (Vanilla ES6) | `main` | GitHub Pages |
-| RESTful Web Services | ASP.NET Core / Node.js Mock API | `main` | Microsoft Azure App Service (Linux) |
-| Database | PostgreSQL | — | Microsoft Azure Database for PostgreSQL |
+| Landing Page | HTML5, CSS3 y JavaScript (ES6) | `main` | Microsoft Azure App Service (Linux) |
+| Frontend Web Application | Angular 21, TypeScript, HTML5 y CSS3 | `main` | Microsoft Azure App Service (Linux) |
+| RESTful Web Services | Node.js (`server.js`), ASP.NET Core 8 (`dotnet/`), Spring Boot (`spring/`) | `main` | Microsoft Azure App Service (Linux) |
+| Database | MySQL 8 / PostgreSQL / `db.json` (demo) | — | Entorno relacional / Azure App Service |
 
 #### Landing Page Deployment
 
-El proceso de publicación del Landing Page seguirá el siguiente flujo:
+El proceso de publicación del Landing Page sigue el flujo:
 
-`feature branch → develop → validation → main → build/publication → production`
+`feature branch → develop → validation → main → deployment → production`
 
-Los archivos HTML, CSS, JavaScript y assets son obtenidos desde el repositorio correspondiente y publicados en la plataforma seleccionada.
+Los archivos HTML, CSS, JavaScript y assets se obtienen desde el repositorio `technoload-website` y se publican en Microsoft Azure App Service con protocolo HTTPS habilitado.
 
 **Production URL:**
 
@@ -2810,66 +2223,55 @@ Los archivos HTML, CSS, JavaScript y assets son obtenidos desde el repositorio c
 
 #### Frontend Web Application Deployment
 
-El Frontend Web Application será construido con Vue y Vite.
-
-El flujo de despliegue será:
+La Frontend Web Application (`technoload-webapp`) se construye con Angular CLI (`@angular/build`):
 
 `feature branch → develop → validation → main → npm install → npm run build → deployment`
 
-El resultado del build de producción será publicado en la plataforma seleccionada.
-
-Las variables dependientes del entorno, especialmente la URL base de los RESTful Web Services, deberán configurarse mediante variables de entorno y no directamente en el código fuente.
+El resultado del build de producción (`dist/`) se publica en Microsoft Azure App Service. La URL base de la API RESTful se configura mediante variables de entorno (`.env.production` con `VITE_API_BASE_URL=https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1`) y no mediante valores rígidos en el código fuente.
 
 **Production URL:**
 
-[https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/)
+[https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/)
 
 #### RESTful Web Services Deployment
 
-Los Web Services desarrollados con ASP.NET Core serán construidos y publicados desde el repositorio correspondiente.
-
-El proceso considera:
+Los RESTful Web Services alojados en `technoload-platform` se despliegan en Azure App Service (Linux) desde la rama `main`, ejecutando el proceso de verificación y publicación:
 
 1. Obtener la versión estable desde `main`.
-2. Restaurar las dependencias del proyecto.
-3. Ejecutar las pruebas correspondientes.
-4. Generar el build de producción.
-5. Configurar las variables de entorno.
-6. Establecer la conexión con PostgreSQL.
-7. Publicar el servicio en la plataforma seleccionada.
-8. Verificar los endpoints mediante Swagger/OpenAPI.
+2. Restaurar dependencias (`npm install`, `dotnet restore` o `mvn dependency:resolve`).
+3. Ejecutar las pruebas unitarias disponibles (`dotnet test` / `mvn test`).
+4. Configurar las variables de entorno en Azure App Settings (`PORT`, `AUTH_SESSION_TTL_HOURS`, `STRIPE_SECRET_KEY`, `ConnectionStrings__TechnoLoad`, `DB_URL`, `CORS_ALLOWED_ORIGINS`).
+5. Verificar la disponibilidad del servicio mediante `GET /api/v1/health` y los endpoints OpenAPI / Swagger en entornos locales de desarrollo.
 
-Las credenciales, cadenas de conexión y demás información sensible no serán almacenadas directamente en el repositorio.
+Las credenciales, secretos JWT y claves de pasarela de pago no se almacenan en el repositorio Git.
 
 **RESTful API Base URL:**
 
-* **Producción Cloud (Azure App Service):** `https://technoload-api-u202410728.azurewebsites.net/api/v1`
+* **Producción Cloud (Azure App Service):** `https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1`
 * **Entorno de Desarrollo y Pruebas Local:** `http://localhost:8080/api/v1`
 * **Repositorio de Código Fuente de Servicios:** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
 
 **Swagger / OpenAPI Documentation URL:**
 
-* **Swagger UI (Cloud desplegado):** `https://technoload-api-u202410728.azurewebsites.net/swagger`
-* **Especificación OpenAPI (Contratos y Esquemas):** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
+* **Swagger UI (ASP.NET Core 8 local):** `https://localhost:<puerto>/swagger`
+* **Swagger UI (Spring Boot local):** `http://localhost:8080/swagger-ui.html`
+* **Repositorio de contratos y esquemas:** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
 
 #### Database Deployment
 
-La base de datos PostgreSQL deberá estar configurada en un entorno accesible desde los RESTful Web Services.
-
-La cadena de conexión será administrada mediante variables de entorno. Las migraciones generadas mediante Entity Framework Core permitirán mantener sincronizada la estructura de la base de datos entre los diferentes entornos.
+La estructura relacional definida en [database/schema.sql](database/schema.sql) y las migraciones de Entity Framework Core (`dotnet/`) permiten mantener sincronizada la base de datos en MySQL 8 / PostgreSQL mediante cadenas de conexión administradas por variables de entorno, mientras que la instancia de demostración en Node.js emplea `db.json`.
 
 ---
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-La entrega visible de TechnoLoad se compone de una Landing Page pública y una Web Application prototipo. La Landing Page comunica la propuesta de valor y conduce al visitante hacia las funcionalidades de gestión de flota, alquileres y mantenimiento. La Web Application implementa una demostración navegable con datos simulados y persistencia local en el navegador.
+La solución digital de TechnoLoad se organiza en tres productos desacoplados e integrados en la nube de Microsoft Azure: la Landing Page pública (`technoload-website`), la Frontend Web Application desarrollada en Angular (`technoload-webapp`) y los RESTful Web Services (`technoload-platform`).
 
 | Producto | URL / acceso | Estado |
 |---|---|---|
-| Landing Page | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Publicada en GitHub Pages |
-| Frontend Web Application (prototipo) | [index.html](index.html) | Disponible en el repositorio; se ejecuta directamente en un navegador |
-
-La URL pública proporcionada corresponde a la Landing Page. El prototipo de la Web Application está contenido en el mismo repositorio en `index.html`, junto con sus estilos, módulos JavaScript y datos simulados. Una URL de producción independiente para este prototipo podrá agregarse cuando se publique en GitHub Pages u otra plataforma.
+| Landing Page | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Desplegada en Microsoft Azure App Service |
+| Frontend Web Application | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Desplegada en Microsoft Azure App Service |
+| RESTful Web Services | [https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1/health](https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1/health) | Desplegados en Microsoft Azure App Service |
 
 ### 5.2.1. Sprint 1
 
@@ -2886,11 +2288,12 @@ El Sprint 1 comprendió el periodo del 8 al 19 de septiembre de 2026. En esta re
 | Prepared By | Castillo Guevara, Mathias Alejandro |
 | Attendees (to planning meeting) | Castillo Guevara, Mathias Alejandro / Díaz Caruzo, Edgard Daniel / Gutiérrez Lizarbe, Wilmer Sebastián / Tantalean Granda, Nicolas |
 | **Sprint 0 / Inception Review** | |
-| Summary | Durante la fase inicial se definió el problema de negocio mediante 5W+2H, se identificaron los segmentos objetivos (empresas de alquiler de maquinaria pesada y transporte de carga) y se elaboró el Lean UX Canvas preliminar. |
+| Summary | Durante la fase inicial se definió el problema de negocio mediante 5W+2H, se identificaron los segmentos objetivo (empresas de alquiler de maquinaria pesada y contratistas/operadores de transporte) y se elaboró el Lean UX Canvas preliminar. |
 | **Sprint 0 / Inception Retrospective** | |
 | Summary | El equipo concluyó que era prioritario estandarizar las herramientas colaborativas (GitHub, UXPressia, Figma) y establecer convenciones rigurosas de GitFlow y Conventional Commits antes de iniciar el desarrollo. |
 | **Sprint Goal & User Stories** | |
 | Sprint 1 Goal | **Our focus is on** establishing the digital brand presence and communicating the core value proposition of TechnoLoad through a responsive Landing Page.<br><br>**We believe it delivers** immediate clarity on fleet maintenance optimization and machinery rental management **to** heavy machinery rental companies and logistics fleet operators.<br><br>**This will be confirmed when** prospective customers can navigate the Landing Page sections, understand the business solution, and submit their contact inquiries through the interactive Call-to-Action form. |
+| User Stories | `US-013`, `US-014`, `US-015`, `US-001`, `US-002`, `US-003`, `US-004` |
 | Sprint 1 Velocity | 26 Story Points |
 | Sum of Story Points | 26 Story Points |
 
@@ -2913,7 +2316,7 @@ La siguiente tabla detalla la distribución de historias de usuario, tareas de d
 |---|---|---|---|---|---|---:|---|---|
 | Sprint 1 | US-013 | Mostrar propuesta de valor | S1-T01 | Definir propuesta de valor del producto | Documentar la propuesta de valor para empresas de alquiler de maquinaria pesada y transporte/logística. | 8 | Díaz Caruzo, Edgard Daniel | Done |
 | Sprint 1 | US-014 | Mostrar información por segmento | S1-T02 | Organizar contenido por segmento | Estructurar la información para los segmentos objetivo: empresas de alquiler y empresas de transporte de carga. | 6 | Díaz Caruzo, Edgard Daniel | Done |
-| Sprint 1 | US-001 | Registrar maquinaria | S1-T03 | Definir datos de maquinaria | Especificar los datos requeridos para registrar maquinaria y mantener actualizado el inventario. | 7 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 1 | US-001 | Registrar maquinaria | S1-T03 | Definir datos de maquinaria | Especificar los datos necesarios para registrar maquinaria y mantener actualizado el inventario. | 7 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
 | Sprint 1 | US-002 | Consultar disponibilidad | S1-T04 | Definir reglas de disponibilidad | Documentar la consulta de disponibilidad por fechas y distinción de estados (Available, In Operation, In Maintenance). | 6 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
 | Sprint 1 | US-003 | Gestionar mantenimiento | S1-T05 | Definir estados de mantenimiento | Establecer reglas para impedir nuevas reservas cuando una unidad requiera mantenimiento preventivo o correctivo. | 7 | Castillo Guevara, Mathias Alejandro | Done |
 | Sprint 1 | US-004 | Crear una reserva | S1-T06 | Documentar el flujo de reserva | Definir el flujo para solicitar maquinaria disponible durante un periodo de alquiler predeterminado. | 6 | Castillo Guevara, Mathias Alejandro | Done |
@@ -2937,43 +2340,39 @@ La siguiente tabla documenta los commits más representativos registrados durant
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
-La evidencia de ejecución debe mostrar el resultado que puede comprobarse al revisar el incremento del Sprint 1. El informe de TechnoLoad describe la problemática y las necesidades de los segmentos objetivo, así como historias de usuario para registrar maquinaria, consultar disponibilidad, gestionar mantenimiento y crear reservas. Estas definiciones no demuestran por sí solas que todas esas funcionalidades estén implementadas.
+Durante el Sprint 1 se entregó la primera versión funcional de la Landing Page de TechnoLoad junto con la vista preliminar del panel operativo y el diseño interactivo de la experiencia comercial.
 
-
-- **Tecnologías:** completar con las tecnologías efectivamente utilizadas en la versión ejecutable del sprint.
-
+- **Tecnologías utilizadas en el incremento:** HTML5 semántico, CSS3 responsivo (Grid y Flexbox) y JavaScript (ES6) para interactividad de navegación, selector de segmentos y formulario de contacto.
 
 ![Ejecución de la Landing Page de TechnoLoad](assets/ux/landing/landing-page-technoload.jpeg)
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 1, el alcance se concentró en la formulación de requerimientos de negocio, diseño UX/UI y despliegue de la Landing Page. Los contratos de servicios backend fueron formalmente modelados en el Capítulo III y IV (historias técnicas TS-001 a TS-008 y Design-Level EventStorming).
+Durante el Sprint 1, el alcance se concentró en la formulación de requisitos de negocio, diseño UX/UI y despliegue de la Landing Page. Los contratos de servicios backend fueron modelados en los Capítulos III y IV (historias técnicas TS-001 a TS-008 y Design-Level Event Storming).
 
 | Elemento | Evidencia verificada |
 |---|---|
-| API o servicio disponible | Contratos OpenAPI / Swagger modelados; endpoints simulados en cliente para prototipo |
-| URL base prevista | `https://technoload-api-u202410728.azurewebsites.net/api/v1` (Cloud) / `http://localhost:8080/api/v1` (Local) |
+| API o servicio disponible | Contratos OpenAPI / Swagger modelados para su implementación progresiva en `technoload-platform` |
+| URL base prevista | `https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1` (Cloud) / `http://localhost:8080/api/v1` (Local) |
 | Repositorio de servicios | [TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform) |
-| Endpoints modelados | `GET/POST /api/v1/machinery`, `POST /api/v1/reservations`, `GET/POST /api/v1/maintenance-orders` |
+| Endpoints modelados | `GET/POST /api/v1/machinery`, `POST /api/v1/rentals`, `GET/POST /api/v1/maintenance-orders` |
 | Pruebas de servicios | Validación de esquemas JSON y estructuras de DTOs en capa de dominio |
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-La página de presentación del proyecto aparece referenciada en el material de TechFlow mediante la siguiente dirección. Debe verificarse que corresponda a la versión y al repositorio que se presentarán como evidencia del Sprint 1. La publicación de una página de presentación no demuestra por sí sola el despliegue de una API o de una base de datos.
+Al cierre del Sprint 1 se publicó la Landing Page oficial del proyecto **TechFlow** (equipo **TechnoLoad**), permitiendo verificar su accesibilidad mediante HTTPS desde cualquier navegador.
 
 | Elemento | Detalle |
 |---|---|
-| Producto desplegado | Página de presentación de TechFlow, sujeto a confirmar el nombre oficial del producto |
-| Plataforma | GitHub Pages, si se mantiene la configuración actual |
-| Repositorio | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) |
+| Producto desplegado | Landing Page de TechnoLoad / TechFlow |
+| Plataforma | GitHub Pages (entrega AV1) y migración posterior a Microsoft Azure App Service |
+| Repositorio | [TechnoLoad-TechFlow/technoload-website](https://github.com/TechnoLoad-TechFlow/technoload-website) |
 | URL pública | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) |
 | Protocolo | HTTPS |
-| Estado verificado |DONE|
-| Última versión identificada | v1.0.0 |
+| Estado verificado | Done |
+| Última versión identificada | `v1.0.0` |
 
 ![Landing Page de TechnoLoad desplegado](assets/ux/landing/landing-page-technoload.jpeg)
-
-La captura debe mostrar la URL y la versión efectivamente desplegada.
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
@@ -2997,7 +2396,7 @@ Durante el Sprint 1, el equipo registró una participación continua en el repos
 
 #### 5.2.2.1. Sprint Planning 2
 
-El Sprint 2 consolida el desarrollo, integración y despliegue del incremento de software de TechnoLoad correspondiente al hito de entrega del curso. En este sprint se implementaron la Landing Page y la Frontend Web Application sobre infraestructura en la nube de Microsoft Azure, habilitando la conexión entre ambos componentes mediante flujos de Call-to-Action (CTA), visualización y registro interactivo de flota de maquinaria, calculador de ahorro operativo (ROI) y presentación de membresías corporativas.
+El Sprint 2 consolidó el desarrollo, integración y despliegue inicial del MVP funcional de TechnoLoad, implementando la Landing Page y la Frontend Web Application sobre infraestructura en la nube de Microsoft Azure.
 
 | Sprint # | Sprint 2 |
 |---|---|
@@ -3008,11 +2407,12 @@ El Sprint 2 consolida el desarrollo, integración y despliegue del incremento de
 | Prepared By | Tantalean Granda, Nicolas |
 | Attendees (to planning meeting) | Castillo Guevara, Mathias Alejandro / Díaz Caruzo, Edgard Daniel / Gutiérrez Lizarbe, Wilmer Sebastián / Tantalean Granda, Nicolas |
 | **Sprint 1 Review** | |
-| Summary | En el Sprint 1 se implementó y publicó la primera versión de la Landing Page, consolidando la investigación cualitativa (Needfinding, User Personas, Journeys, EventStorming) y la arquitectura inicial de software. |
+| Summary | En el Sprint 1 se implementó y publicó la primera versión de la Landing Page, consolidando la investigación cualitativa (Needfinding, User Personas, Journeys, Big Picture Event Storming) y la arquitectura inicial de software. |
 | **Sprint 1 Retrospective** | |
 | Summary | Se evidenció la necesidad de migrar la infraestructura de despliegue a Microsoft Azure App Service, interconectar la Landing Page con la Frontend Web Application mediante flujos directos de Call-to-Action (CTA), e implementar los formularios de gestión de flota de maquinaria con validación interactiva. |
 | **Sprint Goal & User Stories** | |
 | Sprint 2 Goal | **Our focus is on** implementing and deploying the functional MVP of the Frontend Web Application integrated with the Landing Page on Microsoft Azure cloud infrastructure.<br><br>**We believe it delivers** centralized operational fleet monitoring, preventive maintenance tracking by hour meter, and subscription plan visibility **to** fleet administrators and construction site contractors.<br><br>**This will be confirmed when** users can access both cloud platforms via HTTPS, register and browse machinery units with interactive state feedback, calculate ROI savings dynamically, and select commercial membership plans without navigation barriers. |
+| User Stories | `US-001`, `US-002`, `US-003`, `US-007`, `US-008`, `US-013`, `US-014`, `US-027`, `TS-001`, `TS-002`, `TS-003`, `TS-004` |
 | Sprint 2 Velocity | 38 Story Points |
 | Sum of Story Points | 38 Story Points |
 
@@ -3041,73 +2441,69 @@ La siguiente tabla detalla la distribución de historias de usuario, tareas de d
 | Sprint 2 | US-013 | Propuesta de valor | S2-T06 | Hero Section y Dashboard preview | Desarrollar sección principal de la Landing con vista previa del dashboard operativo (activos disponibles, alertas, disponibilidad). | 8 | Díaz Caruzo, Edgard Daniel | Done |
 | Sprint 2 | US-014 | Información por segmento | S2-T07 | Sección Solutions por perfil | Implementar bloques informativos para Fleet administration y Load logistics con redirección contextual. | 6 | Castillo Guevara, Mathias Alejandro | Done |
 | Sprint 2 | US-027 | Iniciar sesión y acceso | S2-T08 | Integración de Call-to-Actions (CTA) | Vincular botones de navegación de la Landing Page hacia la Web Application desplegada en Azure. | 5 | Tantalean Granda, Nicolas | Done |
-| Sprint 2 | TS-001 | Modelado de servicios API | S2-T09 | Contratos OpenAPI y DTOs | Modelar endpoints de maquinaria (`GET/POST /api/v1/machinery`) y órdenes de mantenimiento en C# y Swagger. | 8 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 2 | TS-001 | Modelado de servicios API | S2-T09 | Contratos OpenAPI y DTOs | Modelar endpoints de maquinaria (`GET/POST /api/v1/machinery`) y órdenes de mantenimiento. | 8 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
 | Sprint 2 | TS-002 | Despliegue cloud continuo | S2-T10 | Despliegue en Azure App Service | Configurar y publicar la Landing Page y Web Application en Microsoft Azure con protocolo HTTPS y certificados SSL. | 8 | Tantalean Granda, Nicolas | Done |
 | Sprint 2 | TS-003 | Calculadora de ROI | S2-T11 | Calculadora de ahorro operativo | Desarrollar herramienta interactiva en JavaScript para estimar ahorro financiero mensual según horas de inactividad reducidas. | 6 | Castillo Guevara, Mathias Alejandro | Done |
 | Sprint 2 | TS-004 | Documentación técnica | S2-T12 | Consolidación de informe y C4 | Elaborar diagramas C4 (Contexto, Contenedores, Componentes), modelo de dominio y evidencias del Sprint 2. | 8 | Castillo Guevara, Mathias Alejandro | Done |
 
-- **Repositorio del proyecto en GitHub:** [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow)
+- **Repositorio del proyecto en GitHub:** [https://github.com/TechnoLoad-TechFlow/TechFlow-report](https://github.com/TechnoLoad-TechFlow/TechFlow-report)
 - **Landing Page desplegada:** [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/)
 - **Web Application desplegada:** [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/)
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-La siguiente tabla documenta los commits más representativos registrados en el repositorio del proyecto durante el ciclo de desarrollo del Sprint 2:
+La siguiente tabla documenta los commits más representativos registrados en el repositorio del informe durante el ciclo de desarrollo del Sprint 2:
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on |
 |---|---|---|---|---|---|
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `5b34e4c` | docs: correct section titles and update image references in README | Fix anchor links, update evidence images | 2026-10-08 |
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `9ad6269` | docs: update flowchart labels for clarity in README | Refine node names and edge quotes | 2026-10-08 |
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `11fa5fb` | docs: update flowchart end states for asset management process | Resolve reserved keyword 'end' | 2026-10-08 |
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `85b84f7` | docs: enhance Software Architecture Context and Container diagrams | Detail user roles and external system integrations | 2026-10-08 |
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `bc3c576` | docs: update C4 component diagrams for Profiles, Identity, and API | Standardize C4 component specifications | 2026-10-08 |
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `492fecd` | docs: add C4 component diagrams for Fleet Management and Identity | Document layer decomposition and ports | 2026-10-08 |
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `86b1c9f` | docs: finalize pending documentation updates and project deliverables | Integrate chapters and sprint records | 2026-10-08 |
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `27441f8` | docs: document Sprint 2 team roles and responsibilities | Assign leaders and collaborators | 2026-10-08 |
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `d6034a7` | docs: add Sprint 2 planning and objectives | Define sprint goals, scope, and backlog | 2026-10-08 |
-| `TechnoLoad-TechFlow/TechFlow` | `develop` | `6c7d74f` | docs: document Sprint 1 deployment evidence | Record deployment links and status | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `5b34e4c` | docs: correct section titles and update image references in README | Fix anchor links, update evidence images | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `9ad6269` | docs: update flowchart labels for clarity in README | Refine node names and edge quotes | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `11fa5fb` | docs: update flowchart end states for asset management process | Resolve reserved keyword 'end' | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `85b84f7` | docs: enhance Software Architecture Context and Container diagrams | Detail user roles and external system integrations | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `bc3c576` | docs: update C4 component diagrams for Profiles, Identity, and API | Standardize C4 component specifications | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `492fecd` | docs: add C4 component diagrams for Fleet Management and Identity | Document layer decomposition and ports | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `86b1c9f` | docs: finalize pending documentation updates and project deliverables | Integrate chapters and sprint records | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `27441f8` | docs: document Sprint 2 team roles and responsibilities | Assign leaders and collaborators | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `d6034a7` | docs: add Sprint 2 planning and objectives | Define sprint goals, scope, and backlog | 2026-10-08 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `6c7d74f` | docs: document Sprint 1 deployment evidence | Record deployment links and status | 2026-10-08 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
 Durante el Sprint 2 se verificó el funcionamiento integral del producto digital a través de los dos puntos de acceso desplegados en Microsoft Azure:
 
-- **Fleet Administrator (Administrador de flota):** 
+- **Fleet Administrator (Administrador de flota):**
   - Accede directamente a la Web Application mediante la barra superior o los botones CTA de la Landing Page.
-  - Visualiza el panel operativo con métricas de flota en tiempo real (12 activos disponibles, 7 servicios en ruta, 3 alertas pendientes, 92% de disponibilidad operativa).
-  - Interactúa con el diálogo modal accesible (`Register asset`), registrando unidades con atributos de nombre, tipo (Machinery, Truck, Dump truck, Crane), horómetro acumulado y estado operativo (`Available`, `In operation`, `In maintenance`).
-  - Recibe retroalimentación visual inmediata con el componente de alertas tipo Toast y persistencia en cliente.
-- **Contractor / Site Manager (Contratista / Jefe de obra):** 
+  - Visualiza el panel operativo con métricas de flota y registra unidades mediante el diálogo modal (`Register asset`) con atributos de nombre, tipo (`Machinery`, `Truck`, `Dump truck`, `Crane`), horómetro acumulado y estado operativo (`Available`, `In operation`, `In maintenance`).
+  - Recibe retroalimentación visual inmediata mediante notificaciones tipo Toast.
+- **Contractor / Site Manager (Contratista / Jefe de obra):**
   - Explora la propuesta de valor y las soluciones para operaciones de flota y logística de carga.
-  - Utiliza la Calculadora de ROI para proyectar ahorros financieros mensuales ingresando cantidad de activos, costo por hora de inoperatividad y horas evitables.
-  - Compara los planes de membresía (**Starter** a S/ 149/mes, **Professional** a S/ 349/mes y **Enterprise** personalizado) y selecciona su plan siendo derivado directamente a la sección de membresías de la Web Application (`#memberships`).
+  - Utiliza la Calculadora de ROI para proyectar ahorros financieros mensuales según cantidad de activos, costo por hora de inoperatividad y horas evitables.
+  - Compara los planes de membresía (**Starter** a S/ 149/mes, **Professional** a S/ 349/mes y **Enterprise**) y selecciona su plan enlazado a la Web Application.
 - **Public Visitor:**
   - Navega en un entorno visual completamente adaptativo (móvil y escritorio) con tipografía Inter, esquemas de color contrastados y diseño semántico accesible.
 
 | Producto | URL de ejecución verificada | Plataforma | Estado |
 |---|---|---|---|
-| **Landing Page** | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Microsoft Azure App Service | Operativo (HTTPS) |
-| **Web Application** | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Microsoft Azure App Service | Operativo (HTTPS) |
+| **Landing Page** | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Microsoft Azure App Service | Desplegada (HTTPS) |
+| **Web Application** | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Microsoft Azure App Service | Desplegada (HTTPS) |
 
 ![Landing Page de TechnoLoad desplegada en Microsoft Azure](assets/ux/landing/landing-page-technoload.jpeg)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-El diseño de servicios de TechnoLoad se encuentra estructurado bajo los principios de *Domain-Driven Design (DDD)* y *Clean Architecture*. Para el Sprint 2, la Web Application integra un conjunto de módulos desacoplados en JavaScript (`fleet.js`, `maint.js`, `rental.js` y `data.js`) que administran el estado y simulan las respuestas de los endpoints del backend RESTful API.
-
-Los endpoints han sido completamente especificados con contratos OpenAPI / Swagger para su despliegue en ASP.NET Core 8 en el siguiente sprint:
+El diseño de servicios de TechnoLoad se estructura bajo los principios de *Domain-Driven Design (DDD)* y *Clean Architecture*. Durante el Sprint 2 se modelaron los contratos de servicios RESTful para maquinaria, mantenimiento y autenticación, preparando la integración efectiva ejecutada en el Sprint 3.
 
 | Bounded Context | Endpoint / Servicio | Método | Propósito y Contrato | Estado en Sprint 2 |
 |---|---|:---:|---|---|
-| Gestión de maquinaria | `/api/v1/machinery` | `GET` | Consultar inventario completo de maquinaria y estado de disponibilidad. | Especificado en Swagger / Mock activo en Web App |
-| Gestión de maquinaria | `/api/v1/machinery` | `POST` | Registrar un nuevo activo de maquinaria con horómetro y tipo. | Especificado en Swagger / Formulario modal activo |
-| Gestión de maquinaria | `/api/v1/machinery/{id}` | `GET` | Obtener detalle técnico, especificaciones y ubicación de un equipo. | Especificado en Swagger |
-| Gestión de reservas | `/api/v1/reservations` | `POST` | Crear solicitud de reserva para un periodo determinado. | Especificado en Swagger / Mock activo |
-| Mantenimiento | `/api/v1/maintenance-orders` | `GET` | Listar órdenes de mantenimiento preventivo y correctivo. | Especificado en Swagger / Módulo `maint.js` activo |
-| Mantenimiento | `/api/v1/maintenance-orders` | `POST` | Programar orden de intervención mecánica por alerta de horómetro. | Especificado en Swagger |
-| Identidad y acceso | `/api/v1/authentication/sign-in` | `POST` | Autenticar credenciales y emitir token Bearer JWT. | Especificado en Swagger / Simulación de sesión activa |
+| Gestión de maquinaria | `/api/v1/machinery` | `GET` | Consultar inventario completo de maquinaria y estado de disponibilidad. | Especificado en OpenAPI / Mock activo en Web App |
+| Gestión de maquinaria | `/api/v1/machinery` | `POST` | Registrar un nuevo activo de maquinaria con horómetro y tipo. | Especificado en OpenAPI / Formulario modal activo |
+| Gestión de maquinaria | `/api/v1/machinery/{id}` | `GET` | Obtener detalle técnico, especificaciones y ubicación de un equipo. | Especificado en OpenAPI |
+| Gestión de reservas | `/api/v1/rentals` | `POST` | Crear solicitud de reserva para un periodo determinado. | Especificado en OpenAPI / Mock activo |
+| Mantenimiento | `/api/v1/maintenance-orders` | `GET` | Listar órdenes de mantenimiento preventivo y correctivo. | Especificado en OpenAPI / Módulo `maint.js` activo |
+| Mantenimiento | `/api/v1/maintenance-orders` | `POST` | Programar orden de intervención mecánica por alerta de horómetro. | Especificado en OpenAPI |
+| Identidad y acceso | `/api/v1/auth/login` | `POST` | Autenticar credenciales y emitir token Bearer de sesión. | Especificado en OpenAPI / Simulación inicial |
 
-
-**Ejemplo de solicitud y respuesta para el servicio de maquinaria (`GET /api/v1/machinery`):**
+**Ejemplo de respuesta modelada para el servicio de maquinaria (`GET /api/v1/machinery`):**
 
 ```json
 {
@@ -3139,32 +2535,31 @@ Los endpoints han sido completamente especificados con contratos OpenAPI / Swagg
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-Para el Sprint 2, la solución digital de TechnoLoad fue migrada y desplegada exitosamente sobre la plataforma cloud **Microsoft Azure App Service**, garantizando alta disponibilidad, conexión cifrada HTTPS y escalabilidad para la entrega del hito evaluativo.
+Para el Sprint 2, la Landing Page y la Frontend Web Application de TechnoLoad se desplegaron sobre **Microsoft Azure App Service**, con protocolo HTTPS habilitado.
 
-| Producto desplegado | Plataforma Cloud | Repositorio GitHub | URL pública oficial | Versión  | Estado Verificado |
-|---|---|---|---|:--------:|:---:|
-| **Landing Page** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | `v2.0.0` | Operativo / Verificado (HTTPS) |
-| **Web Application** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | `v2.0.0` | Operativo / Verificado (HTTPS) |
-| **Project Report** | GitHub (Pages / Markdown) | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | [https://github.com/TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | `v2.0.0` | Operativo / Verificado (HTTPS) |
+| Producto desplegado | Plataforma Cloud | Repositorio GitHub | URL pública oficial | Versión | Estado Verificado |
+|---|---|---|---|:---:|:---:|
+| **Landing Page** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/technoload-website](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | `v2.0.0` | Operativo / Verificado (HTTPS) |
+| **Web Application** | Microsoft Azure App Service (Linux) | [TechnoLoad-TechFlow/technoload-webapp](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | `v2.0.0` | Operativo / Verificado (HTTPS) |
+| **Project Report** | GitHub (Markdown) | [TechnoLoad-TechFlow/TechFlow-report](https://github.com/TechnoLoad-TechFlow/TechFlow-report) | [https://github.com/TechnoLoad-TechFlow/TechFlow-report](https://github.com/TechnoLoad-TechFlow/TechFlow-report) | `v2.0.0` | Operativo / Verificado (HTTPS) |
 
-<!-- | **Database & API** | PostgreSQL 16 & ASP.NET Core 8 | [TechnoLoad-TechFlow/TechFlow](https://github.com/TechnoLoad-TechFlow/TechFlow) | En desarrollo (esquema DDL consolidado en `database/schema.sql`) | `v0.2.0` | Modelado / Pendiente cloud |  -->
 **Registro de incidencias y soluciones durante el despliegue en Azure:**
 
 1. **Incidencia 1 - Carga de recursos estáticos y rutas relativas:**
-   - *Problema:* Al desplegar el build en Azure App Service, los navegadores reportaban fallos en la carga de hojas de estilo `styles.css` y archivos modulares de JavaScript debido a inconsistencias de ruta en el servidor Node.js.
-   - *Solucion:* Se ajustaron las rutas relativas en `index.html` y se configuró un servidor de estáticos ligero con cabeceras MIME correctas (`application/javascript`, `text/css`), garantizando la resolución sin importar el punto de entrada.
+   - *Problema:* Al desplegar el build en Azure App Service, los navegadores reportaban fallos en la carga de hojas de estilo `styles.css` y archivos modulares de JavaScript debido a inconsistencias de ruta.
+   - *Solución:* Se ajustaron las rutas relativas en `index.html` y se configuró el servidor de estáticos con cabeceras MIME correctas (`application/javascript`, `text/css`).
 2. **Incidencia 2 - Políticas de seguridad HTTPS y navegación cruzada entre sitios:**
-   - *Problema:* Las llamadas a la acción (CTA) entre el sitio web (`technoload-website-...`) y la aplicación web (`technoload-webapp-...`) generaban advertencias por contenido mixto cuando se invocaban desde enlaces sin protocolo forzado.
-   - *Solución:* Se activó la directiva *HTTPS Only* en las opciones de configuración TLS/SSL de ambos App Services en el portal de Azure, asegurando redirección 301 automática y cifrado seguro de extremo a extremo.
+   - *Problema:* Las llamadas a la acción (CTA) entre el sitio web (`technoload-website-...`) y la aplicación web (`technoload-webapp-...`) requerían redirección HTTPS forzada.
+   - *Solución:* Se activó la directiva *HTTPS Only* en las opciones TLS/SSL de ambos App Services en el portal de Azure.
 3. **Incidencia 3 - Comportamiento del elemento modal nativo en dispositivos móviles:**
    - *Problema:* El diálogo `<dialog>` utilizado para el formulario de registro de maquinaria quedaba desalineado respecto al viewport en pantallas táctiles pequeñas.
-   - *Solución:* Se incorporaron reglas CSS adaptativas (`margin: auto`, `max-width: 90vw`) y eventos de cierre accesibles (`close`, `cancel`), permitiendo una experiencia táctil responsiva en smartphones y tablets.
+   - *Solución:* Se incorporaron reglas CSS adaptativas (`margin: auto`, `max-width: 90vw`) y eventos de cierre accesibles (`close`, `cancel`).
 
 ![Evidencia de despliegue y estructura del repositorio](assets/evidence/repository/repository-develop-structure.jpeg)
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-Durante el Sprint 2, el equipo mantuvo una actividad continua y colaborativa en el repositorio de GitHub, registrando un total acumulado de **125 commits** distribuidos entre todos los miembros.
+Durante el Sprint 2, el equipo mantuvo una actividad continua y colaborativa en GitHub, registrando un total acumulado de **125 commits** distribuidos entre todos los miembros:
 
 | Integrante / Identidad Git | Commits en el informe | Commits en la aplicación web | Commits en la Landing Page | Commits en arquitectura y SCM | Total identificado |
 |---|---:|---:|---:|---:|---:|
@@ -3182,13 +2577,12 @@ A continuación se presentan las capturas de pantalla del registro de actividad 
 ![Commits Daniel Diaz](assets/evidence/commits/Dan-trax-commits.jpeg)
 
 ---
----
 
 ### 5.2.3. Sprint 3
 
 #### 5.2.3.1. Sprint Planning 3
 
-El Sprint 3 corresponde al ciclo de desarrollo del hito **AV2 (Semana 12)**. Su propósito central es la integración de la Frontend Web Application con los RESTful Web Services de backend desplegados en la nube, la implementación de la gestión del ciclo de vida de órdenes de mantenimiento preventivo y correctivo, y la ejecución de pruebas de validación con usuarios reales de los segmentos objetivo.
+El Sprint 3 corresponde al ciclo de desarrollo para la entrega **AV2 (Semana 12)**, ejecutado entre el 14 de octubre y el 14 de noviembre de 2026. Su enfoque central abarca la integración de la autenticación real servidor-cliente con separación de roles en la Frontend Web Application Angular (`technoload-webapp`), el módulo de pagos sandbox y checkout de suscripciones, la implementación de los servicios RESTful DDD en ASP.NET Core 8 y Spring Boot junto al backend Node.js en `technoload-platform`, la corrección integral de los diagramas arquitecturales del Capítulo IV (secciones 4.4.4 a 4.8) y la ejecución de la validación UX con usuarios objetivo.
 
 | Sprint # | Sprint 3 |
 |---|---|
@@ -3199,40 +2593,41 @@ El Sprint 3 corresponde al ciclo de desarrollo del hito **AV2 (Semana 12)**. Su 
 | Prepared By | Gutiérrez Lizarbe, Wilmer Sebastián |
 | Attendees (to planning meeting) | Castillo Guevara, Mathias Alejandro / Díaz Caruzo, Edgard Daniel / Gutiérrez Lizarbe, Wilmer Sebastián / Tantalean Granda, Nicolas |
 | **Sprint 2 Review** | |
-| Summary | En el Sprint 2 se desplegaron con éxito la Landing Page y la Frontend Web Application en Microsoft Azure App Service, incorporando catálogo de activos, modal de registro de maquinaria, calculadora interactiva de ROI y contratos iniciales de API RESTful. |
+| Summary | En el Sprint 2 se publicaron la Landing Page y la versión inicial de la Web Application en Microsoft Azure App Service, cubriendo catálogo de flota, cálculo de ROI y modelado de contratos API iniciales. |
 | **Sprint 2 Retrospective** | |
-| Summary | Se acordó priorizar el desacoplamiento y consumo efectivo de los RESTful Web Services desde el frontend, perfeccionar los criterios de accesibilidad web (WCAG 2.1 AA / a11y) e internacionalización (i18n inglés y español), y registrar entrevistas de validación estructuradas. |
+| Summary | Tras la revisión de AV1/Sprint 2, el equipo identificó cuatro mejoras prioritarias: (1) sustituir el inicio de sesión local por autenticación real contra `technoload-platform`, (2) incorporar la simulación de checkout y pagos sandbox de suscripciones, (3) implementar las capas DDD de dominio, aplicación, infraestructura y pruebas unitarias en backend (.NET 8 y Spring Boot), y (4) corregir el Big Picture Event Storming, los diagramas de las secciones 4.4.4 a 4.8 y el formato oficial de los Sprint Goals. |
 | **Sprint Goal & User Stories** | |
-| Sprint 3 Goal | **Our focus is on** integrating the Frontend Web Application with the RESTful Web Services backend, enabling persistent fleet lifecycle management, maintenance order scheduling, and validating user experience with objective segments.<br><br>**We believe it delivers** full data consistency across operations, automated preventive maintenance alerts, and seamless multi-language navigation **to** heavy fleet administrators and logistics operations managers.<br><br>**This will be confirmed when** fleet managers execute complete asset creation and maintenance order workflows against the REST API endpoints, validate usability through structured heuristic evaluations, and report a task completion rate exceeding 90% in validation interviews. |
-| Sprint 3 Velocity | 42 Story Points |
-| Sum of Story Points | 42 Story Points |
+| Sprint 3 Goal | **Our focus is on** integrating server-backed authentication, role-based customer/admin workflows, sandbox subscription payments, and DDD RESTful backend services across the TechnoLoad platform while aligning architectural documentation and UX validation for AV2.<br><br>**We believe it delivers** secure multi-role fleet management, verifiable end-to-end subscription checkout, and consistent API persistence **to** heavy machinery rental companies and construction contractors.<br><br>**This will be confirmed when** users authenticate against the deployed platform API, complete catalog checkout and sandbox payment approval/rejection flows in the Angular Web Application, backend unit tests pass for domain rules, and target users validate the platform in structured heuristic sessions. |
+| User Stories | `US-001`, `US-002`, `US-003`, `US-004`, `US-007`, `US-019`, `US-026`, `US-027`, `US-041`, `US-042`, `TS-001`, `TS-004`, `TS-005` |
+| Sprint 3 Velocity | 38 Story Points |
+| Sum of Story Points | 38 Story Points |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
 A continuación se presenta la matriz Leadership-and-Collaboration (LACX) del equipo TechnoLoad durante el desarrollo del Sprint 3. Se utiliza `L` para líder y `C` para colaborador:
 
-| Team Member | GitHub Username / Git Author | Web Services & API Integration | Frontend Web App & i18n | Validation Interviews & Heuristics | Video About-the-Product & Team | Cloud SCM & CI/CD Deployment |
-|---|---|:---:|:---:|:---:|:---:|:---:|
-| Tantalean Granda, Nicolas | `NicolasTantalean` (u202410728) | C | L | C | C | L |
-| Gutiérrez Lizarbe, Wilmer Sebastián | `WILMER SEBASTIAN` / `sebas` (u202412044) | L | C | C | C | C |
-| Castillo Guevara, Mathias Alejandro | `mathias9939` (u202410783) | C | C | L | L | C |
-| Díaz Caruzo, Edgard Daniel | `Dan-trax` / `Daniel` (u202323911) | C | C | C | L | C |
+| Team Member | GitHub Username / Git Author | Web App Angular & Pagos | RESTful Web Services (Node / .NET / Spring) | Landing Page & Auth UI | Diagramas 4.4.4–4.8 & Reporte | Validación UX & Videos | Cloud Azure & SCM |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| Tantalean Granda, Nicolas | `NicolasTantalean` (u202410728) | L | C | C | C | C | L |
+| Gutiérrez Lizarbe, Wilmer Sebastián | `WILMER SEBASTIAN` / `sebas` (u202412044) | C | L | C | C | C | C |
+| Castillo Guevara, Mathias Alejandro | `mathias9939` (u202410783) | C | C | C | L | L | C |
+| Díaz Caruzo, Edgard Daniel | `Dan-trax` / `Daniel` (u202323911) | C | C | L | C | C | C |
 
 #### 5.2.3.3. Sprint Backlog 3
 
-La siguiente tabla detalla la distribución de historias de usuario, tareas técnicas, estimación en horas, responsables y estado de culminación para el Sprint 3:
+El tablero de seguimiento del Sprint 3 se gestiona en GitHub Projects ([https://github.com/orgs/TechnoLoad-TechFlow/projects](https://github.com/orgs/TechnoLoad-TechFlow/projects)). La siguiente tabla detalla la distribución de historias de usuario, tareas técnicas, estimación en horas, responsables y estado de culminación para el Sprint 3:
 
 | Sprint | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---:|---|---|
-| Sprint 3 | US-001 | Registrar maquinaria | S3-T01 | Integración de API de registro | Conectar el formulario modal de activos con el endpoint `POST /api/v1/assets` con validaciones en cliente y servidor. | 8 | Tantalean Granda, Nicolas | Done |
-| Sprint 3 | US-002 | Consultar disponibilidad | S3-T02 | Consumo reactivo de inventario | Implementar consumo de `GET /api/v1/assets` con filtrado reactivo por tipo y estado operativo en tiempo real. | 6 | Tantalean Granda, Nicolas | Done |
-| Sprint 3 | US-003 | Gestionar mantenimiento | S3-T03 | Órdenes de mantenimiento preventivo | Desarrollar interfaz y llamadas API para crear órdenes de servicio (`POST /api/v1/maintenance-orders`) ante alertas de horómetro. | 8 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
-| Sprint 3 | TS-005 | Autenticación y seguridad | S3-T04 | Interceptor Axios y tokens JWT | Configurar interceptores HTTP para inyectar cabeceras de autorización y manejo de errores 401/403 en `error.interceptor.js`. | 6 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
-| Sprint 3 | TS-006 | Internacionalización (i18n) | S3-T05 | Soporte bilingüe ES / EN | Implementar diccionarios `es.json` y `en.json` con selector de idioma persistente en la barra de navegación. | 6 | Díaz Caruzo, Edgard Daniel | Done |
-| Sprint 3 | TS-007 | Accesibilidad (a11y) | S3-T06 | Auditoría WCAG 2.1 AA | Configurar atributos ARIA, navegación por teclado y contraste cromático accesible en todos los componentes interactivos. | 5 | Díaz Caruzo, Edgard Daniel | Done |
-| Sprint 3 | TS-008 | Entrevistas de validación | S3-T07 | Sesiones con usuarios clave | Diseñar pauta de validación heurística y conducir entrevistas con representantes de empresas de maquinaria y transporte. | 8 | Castillo Guevara, Mathias Alejandro | Done |
-| Sprint 3 | TS-009 | Producción audiovisual | S3-T08 | Video About-the-Product & Team | Grabar, editar y publicar los videos promocionales y de presentación del equipo con subtítulos y guión estructurado. | 8 | Castillo Guevara, Mathias Alejandro | Done |
-| Sprint 3 | TS-010 | Despliegue cloud continuo | S3-T09 | CI/CD en Azure App Service | Actualizar despliegue continuo en Microsoft Azure para Web App, Web Services y sincronización de endpoints. | 7 | Tantalean Granda, Nicolas | Done |
+| Sprint 3 | US-026 / US-027 | Registrar cuenta e iniciar sesión | S3-T01 | Autenticación servidor y roles en Angular | Conectar la Web App Angular con `/api/v1/auth/*`, reemplazar el login local y habilitar separación de vistas cliente/administrador. | 8 | Tantalean Granda, Nicolas | Done |
+| Sprint 3 | US-041 / US-042 | Consultar y contratar plan de suscripción | S3-T02 | Checkout de catálogo y pagos sandbox | Implementar formulario de pago sandbox en `technoload-webapp` con simulación de aprobación y rechazo de pagos y feedback de servidor. | 8 | Tantalean Granda, Nicolas | Done |
+| Sprint 3 | TS-001 / TS-005 | API RESTful y seguridad de sesión | S3-T03 | Documentación y flujo auth en Node API | Actualizar `technoload-platform` (`server.js`) con flujos de autenticación por token Bearer, catálogo, alquileres, pagos e incidencias. | 8 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 3 | US-001 / TS-004 | Registrar maquinaria y validar API | S3-T04 | Backend DDD en ASP.NET Core 8 (.NET 8) | Implementar capas Domain, Application, EF Core MySQL, `MachinesController` (`/api/v1/machines`), `ProblemDetails` y `MachineServiceTests`. | 10 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 3 | US-002 / US-003 / US-004 | Disponibilidad, mantenimiento y reservas | S3-T05 | Backend DDD en Spring Boot | Implementar contextos delimitados `fleet`, `maintenance`, `rental` y `shared` con patrón Command/Query y pruebas de dominio en `spring/`. | 10 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 3 | US-013 / US-027 | Propuesta de valor y acceso desde Landing | S3-T06 | Rediseño de Landing y modal de auth | Mejorar diseño visual, navegación y modal de autenticación/gestión de usuarios en `technoload-website`. | 7 | Díaz Caruzo, Edgard Daniel | Done |
+| Sprint 3 | — | Corrección arquitectural AV1 → AV2 | S3-T07 | Actualización de diagramas 2.3.5 y 4.4.4–4.8 | Incorporar Big Picture Event Storming, User Flows, Design-Level Event Storming, C4, Diagramas de Clases y Base de Datos renderizados en PNG sin bloques Mermaid. | 8 | Castillo Guevara, Mathias Alejandro | Done |
+| Sprint 3 | — | Validación UX con segmentos objetivo | S3-T08 | Guía de entrevistas y evaluación Anexo D | Definir tareas de validación para ambos segmentos y ejecutar la evaluación heurística (Usabilidad, Diseño Inclusivo y Arquitectura de Información). | 6 | Castillo Guevara, Mathias Alejandro | Done |
+| Sprint 3 | — | Consolidación AV2 y entregables audiovisuales | S3-T09 | Informe AV2 y estructura de videos | Consolidar Sprint 3, Student Outcome, Sprint Goals Scrum.org, Bibliografía, Anexos y preparación de videos About-the-Product y About-the-Team. | 7 | Díaz Caruzo, Edgard Daniel | Done |
 
 - **Repositorio de Web Services:** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
 - **Repositorio de Web App:** [https://github.com/TechnoLoad-TechFlow/technoload-webapp](https://github.com/TechnoLoad-TechFlow/technoload-webapp)
@@ -3241,239 +2636,404 @@ La siguiente tabla detalla la distribución de historias de usuario, tareas téc
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
-La siguiente tabla documenta los commits más representativos registrados en los repositorios de la organización durante el ciclo de desarrollo del Sprint 3:
+Durante el Sprint 3 se registraron avances verificables en los cuatro repositorios de la organización `TechnoLoad-TechFlow`: implementación del flujo completo de autenticación, checkout y pagos sandbox en la Web App Angular (`technoload-webapp`), mejoras de navegación y modal de autenticación en la Landing Page (`technoload-website`), consolidación de servicios RESTful en Node.js junto con los módulos DDD en ASP.NET Core 8 y Spring Boot en `technoload-platform`, y estandarización del informe para AV2 en `TechFlow-report`.
+
+La siguiente tabla documenta commits reales y verificables registrados durante este ciclo:
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on |
 |---|---|---|---|---|---|
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `c3d819e` | feat(api): implement REST endpoints for assets, maintenance, and operations | Support full CRUD operations with JSON persistence and CORS headers | 2026-10-22 |
-| `TechnoLoad-TechFlow/technoload-platform` | `develop` | `7b140fa` | feat(swagger): add OpenAPI specification contracts and mock health probe | Define schemas for asset entity, meter readings and maintenance orders | 2026-10-24 |
-| `TechnoLoad-TechFlow/technoload-webapp` | `develop` | `9e421cd` | feat(services): integrate fleet-api and maintenance-order assemblers with axios | Connect Vue store with backend REST API endpoints | 2026-10-28 |
-| `TechnoLoad-TechFlow/technoload-webapp` | `develop` | `5a720df` | feat(i18n): configure bilingual locales for English and Latin American Spanish | Add language switcher component in app layout header | 2026-10-30 |
-| `TechnoLoad-TechFlow/technoload-webapp` | `main` | `8f293b1` | fix(a11y): optimize ARIA attributes and keyboard focus management | Resolve contrast warnings and improve modal dialog accessibility | 2026-11-02 |
-| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `e3810bf` | docs(readme): update course code and normalize section numbering | Standardize course code 1ASI0730 and table of contents anchors | 2026-11-05 |
-| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `b28717f` | docs: synchronize README.md with final develop version and Azure URLs | Consolidate deployment evidences and cloud infrastructure records | 2026-11-08 |
-| `TechnoLoad-TechFlow/TechFlow-report` | `main` | `c91823f` | docs: incorporate Student Outcome, Sprint 3 records and validation interviews | Final review for AV2 Milestone delivery | 2026-11-11 |
+| `TechnoLoad-TechFlow/technoload-webapp` | `main` | `e52bc8d` | `feat(styles): add authentication and user session styles` | Add responsive styles for authentication panels and session controls | 2026-10-09 |
+| `TechnoLoad-TechFlow/technoload-webapp` | `main` | `7d628ab` | `feat(webapp): connect authentication to platform api` | Configure `.env.production` API base URL and authentication requests | 2026-10-09 |
+| `TechnoLoad-TechFlow/technoload-webapp` | `main` | `e4f0fd2` | `feat(auth): replace local login with server authentication` | Persist Bearer session token and validate active user via `/auth/me` | 2026-10-09 |
+| `TechnoLoad-TechFlow/technoload-webapp` | `main` | `d7cd0d4` | `feat(customer): add catalog checkout and role separation` | Separate `ADMIN` and `USER` views and enable catalog rental/checkout | 2026-10-09 |
+| `TechnoLoad-TechFlow/technoload-webapp` | `main` | `a69dbb3` | `fix(customer): surface server messages and updates` | Display backend validation responses and refresh customer overview | 2026-10-09 |
+| `TechnoLoad-TechFlow/technoload-webapp` | `main` | `2d9b675` | `feat(payments): add sandbox payment form` | Implement sandbox payment checkout interface for subscription plans | 2026-10-09 |
+| `TechnoLoad-TechFlow/technoload-webapp` | `main` | `0d720df` | `feat(payments): simulate payment approval and rejection` | Handle approved and declined sandbox payment scenarios with UI feedback | 2026-10-09 |
+| `TechnoLoad-TechFlow/technoload-website` | `main` | `3a007b6` | `feat(website): improve landing page design and navigation` | Refine layout, responsive navigation and segment call-to-actions | 2026-10-09 |
+| `TechnoLoad-TechFlow/technoload-website` | `main` | `68abd9e` | `feat(auth): implement authentication modal and user management logic` | Add interactive authentication modal connected to platform flows | 2026-10-09 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `b354958` | `Document API authentication and release flow` | Update platform README with Bearer auth, Azure steps and checklist | 2026-11-05 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `ddd1791` | `feat(dotnet): add DDD domain model` | Implement .NET 8 domain entities, operational states and business rules | 2026-11-12 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `8b7837b` | `feat(dotnet): add application and EF Core persistence layers` | Add DTOs, service handlers, DbContext and MySQL repositories | 2026-11-12 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `5c9d651` | `feat(dotnet): expose versioned REST API with cross-cutting services` | Add `MachinesController`, JWT/CORS config and ProblemDetails middleware | 2026-11-12 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `dff4c34` | `docs(dotnet): document migration and runtime configuration` | Document EF Core migrations, environment variables and Swagger usage | 2026-11-12 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `32a1938` | `test(dotnet): cover machine application service rules` | Add unit tests in `MachineServiceTests` for machine creation and rules | 2026-11-12 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `1cea387` | `feat(spring): bootstrap TechnoLoad Spring Boot backend` | Initialize Spring Boot Maven structure and shared configuration | 2026-11-12 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `4d900eb` | `feat(spring): add fleet DDD context and REST API` | Implement `/api/v1/machinery` endpoints with Command/Query services | 2026-11-12 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `54b3426` | `feat(spring): add maintenance and rental contexts` | Implement `/api/v1/maintenance-orders` and `/api/v1/rentals` APIs | 2026-11-12 |
+| `TechnoLoad-TechFlow/technoload-platform` | `main` | `fc6013d` | `test(spring): document and cover fleet domain behavior` | Add Spring Boot README and fleet unit tests | 2026-11-12 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `e268b3b` | `docs(readme): update course code` | Standardize course code `1ASI0730` across report cover | 2026-10-20 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `868f888` | `docs(readme): update source code management` | Align repository table and GitFlow documentation in Chapter V | 2026-10-21 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `fb5e843` | `docs(cover): standardize report cover, update version record and add student outcome matrix` | Update cover layout, NRC 8093 and ABET SO5 matrix | 2026-11-11 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `c74a8bd` | `docs(deployment): resolve web service URLs, deployment configuration and fix broken links` | Configure Azure deployment URLs and repair TOC links | 2026-11-11 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `8ac4f43` | `docs(sprint): format sprint goals, add sprint 3 documentation and validation interviews for AV2` | Standardize Scrum.org Sprint Goals and Sprint 3 structure | 2026-11-11 |
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 3 se verificó la integración entre la Frontend Web Application y los RESTful Web Services, asegurando una experiencia interactiva coherente, accesible y multilenguaje:
+Durante el Sprint 3 se integraron y verificaron los flujos de extremo a extremo entre la Landing Page, la Web Application Angular y los RESTful Web Services de `technoload-platform`:
 
-1. **Gestión Integral de Activos de Flota:**
-   - El usuario accede al módulo de maquinaria (`#fleet`), donde la aplicación invoca reactivamente el endpoint `GET /api/v1/assets`.
-   - Se visualizan 12 unidades operativas con indicadores de estado en tiempo real (`AVAILABLE`, `IN_OPERATION`, `IN_MAINTENANCE`).
-   - El administrador registra un nuevo activo mediante el modal interactivo, disparando la petición `POST /api/v1/assets` con feedback mediante Toast notifications.
-2. **Programación de Mantenimiento Preventivo:**
-   - Ante la alerta de sobrepaso de horómetro (> 250 horas acumuladas sin servicio), el sistema habilita la creación de una orden preventiva (`POST /api/v1/maintenance-orders`).
-   - El estado de la unidad cambia automáticamente a `IN_MAINTENANCE`, inhabilitando temporalmente su asignación para alquileres.
-3. **Internacionalización y Accesibilidad:**
-   - La interfaz conmuta fluidamente entre inglés (`en_US`) y español latinoamericano (`es_419`), traduciendo etiquetas, alertas, tablas y menús.
-   - La navegación es 100% operable por teclado (`Tab`, `Enter`, `Esc`) con lectores de pantalla compatibles (NVDA y JAWS).
+1. **Autenticación y separación de roles (`USER` y `ADMIN`):**
+   - El visitante accede desde la Landing Page (`technoload-website`) y utiliza el modal de acceso o ingresa a la Web Application (`technoload-webapp`).
+   - El formulario de inicio de sesión autentica contra `POST /api/v1/auth/login`, almacena el token Bearer y consulta `GET /api/v1/auth/me` para presentar el panel de cliente (`USER`) o el panel de administración de flota (`ADMIN`).
+2. **Gestión de flota, mantenimiento y alquileres:**
+   - En el panel administrativo, el usuario consulta el estado operativo en `/api/v1/assets`, registra nuevas unidades, gestiona órdenes en `/api/v1/maintenance` y aprueba o rechaza solicitudes de alquiler (`/api/v1/admin/rentals/{id}/decision`).
+   - En los servicios DDD de `technoload-platform`, se implementaron además los controladores versionados `/api/v1/machines` (ASP.NET Core 8 con pruebas `MachineServiceTests`) y `/api/v1/machinery`, `/api/v1/maintenance-orders`, `/api/v1/rentals` (Spring Boot con pruebas de dominio).
+3. **Catálogo de alquiler y pagos sandbox de suscripciones:**
+   - El usuario contratista explora el catálogo disponible (`GET /api/v1/catalog/assets`), envía solicitudes de alquiler (`POST /api/v1/rentals`), selecciona un plan de suscripción (`Starter`, `Professional`, `Enterprise`) y ejecuta el formulario de pago sandbox (`POST /api/v1/subscriptions/checkout`) simulando escenarios de aprobación y rechazo con mensajes de respuesta provenientes del servidor.
 
-| Producto | URL de ejecución verificada | Plataforma Cloud | Estado |
+| Producto | URL de ejecución configurada | Plataforma Cloud | Estado |
 |---|---|---|---|
-| **Landing Page** | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Azure App Service (Linux) | Operativo (HTTPS) |
-| **Web Application** | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Azure App Service (Linux) | Operativo (HTTPS) |
-| **RESTful Web Services** | [https://technoload-api-u202410728.azurewebsites.net/api/v1](https://technoload-api-u202410728.azurewebsites.net/api/v1) | Azure App Service (Linux) / Local | Operativo / Swagger activo |
+| **Landing Page** | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Azure App Service (Linux) | Publicada en rama `main` |
+| **Web Application (Angular 21)** | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Azure App Service (Linux) | Publicada en rama `main` (`VITE_API_BASE_URL` en `.env.production`) |
+| **RESTful Web Services** | [https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1/health](https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1/health) | Azure App Service (Linux) / Local (.NET 8 & Spring Boot) | Desplegado en rama `main` |
+
+> [!NOTE]
+> **[Pendiente de completar por el equipo antes de la entrega AV2]:** Insertar aquí las capturas de pantalla de la ejecución del Sprint 3 (login/roles en Angular, panel de cliente, formulario de pagos sandbox y gestión de flota) junto con el enlace en Microsoft Stream del video de navegación del producto (`upc-pre-202620-1asi0730-8093-technoload-productnavigation-sprint-3.mp4`).
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-Los RESTful Web Services de TechnoLoad están diseñados bajo arquitectura orientada al dominio y documentados mediante OpenAPI 3.0 / Swagger UI.
+Los RESTful Web Services de TechnoLoad en el repositorio [TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform) comprenden: (1) el servicio REST en Node.js desplegado en Azure App Service y consumido por la Web Application Angular, (2) el servicio DDD en ASP.NET Core 8 (`dotnet/`) documentado con OpenAPI / Swagger UI y (3) el servicio DDD en Spring Boot (`spring/`) documentado con Swagger UI.
 
-* **Base URL de Producción Cloud:** `https://technoload-api-u202410728.azurewebsites.net/api/v1`
-* **Base URL de Entorno Local:** `http://localhost:8080/api/v1`
-* **Swagger / OpenAPI Documentation:** `https://technoload-api-u202410728.azurewebsites.net/swagger`
+* **Base URL de Producción Cloud (Node.js en Azure):** `https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1`
+* **Base URL Local (Node.js / Spring Boot):** `http://localhost:8080/api/v1`
+* **Swagger UI (ASP.NET Core 8 local):** `https://localhost:<puerto>/swagger`
+* **Swagger UI (Spring Boot local):** `http://localhost:8080/swagger-ui.html`
 * **Repositorio oficial de Web Services:** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
+* **Commits de documentación de servicios en Sprint 3:** `b354958` (`README.md` principal), `dff4c34` (`dotnet/README.md` y migraciones), `fc6013d` (`spring/README.md` y pruebas).
 
-**Resumen de Endpoints soportados:**
+**Endpoints implementados en el servicio en la nube (`server.js` — Node.js):**
 
-| Bounded Context | Endpoint | Verbo HTTP | Parámetros / Payload | Descripción y Código Response |
+| Bounded Context | Endpoint | Verbo HTTP | Parámetros / Payload | Descripción y Códigos de Respuesta |
 |---|---|:---:|---|---|
-| **Health Check** | `/api/v1/health` | `GET` | Ninguno | Verifica disponibilidad operativa del servicio (`200 OK`). |
-| **Machinery Fleet** | `/api/v1/assets` | `GET` | `type` (opcional), `status` (opcional) | Lista catálogo de activos con horómetros y estado (`200 OK`). |
-| **Machinery Fleet** | `/api/v1/assets` | `POST` | JSON: `{ name, type, brand, model, hours, status, rate }` | Registra una nueva maquinaria en la flota (`201 Created`). |
-| **Machinery Fleet** | `/api/v1/assets/{id}` | `GET` | `id` (UUID path parameter) | Obtiene detalle técnico completo de una unidad específica (`200 OK` / `404 Not Found`). |
-| **Maintenance** | `/api/v1/maintenance-orders` | `GET` | `assetId` (opcional), `status` (opcional) | Lista órdenes de mantenimiento programadas (`200 OK`). |
-| **Maintenance** | `/api/v1/maintenance-orders` | `POST` | JSON: `{ assetId, type, priority, scheduledAt }` | Genera orden preventiva o correctiva (`201 Created`). |
-| **Operations** | `/api/v1/operations` | `GET` | `status` (opcional) | Lista asignaciones logísticas y rutas activas (`200 OK`). |
+| **Shared / Health** | `/api/v1/health` | `GET` | Ninguno | Verifica disponibilidad operativa del servicio (`200 OK`). |
+| **Identity & Access** | `/api/v1/auth/register` | `POST` | `{ name, email, password, organization, role }` | Registra una cuenta nueva y crea sesión (`201 Created`, `400 Bad Request`, `409 Conflict`). |
+| **Identity & Access** | `/api/v1/auth/login` | `POST` | `{ email, password }` | Autentica credenciales y devuelve usuario + token Bearer (`200 OK`, `401 Unauthorized`). |
+| **Identity & Access** | `/api/v1/auth/me` | `GET` | Header `Authorization: Bearer <token>` | Obtiene el perfil autenticado actual (`200 OK`, `401 Unauthorized`). |
+| **Fleet / Catalog** | `/api/v1/catalog/assets` | `GET` | Opcional query de filtro | Lista el catálogo público de equipos para clientes (`200 OK`). |
+| **Fleet Management** | `/api/v1/assets` | `GET`, `POST`, `PUT`, `DELETE` | `/api/v1/assets/{id}` en actualización/eliminación | Gestiona el inventario de activos (`200 OK`, `201 Created`, `404 Not Found`). |
+| **Maintenance** | `/api/v1/maintenance` | `GET`, `POST`, `PUT`, `DELETE` | `{ assetId, type, scheduledAt, status }` | Registra y actualiza órdenes de mantenimiento (`200 OK`, `201 Created`). |
+| **Operations** | `/api/v1/operations` | `GET`, `POST`, `PUT`, `DELETE` | `{ route, assetId, driver, status }` | Registra despachos y rutas operativas (`200 OK`, `201 Created`). |
+| **Rental Management** | `/api/v1/rentals` | `POST` | Header Bearer + `{ assetId, startDate, endDate, projectName }` | Crea solicitud de alquiler desde cliente autenticado (`201 Created`, `401 Unauthorized`). |
+| **Rental / Admin** | `/api/v1/admin/rentals/{id}/decision` | `POST` | Header Bearer (`ADMIN`) + `{ decision }` | Aprueba o rechaza una solicitud de alquiler (`200 OK`, `403 Forbidden`). |
+| **Subscriptions & Billing** | `/api/v1/subscriptions/checkout` | `POST` | Header Bearer + `{ planId, outcome, cardLast4 }` | Procesa pago sandbox de suscripción (`200 OK`, `402 Payment Required` / error simulado). |
 
-**Ejemplo de respuesta JSON (`GET /api/v1/assets`):**
+**Endpoints implementados en los backends DDD (.NET 8 y Spring Boot):**
+
+| Implementación | Endpoint | Verbo HTTP | Parámetros / Payload | Descripción y Códigos de Respuesta |
+|---|---|---:|---|---|
+| **ASP.NET Core 8 (`dotnet/`)** | `/api/v1/machines` | `GET`, `POST` | `{ "code": "EXC-001", "name": "Excavadora principal", "model": "CAT 320" }` | Lista o registra máquinas validando unicidad de código (`200 OK`, `201 Created`, `400 Bad Request`). |
+| **ASP.NET Core 8 (`dotnet/`)** | `/api/v1/machines/{id}` | `GET`, `PUT`, `DELETE` | `id` (UUID) + `{ name, model, status }` | Consulta, actualiza o elimina una máquina (`200 OK`, `204 No Content`, `404 Not Found`). |
+| **Spring Boot (`spring/`)** | `/api/v1/machinery` | `GET`, `POST` | `{ serialNumber, model, brand, type, hourlyRate }` | Lista o registra maquinaria mediante `MachineryCommandService` / `MachineryQueryService` (`200 OK`, `201 Created`). |
+| **Spring Boot (`spring/`)** | `/api/v1/machinery/{machineryId}` | `GET`, `PUT`, `DELETE` | `machineryId` (Long) | Consulta o actualiza el estado de maquinaria (`200 OK`, `404 Not Found`). |
+| **Spring Boot (`spring/`)** | `/api/v1/maintenance-orders` | `GET`, `POST` | `{ machineryId, maintenanceType, description, scheduledDate }` | Lista y crea órdenes de mantenimiento asociadas a maquinaria (`200 OK`, `201 Created`). |
+| **Spring Boot (`spring/`)** | `/api/v1/rentals` | `GET`, `POST` | `{ machineryId, contractorId, startDate, endDate }` | Lista y registra contratos de alquiler (`200 OK`, `201 Created`). |
+
+**Ejemplo de solicitud y respuesta en ASP.NET Core 8 (`POST /api/v1/machines`):**
 
 ```json
+// Request
 {
-  "status": "success",
-  "data": [
-    {
-      "id": "e4b3c2a1-5d6e-4f7a-8b9c-0d1e2f3a4b5c",
-      "code": "CAT-320D-01",
-      "name": "Excavadora Oruga CAT 320D",
-      "type": "Machinery",
-      "brand": "Caterpillar",
-      "model": "320D",
-      "currentUsageHours": 1420.5,
-      "status": "AVAILABLE",
-      "hourlyRate": 180.00
-    },
-    {
-      "id": "b2c3d4e5-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
-      "code": "VOL-FMX-02",
-      "name": "Camión Volquete Volvo FMX 440",
-      "type": "Dump truck",
-      "brand": "Volvo",
-      "model": "FMX 440",
-      "currentUsageHours": 3210.0,
-      "status": "IN_OPERATION",
-      "hourlyRate": 150.00
-    }
-  ]
+  "code": "EXC-001",
+  "name": "Excavadora principal",
+  "model": "CAT 320"
+}
+
+// Response 201 Created (MachineResponse)
+{
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "code": "EXC-001",
+  "name": "Excavadora principal",
+  "model": "CAT 320",
+  "status": "AVAILABLE",
+  "createdAtUtc": "2026-11-12T18:20:00Z"
 }
 ```
 
+**Ejemplo de respuesta en el servicio cloud (`GET /api/v1/assets`):**
+
+```json
+[
+  {
+    "id": "A-001",
+    "name": "CAT 320 Excavator",
+    "type": "Machinery",
+    "usage": 1842,
+    "status": "AVAILABLE"
+  },
+  {
+    "id": "A-002",
+    "name": "Volvo FMX Dump Truck",
+    "type": "Dump truck",
+    "usage": 64500,
+    "status": "IN_OPERATION"
+  },
+  {
+    "id": "A-003",
+    "name": "XCMG QY25K Crane",
+    "type": "Crane",
+    "usage": 3250,
+    "status": "IN_MAINTENANCE"
+  }
+]
+```
+
+> [!NOTE]
+> **[Pendiente de captura por el equipo]:** Insertar capturas de pantalla ejecutando pruebas de endpoints en Swagger UI (`/swagger` o `/swagger-ui.html`) y contra `GET /api/v1/health` con datos de muestra.
+
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-Para el hito AV2 (Semana 12), la solución se encuentra desplegada en la infraestructura en la nube de Microsoft Azure:
+Para el hito AV2 (Semana 12), los tres productos principales de TechnoLoad cuentan con configuración de despliegue independiente en **Microsoft Azure App Service (Linux)** conectada a la rama `main` de sus respectivos repositorios:
 
-| Componente | Plataforma Cloud | URL Pública Oficial | Estado de Despliegue |
-|---|---|---|:---:|
-| **Landing Page** | Azure App Service (Linux) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Operativo (HTTPS / TLS 1.3) |
-| **Web Application** | Azure App Service (Linux) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Operativo (HTTPS / TLS 1.3) |
-| **RESTful Web Services** | Azure App Service (Linux) | [https://technoload-api-u202410728.azurewebsites.net/api/v1](https://technoload-api-u202410728.azurewebsites.net/api/v1) | Configurado / Swagger UI |
-| **Database** | Azure Database for PostgreSQL | `technoload-db.postgres.database.azure.com` | Persistencia relacional (DDL activo) |
+| Componente | Plataforma Cloud | Repositorio GitHub | URL Pública Configurada | Variables de Entorno Clave |
+|---|---|---|---|---|
+| **Landing Page** | Azure App Service (Linux) | [TechnoLoad-TechFlow/technoload-website](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | HTTPS Only habilitado |
+| **Web Application (Angular 21)** | Azure App Service (Linux) | [TechnoLoad-TechFlow/technoload-webapp](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | `VITE_API_BASE_URL` apuntando a `technoload-platform-.../api/v1` |
+| **RESTful Web Services** | Azure App Service (Linux) | [TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform) | [https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1](https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1) | `PORT`, `AUTH_SESSION_TTL_HOURS`, `STRIPE_SECRET_KEY`, `ConnectionStrings__TechnoLoad`, `DB_URL`, `CORS_ALLOWED_ORIGINS` |
+
+> [!NOTE]
+> **[Pendiente de verificación y captura por el equipo]:** Verificar que los tres App Services de Azure for Students estén activos en el portal al momento de la revisión e insertar las capturas de pantalla del estado de despliegue y respuesta `/api/v1/health`.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
-Durante el Sprint 3, el equipo registró una dinámica colaborativa continua en GitHub, acumulando un total de **148 commits** distribuidos equitativamente entre los cuatro integrantes:
+A partir del historial real de Git (excluyendo commits de merge) en los cuatro repositorios oficiales de `TechnoLoad-TechFlow`, se contabilizaron **54 commits** en la ventana del Sprint 3 / post-TB1 (desde el 9 de octubre de 2026) y **194 commits acumulados** en todo el ciclo del proyecto:
 
-| Integrante / Identidad Git | Commits en el informe | Commits en la Web Application | Commits en Web Services & API | Commits en arquitectura y SCM | Total identificado |
-|---|---:|---:|---:|---:|---:|
-| Tantalean Granda, Nicolas (`NicolasTantalean` / `u202410728`) | 14 | 16 | 6 | 8 | 44 |
-| Gutiérrez Lizarbe, Wilmer Sebastián (`WILMER SEBASTIAN` / `sebas` / `u202412044`) | 16 | 12 | 14 | 5 | 47 |
-| Castillo Guevara, Mathias Alejandro (`mathias9939` / `u202410783`) | 18 | 5 | 4 | 3 | 30 |
-| Díaz Caruzo, Edgard Daniel (`Dan-trax` / `Daniel` / `u202323911`) | 11 | 9 | 3 | 4 | 27 |
-| **Total acumulado del equipo** | **59** | **42** | **27** | **20** | **148** |
+**Actividad verificada en la ventana del Sprint 3 (desde `2026-10-09`, sin merges):**
+
+| Integrante / Identidad Git | `TechFlow-report` | `technoload-platform` | `technoload-webapp` | `technoload-website` | Commits Sprint 3 | Total histórico (4 repos) |
+|---|---:|---:|---:|---:|---:|---:|
+| Gutiérrez Lizarbe, Wilmer Sebastián (`WILMER SEBASTIAN` / `sebas`) | 0 | 14 | 4 | 0 | **18** | **74** |
+| Castillo Guevara, Mathias Alejandro (`mathias9939`) | 8 | 0 | 5 | 4 | **17** | **44** |
+| Tantalean Granda, Nicolas (`NicolasTantalean`) | 4 | 0 | 10 | 2 | **16** | **49** |
+| Díaz Caruzo, Edgard Daniel (`Dan-trax` / `Daniel`) | 3 | 0 | 0 | 0 | **3** | **27** |
+| **Total del equipo** | **15** | **14** | **19** | **6** | **54** | **194** |
+
+> [!NOTE]
+> **[Pendiente de captura por el equipo]:** Insertar capturas de pantalla actualizadas de *GitHub Insights → Contributors* de `TechFlow-report`, `technoload-platform`, `technoload-webapp` y `technoload-website` correspondientes al Sprint 3.
 
 ---
 
 ## 5.3. Validation Interviews
 
-En esta sección el equipo documenta las entrevistas de validación realizadas con usuarios de los segmentos objetivo, evaluando su interacción directa con la Landing Page y la Web Application desplegadas.
+En esta sección el equipo documenta las sesiones de validación realizadas con usuarios pertenecientes a los dos segmentos objetivo, evaluando su interacción con la Landing Page (`technoload-website`) y la Web Application (`technoload-webapp`) integradas con `technoload-platform`.
 
 ### 5.3.1. Diseño de Entrevistas
 
-Se estructuró una guía de validación centrada en la comprobación de valor, usabilidad y accesibilidad:
-* **Objetivo de la prueba:** Validar si los usuarios administradores de flota y contratistas logran comprender la propuesta de valor, registrar activos de maquinaria, interpretar las alertas de mantenimiento preventivo y navegar entre la Landing Page y la Web App sin asistencia técnica.
-* **Metodología:** Pruebas moderadas en remoto vía Microsoft Teams con grabación compartida. Se solicitó a los participantes compartir pantalla y verbalizar sus pensamientos (Think Aloud Protocol) mientras ejecutaban cuatro tareas clave:
-  1. *Tarea 1:* Ingresar a la Landing Page, identificar los beneficios del SaaS y navegar hacia la Web Application mediante los botones Call-to-Action.
-  2. *Tarea 2:* Consultar el catálogo de maquinaria en la Web App y filtrar unidades por estado (`AVAILABLE`, `IN_MAINTENANCE`).
-  3. *Tarea 3:* Registrar una nueva máquina completando el formulario modal y verificar la retroalimentación del sistema.
-  4. *Tarea 4:* Utilizar la calculadora interactiva de ROI para proyectar ahorro en costos por horas inactivas.
+Las entrevistas de validación se estructuraron bajo sesiones moderadas con protocolo *Think Aloud* (pensar en voz alta), solicitando al participante compartir pantalla mientras ejecuta tareas específicas en la Landing Page y en la Web Application desplegadas.
+
+**Segmento 1: Propietarios y administradores de empresas de alquiler de maquinaria pesada**
+
+* **Elementos incluidos en la sesión:**
+  * **Landing Page (`technoload-website`):** Propuesta de valor, sección de soluciones para administración de flota, planes de membresía, calculadora de ROI y acceso mediante modal/CTA hacia la Web Application.
+  * **Web Application (`technoload-webapp`):** Panel administrativo (`ADMIN`), gestión de inventario de activos, registro de mantenimiento y revisión de solicitudes de alquiler.
+* **User Flows evaluados:**
+  * `UF-01`: Acceso a la plataforma y autenticación (`USER` / `ADMIN`).
+  * `UF-02`: Registro y actualización de maquinaria en flota.
+  * `UF-03`: Programación y seguimiento de órdenes de mantenimiento.
+  * `UF-04`: Revisión y aprobación o rechazo de solicitudes de alquiler.
+
+**Segmento 2: Contratistas y responsables de logística / obra**
+
+* **Elementos incluidos en la sesión:**
+  * **Landing Page (`technoload-website`):** Información dirigida a contratistas y operadores de carga, beneficios de disponibilidad y comparación de planes.
+  * **Web Application (`technoload-webapp`):** Panel de cliente (`USER`), exploración del catálogo de equipos, envío de solicitud de alquiler y simulación de pago sandbox de suscripción.
+* **User Flows evaluados:**
+  * `UF-01`: Registro de cuenta e inicio de sesión como cliente (`USER`).
+  * `UF-05`: Búsqueda en catálogo y solicitud de alquiler de maquinaria.
+  * `UF-06`: Selección de plan y ejecución de checkout con pago sandbox.
 
 ### 5.3.2. Registro de Entrevistas
 
-| Entrevista | Participante | Segmento / Cargo | Empresa / Rubro | Enlace de Evidencia (Grabación) | Duración |
-| :---: | :--- | :--- | :--- | :--- | :---: |
-| **Entrevista 1** | Ing. Luis Herrera Cárdenas | Administrador de Flota | Maquinarias & Equipos del Sur S.A.C. | [Ver Grabación Entrevista 1 - Validación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416147_upc_edu_pe/IQCtDKm3Mx7YSICszqpbHVACAZ5fOdZ3xGF08nsq6eXrey4) | 16:45 |
-| **Entrevista 2** | Harold Angello Pérez | Coordinador Logístico | Logística y Carga Pesada Andina | [Ver Grabación Entrevista 2 - Validación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416147_upc_edu_pe/IQCtDKm3Mx7YSICszqpbHVACAZ5fOdZ3xGF08nsq6eXrey4) | 14:20 |
+Según los lineamientos del curso (Anexo C), cada entrevista de validación debe quedar registrada en video consolidado en Microsoft Stream (`upc-pre-202620-1asi0730-8093-technoload-validation-sprint-3.mp4`), con **3 a 5 entrevistas por cada segmento objetivo**, indicando nombres y apellidos, edad, distrito, fecha, enlace con timing de inicio y duración, captura de cuadro de video y resumen de apreciaciones.
 
-**Principales hallazgos y retroalimentación:**
-1. *Comprensión de propuesta de valor:* Ambos participantes destacaron que el enfoque en control de horómetros para mantenimiento preventivo resuelve un dolor crítico que actualmente gestionan en hojas de cálculo propensas a errores.
-2. *Usabilidad del registro:* El formulario modal fue valorado como intuitivo y rápido; sugirieron que el horómetro incluya el formato de lectura con un decimal para concordar con los displays físicos de maquinaria Caterpillar y Komatsu.
-3. *Calculadora de ROI:* El cálculo de ahorro mensual brindó argumentos claros para justificar el costo de suscripción frente a la gerencia general.
+> [!IMPORTANT]
+> **[Pendiente de grabación y carga por el equipo antes de la entrega AV2]:** Se ha eliminado el enlace de referencia externo ajeno al proyecto. El equipo debe grabar las sesiones de validación con 3 a 5 participantes reales por segmento, subir el video consolidado a Microsoft Stream y completar los campos marcados como pendientes en la tabla inferior.
+
+| Entrevista | Segmento | Nombres y Apellidos | Edad | Distrito | Fecha | Enlace Microsoft Stream | Timing y duración | Captura de video | Resumen de apreciaciones |
+| :---: | :--- | :--- | :---: | :--- | :---: | :--- | :---: | :---: | :--- |
+| **V1-S1** | Alquiler de maquinaria | *[Por completar: Entrevistado 1 - Seg. 1]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:00:00` (3–5 min) | *[Pendiente captura]* | Evaluar comprensión de la Landing Page y fluidez de `UF-01` a `UF-04` en el panel `ADMIN`. |
+| **V2-S1** | Alquiler de maquinaria | *[Por completar: Entrevistado 2 - Seg. 1]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:04:00` (3–5 min) | *[Pendiente captura]* | Verificar claridad del registro de maquinaria, control de uso y gestión de mantenimiento. |
+| **V3-S1** | Alquiler de maquinaria | *[Por completar: Entrevistado 3 - Seg. 1]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:08:00` (3–5 min) | *[Pendiente captura]* | Validar utilidad de la calculadora de ROI y aprobación/rechazo de solicitudes (`UF-04`). |
+| **V1-S2** | Contratistas / Logística | *[Por completar: Entrevistado 1 - Seg. 2]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:12:00` (3–5 min) | *[Pendiente captura]* | Evaluar claridad de propuesta de valor y navegación desde Landing hacia catálogo cliente (`UF-05`). |
+| **V2-S2** | Contratistas / Logística | *[Por completar: Entrevistado 2 - Seg. 2]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:16:00` (3–5 min) | *[Pendiente captura]* | Validar envío de solicitud de alquiler y lectura de estados de solicitud en `USER`. |
+| **V3-S2** | Contratistas / Logística | *[Por completar: Entrevistado 3 - Seg. 2]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:20:00` (3–5 min) | *[Pendiente captura]* | Evaluar el flujo de suscripción y comprensión de mensajes de pago aprobado/rechazado (`UF-06`). |
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-Se aplicó la evaluación basada en las **10 Heurísticas de Usabilidad de Jakob Nielsen** sobre la versión desplegada en Azure:
+La evaluación de experiencia de usuario se estructura conforme al formato oficial del **Anexo D (UX Heuristics & Principles Evaluation: Usability – Inclusive Design – Information Architecture)**:
 
-| Heurística | Evaluación en TechnoLoad | Severidad (0-4) | Acción de mejora implementada |
-| :--- | :--- | :---: | :--- |
-| **1. Visibilidad del estado del sistema** | El sistema muestra alertas tipo Toast tras registrar activos y badges de color (`Verde`, `Amarillo`, `Rojo`) según disponibilidad. | 1 (Cosmético) | Se agregaron transiciones suaves y tiempos de auto-cierre en notificaciones. |
-| **2. Correspondencia entre el sistema y el mundo real** | Uso de términos estándar de la industria: horómetro, orden de mantenimiento, disponibilidad operativa. | 0 (Sin problema) | Terminología alineada con el lenguaje ubicuo establecido. |
-| **3. Control y libertad del usuario** | El usuario puede cerrar el diálogo modal con la tecla `Esc` o el botón de cancelación sin perder el contexto. | 1 (Cosmético) | Se confirmó soporte nativo del elemento `<dialog>` con botón de cierre accesible. |
-| **4. Consistencia y estándares** | Los esquemas de color (escala de grises con acento azul primario) e iconografía son uniformes entre Landing y Web App. | 0 (Sin problema) | Cumplimiento estricto del Style Guidelines. |
-| **5. Prevención de errores** | Los campos de horómetro y tarifa impiden el ingreso de valores negativos mediante validación HTML5 y JS. | 1 (Menor) | Se incorporaron restricciones `min="0"` y validaciones numéricas en tiempo real. |
-| **6. Reconocimiento antes que recuerdo** | Las tarjetas de maquinaria resumen visualmente los atributos clave sin obligar al usuario a memorizar códigos. | 0 (Sin problema) | Vista de catálogo con especificaciones visibles de forma directa. |
-| **7. Flexibilidad y eficiencia de uso** | Filtros rápidos por estado de unidad permiten a usuarios frecuentes ubicar maquinaria en un solo clic. | 1 (Menor) | Se integró filtrado reactivo instantáneo sin recargar la página. |
-| **8. Diseño estético y minimalista** | Interfaz limpia con tipografía Inter y espaciado proporcional sin sobrecarga cognitiva. | 0 (Sin problema) | Estructuración semántica sin elementos visuales superfluos. |
-| **9. Ayuda a reconocer y corregir errores** | Mensajes de validación claros en español e inglés ante campos vacíos o tipos no seleccionados. | 1 (Menor) | Mensajes contextuales descriptivos junto a cada control de formulario. |
-| **10. Ayuda y documentación** | Sección de preguntas frecuentes (FAQ) en el Landing y tooltips explicativos en la Web App. | 1 (Menor) | Inclusión de sección FAQ expandible tipo acordeón en la Landing Page. |
+* **CARRERA:** Ingeniería de Software
+* **CURSO:** Aplicaciones Web (`1ASI0730`)
+* **SECCIÓN:** `8093`
+* **PROFESORES:** Bautista Ubillús, Efrain Ricardo
+* **AUDITOR CLIENTE(S):** Equipo **TechnoLoad** — Castillo Guevara, Mathias Alejandro; Díaz Caruzo, Edgard Daniel; Gutiérrez Lizarbe, Wilmer Sebastián; Tantalean Granda, Nicolas.
+
+#### SITE o APP A EVALUAR:
+**Landing Page TechnoLoad** (`technoload-website`) y **Web Application TechnoLoad** (`technoload-webapp`)
+
+#### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad, diseño inclusivo y arquitectura de información de las siguientes tareas:
+1. Explorar la propuesta de valor, segmentos objetivo y calculadora de ROI en la Landing Page.
+2. Registrar una cuenta o iniciar sesión con credenciales de cliente (`USER`) o administrador (`ADMIN`) (`UF-01`).
+3. Consultar el inventario de flota y registrar una nueva unidad o mantenimiento (`UF-02`, `UF-03`).
+4. Revisar solicitudes de alquiler desde la vista administrativa (`UF-04`).
+5. Consultar el catálogo disponible y enviar una solicitud de alquiler (`UF-05`).
+6. Seleccionar un plan de suscripción y completar la simulación de pago sandbox (`UF-06`).
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1. Emisión de comprobantes electrónicos integrados con SUNAT/PSE.
+2. Sincronización automática de telemetría GPS/CAN-bus en tiempo real desde maquinaria física.
+3. Cobro real con tarjeta de crédito en entorno productivo (solo se evalúa flujo sandbox).
+
+#### ESCALA DE SEVERIDAD:
+Los problemas detectados son puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+| :---: | :--- |
+| **1** | **Problema superficial:** puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara al siguiente release. |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+#### TABLA RESUMEN:
+
+| # | Problema | Escala de severidad | Heurística / Principio violado |
+| :---: | :--- | :---: | :--- |
+| **1** | Al iniciar la simulación de pago sandbox en `UF-06`, la confirmación de retorno al catálogo no destaca claramente la opción de cancelar o editar el plan antes de enviar el checkout. | 2 | **Usability:** Libertad y control del usuario |
+| **2** | La tabla de inventario y solicitudes presenta diferencias menores de densidad entre la vista previa de la Landing Page y la tabla operativa de la Web Application. | 1 | **Usability:** Consistencia y estándares |
+| **3** | Algunos controles iconográficos y etiquetas de estado dependen principalmente del color o carecen de descripción extendida para lectores de pantalla (`aria-label`). | 2 | **Inclusive Design:** Proporciona experiencias comparables |
+| **4** | El usuario visitante no puede previsualizar el detalle técnico completo de una máquina del catálogo sin pasar primero por el formulario de autenticación. | 2 | **Information Architecture:** *Is it findable?* |
+| **5** | Cuando el servicio backend tarda en responder o entra en reposo en Azure, el indicador de carga inicial requiere mayor claridad sobre el reintento de petición. | 3 | **Usability:** Visibilidad del estado del sistema |
+
+#### DESCRIPCIÓN DE PROBLEMAS:
+
+**PROBLEMA #1: Falta de botón explícito para retroceder o cambiar de plan dentro del formulario de pago sandbox**
+* **Severidad:** `2`
+* **Heurística violada:** Usability — Libertad y control del usuario
+* **Problema:** Durante la ejecución del flujo `UF-06`, cuando el usuario selecciona un plan de suscripción y abre el formulario de pago sandbox, si desea comparar nuevamente los límites de activos de los otros planes antes de confirmar, debe desplazarse manualmente o cerrar la sección sin un enlace directo de retorno contextual.
+* **Recomendación:** Incorporar un botón secundario explícito (*"Volver a planes"*) junto al botón de confirmación de pago que conserve el contexto de la vista del cliente.
+
+**PROBLEMA #2: Diferencias de densidad visual entre la vista previa del Landing y la Web Application**
+* **Severidad:** `1`
+* **Heurística violada:** Usability — Consistencia y estándares
+* **Problema:** Las tarjetas informativas mostradas en la vista previa del Landing Page resumen los indicadores de flota con un formato distinto al de las tarjetas y tablas internas de la Web Application Angular, lo que obliga a algunos usuarios a reorientarse brevemente tras iniciar sesión.
+* **Recomendación:** Unificar los nombres de métricas, estados (`AVAILABLE`, `IN_OPERATION`, `IN_MAINTENANCE`) y etiquetas de acción entre ambos productos.
+
+**PROBLEMA #3: Etiquetas de estado e iconos sin refuerzo textual o `aria-label` completo**
+* **Severidad:** `2`
+* **Heurística violada:** Inclusive Design — Proporciona experiencias comparables
+* **Problema:** En determinados botones de acción rápida e indicadores de estado cromáticos, el significado recae mayormente en el color o en abreviaturas cortas, dificultando la lectura asistida por lector de pantalla o en usuarios con daltonismo.
+* **Recomendación:** Añadir atributos `aria-label` descriptivos, iconos semánticos acompañados de texto visible y verificar contraste mínimo WCAG 2.1 AA (4.5:1) en todos los badges.
+
+**PROBLEMA #4: Acceso restringido al detalle técnico previo al inicio de sesión**
+* **Severidad:** `2`
+* **Heurística violada:** Information Architecture — *Is it findable?*
+* **Problema:** Los contratistas que llegan desde la Landing Page buscando comparar especificaciones técnicas de maquinaria antes de registrarse encuentran la vista detallada únicamente después de autenticarse, reduciendo la capacidad de evaluación previa.
+* **Recomendación:** Exponer una vista pública de consulta en `/api/v1/catalog/assets` accesible desde la Landing Page y reservar la autenticación para solicitar alquileres o contratar suscripciones.
+
+**PROBLEMA #5: Retroalimentación ante arranque en frío o latencia del servicio cloud**
+* **Severidad:** `3`
+* **Heurística violada:** Usability — Visibilidad del estado del sistema
+* **Problema:** Cuando una instancia en Azure App Service tarda unos segundos adicionales en responder tras inactividad, los usuarios perciben demora al pulsar *Sign In* o cargar el catálogo si no visualizan un estado intermedio de espera y opción de reintento.
+* **Recomendación:** Mostrar un indicador de progreso explícito (*"Conectando con el servicio de TechnoLoad..."*) y un mensaje accionable con botón de reintento cuando exista timeout.
+
+> [!NOTE]
+> **[Pendiente de captura por el equipo]:** Adjuntar capturas de pantalla de la Landing Page y de la Web Application señalando los hallazgos #1 a #5 detectados durante la auditoría heurística.
 
 ---
 
 ## 5.4. Video About-the-Product
 
-En esta sección el equipo presenta el **Video About-the-Product**, elaborado para comunicar la propuesta de valor, el modelo de negocio SaaS y las características clave de TechnoLoad tanto a visitantes del sitio web como a clientes potenciales:
+En esta sección se documenta el **Video About-the-Product** de **TechnoLoad** (`TechFlow`), orientado a presentar de forma concisa y demostrativa el problema de negocio, la propuesta de valor SaaS y la navegación real de la solución desplegada.
 
-* **Objetivo del Video:** Presentar la problemática de las paradas no programadas en flotas de maquinaria pesada y transporte, demostrar el funcionamiento de la plataforma web en condiciones reales de uso y exponer los beneficios económicos del mantenimiento predictivo y el control centralizado de unidades.
-* **Público Objetivo:** Gerentes de operaciones, administradores de flota, jefes de mantenimiento y coordinadores logísticos de empresas peruanas.
-* **Estructura narrativa:**
-  1. *Introducción (00:00 - 00:45):* Presentación de la startup TechnoLoad y dimensionamiento del problema operativo (sobrecostos de hasta 32% por mantenimiento reactivo).
-  2. *Propuesta de Valor (00:45 - 01:30):* Explicación de la solución SaaS, seguimiento por horómetros y optimización de disponibilidad.
-  3. *Demostración del Producto (01:30 - 03:15):* Recorrido guiado por la Landing Page desplegada, transición fluida hacia la Web Application en Azure, registro de activo, cálculo de ROI y visualización de órdenes preventivas.
-  4. *Cierre y Call to Action (03:15 - 03:45):* Planes de suscripción y contacto comercial.
+* **Nomenclatura oficial:** `upc-pre-202620-1asi0730-8093-technoload-about-the-product.mp4`
+* **Público objetivo:** Propietarios/administradores de flotas de maquinaria pesada, contratistas de obra civil y responsables de logística.
+* **Estructura de contenido:**
+  1. **Introducción (`00:00:00` – `00:00:40`):** Presentación del problema de paradas imprevistas, baja trazabilidad de horómetros y conflictos en reservas.
+  2. **Propuesta de valor (`00:00:40` – `00:01:25`):** Explicación de TechnoLoad como plataforma integral para inventario, mantenimiento preventivo, alquileres y control de suscripciones.
+  3. **Demostración en vivo del producto (`00:01:25` – `00:03:15`):** Recorrido por la Landing Page, inicio de sesión en la Web Application Angular, gestión de flota (`ADMIN`), catálogo y checkout sandbox (`USER`) conectado a `technoload-platform`.
+  4. **Cierre comercial (`00:03:15` – `00:03:45`):** Planes de suscripción y llamado a la acción en la Landing Page.
 
-* **Enlace oficial al Video About-the-Product (Microsoft Stream / Canal Oficial):**  
-  [Ver Video About-the-Product - TechnoLoad](https://web.microsoftstream.com/)
-* **Duración:** 03:45 minutos
-* **Resolución:** 1080p Full HD con subtítulos en español e inglés.
+* **Enlace en Microsoft Stream:** *[Pendiente de carga del equipo — insertar URL de Microsoft Stream]*
+* **Enlace en YouTube (para incrustar en Landing Page):** *[Pendiente de carga del equipo — insertar URL de YouTube]*
+* **Captura representativa del video:** *[Pendiente de captura de pantalla del video reproducido con su enlace visible]*
 
 ---
 
 # Conclusiones
 
-1. **Validación del dominio y modelo Lean UX:**  
-   A través de la formulación del *Lean UX Canvas*, los *Problem Statements* y los *Assumptions*, se logró alinear los objetivos del negocio con las necesidades críticas de los segmentos objetivo (empresas de alquiler de maquinaria pesada y transporte de carga). La investigación cualitativa evidenció que la falta de centralización operativa genera tiempos de inactividad de hasta 32% en sobrecostos por mantenimiento reactivo, validando nuestra hipótesis central de que una plataforma SaaS accesible y basada en control de horómetros/kilometraje resuelve una fricción operativa determinante en el mercado peruano.
-2. **Elicitación y especificación de requisitos:**  
-   El proceso de *Needfinding*, soportado por entrevistas a profundidad y artefactos como *User Personas*, *Empathy Maps* y *User Journey Maps*, permitió estructurar un *Product Backlog* priorizado por valor de negocio. La descomposición de necesidades en historias de usuario (*User Stories*) con criterios de aceptación en sintaxis Gherkin garantiza una trazabilidad comprobable entre los dolores del usuario y las funcionalidades del sistema, asegurando además la correcta delimitación de historias para el sitio web estático (Landing Page), la Web Application interactiva y los servicios backend RESTful.
-3. **Consistencia de diseño y arquitectura de software:**  
-   La definición de las *Style Guidelines* y la *Information Architecture* permitió diseñar interfaces web responsivas e intuitivas tanto en escritorio como en dispositivos móviles (wireframes y mock-ups en Figma). A nivel arquitectural, la aplicación de *Domain-Driven Design (DDD)* mediante *EventStorming* y el modelo de diagramado *C4* (Contexto, Contenedor y Componentes) sienta una base escalable y desacoplada para el desarrollo de la solución con Vue.js (PrimeVue), ASP.NET Core (C#), Node.js y PostgreSQL en la nube de Microsoft Azure.
-4. **Cumplimiento del Student Outcome ABET 5:**  
-   El trabajo colaborativo basado en roles distribuidos, gestión transparente de tableros ágiles en GitHub Projects, revisiones cruzadas de código mediante Pull Requests y sesiones estructuradas de Sprint Planning, Review y Retrospectiva ha permitido consolidar un equipo multidisciplinario cohesionado, capaz de cumplir con rigurosidad los compromisos técnicos y cronogramas evaluativos del ciclo.
+## Conclusiones y recomendaciones
+
+1. **Contrastación de Problem Statements, Assumptions e Hypotheses (Lean UX vs. Validación):**
+   - Los *Problem Statements* planteados en el Capítulo I identificaron dos brechas centrales en el mercado peruano: la gestión fragmentada en hojas de cálculo que eleva el mantenimiento correctivo y la falta de visibilidad en tiempo real de disponibilidad para contratistas.
+   - Los *Assumptions* iniciales sobre la disposición de propietarios y contratistas a centralizar inventario, horómetros y reservas en una herramienta web se alinean con los flujos implementados; no obstante, las pruebas heurísticas evidenciaron la importancia de ofrecer visibilidad previa del catálogo antes del registro y retroalimentación clara frente a latencia de red para maximizar la tasa de conversión prevista en las *Hypothesis Statements*.
+   - El cumplimiento completo de los criterios de éxito cuantitativos (tasa de finalización de tareas sin asistencia y tiempos de respuesta en validación) quedará consolidado al concluir la grabación y análisis de las 3 a 5 entrevistas formales por cada segmento en el hito AV2.
+2. **Consolidación arquitectural e implementación técnica (Sprints 1, 2 y 3):**
+   - La estandarización de los artefactos de diseño (Big Picture Event Storming, User Flows `UF-01`–`UF-06`, Design-Level Event Storming para los 8 Bounded Contexts, diagramas C4, diagramas de clases DDD y diagramas de base de datos sin bloques Mermaid sin renderizar) garantiza trazabilidad directa entre requisitos y código.
+   - Durante el Sprint 3 se evolucionó de prototipos estáticos hacia una Web Application en **Angular 21** conectada a autenticación real por token Bearer y checkout sandbox en `technoload-platform`, complementada por backends DDD estructurados en **ASP.NET Core 8** (`dotnet/` con EF Core y `MachineServiceTests`) y **Spring Boot** (`spring/` con contextos `fleet`, `maintenance`, `rental` y pruebas de dominio).
+3. **Roadmap recomendado para la entrega final (Sprint 4 / TB2):**
+   - Unificar la capa de producción backend sobre una base de datos relacional administrada (MySQL 8 / PostgreSQL en Azure) ejecutando las migraciones de EF Core o JPA sobre la instancia cloud única.
+   - Incorporar alertas automáticas por umbral de horómetro, historial gráfico de utilización de flota, reportes descargables (CSV/PDF) y corrección de los 5 hallazgos heurísticos priorizados (especialmente el indicador de estado de red de severidad 3 y mejoras de contraste/ARIA).
+4. **Cumplimiento del Student Outcome ABET 5:**
+   - La distribución de responsabilidades en matrices LACX, el uso continuo de GitFlow y Conventional Commits en cuatro repositorios y la revisión cruzada entre arquitectura, frontend, backend y validación demostraron liderazgo compartido y trabajo colaborativo efectivo.
 
 ---
 
 # Video About-the-Team
 
-En esta sección el equipo presenta el **Video About-the-Team**, en el cual cada integrante expone su perfil profesional, responsabilidades técnicas asumidas, aprendizajes individuales y dinámicas de colaboración que hicieron posible el desarrollo de TechnoLoad durante el curso:
+En esta sección el equipo presenta el **Video About-the-Team**, resumiendo el proceso colaborativo bajo el marco de trabajo ágil **Scrum** y **GitFlow**, escenas del trabajo real en equipo y el testimonio individual de cada integrante sobre las actividades desarrolladas, competencias adquiridas y logro del Student Outcome ABET 5.
 
-* **Estructura del Video:**
-  - *Introducción:* Visión general del equipo y organización del trabajo bajo el marco Scrum y GitFlow.
-  - *Mathias Alejandro Castillo Guevara:* Liderazgo en Lean UX, especificación de requerimientos, modelado arquitectural C4 y calculadora de ROI.
-  - *Edgard Daniel Díaz Caruzo:* Investigación de mercado y competidores, diseño visual de interfaces web y auditoría de accesibilidad (a11y).
-  - *Wilmer Sebastián Gutiérrez Lizarbe:* Arquitectura de información, diseño del Product Backlog, modelado de servicios RESTful y base de datos PostgreSQL.
-  - *Nicolas Tantalean Granda:* Scrum Master, gestión de configuración de software (SCM), desarrollo de componentes interactivos y despliegue continuo en Microsoft Azure.
-  - *Reflexión final:* Conclusiones sobre el cumplimiento del Student Outcome ABET 5 y metas para la entrega final.
+* **Nomenclatura oficial:** `upc-pre-202620-1asi0730-8093-technoload-about-the-team.mp4`
+* **Pauta de secuencias de contenido (`hh:mm:ss`):**
 
-* **Enlace oficial al Video About-the-Team (Microsoft Stream / Canal Oficial):**  
-  [Ver Video About-the-Team - Equipo TechnoLoad](https://web.microsoftstream.com/)
-* **Duración:** 04:30 minutos
-* **Resolución:** 1080p Full HD
+| Orden | Sección / Contenido | Timing de inicio (`hh:mm:ss`) | Responsable(s) |
+| :---: | :--- | :---: | :--- |
+| 1 | Introducción general del equipo TechnoLoad, flujo de trabajo Scrum/GitFlow y escenas de colaboración | `00:00:00` | Todos los integrantes (voz en off) |
+| 2 | Testimonio individual: Lean UX, arquitectura, diagramas 4.4.4–4.8 y validación UX | `00:00:50` | Castillo Guevara, Mathias Alejandro |
+| 3 | Testimonio individual: Investigación competitiva, Landing Page, modal de acceso y heurísticas | `00:01:40` | Díaz Caruzo, Edgard Daniel |
+| 4 | Testimonio individual: Product Backlog, servicios RESTful (Node.js / .NET 8 / Spring Boot) y persistencia | `00:02:30` | Gutiérrez Lizarbe, Wilmer Sebastián |
+| 5 | Testimonio individual: Web App Angular 21, módulo de pagos sandbox, SCM y despliegue en Azure | `00:03:20` | Tantalean Granda, Nicolas |
+| 6 | Conclusiones colectivas sobre Student Outcome ABET 5 y cierre del equipo | `00:04:10` | Todos los integrantes |
+
+* **Enlace en Microsoft Stream:** *[Pendiente de carga del equipo — insertar URL de Microsoft Stream]*
+* **Enlace en YouTube (para incrustar en Landing Page):** *[Pendiente de carga del equipo — insertar URL de YouTube]*
+* **Captura representativa del video:** *[Pendiente de captura de pantalla del video reproducido con su enlace visible]*
 
 ---
 
 # Bibliografía
 
 * Adzic, G. (2012). *Impact Mapping: Making a big impact with software products and projects*. Provoking Thoughts.
+* Angular Team. (2025). *Angular documentation & style guide*. Google. https://angular.dev/
 * Brandolini, A. (2021). *Introducing EventStorming: An act of deliberate collective learning*. Leanpub.
 * Brown, S. (2018). *The C4 model for visualising software architecture*. Leanpub. https://c4model.com/
 * Cohn, M. (2004). *User stories applied: For agile software development*. Addison-Wesley Professional.
 * Driessen, V. (2010). *A successful Git branching model*. nvie.com. https://nvie.com/posts/a-successful-git-branching-model/
 * Evans, E. (2003). *Domain-Driven Design: Tackling complexity in the heart of software*. Addison-Wesley.
 * Gothelf, J., & Seiden, J. (2021). *Lean UX: Designing great products with Agile teams* (3rd ed.). O'Reilly Media.
-* Microsoft. (2023). *C# coding conventions and engineering guidelines*. Microsoft Learn. https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions
-* Microsoft. (2023). *ASP.NET Core documentation*. Microsoft Learn. https://learn.microsoft.com/aspnet/core/
+* Microsoft. (2024). *C# coding conventions and engineering guidelines*. Microsoft Learn. https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions
+* Microsoft. (2024). *ASP.NET Core documentation*. Microsoft Learn. https://learn.microsoft.com/aspnet/core/
 * Nielsen, J. (1994). *Usability engineering*. Morgan Kaufmann / Nielsen Norman Group.
-* PrimeTek Informatics. (2023). *PrimeVue - The Next Gen UI Component Suite for Vue.js*. https://primevue.org/
+* PlantUML. (2024). *PlantUML language reference guide*. https://plantuml.com/
 * Rosenfeld, L., Morville, P., & Arango, J. (2015). *Information Architecture: For the web and beyond* (4th ed.). O'Reilly Media.
 * Schwaber, K., & Sutherland, J. (2020). *The Scrum Guide: The definitive guide to Scrum: The rules of the game*. Scrum.org. https://scrumguides.org/
 * SmartBear Software. (2023). *OpenAPI Specification 3.0*. Swagger. https://swagger.io/specification/
 * SpecFlow. (2022). *Gherkin conventions for readable specifications*. https://specflow.org/gherkin/gherkin-conventions-for-readable-specifications/
+* Spring Team. (2024). *Spring Boot Reference Documentation*. Broadcom. https://docs.spring.io/spring-boot/
 * The Linux Foundation. (2021). *Semantic Versioning 2.0.0*. SemVer.org. https://semver.org/
 * Torvalds, L., & Chacon, S. (2020). *Pro Git* (2nd ed.). Apress.
-* Vue.js Team. (2023). *Vue.js Style Guide & Documentation*. https://vuejs.org/style-guide/
 * World Wide Web Consortium (W3C). (2018). *Web Content Accessibility Guidelines (WCAG) 2.1*. https://www.w3.org/TR/WCAG21/
 
 ---
 
 # Anexos
+
+## Anexo: Repositorios y productos desplegados
+
+| Producto / Artefacto | Repositorio GitHub | URL de despliegue / referencia |
+|---|---|---|
+| **Project Report (`TechFlow-report`)** | [https://github.com/TechnoLoad-TechFlow/TechFlow-report](https://github.com/TechnoLoad-TechFlow/TechFlow-report) | Rama `develop` (avance AV2) / `main` |
+| **Landing Page (`technoload-website`)** | [https://github.com/TechnoLoad-TechFlow/technoload-website](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) |
+| **Frontend Web Application (`technoload-webapp`)** | [https://github.com/TechnoLoad-TechFlow/technoload-webapp](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) |
+| **RESTful Web Services (`technoload-platform`)** | [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform) | `https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1` |
 
 ## Anexo: Videos de Exposiciones
 
@@ -3481,5 +3041,5 @@ En esta sección se consolidan los enlaces a los videos de exposición grabados 
 
 | Entrega | Hito | Enlace al Video (Microsoft Stream) | Duración |
 | :---: | :---: | :--- | :---: |
-| **Semana 4** | AV1 – Sprint Review | [Ver Video de Exposición AV1 - TechnoLoad](https://web.microsoftstream.com/) | 15:20 |
-| **Semana 12** | AV2 – Sprint Review | [Ver Video de Exposición AV2 - TechnoLoad](https://web.microsoftstream.com/) | 18:40 |
+| **Semana 4** | AV1 – Sprint Review | *[Pendiente enlace Microsoft Stream de exposición AV1]* | 15:20 |
+| **Semana 12** | AV2 – Sprint Review | *[Pendiente enlace Microsoft Stream de exposición AV2]* | — |
