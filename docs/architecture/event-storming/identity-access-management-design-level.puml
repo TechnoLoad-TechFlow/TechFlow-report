@@ -1,90 +1,67 @@
 @startuml
-title TechFlow - Identity & Access Management Bounded Context\nDesign-Level Event Storming
+title MaquiControl - Identity & Access Management Bounded Context\nDesign-Level Event Storming
 
 left to right direction
 skinparam shadowing false
 skinparam roundcorner 8
 skinparam defaultFontName Arial
+skinparam rectangleFontSize 12
+skinparam ArrowColor #555555
+skinparam noteBorderColor #BDB76B
+skinparam nodesep 30
+skinparam ranksep 40
 
-' =========================
-' Styles
-' =========================
+rectangle "COMMAND\nSign Up\n<size:10>(email, password, role)</size>" as CMD_1 #87CEFA
+rectangle "ACTOR\nVisitor" as ACT_2 #FFF9C4
+ACT_2 -left-> CMD_1
+rectangle "AGGREGATE\nUser Account" as AGG_3 #FFF59D
+CMD_1 --> AGG_3
+rectangle "DOMAIN EVENT\nUser Signed Up" as EVT_4 #FFB74D
+AGG_3 --> EVT_4
+rectangle "POLICY (Profiles)\nWhen a user signs up,\nask for the profile data" as POL_5 #B39DDB
+EVT_4 --> POL_5
+rectangle "COMMAND (Profiles)\nCreate Profile" as CMD_6 #87CEFA
+POL_5 --> CMD_6
+rectangle "AGGREGATE (Profiles)\nProfile" as AGG_7 #FFF59D
+CMD_6 --> AGG_7
+rectangle "COMMAND\nSign In" as CMD_8 #87CEFA
+rectangle "ACTOR\nUser" as ACT_9 #FFF9C4
+ACT_9 -left-> CMD_8
+rectangle "AGGREGATE\nUser Account" as AGG_10 #FFF59D
+CMD_8 --> AGG_10
+rectangle "HOTSPOT\nThe JWT token must expire and be\ndiscarded by the client on Sign Out" as HOT_11 #EF9A9A
+HOT_11 .right. AGG_10
+rectangle "COMMAND\nSign Out" as CMD_12 #87CEFA
+rectangle "ACTOR\nUser" as ACT_13 #FFF9C4
+ACT_13 -left-> CMD_12
+rectangle "AGGREGATE\nUser Account" as AGG_14 #FFF59D
+CMD_12 --> AGG_14
+AGG_10 -[hidden]-> CMD_12
+rectangle "<b>BUSINESS RULES (User Account)</b>\n- Email must be valid and unique\n- Password is stored as a credential hash\n- A role (FLEET_OWNER, FLEET_ADMINISTRATOR,\n  CONTRACTOR or OPERATOR) is required\n  to sign up\n- Only an active account can sign in" as BR_15 #FFFDE7
+rectangle "READ MODEL\nCurrent Session\n<size:10><i>Query: Get Signed-in Account</i></size>\n<size:10>Source: User Account</size>" as RM_16 #81C784
+rectangle "ACTOR\nUser" as ACT_17 #FFF9C4
+RM_16 ..> ACT_17 : informs
+rectangle "READ MODEL\nRole Catalog\n<size:10><i>Query: View Roles</i></size>\n<size:10>Source: Role</size>" as RM_18 #81C784
+rectangle "ACTOR\nVisitor" as ACT_19 #FFF9C4
+RM_18 ..> ACT_19 : informs
 
-rectangle "COMMAND\nRegister User" as CMD_REGISTER #87CEFA
-rectangle "AGGREGATE\nUser Account" as AGG_REGISTER #FFF59D
-rectangle "ACTOR\nSystem Administrator" as ACT_REGISTER #FFF9C4
-rectangle "COMMAND\nAuthenticate User" as CMD_AUTHENTICATE #87CEFA
-rectangle "AGGREGATE\nUser Account" as AGG_AUTHENTICATE #FFF59D
-rectangle "ACTOR\nContractor" as ACT_AUTHENTICATE #FFF9C4
-rectangle "COMMAND\nAssign Role" as CMD_ASSIGN_ROLE #87CEFA
-rectangle "AGGREGATE\nUser Account" as AGG_ASSIGN_ROLE #FFF59D
-rectangle "ACTOR\nSystem Administrator" as ACT_ASSIGN_ROLE #FFF9C4
-rectangle "COMMAND\nChange Password" as CMD_CHANGE_PASSWORD #87CEFA
-rectangle "AGGREGATE\nUser Account" as AGG_CHANGE_PASSWORD #FFF59D
-rectangle "ACTOR\nContractor" as ACT_CHANGE_PASSWORD #FFF9C4
-
-rectangle "DOMAIN EVENT\nUser Registered" as EVT_REGISTERED #FFB74D
-rectangle "DOMAIN EVENT\nUser Authenticated" as EVT_AUTHENTICATED #FFB74D
-rectangle "DOMAIN EVENT\nRole Assigned" as EVT_ROLE_ASSIGNED #FFB74D
-rectangle "DOMAIN EVENT\nPassword Changed" as EVT_PASSWORD_CHANGED #FFB74D
-
-rectangle "POLICY\nWhen a user is registered,\nassign the default CONTRACTOR role" as POL_DEFAULT_ROLE #B39DDB
-
-rectangle "READ MODEL\nAccount Details" as READ_ACCOUNT #81C784
-rectangle "QUERY\nView Account Details" as QUERY_ACCOUNT #87CEFA
-rectangle "QUERY RESULT\nAccount Details" as RESULT_ACCOUNT #C8E6C9
-
-rectangle "READ MODEL\nUser Role List" as READ_ROLES #81C784
-rectangle "QUERY\nView User Roles" as QUERY_ROLES #87CEFA
-rectangle "QUERY RESULT\nUser Role List" as RESULT_ROLES #C8E6C9
-
-rectangle "READ MODEL\nAuthentication Status" as READ_AUTH_STATUS #81C784
-rectangle "QUERY\nCheck Authentication Status" as QUERY_AUTH_STATUS #87CEFA
-rectangle "QUERY RESULT\nAuthentication Status" as RESULT_AUTH_STATUS #C8E6C9
-
-' =========================
-' Commands -> Aggregate -> Events
-' =========================
-
-CMD_REGISTER --> AGG_REGISTER
-AGG_REGISTER --> EVT_REGISTERED
-ACT_REGISTER -[hidden]up-> CMD_REGISTER
-
-CMD_AUTHENTICATE --> AGG_AUTHENTICATE
-AGG_AUTHENTICATE --> EVT_AUTHENTICATED
-ACT_AUTHENTICATE -[hidden]up-> CMD_AUTHENTICATE
-
-CMD_ASSIGN_ROLE --> AGG_ASSIGN_ROLE
-AGG_ASSIGN_ROLE --> EVT_ROLE_ASSIGNED
-ACT_ASSIGN_ROLE -[hidden]up-> CMD_ASSIGN_ROLE
-
-CMD_CHANGE_PASSWORD --> AGG_CHANGE_PASSWORD
-AGG_CHANGE_PASSWORD --> EVT_PASSWORD_CHANGED
-ACT_CHANGE_PASSWORD -[hidden]up-> CMD_CHANGE_PASSWORD
-
-EVT_REGISTERED --> POL_DEFAULT_ROLE
-POL_DEFAULT_ROLE --> CMD_ASSIGN_ROLE
-
-' =========================
-' Queries -> Read Models
-' =========================
-
-READ_ACCOUNT --> QUERY_ACCOUNT
-QUERY_ACCOUNT --> RESULT_ACCOUNT
-READ_ROLES --> QUERY_ROLES
-QUERY_ROLES --> RESULT_ROLES
-READ_AUTH_STATUS --> QUERY_AUTH_STATUS
-QUERY_AUTH_STATUS --> RESULT_AUTH_STATUS
+' Flows are stacked from top to bottom; each one reads left to right
+CMD_8 -[hidden]left-> CMD_1
+RM_16 -[hidden]left-> CMD_8
+RM_18 -[hidden]left-> RM_16
+ACT_17 -[hidden]-> BR_15
 
 legend right
 |= Color |= Element |
-|<#87CEFA>| Command / Query |
+|<#FFF9C4>| Actor |
+|<#87CEFA>| Command |
 |<#FFF59D>| Aggregate |
 |<#FFB74D>| Domain Event |
-|<#FFF9C4>| Actor |
 |<#B39DDB>| Policy |
+|<#FFE0B2>| Domain Event from another Bounded Context |
 |<#81C784>| Read Model |
-|<#C8E6C9>| Query Result |
+|<#EF9A9A>| Hotspot |
+|<#FFFDE7>| Business Rules |
 endlegend
 
 @enduml

@@ -1,102 +1,131 @@
 @startuml
-title TechFlow - Fleet Management Bounded Context\nDesign-Level Event Storming
+title MaquiControl - Fleet Management Bounded Context\nDesign-Level Event Storming
 
 left to right direction
 skinparam shadowing false
 skinparam roundcorner 8
 skinparam defaultFontName Arial
+skinparam rectangleFontSize 12
+skinparam ArrowColor #555555
+skinparam noteBorderColor #BDB76B
+skinparam nodesep 30
+skinparam ranksep 40
 
-' =========================
-' Styles
-' =========================
+rectangle "COMMAND\nRegister Machinery" as CMD_1 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_2 #FFF9C4
+ACT_2 -left-> CMD_1
+rectangle "AGGREGATE\nMachinery" as AGG_3 #FFF59D
+CMD_1 --> AGG_3
+rectangle "DOMAIN EVENT\nMachinery Registered" as EVT_4 #FFB74D
+AGG_3 --> EVT_4
+rectangle "POLICY\nWhen machinery is registered,\nset its status to AVAILABLE" as POL_5 #B39DDB
+EVT_4 --> POL_5
+rectangle "COMMAND\nChange Machinery Status" as CMD_6 #87CEFA
+POL_5 --> CMD_6
+rectangle "AGGREGATE\nMachinery" as AGG_7 #FFF59D
+CMD_6 --> AGG_7
+rectangle "HOTSPOT\nRegistration must respect the machinery\nlimit of the owner subscription plan" as HOT_8 #EF9A9A
+HOT_8 .right. CMD_1
+rectangle "COMMAND\nUpdate Machinery" as CMD_9 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_10 #FFF9C4
+ACT_10 -left-> CMD_9
+rectangle "AGGREGATE\nMachinery" as AGG_11 #FFF59D
+CMD_9 --> AGG_11
+rectangle "COMMAND\nDelete Machinery" as CMD_12 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_13 #FFF9C4
+ACT_13 -left-> CMD_12
+rectangle "AGGREGATE\nMachinery" as AGG_14 #FFF59D
+CMD_12 --> AGG_14
+AGG_11 -[hidden]-> CMD_12
+rectangle "COMMAND\nChange Machinery Status" as CMD_15 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_16 #FFF9C4
+ACT_16 -left-> CMD_15
+rectangle "AGGREGATE\nMachinery" as AGG_17 #FFF59D
+CMD_15 --> AGG_17
+AGG_14 -[hidden]-> CMD_15
+rectangle "DOMAIN EVENT (Rental)\nReservation Confirmed" as XEVT_18 #FFE0B2
+rectangle "POLICY\nWhen a reservation is confirmed,\nset the machinery to RESERVED" as POL_19 #B39DDB
+XEVT_18 --> POL_19
+rectangle "COMMAND\nChange Machinery Status" as CMD_20 #87CEFA
+POL_19 --> CMD_20
+rectangle "AGGREGATE\nMachinery" as AGG_21 #FFF59D
+CMD_20 --> AGG_21
+rectangle "HOTSPOT\nAvailability may be outdated if\nstatus changes are not propagated" as HOT_22 #EF9A9A
+HOT_22 .left. CMD_20
+rectangle "DOMAIN EVENT (Rental)\nReservation Cancelled" as XEVT_23 #FFE0B2
+rectangle "POLICY\nWhen a reservation is cancelled,\nset the machinery back to AVAILABLE" as POL_24 #B39DDB
+XEVT_23 --> POL_24
+rectangle "COMMAND\nChange Machinery Status" as CMD_25 #87CEFA
+POL_24 --> CMD_25
+rectangle "AGGREGATE\nMachinery" as AGG_26 #FFF59D
+CMD_25 --> AGG_26
+AGG_21 -[hidden]-> XEVT_23
+rectangle "DOMAIN EVENT (Maintenance)\nMaintenance Started" as XEVT_27 #FFE0B2
+rectangle "POLICY\nWhen maintenance starts,\nset the machinery to IN_MAINTENANCE" as POL_28 #B39DDB
+XEVT_27 --> POL_28
+rectangle "COMMAND\nChange Machinery Status" as CMD_29 #87CEFA
+POL_28 --> CMD_29
+rectangle "AGGREGATE\nMachinery" as AGG_30 #FFF59D
+CMD_29 --> AGG_30
+rectangle "DOMAIN EVENT (Maintenance)\nMaintenance Completed" as XEVT_31 #FFE0B2
+rectangle "POLICY\nWhen maintenance is completed,\nset the machinery back to AVAILABLE" as POL_32 #B39DDB
+XEVT_31 --> POL_32
+rectangle "COMMAND\nChange Machinery Status" as CMD_33 #87CEFA
+POL_32 --> CMD_33
+rectangle "AGGREGATE\nMachinery" as AGG_34 #FFF59D
+CMD_33 --> AGG_34
+AGG_30 -[hidden]-> XEVT_31
+rectangle "COMMAND\nCreate Category" as CMD_35 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_36 #FFF9C4
+ACT_36 -left-> CMD_35
+rectangle "AGGREGATE\nCategory" as AGG_37 #FFF59D
+CMD_35 --> AGG_37
+rectangle "COMMAND\nRename Category" as CMD_38 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_39 #FFF9C4
+ACT_39 -left-> CMD_38
+rectangle "AGGREGATE\nCategory" as AGG_40 #FFF59D
+CMD_38 --> AGG_40
+AGG_37 -[hidden]-> CMD_38
+rectangle "COMMAND\nDelete Category" as CMD_41 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_42 #FFF9C4
+ACT_42 -left-> CMD_41
+rectangle "AGGREGATE\nCategory" as AGG_43 #FFF59D
+CMD_41 --> AGG_43
+AGG_40 -[hidden]-> CMD_41
+rectangle "<b>BUSINESS RULES (Machinery)</b>\n- Name, brand and model are required\n- Manufacture year must be valid\n- Hourly rate (Money) cannot be negative\n- Status: AVAILABLE, RESERVED, RENTED,\n  IN_MAINTENANCE or OUT_OF_SERVICE\n- Only AVAILABLE machinery can be reserved\n- Machinery with active rentals\n  cannot be deleted" as BR_44 #FFFDE7
+rectangle "<b>BUSINESS RULES (Category)</b>\n- Name is required and unique\n- A category with machinery\n  cannot be deleted" as BR_45 #FFFDE7
+rectangle "READ MODEL\nMachinery Catalog\n<size:10><i>Query: View Machinery Catalog</i></size>\n<size:10>Source: Machinery</size>" as RM_46 #81C784
+rectangle "ACTOR\nContractor" as ACT_47 #FFF9C4
+RM_46 ..> ACT_47 : informs
+rectangle "READ MODEL\nMachinery Availability\n<size:10><i>Query: Check Machinery Availability</i></size>\n<size:10>Source: Machinery</size>" as RM_48 #81C784
+rectangle "ACTOR\nContractor" as ACT_49 #FFF9C4
+RM_48 ..> ACT_49 : informs
+rectangle "READ MODEL\nCategory Catalog\n<size:10><i>Query: View Categories</i></size>\n<size:10>Source: Category</size>" as RM_50 #81C784
+rectangle "ACTOR\nFleet Owner" as ACT_51 #FFF9C4
+RM_50 ..> ACT_51 : informs
 
-rectangle "COMMAND\nRegister Machinery" as CMD_REGISTER #87CEFA
-rectangle "AGGREGATE\nMachinery" as AGG_REGISTER #FFF59D
-rectangle "ACTOR\nFleet Owner" as ACT_REGISTER #FFF9C4
-rectangle "COMMAND\nUpdate Machinery Information" as CMD_UPDATE_INFO #87CEFA
-rectangle "AGGREGATE\nMachinery" as AGG_UPDATE_INFO #FFF59D
-rectangle "ACTOR\nFleet Owner" as ACT_UPDATE_INFO #FFF9C4
-rectangle "COMMAND\nUpdate Machinery Status" as CMD_UPDATE_STATUS #87CEFA
-rectangle "AGGREGATE\nMachinery" as AGG_UPDATE_STATUS #FFF59D
-rectangle "COMMAND\nRegister Category" as CMD_REGISTER_CATEGORY #87CEFA
-rectangle "AGGREGATE\nCategory" as AGG_REGISTER_CATEGORY #FFF59D
-rectangle "ACTOR\nFleet Owner" as ACT_REGISTER_CATEGORY #FFF9C4
-rectangle "COMMAND\nUpdate Category" as CMD_UPDATE_CATEGORY #87CEFA
-rectangle "AGGREGATE\nCategory" as AGG_UPDATE_CATEGORY #FFF59D
-rectangle "ACTOR\nFleet Owner" as ACT_UPDATE_CATEGORY #FFF9C4
-
-rectangle "DOMAIN EVENT\nMachinery Registered" as EVT_REGISTERED #FFB74D
-rectangle "DOMAIN EVENT\nMachinery Information Updated" as EVT_INFO_UPDATED #FFB74D
-rectangle "DOMAIN EVENT\nMachinery Status Updated" as EVT_STATUS_UPDATED #FFB74D
-rectangle "DOMAIN EVENT\nCategory Registered" as EVT_CATEGORY_REGISTERED #FFB74D
-rectangle "DOMAIN EVENT\nCategory Updated" as EVT_CATEGORY_UPDATED #FFB74D
-
-rectangle "POLICY\nWhen machinery is registered,\ninitialize its status as AVAILABLE" as POL_INITIAL_STATUS #B39DDB
-
-rectangle "READ MODEL\nMachinery Inventory" as READ_INVENTORY #81C784
-rectangle "QUERY\nView Machinery Inventory" as QUERY_INVENTORY #87CEFA
-rectangle "QUERY RESULT\nMachinery Inventory" as RESULT_INVENTORY #C8E6C9
-
-rectangle "READ MODEL\nMachinery Availability" as READ_AVAILABILITY #81C784
-rectangle "QUERY\nCheck Machinery Availability" as QUERY_AVAILABILITY #87CEFA
-rectangle "QUERY RESULT\nMachinery Availability" as RESULT_AVAILABILITY #C8E6C9
-
-rectangle "READ MODEL\nCategory Catalog" as READ_CATEGORIES #81C784
-rectangle "QUERY\nView Categories" as QUERY_CATEGORIES #87CEFA
-rectangle "QUERY RESULT\nCategory Catalog" as RESULT_CATEGORIES #C8E6C9
-
-' =========================
-' Commands -> Aggregate -> Events
-' =========================
-
-CMD_REGISTER --> AGG_REGISTER
-AGG_REGISTER --> EVT_REGISTERED
-ACT_REGISTER -[hidden]up-> CMD_REGISTER
-
-CMD_UPDATE_INFO --> AGG_UPDATE_INFO
-AGG_UPDATE_INFO --> EVT_INFO_UPDATED
-ACT_UPDATE_INFO -[hidden]up-> CMD_UPDATE_INFO
-
-CMD_UPDATE_STATUS --> AGG_UPDATE_STATUS
-AGG_UPDATE_STATUS --> EVT_STATUS_UPDATED
-
-CMD_REGISTER_CATEGORY --> AGG_REGISTER_CATEGORY
-AGG_REGISTER_CATEGORY --> EVT_CATEGORY_REGISTERED
-ACT_REGISTER_CATEGORY -[hidden]up-> CMD_REGISTER_CATEGORY
-
-CMD_UPDATE_CATEGORY --> AGG_UPDATE_CATEGORY
-AGG_UPDATE_CATEGORY --> EVT_CATEGORY_UPDATED
-ACT_UPDATE_CATEGORY -[hidden]up-> CMD_UPDATE_CATEGORY
-
-EVT_REGISTERED --> POL_INITIAL_STATUS
-POL_INITIAL_STATUS --> CMD_UPDATE_STATUS
-
-note right of AGG_REGISTER
-  Every Machinery references exactly
-  one Category (registered beforehand)
-  used for catalog filtering (US-020).
-end note
-
-' =========================
-' Queries -> Read Models
-' =========================
-
-READ_INVENTORY --> QUERY_INVENTORY
-QUERY_INVENTORY --> RESULT_INVENTORY
-READ_AVAILABILITY --> QUERY_AVAILABILITY
-QUERY_AVAILABILITY --> RESULT_AVAILABILITY
-READ_CATEGORIES --> QUERY_CATEGORIES
-QUERY_CATEGORIES --> RESULT_CATEGORIES
+' Flows are stacked from top to bottom; each one reads left to right
+CMD_9 -[hidden]left-> CMD_1
+XEVT_18 -[hidden]left-> CMD_9
+XEVT_27 -[hidden]left-> XEVT_18
+CMD_35 -[hidden]left-> XEVT_27
+RM_46 -[hidden]left-> CMD_35
+RM_48 -[hidden]left-> RM_46
+RM_50 -[hidden]left-> RM_48
+ACT_47 -[hidden]-> BR_44
+BR_44 -[hidden]-> BR_45
 
 legend right
 |= Color |= Element |
-|<#87CEFA>| Command / Query |
+|<#FFF9C4>| Actor |
+|<#87CEFA>| Command |
 |<#FFF59D>| Aggregate |
 |<#FFB74D>| Domain Event |
-|<#FFF9C4>| Actor |
 |<#B39DDB>| Policy |
+|<#FFE0B2>| Domain Event from another Bounded Context |
 |<#81C784>| Read Model |
-|<#C8E6C9>| Query Result |
+|<#EF9A9A>| Hotspot |
+|<#FFFDE7>| Business Rules |
 endlegend
 
 @enduml

@@ -1,97 +1,76 @@
 @startuml
-title TechFlow - Subscription Management Bounded Context\nDesign-Level Event Storming
+title MaquiControl - Subscription Management Bounded Context\nDesign-Level Event Storming
 
 left to right direction
 skinparam shadowing false
 skinparam roundcorner 8
 skinparam defaultFontName Arial
+skinparam rectangleFontSize 12
+skinparam ArrowColor #555555
+skinparam noteBorderColor #BDB76B
+skinparam nodesep 30
+skinparam ranksep 40
 
-' =========================
-' Styles
-' =========================
+rectangle "COMMAND\nSubscribe to Plan" as CMD_1 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_2 #FFF9C4
+ACT_2 -left-> CMD_1
+rectangle "AGGREGATE\nSubscription" as AGG_3 #FFF59D
+CMD_1 --> AGG_3
+rectangle "DOMAIN EVENT\nSubscription Requested" as EVT_4 #FFB74D
+AGG_3 --> EVT_4
+rectangle "POLICY\nWhen a plan is selected,\nredirect the owner to the checkout" as POL_5 #B39DDB
+EVT_4 --> POL_5
+rectangle "COMMAND\nConfirm Checkout" as CMD_6 #87CEFA
+POL_5 --> CMD_6
+rectangle "AGGREGATE\nSubscription" as AGG_7 #FFF59D
+CMD_6 --> AGG_7
+rectangle "DOMAIN EVENT\nSubscription Payment Approved" as EVT_8 #FFB74D
+AGG_7 --> EVT_8
+rectangle "POLICY\nWhen the payment is approved,\nactivate the subscription" as POL_9 #B39DDB
+EVT_8 --> POL_9
+rectangle "COMMAND\nActivate Subscription" as CMD_10 #87CEFA
+POL_9 --> CMD_10
+rectangle "AGGREGATE\nSubscription" as AGG_11 #FFF59D
+CMD_10 --> AGG_11
+rectangle "EXTERNAL SYSTEM\nMercado Pago\nCheckout Pro (sandbox)" as EXT_12 #E78AD9
+EXT_12 .left. CMD_6
+rectangle "HOTSPOT\nThe payment may be approved but\nthe owner never returns to the app" as HOT_13 #EF9A9A
+HOT_13 .right. EVT_8
+rectangle "COMMAND\nCancel Subscription" as CMD_14 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_15 #FFF9C4
+ACT_15 -left-> CMD_14
+rectangle "AGGREGATE\nSubscription" as AGG_16 #FFF59D
+CMD_14 --> AGG_16
+rectangle "<b>BUSINESS RULES (Subscription)</b>\n- Plan price must be greater than zero\n- Plan machinery limit is a positive integer\n- Status: PENDING_PAYMENT, ACTIVE\n  or CANCELLED\n- Only a subscription PENDING_PAYMENT\n  can be activated\n- Only an ACTIVE subscription\n  can be cancelled\n- An active subscription records its\n  payment and period" as BR_17 #FFFDE7
+rectangle "READ MODEL\nPlan Catalog\n<size:10><i>Query: View Plans</i></size>\n<size:10>Source: Plan</size>" as RM_18 #81C784
+rectangle "ACTOR\nFleet Owner" as ACT_19 #FFF9C4
+RM_18 ..> ACT_19 : informs
+rectangle "READ MODEL\nSubscription Status\n<size:10><i>Query: View Subscription</i></size>\n<size:10>Source: Subscription</size>" as RM_20 #81C784
+rectangle "ACTOR\nFleet Owner" as ACT_21 #FFF9C4
+RM_20 ..> ACT_21 : informs
+rectangle "READ MODEL\nPayment History\n<size:10><i>Query: View Payments</i></size>\n<size:10>Source: Subscription</size>" as RM_22 #81C784
+rectangle "ACTOR\nFleet Owner" as ACT_23 #FFF9C4
+RM_22 ..> ACT_23 : informs
 
-rectangle "COMMAND\nSelect Subscription Plan" as CMD_SELECT_PLAN #87CEFA
-rectangle "AGGREGATE\nSubscription" as AGG_SELECT_PLAN #FFF59D
-rectangle "ACTOR\nFleet Owner" as ACT_SELECT_PLAN #FFF9C4
-rectangle "COMMAND\nRegister Subscription Payment" as CMD_REGISTER_PAYMENT #87CEFA
-rectangle "AGGREGATE\nSubscription" as AGG_REGISTER_PAYMENT #FFF59D
-rectangle "ACTOR\nFleet Owner" as ACT_REGISTER_PAYMENT #FFF9C4
-rectangle "COMMAND\nActivate Subscription" as CMD_ACTIVATE #87CEFA
-rectangle "AGGREGATE\nSubscription" as AGG_ACTIVATE #FFF59D
-rectangle "COMMAND\nCancel Subscription" as CMD_CANCEL #87CEFA
-rectangle "AGGREGATE\nSubscription" as AGG_CANCEL #FFF59D
-rectangle "ACTOR\nFleet Owner" as ACT_CANCEL #FFF9C4
-
-rectangle "DOMAIN EVENT\nSubscription Plan Selected" as EVT_PLAN_SELECTED #FFB74D
-rectangle "DOMAIN EVENT\nSubscription Payment Registered" as EVT_PAYMENT_REGISTERED #FFB74D
-rectangle "DOMAIN EVENT\nSubscription Activated" as EVT_ACTIVATED #FFB74D
-rectangle "DOMAIN EVENT\nSubscription Cancelled" as EVT_CANCELLED #FFB74D
-
-rectangle "POLICY\nWhen a subscription payment is\napproved, activate or renew\nthe subscription" as POL_ACTIVATE_ON_PAYMENT #B39DDB
-rectangle "POLICY\nWhen registered machinery reaches\nthe plan limit, reject new\nmachinery registration" as POL_PLAN_LIMIT #B39DDB
-
-rectangle "READ MODEL\nSubscription Plan Catalog" as READ_PLANS #81C784
-rectangle "QUERY\nView Subscription Plans" as QUERY_PLANS #87CEFA
-rectangle "QUERY RESULT\nSubscription Plan Catalog" as RESULT_PLANS #C8E6C9
-
-rectangle "READ MODEL\nSubscription Status" as READ_STATUS #81C784
-rectangle "QUERY\nView Subscription Status" as QUERY_STATUS #87CEFA
-rectangle "QUERY RESULT\nSubscription Status" as RESULT_STATUS #C8E6C9
-
-rectangle "READ MODEL\nPayment History" as READ_HISTORY #81C784
-rectangle "QUERY\nView Payment History" as QUERY_HISTORY #87CEFA
-rectangle "QUERY RESULT\nPayment History" as RESULT_HISTORY #C8E6C9
-
-' =========================
-' Commands -> Aggregate -> Events
-' =========================
-
-CMD_SELECT_PLAN --> AGG_SELECT_PLAN
-AGG_SELECT_PLAN --> EVT_PLAN_SELECTED
-ACT_SELECT_PLAN -[hidden]up-> CMD_SELECT_PLAN
-
-CMD_REGISTER_PAYMENT --> AGG_REGISTER_PAYMENT
-AGG_REGISTER_PAYMENT --> EVT_PAYMENT_REGISTERED
-ACT_REGISTER_PAYMENT -[hidden]up-> CMD_REGISTER_PAYMENT
-
-CMD_ACTIVATE --> AGG_ACTIVATE
-AGG_ACTIVATE --> EVT_ACTIVATED
-
-CMD_CANCEL --> AGG_CANCEL
-AGG_CANCEL --> EVT_CANCELLED
-ACT_CANCEL -[hidden]up-> CMD_CANCEL
-
-EVT_PAYMENT_REGISTERED --> POL_ACTIVATE_ON_PAYMENT
-POL_ACTIVATE_ON_PAYMENT --> CMD_ACTIVATE
-
-note right of POL_PLAN_LIMIT
-  Cross-context policy: consumed by
-  Fleet Management when handling
-  Register Machinery, using the
-  active Subscription Plan Catalog
-  Read Model as an external reference.
-end note
-
-' =========================
-' Queries -> Read Models
-' =========================
-
-READ_PLANS --> QUERY_PLANS
-QUERY_PLANS --> RESULT_PLANS
-READ_STATUS --> QUERY_STATUS
-QUERY_STATUS --> RESULT_STATUS
-READ_HISTORY --> QUERY_HISTORY
-QUERY_HISTORY --> RESULT_HISTORY
+' Flows are stacked from top to bottom; each one reads left to right
+CMD_14 -[hidden]left-> CMD_1
+RM_18 -[hidden]left-> CMD_14
+RM_20 -[hidden]left-> RM_18
+RM_22 -[hidden]left-> RM_20
+ACT_19 -[hidden]-> BR_17
 
 legend right
 |= Color |= Element |
-|<#87CEFA>| Command / Query |
+|<#FFF9C4>| Actor |
+|<#87CEFA>| Command |
 |<#FFF59D>| Aggregate |
 |<#FFB74D>| Domain Event |
-|<#FFF9C4>| Actor |
 |<#B39DDB>| Policy |
+|<#FFE0B2>| Domain Event from another Bounded Context |
 |<#81C784>| Read Model |
-|<#C8E6C9>| Query Result |
+|<#EF9A9A>| Hotspot |
+|<#E78AD9>| External System |
+|<#FFFDE7>| Business Rules |
 endlegend
 
 @enduml

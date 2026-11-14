@@ -1,90 +1,75 @@
 @startuml
-title TechFlow - Profiles Management Bounded Context\nDesign-Level Event Storming
+title MaquiControl - Profiles Management Bounded Context\nDesign-Level Event Storming
 
 left to right direction
 skinparam shadowing false
 skinparam roundcorner 8
 skinparam defaultFontName Arial
+skinparam rectangleFontSize 12
+skinparam ArrowColor #555555
+skinparam noteBorderColor #BDB76B
+skinparam nodesep 30
+skinparam ranksep 40
 
-' =========================
-' Styles
-' =========================
+rectangle "DOMAIN EVENT (Identity & Access)\nUser Signed Up" as XEVT_1 #FFE0B2
+rectangle "POLICY\nWhen a user signs up,\nask for the profile data" as POL_2 #B39DDB
+XEVT_1 --> POL_2
+rectangle "COMMAND\nCreate Profile" as CMD_3 #87CEFA
+rectangle "ACTOR\nUser" as ACT_4 #FFF9C4
+ACT_4 -left-> CMD_3
+POL_2 --> CMD_3
+rectangle "AGGREGATE\nProfile" as AGG_5 #FFF59D
+CMD_3 --> AGG_5
+rectangle "DOMAIN EVENT\nProfile Created" as EVT_6 #FFB74D
+AGG_5 --> EVT_6
+rectangle "POLICY\nWhen a profile is created,\nask for its organization data" as POL_7 #B39DDB
+EVT_6 --> POL_7
+rectangle "COMMAND\nCreate Organization" as CMD_8 #87CEFA
+rectangle "ACTOR\nUser" as ACT_9 #FFF9C4
+ACT_9 -left-> CMD_8
+POL_7 --> CMD_8
+rectangle "AGGREGATE\nOrganization" as AGG_10 #FFF59D
+CMD_8 --> AGG_10
+rectangle "HOTSPOT\nThe RUC is not yet verified\nagainst SUNAT" as HOT_11 #EF9A9A
+HOT_11 .right. AGG_10
+rectangle "COMMAND\nUpdate Profile" as CMD_12 #87CEFA
+rectangle "ACTOR\nUser" as ACT_13 #FFF9C4
+ACT_13 -left-> CMD_12
+rectangle "AGGREGATE\nProfile" as AGG_14 #FFF59D
+CMD_12 --> AGG_14
+rectangle "COMMAND\nUpdate Organization" as CMD_15 #87CEFA
+rectangle "ACTOR\nUser" as ACT_16 #FFF9C4
+ACT_16 -left-> CMD_15
+rectangle "AGGREGATE\nOrganization" as AGG_17 #FFF59D
+CMD_15 --> AGG_17
+AGG_14 -[hidden]-> CMD_15
+rectangle "<b>BUSINESS RULES (Profile)</b>\n- First name and last name are required\n- Document number is required\n- Contact information requires valid\n  phone, email and address" as BR_18 #FFFDE7
+rectangle "<b>BUSINESS RULES (Organization)</b>\n- Legal name, tax id (RUC) and\n  address are required\n- Tax id must be valid" as BR_19 #FFFDE7
+rectangle "READ MODEL\nProfile Details\n<size:10><i>Query: View Profile</i></size>\n<size:10>Source: Profile</size>" as RM_20 #81C784
+rectangle "ACTOR\nUser" as ACT_21 #FFF9C4
+RM_20 ..> ACT_21 : informs
+rectangle "READ MODEL\nOrganization Details\n<size:10><i>Query: View Organization</i></size>\n<size:10>Source: Organization</size>" as RM_22 #81C784
+rectangle "ACTOR\nUser" as ACT_23 #FFF9C4
+RM_22 ..> ACT_23 : informs
 
-rectangle "COMMAND\nCreate Profile" as CMD_CREATE_PROFILE #87CEFA
-rectangle "AGGREGATE\nProfile" as AGG_CREATE_PROFILE #FFF59D
-rectangle "ACTOR\nContractor" as ACT_CREATE_PROFILE #FFF9C4
-rectangle "COMMAND\nUpdate Profile Information" as CMD_UPDATE_PROFILE #87CEFA
-rectangle "AGGREGATE\nProfile" as AGG_UPDATE_PROFILE #FFF59D
-rectangle "ACTOR\nContractor" as ACT_UPDATE_PROFILE #FFF9C4
-rectangle "COMMAND\nUpdate Contact Information" as CMD_UPDATE_CONTACT #87CEFA
-rectangle "AGGREGATE\nProfile" as AGG_UPDATE_CONTACT #FFF59D
-rectangle "ACTOR\nContractor" as ACT_UPDATE_CONTACT #FFF9C4
-rectangle "COMMAND\nUpdate Organization Information" as CMD_UPDATE_ORG #87CEFA
-rectangle "AGGREGATE\nProfile" as AGG_UPDATE_ORG #FFF59D
-rectangle "ACTOR\nFleet Owner" as ACT_UPDATE_ORG #FFF9C4
-
-rectangle "DOMAIN EVENT\nProfile Created" as EVT_PROFILE_CREATED #FFB74D
-rectangle "DOMAIN EVENT\nProfile Information Updated" as EVT_PROFILE_UPDATED #FFB74D
-rectangle "DOMAIN EVENT\nContact Information Updated" as EVT_CONTACT_UPDATED #FFB74D
-rectangle "DOMAIN EVENT\nOrganization Information Updated" as EVT_ORG_UPDATED #FFB74D
-
-rectangle "POLICY\nWhen a profile is created,\nrequire valid contact information" as POL_REQUIRE_CONTACT #B39DDB
-
-rectangle "READ MODEL\nProfile Details" as READ_PROFILE #81C784
-rectangle "QUERY\nView Profile" as QUERY_PROFILE #87CEFA
-rectangle "QUERY RESULT\nProfile Details" as RESULT_PROFILE #C8E6C9
-
-rectangle "READ MODEL\nContact Information" as READ_CONTACT #81C784
-rectangle "QUERY\nView Contact Information" as QUERY_CONTACT #87CEFA
-rectangle "QUERY RESULT\nContact Information" as RESULT_CONTACT #C8E6C9
-
-rectangle "READ MODEL\nOrganization Information" as READ_ORG #81C784
-rectangle "QUERY\nView Organization Information" as QUERY_ORG #87CEFA
-rectangle "QUERY RESULT\nOrganization Information" as RESULT_ORG #C8E6C9
-
-' =========================
-' Commands -> Aggregate -> Events
-' =========================
-
-CMD_CREATE_PROFILE --> AGG_CREATE_PROFILE
-AGG_CREATE_PROFILE --> EVT_PROFILE_CREATED
-ACT_CREATE_PROFILE -[hidden]up-> CMD_CREATE_PROFILE
-
-CMD_UPDATE_PROFILE --> AGG_UPDATE_PROFILE
-AGG_UPDATE_PROFILE --> EVT_PROFILE_UPDATED
-ACT_UPDATE_PROFILE -[hidden]up-> CMD_UPDATE_PROFILE
-
-CMD_UPDATE_CONTACT --> AGG_UPDATE_CONTACT
-AGG_UPDATE_CONTACT --> EVT_CONTACT_UPDATED
-ACT_UPDATE_CONTACT -[hidden]up-> CMD_UPDATE_CONTACT
-
-CMD_UPDATE_ORG --> AGG_UPDATE_ORG
-AGG_UPDATE_ORG --> EVT_ORG_UPDATED
-ACT_UPDATE_ORG -[hidden]up-> CMD_UPDATE_ORG
-
-EVT_PROFILE_CREATED --> POL_REQUIRE_CONTACT
-POL_REQUIRE_CONTACT --> CMD_UPDATE_CONTACT
-
-' =========================
-' Queries -> Read Models
-' =========================
-
-READ_PROFILE --> QUERY_PROFILE
-QUERY_PROFILE --> RESULT_PROFILE
-READ_CONTACT --> QUERY_CONTACT
-QUERY_CONTACT --> RESULT_CONTACT
-READ_ORG --> QUERY_ORG
-QUERY_ORG --> RESULT_ORG
+' Flows are stacked from top to bottom; each one reads left to right
+CMD_12 -[hidden]left-> XEVT_1
+RM_20 -[hidden]left-> CMD_12
+RM_22 -[hidden]left-> RM_20
+ACT_21 -[hidden]-> BR_18
+BR_18 -[hidden]-> BR_19
 
 legend right
 |= Color |= Element |
-|<#87CEFA>| Command / Query |
+|<#FFF9C4>| Actor |
+|<#87CEFA>| Command |
 |<#FFF59D>| Aggregate |
 |<#FFB74D>| Domain Event |
-|<#FFF9C4>| Actor |
 |<#B39DDB>| Policy |
+|<#FFE0B2>| Domain Event from another Bounded Context |
 |<#81C784>| Read Model |
-|<#C8E6C9>| Query Result |
+|<#EF9A9A>| Hotspot |
+|<#FFFDE7>| Business Rules |
 endlegend
 
 @enduml

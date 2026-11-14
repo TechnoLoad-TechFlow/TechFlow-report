@@ -1,90 +1,76 @@
 @startuml
-title TechFlow - Billing Management Bounded Context\nDesign-Level Event Storming
+title MaquiControl - Billing Management Bounded Context\nDesign-Level Event Storming
 
 left to right direction
 skinparam shadowing false
 skinparam roundcorner 8
 skinparam defaultFontName Arial
+skinparam rectangleFontSize 12
+skinparam ArrowColor #555555
+skinparam noteBorderColor #BDB76B
+skinparam nodesep 30
+skinparam ranksep 40
 
-' =========================
-' Styles
-' =========================
+rectangle "DOMAIN EVENT (Operations)\nOperation Completed" as XEVT_1 #FFE0B2
+rectangle "POLICY\nWhen the service operation is completed,\ncalculate the rental amount" as POL_2 #B39DDB
+XEVT_1 --> POL_2
+rectangle "COMMAND\nCalculate Rental Amount" as CMD_3 #87CEFA
+POL_2 --> CMD_3
+rectangle "AGGREGATE\nInvoice" as AGG_4 #FFF59D
+CMD_3 --> AGG_4
+rectangle "DOMAIN EVENT\nRental Amount Calculated" as EVT_5 #FFB74D
+AGG_4 --> EVT_5
+rectangle "POLICY\nWhen the amount is calculated,\nnotify the fleet owner to issue the invoice" as POL_6 #B39DDB
+EVT_5 --> POL_6
+rectangle "COMMAND\nIssue Invoice" as CMD_7 #87CEFA
+rectangle "ACTOR\nFleet Owner" as ACT_8 #FFF9C4
+ACT_8 -left-> CMD_7
+POL_6 --> CMD_7
+rectangle "AGGREGATE\nInvoice" as AGG_9 #FFF59D
+CMD_7 --> AGG_9
+rectangle "EXTERNAL SYSTEM\nSUNAT" as EXT_10 #E78AD9
+EXT_10 .left. AGG_9
+rectangle "HOTSPOT\nSUNAT may reject or delay\nthe electronic invoice" as HOT_11 #EF9A9A
+HOT_11 .right. AGG_9
+rectangle "DOMAIN EVENT (Rental)\nRental Completed" as XEVT_12 #FFE0B2
+rectangle "POLICY\nWhen a rental ends after its\nagreed date, apply a late penalty" as POL_13 #B39DDB
+XEVT_12 --> POL_13
+rectangle "COMMAND\nApply Late Penalty" as CMD_14 #87CEFA
+POL_13 --> CMD_14
+rectangle "AGGREGATE\nLate Penalty" as AGG_15 #FFF59D
+CMD_14 --> AGG_15
+rectangle "<b>BUSINESS RULES (Invoice)</b>\n- Amount = validated hours x hourly rate\n- References the rental by its id\n- An invoice is issued only once\n  per rental" as BR_16 #FFFDE7
+rectangle "<b>BUSINESS RULES (Late Penalty)</b>\n- Applies only when machinery is\n  returned after the agreed end date" as BR_17 #FFFDE7
+rectangle "READ MODEL\nInvoice Details\n<size:10><i>Query: View Invoice</i></size>\n<size:10>Source: Invoice</size>" as RM_18 #81C784
+rectangle "ACTOR\nFleet Owner" as ACT_19 #FFF9C4
+RM_18 ..> ACT_19 : informs
+rectangle "READ MODEL\nInvoice History\n<size:10><i>Query: View Invoice History</i></size>\n<size:10>Source: Invoice</size>" as RM_20 #81C784
+rectangle "ACTOR\nContractor" as ACT_21 #FFF9C4
+RM_20 ..> ACT_21 : informs
+rectangle "READ MODEL\nLate Penalties\n<size:10><i>Query: View Late Penalties</i></size>\n<size:10>Source: Late Penalty</size>" as RM_22 #81C784
+rectangle "ACTOR\nContractor" as ACT_23 #FFF9C4
+RM_22 ..> ACT_23 : informs
 
-rectangle "COMMAND\nCalculate Rental Amount" as CMD_CALCULATE #87CEFA
-rectangle "AGGREGATE\nInvoice" as AGG_CALCULATE #FFF59D
-rectangle "COMMAND\nIssue Electronic Invoice" as CMD_ISSUE_INVOICE #87CEFA
-rectangle "AGGREGATE\nInvoice" as AGG_ISSUE_INVOICE #FFF59D
-rectangle "ACTOR\nFleet Owner" as ACT_ISSUE_INVOICE #FFF9C4
-rectangle "COMMAND\nApply Late Penalty" as CMD_APPLY_PENALTY #87CEFA
-rectangle "AGGREGATE\nLate Penalty" as AGG_PENALTY #FFF59D
-
-rectangle "DOMAIN EVENT\nRental Amount Calculated" as EVT_AMOUNT_CALCULATED #FFB74D
-rectangle "DOMAIN EVENT\nElectronic Invoice Issued" as EVT_INVOICE_ISSUED #FFB74D
-rectangle "DOMAIN EVENT\nLate Penalty Applied" as EVT_PENALTY_APPLIED #FFB74D
-
-rectangle "POLICY\nWhen the rental amount is\ncalculated, enable issuing\nthe electronic invoice" as POL_ISSUE_INVOICE #B39DDB
-rectangle "POLICY\nWhen machinery is returned\nafter the agreed end date,\napply a late penalty" as POL_LATE_RETURN #B39DDB
-
-rectangle "EXTERNAL SYSTEM\nSUNAT" as EXT_SUNAT #E78AD9
-
-rectangle "READ MODEL\nInvoice Details" as READ_INVOICE #81C784
-rectangle "QUERY\nView Invoice" as QUERY_INVOICE #87CEFA
-rectangle "QUERY RESULT\nInvoice Details" as RESULT_INVOICE #C8E6C9
-
-rectangle "READ MODEL\nInvoice History" as READ_INVOICE_HISTORY #81C784
-rectangle "QUERY\nView Invoice History" as QUERY_INVOICE_HISTORY #87CEFA
-rectangle "QUERY RESULT\nInvoice History" as RESULT_INVOICE_HISTORY #C8E6C9
-
-rectangle "READ MODEL\nLate Penalty List" as READ_PENALTIES #81C784
-rectangle "QUERY\nView Late Penalties by Rental" as QUERY_PENALTIES #87CEFA
-rectangle "QUERY RESULT\nLate Penalty List" as RESULT_PENALTIES #C8E6C9
-
-' =========================
-' Commands -> Aggregate -> Events
-' =========================
-
-CMD_CALCULATE --> AGG_CALCULATE
-AGG_CALCULATE --> EVT_AMOUNT_CALCULATED
-
-CMD_ISSUE_INVOICE --> AGG_ISSUE_INVOICE
-AGG_ISSUE_INVOICE --> EVT_INVOICE_ISSUED
-ACT_ISSUE_INVOICE -[hidden]up-> CMD_ISSUE_INVOICE
-EXT_SUNAT .. EVT_INVOICE_ISSUED
-
-CMD_APPLY_PENALTY --> AGG_PENALTY
-AGG_PENALTY --> EVT_PENALTY_APPLIED
-
-EVT_AMOUNT_CALCULATED --> POL_ISSUE_INVOICE
-POL_ISSUE_INVOICE --> CMD_ISSUE_INVOICE
-
-note right of POL_LATE_RETURN
-  Cross-context policy: triggered by
-  Rental Management when a Rental
-  is closed after its agreed end date
-  (Rental Period, external reference).
-end note
-
-' =========================
-' Queries -> Read Models
-' =========================
-
-READ_INVOICE --> QUERY_INVOICE
-QUERY_INVOICE --> RESULT_INVOICE
-READ_INVOICE_HISTORY --> QUERY_INVOICE_HISTORY
-QUERY_INVOICE_HISTORY --> RESULT_INVOICE_HISTORY
-READ_PENALTIES --> QUERY_PENALTIES
-QUERY_PENALTIES --> RESULT_PENALTIES
+' Flows are stacked from top to bottom; each one reads left to right
+XEVT_12 -[hidden]left-> XEVT_1
+RM_18 -[hidden]left-> XEVT_12
+RM_20 -[hidden]left-> RM_18
+RM_22 -[hidden]left-> RM_20
+ACT_19 -[hidden]-> BR_16
+BR_16 -[hidden]-> BR_17
 
 legend right
 |= Color |= Element |
-|<#87CEFA>| Command / Query |
+|<#FFF9C4>| Actor |
+|<#87CEFA>| Command |
 |<#FFF59D>| Aggregate |
 |<#FFB74D>| Domain Event |
-|<#FFF9C4>| Actor |
 |<#B39DDB>| Policy |
-|<#E78AD9>| External System |
+|<#FFE0B2>| Domain Event from another Bounded Context |
 |<#81C784>| Read Model |
-|<#C8E6C9>| Query Result |
+|<#EF9A9A>| Hotspot |
+|<#E78AD9>| External System |
+|<#FFFDE7>| Business Rules |
 endlegend
 
 @enduml
