@@ -76,7 +76,8 @@ El presente registro resume las modificaciones relevantes realizadas al informe 
 | **1.9.0** | 2026-09-19 | Todos los integrantes | Revisión general, incorporación de Conclusiones, Bibliografía según formato APA 7 y consolidación final del informe para la entrega AV1 (Semana 4). |
 | **2.0.0** | 2026-10-08 | Todos los integrantes | Documentación del Sprint 2: planificación, backlog, evidencias de desarrollo y ejecución; registro del despliegue en Microsoft Azure App Service (Landing Page y Web App); validación de anclas del Índice (TOC) y depuración de referencias. |
 | **2.1.0** | 2026-11-11 | Todos los integrantes | Estandarización de carátula según plantilla oficial (`1ASI0730`, NRC `8093`, orden alfabético por apellidos); adopción del formato oficial Scrum.org para los Sprint Goals en Sprint Planning 1, 2 y 3; actualización de URLs de despliegue en Microsoft Azure y repositorio `technoload-platform`. |
-| **2.2.0** | 2026-11-14 | Todos los integrantes | Consolidación final de AV2 (Sprint 3): actualización de Big Picture Event Storming (`2.3.5`) y diagramas renderizados de las secciones `4.4.4` a `4.8` (User Flows `UF-01`–`UF-06`, Design-Level Event Storming, C4, Diagramas de Clases DDD y Base de Datos sin bloques Mermaid sin renderizar); registro de commits y métricas reales de los 4 repositorios; documentación de integración Angular 21 + Node.js / ASP.NET Core 8 / Spring Boot; formato Anexo D en heurísticas, Video About-the-Product y About-the-Team, Student Outcome y corrección terminológica según Anexo E. |
+| **2.2.0** | 2026-11-14 | Todos los integrantes | Consolidación de AV2 (Sprint 3): actualización de Big Picture Event Storming (`2.3.5`) y diagramas renderizados de las secciones `4.4.4` a `4.8` (User Flows `UF-01`–`UF-06`, Design-Level Event Storming, C4, Diagramas de Clases DDD y Base de Datos sin bloques Mermaid sin renderizar); formato Anexo D en heurísticas, Video About-the-Product y About-the-Team, Student Outcome y corrección terminológica según Anexo E. |
+| **2.3.0** | 2026-11-14 | Wilmer Gutierrez, Mathias Castillo | Actualización integral del Sprint 3 conforme al repositorio oficial `TechFlow-Backend`: backend DDD y CQRS en Java 21 / Spring Boot, 9 bounded contexts, 16 controladores RESTful documentados con OpenAPI / Swagger UI, Transactional Outbox (`outbox_events`), autenticación JWT stateless, 14 suites de pruebas unitarias de dominio, Docker Compose y pipeline CI/CD en GitHub Actions hacia Azure App Service. |
 
 ---
 
@@ -235,7 +236,7 @@ En la siguiente matriz se detallan las acciones realizadas y los enunciados de c
 | | **Díaz Caruzo, Edgard Daniel** | **AV1** | Asumió el liderazgo en la investigación de competidores y el diseño de guías estructuradas de entrevistas para los segmentos de alquiler de maquinaria y transporte. Moderó la discusión sobre estrategias de diferenciación frente al mercado local. | Dirigir el análisis competitivo temprano proporcionó al equipo argumentos sólidos para priorizar el control de horómetros y alertas de mantenimiento preventivo como valor diferencial. |
 | | | **AV2** | Lideró el rediseño visual y navegación de la Landing Page (`technoload-website`), la implementación del modal de autenticación y gestión de usuarios, así como la evaluación heurística según el formato oficial Anexo D. | Ejercer liderazgo en la capa visual y de experiencia de usuario garantizó coherencia semántica entre la Landing Page y la Web Application, optimizando las rutas de conversión hacia la plataforma. |
 | | **Gutiérrez Lizarbe, Wilmer Sebastián** | **AV1** | Lideró el diseño de la arquitectura de información y la priorización del Product Backlog mediante Impact Mapping. Estableció las directrices de estimación ágil en Story Points y definición de criterios de aceptación en Gherkin. | La clarificación y priorización del backlog bajo un liderazgo visible facilitó al equipo enfocarse en las épicas críticas de inventario y estado operativo. |
-| | | **AV2** | Condujo la implementación de los RESTful Web Services en `technoload-platform`, desarrollando las capas DDD en ASP.NET Core 8 (`dotnet/` con EF Core y pruebas unitarias) y Spring Boot (`spring/` con contextos `fleet`, `maintenance` y `rental`), además de documentar la autenticación Bearer de la API Node.js. | El liderazgo en servicios backend y DDD permitió establecer contratos claros, validaciones consistentes y pruebas unitarias antes y durante la integración en la nube. |
+| | | **AV2** | Condujo la implementación de los RESTful Web Services en `TechFlow-Backend`, desarrollando la arquitectura Domain-Driven Design (DDD) con persistencia hexagonal y CQRS en Java 21 y Spring Boot, estructurando 9 contextos delimitados (`iam`, `profiles`, `fleet`, `rental`, `maintenance`, `operations`, `subscription`, `billing`, `shared`), Transactional Outbox, autenticación JWT stateless, 14 suites de pruebas unitarias de dominio y pipeline CI/CD en GitHub Actions hacia Azure App Service. | El liderazgo en servicios backend y DDD permitió establecer contratos claros, validaciones consistentes y pruebas unitarias antes y durante la integración en la nube. |
 | | **Tantalean Granda, Nicolas** | **AV1** | Asumió el rol de Scrum Master y líder de configuración de software (SCM). Estableció el flujo de trabajo GitFlow, las convenciones de Conventional Commits y supervisó el despliegue inicial en GitHub Pages. | La disciplina establecida en el control de versiones desde el inicio del proyecto garantizó trazabilidad completa en cada commit y Pull Request del equipo. |
 | | | **AV2** | Lideró el desarrollo de la Web Application en Angular 21 (`technoload-webapp`) conectada a la API de plataforma, integrando autenticación real de servidor, separación de roles (`ADMIN`/`USER`), checkout sandbox de suscripciones y el despliegue en Microsoft Azure App Service. | Asumir la responsabilidad de la integración frontend-servidor y del despliegue cloud aseguró la operación integrada de la Landing Page, Web Application y RESTful API bajo HTTPS. |
 | **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Castillo Guevara, Mathias Alejandro** | **AV1** | Participó activamente en la elaboración de Empathy Maps y Big Picture Event Storming. Apoyó a sus compañeros en la redacción técnica de requisitos y promovió la toma de decisiones por consenso. | Mantener un ambiente abierto de debate conceptual permitió enriquecer el glosario de lenguaje ubicuo con la perspectiva de todos los participantes. |
@@ -243,7 +244,7 @@ En la siguiente matriz se detallan las acciones realizadas y los enunciados de c
 | | **Díaz Caruzo, Edgard Daniel** | **AV1** | Realizó entrevistas cualitativas con usuarios potenciales, transcribió los hallazgos y facilitó sesiones conjuntas de Needfinding para consolidar los User Personas y Journey Maps. | La apertura para incorporar retroalimentación de los integrantes permitió refinar la descripción de dolores operativos de los administradores de flota. |
 | | | **AV2** | Planificó y ejecutó mejoras de diseño responsivo en `technoload-website`, colaboró en la definición de criterios de accesibilidad e internacionalización y consolidó los hallazgos de Usabilidad, Diseño Inclusivo y Arquitectura de Información para el Sprint 3. | La colaboración constante entre diseño UX/UI y desarrollo frontend fortaleció la calidad percibida de las interfaces y el cumplimiento de estándares de accesibilidad. |
 | | **Gutiérrez Lizarbe, Wilmer Sebastián** | **AV1** | Colaboró en la definición de perfiles de integrantes, elaboración del Style Guideline y diseño de componentes de UI. Participó puntualmente en todas las reuniones de planificación y revisión. | La colaboración inclusiva en la definición de estilos y paleta cromática favoreció un sentido de pertenencia y compromiso compartido con el diseño del producto. |
-| | | **AV2** | Estableció las metas técnicas de persistencia y dominio del Sprint 3, coordinando con Tantalean los contratos JSON entre `technoload-platform` y `technoload-webapp` para el registro de maquinaria, solicitudes de alquiler y pago sandbox. | La coordinación fluida y la asignación transparente de responsabilidades permitieron entregar incrementos de software funcionales y verificables mediante pruebas unitarias. |
+| | | **AV2** | Estableció las metas técnicas de persistencia y dominio del Sprint 3, coordinando con Tantalean los contratos JSON y especificaciones OpenAPI entre `TechFlow-Backend` y `technoload-webapp` para autenticación, gestión de maquinaria, solicitudes de alquiler, mantenimiento y pago sandbox de suscripciones. | La coordinación fluida y la asignación transparente de responsabilidades permitieron entregar incrementos de software funcionales y verificables mediante pruebas unitarias. |
 | | **Tantalean Granda, Nicolas** | **AV1** | Creó el repositorio central en la organización de GitHub, configuró permisos para todos los integrantes y brindó soporte técnico en la resolución de conflictos de merge en ramas locales. | Un entorno de trabajo accesible y con soporte mutuo fomenta la confianza del equipo para experimentar y contribuir con regularidad. |
 | | | **AV2** | Gestionó la configuración de entorno `.env.production` en `technoload-webapp`, coordinó las entregas de Landing Page, Web App y API en Azure App Service y dio seguimiento a la integración continua en ramas de desarrollo y producción. | El monitoreo transparente del avance y la adaptación ágil ante incidencias de despliegue aseguraron el cumplimiento de los objetivos planificados para el Sprint 3. |
 
@@ -2049,13 +2050,13 @@ Las principales herramientas utilizadas para el proyecto son las siguientes:
 | Landing Page | HTML5, CSS3 & JavaScript (ES6) | Implementación del sitio público de presentación, selector de segmentos, modal de autenticación y calculadora ROI. | https://developer.mozilla.org/ |
 | Frontend Web Framework | Angular 21 (`@angular/core ^21.2.25`) & TypeScript (`~5.9.2`) | Framework y lenguaje utilizados para desarrollar la Frontend Web Application (`technoload-webapp`). | https://angular.dev/ |
 | Reactive Extensions | RxJS (`7.8.1`) | Manejo reactivo de flujos asíncronos y consumo de servicios HTTP en el cliente Angular. | https://rxjs.dev/ |
-| Backend Services (Cloud Demo & DDD) | Node.js (`server.js`), ASP.NET Core 8 (C# / EF Core) & Spring Boot (Java) | Implementación de los RESTful Web Services en `technoload-platform` para autenticación, activos, mantenimiento, alquileres y pagos. | https://learn.microsoft.com/aspnet/core/ |
-| DBMS & Persistence | MySQL 8 / PostgreSQL / `db.json` | Persistencia relacional para los backends DDD (.NET 8 / Spring Boot) y almacenamiento JSON para el servicio Node.js desplegado. | https://www.mysql.com/ |
-| API Documentation | OpenAPI 3.0 / Swagger UI | Documentación e interacción con los endpoints de los RESTful Web Services. | https://swagger.io/ |
+| Backend Services (DDD / CQRS REST API) | Java 21 & Spring Boot 4.1.2 (DDD / CQRS) | Implementación de los RESTful Web Services en `TechFlow-Backend` para autenticación JWT stateless, perfiles, flota, alquileres, mantenimiento, operaciones, suscripciones y facturación con Transactional Outbox. | https://spring.io/projects/spring-boot |
+| DBMS & Persistence | MySQL 8.0 & Hibernate JPA | Persistencia relacional para el backend DDD/CQRS en Spring Boot con outbox transaccional (`outbox_events`) y validación de esquema en producción. | https://www.mysql.com/ |
+| API Documentation | OpenAPI 3.0 / Swagger UI (SpringDoc 3.2.0) | Documentación interactiva de los 16 controladores RESTful del backend en `/swagger-ui/index.html`. | https://swagger.io/ |
 | Software Documentation | Markdown | Elaboración del Project Report y documentación técnica dentro de GitHub. | https://www.markdownguide.org/ |
 | Software Deployment | Microsoft Azure App Service & GitHub Pages | Publicación en la nube de Landing Page, Frontend Web Application y RESTful Web Services. | https://azure.microsoft.com/ |
 
-La combinación de estas herramientas permite mantener un entorno común entre los integrantes del equipo. El Landing Page emplea HTML5, CSS3 y JavaScript ES6; la Frontend Web Application está construida con Angular 21 y TypeScript; y los RESTful Web Services en `technoload-platform` combinan el servicio Node.js publicado en Azure con las implementaciones DDD en ASP.NET Core 8 (C# / EF Core) y Spring Boot (Java).
+La combinación de estas herramientas permite mantener un entorno común entre los integrantes del equipo. El Landing Page emplea HTML5, CSS3 y JavaScript ES6; la Frontend Web Application está construida con Angular 21 y TypeScript; y los RESTful Web Services en `TechFlow-Backend` implementan una arquitectura empresarial en Java 21 y Spring Boot bajo Domain-Driven Design (DDD) con persistencia hexagonal y CQRS sobre MySQL 8.
 
 ![Estructura del proyecto](assets/evidence/repository/repository-develop-structure.jpeg)
 
@@ -2070,9 +2071,9 @@ Los repositorios correspondientes a los productos de TechnoLoad son:
 | Project Report | https://github.com/TechnoLoad-TechFlow/TechFlow-report |
 | Landing Page | https://github.com/TechnoLoad-TechFlow/technoload-website |
 | Frontend Web Application | https://github.com/TechnoLoad-TechFlow/technoload-webapp |
-| Web Services (RESTful API) | https://github.com/TechnoLoad-TechFlow/technoload-platform |
+| Web Services (RESTful API) | https://github.com/TechnoLoad-TechFlow/TechFlow-Backend |
 
-El repositorio correspondiente a los RESTful Web Services (`technoload-platform`) incluye tanto el código fuente de los servicios como las pruebas unitarias de dominio y aplicación (`MachineServiceTests` en .NET y pruebas unitarias de flota en Spring Boot).
+El repositorio correspondiente a los RESTful Web Services (`TechFlow-Backend`) incluye el código fuente del backend DDD y CQRS en Java 21 / Spring Boot, los 9 contextos delimitados, la suite de 14 pruebas unitarias de dominio y los flujos de integración y despliegue continuo en GitHub Actions hacia Azure App Service.
 
 ![Landing Page de TechnoLoad](assets/ux/landing/landing-page-technoload.jpeg)
 
@@ -2227,7 +2228,7 @@ La Frontend Web Application (`technoload-webapp`) se construye con Angular CLI (
 
 `feature branch → develop → validation → main → npm install → npm run build → deployment`
 
-El resultado del build de producción (`dist/`) se publica en Microsoft Azure App Service. La URL base de la API RESTful se configura mediante variables de entorno (`.env.production` con `VITE_API_BASE_URL=https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1`) y no mediante valores rígidos en el código fuente.
+El resultado del build de producción (`dist/`) se publica en Microsoft Azure App Service. La URL base de la API RESTful se configura mediante variables de entorno (`.env.production` con `VITE_API_BASE_URL=https://techflow-backend-u202410728.azurewebsites.net/api/v1`) y no mediante valores rígidos en el código fuente.
 
 **Production URL:**
 
@@ -2235,43 +2236,46 @@ El resultado del build de producción (`dist/`) se publica en Microsoft Azure Ap
 
 #### RESTful Web Services Deployment
 
-Los RESTful Web Services alojados en `technoload-platform` se despliegan en Azure App Service (Linux) desde la rama `main`, ejecutando el proceso de verificación y publicación:
+Los RESTful Web Services alojados en `TechFlow-Backend` se compilan y despliegan en Azure App Service (Linux) desde la rama `main` de [TechnoLoad-TechFlow/TechFlow-Backend](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend) mediante un pipeline automatizado de GitHub Actions (`.github/workflows/deploy-azure.yml`), ejecutando el siguiente flujo de verificación y publicación:
 
-1. Obtener la versión estable desde `main`.
-2. Restaurar dependencias (`npm install`, `dotnet restore` o `mvn dependency:resolve`).
-3. Ejecutar las pruebas unitarias disponibles (`dotnet test` / `mvn test`).
-4. Configurar las variables de entorno en Azure App Settings (`PORT`, `AUTH_SESSION_TTL_HOURS`, `STRIPE_SECRET_KEY`, `ConnectionStrings__TechnoLoad`, `DB_URL`, `CORS_ALLOWED_ORIGINS`).
-5. Verificar la disponibilidad del servicio mediante `GET /api/v1/health` y los endpoints OpenAPI / Swagger en entornos locales de desarrollo.
+1. Obtener la versión estable desde `main` (`actions/checkout@v4`).
+2. Configurar el runtime JDK 21 Temurin con caché Maven (`actions/setup-java@v4`).
+3. Compilar el proyecto y ejecutar las 14 suites de pruebas unitarias de dominio con Maven Wrapper (`./mvnw -B package -Dtest='!TechFlowBackendApplicationTests' -Dsurefire.failIfNoSpecifiedTests=false`).
+4. Empaquetar y subir el artefacto JAR ejecutable (`target/*.jar`) mediante `actions/upload-artifact@v4`.
+5. Descargar el artefacto y desplegar en Azure App Service (`azure/webapps-deploy@v3`) utilizando el publish profile configurado en los GitHub Secrets del repositorio (`AZURE_WEBAPP_NAME: techflow-backend`).
+6. Configurar las variables de entorno en Azure App Settings (`DATABASE_URL`, `DATABASE_PORT`, `DATABASE_NAME`, `DATABASE_USER`, `DATABASE_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `PORT`).
+7. Verificar la disponibilidad del servicio mediante `GET /health` y la documentación interactiva en `/swagger-ui/index.html`.
 
-Las credenciales, secretos JWT y claves de pasarela de pago no se almacenan en el repositorio Git.
+Las credenciales de base de datos, firmas secretas JWT (mínimo 32 caracteres) y certificados de producción se gestionan como variables de entorno aisladas y nunca se exponen en el repositorio Git.
 
 **RESTful API Base URL:**
 
-* **Producción Cloud (Azure App Service):** `https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1`
-* **Entorno de Desarrollo y Pruebas Local:** `http://localhost:8080/api/v1`
-* **Repositorio de Código Fuente de Servicios:** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
+* **Producción Cloud (Azure App Service):** `https://techflow-backend-u202410728.azurewebsites.net/api/v1` (Health: `/health`)
+* **Entorno de Desarrollo Local:** `http://localhost:8080/api/v1` (Health: `http://localhost:8080/health`)
+* **Repositorio de Código Fuente de Servicios:** [https://github.com/TechnoLoad-TechFlow/TechFlow-Backend](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend)
 
 **Swagger / OpenAPI Documentation URL:**
 
-* **Swagger UI (ASP.NET Core 8 local):** `https://localhost:<puerto>/swagger`
-* **Swagger UI (Spring Boot local):** `http://localhost:8080/swagger-ui.html`
-* **Repositorio de contratos y esquemas:** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
+* **Swagger UI (Spring Boot / OpenAPI 3.0 Local):** `http://localhost:8080/swagger-ui/index.html`
+* **Swagger UI (Azure App Service Cloud):** `https://techflow-backend-u202410728.azurewebsites.net/swagger-ui/index.html`
+* **OpenAPI Schema (JSON v3):** `http://localhost:8080/v3/api-docs`
+* **Repositorio de contratos y código backend:** [https://github.com/TechnoLoad-TechFlow/TechFlow-Backend](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend)
 
 #### Database Deployment
 
-La estructura relacional definida en [database/schema.sql](database/schema.sql) y las migraciones de Entity Framework Core (`dotnet/`) permiten mantener sincronizada la base de datos en MySQL 8 / PostgreSQL mediante cadenas de conexión administradas por variables de entorno, mientras que la instancia de demostración en Node.js emplea `db.json`.
+La estructura relacional se administra en MySQL 8.0. En el perfil de desarrollo (`dev`), Hibernate JPA gestiona la actualización automática de entidades y tablas (`techflow`). En el perfil de producción (`prod`), se ejecuta bajo `spring.jpa.hibernate.ddl-auto=validate`, asegurando que la base de datos coincida estrictamente con los esquemas y restricciones relacionales, incluyendo la tabla transaccional `outbox_events` para la publicación asíncrona de eventos de dominio sin riesgo de inconsistencias.
 
 ---
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-La solución digital de TechnoLoad se organiza en tres productos desacoplados e integrados en la nube de Microsoft Azure: la Landing Page pública (`technoload-website`), la Frontend Web Application desarrollada en Angular (`technoload-webapp`) y los RESTful Web Services (`technoload-platform`).
+La solución digital de TechnoLoad se organiza en tres productos desacoplados e integrados en la nube de Microsoft Azure: la Landing Page pública (`technoload-website`), la Frontend Web Application desarrollada en Angular (`technoload-webapp`) y los RESTful Web Services desarrollados en Java 21 y Spring Boot (`TechFlow-Backend`).
 
 | Producto | URL / acceso | Estado |
 |---|---|---|
 | Landing Page | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Desplegada en Microsoft Azure App Service |
 | Frontend Web Application | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Desplegada en Microsoft Azure App Service |
-| RESTful Web Services | [https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1/health](https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1/health) | Desplegados en Microsoft Azure App Service |
+| RESTful Web Services | [https://techflow-backend-u202410728.azurewebsites.net/health](https://techflow-backend-u202410728.azurewebsites.net/health) | Desplegados en Microsoft Azure App Service (`TechFlow-Backend`) |
 
 ### 5.2.1. Sprint 1
 
@@ -2352,9 +2356,9 @@ Durante el Sprint 1, el alcance se concentró en la formulación de requisitos d
 
 | Elemento | Evidencia verificada |
 |---|---|
-| API o servicio disponible | Contratos OpenAPI / Swagger modelados para su implementación progresiva en `technoload-platform` |
-| URL base prevista | `https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1` (Cloud) / `http://localhost:8080/api/v1` (Local) |
-| Repositorio de servicios | [TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform) |
+| API o servicio disponible | Contratos OpenAPI / Swagger modelados para su implementación progresiva en `TechFlow-Backend` |
+| URL base prevista | `https://techflow-backend-u202410728.azurewebsites.net/api/v1` (Cloud) / `http://localhost:8080/api/v1` (Local) |
+| Repositorio de servicios | [TechnoLoad-TechFlow/TechFlow-Backend](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend) |
 | Endpoints modelados | `GET/POST /api/v1/machinery`, `POST /api/v1/rentals`, `GET/POST /api/v1/maintenance-orders` |
 | Pruebas de servicios | Validación de esquemas JSON y estructuras de DTOs en capa de dominio |
 
@@ -2582,7 +2586,7 @@ A continuación se presentan las capturas de pantalla del registro de actividad 
 
 #### 5.2.3.1. Sprint Planning 3
 
-El Sprint 3 corresponde al ciclo de desarrollo para la entrega **AV2 (Semana 12)**, ejecutado entre el 14 de octubre y el 14 de noviembre de 2026. Su enfoque central abarca la integración de la autenticación real servidor-cliente con separación de roles en la Frontend Web Application Angular (`technoload-webapp`), el módulo de pagos sandbox y checkout de suscripciones, la implementación de los servicios RESTful DDD en ASP.NET Core 8 y Spring Boot junto al backend Node.js en `technoload-platform`, la corrección integral de los diagramas arquitecturales del Capítulo IV (secciones 4.4.4 a 4.8) y la ejecución de la validación UX con usuarios objetivo.
+El Sprint 3 corresponde al ciclo de desarrollo para la entrega **AV2 (Semana 12)**, ejecutado entre el 14 de octubre y el 14 de noviembre de 2026. Su enfoque central abarca la consolidación de la arquitectura backend empresarial en **Java 21** y **Spring Boot** dentro del repositorio oficial [TechnoLoad-TechFlow/TechFlow-Backend](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend), estructurado bajo Domain-Driven Design (DDD) con persistencia hexagonal y CQRS, autenticación basada en tokens JWT stateless, el patrón Transactional Outbox para publicación confiable de eventos de dominio, la integración con la Frontend Web Application en Angular 21 (`technoload-webapp`), la Landing Page (`technoload-website`), la corrección de los artefactos de diseño del Capítulo IV y la validación con usuarios objetivo.
 
 | Sprint # | Sprint 3 |
 |---|---|
@@ -2593,12 +2597,12 @@ El Sprint 3 corresponde al ciclo de desarrollo para la entrega **AV2 (Semana 12)
 | Prepared By | Gutiérrez Lizarbe, Wilmer Sebastián |
 | Attendees (to planning meeting) | Castillo Guevara, Mathias Alejandro / Díaz Caruzo, Edgard Daniel / Gutiérrez Lizarbe, Wilmer Sebastián / Tantalean Granda, Nicolas |
 | **Sprint 2 Review** | |
-| Summary | En el Sprint 2 se publicaron la Landing Page y la versión inicial de la Web Application en Microsoft Azure App Service, cubriendo catálogo de flota, cálculo de ROI y modelado de contratos API iniciales. |
+| Summary | En el Sprint 2 se publicaron la Landing Page y la versión inicial de la Web Application en Microsoft Azure App Service, cubriendo catálogo de flota, cálculo de ROI y modelado de contratos de servicios iniciales. |
 | **Sprint 2 Retrospective** | |
-| Summary | Tras la revisión de AV1/Sprint 2, el equipo identificó cuatro mejoras prioritarias: (1) sustituir el inicio de sesión local por autenticación real contra `technoload-platform`, (2) incorporar la simulación de checkout y pagos sandbox de suscripciones, (3) implementar las capas DDD de dominio, aplicación, infraestructura y pruebas unitarias en backend (.NET 8 y Spring Boot), y (4) corregir el Big Picture Event Storming, los diagramas de las secciones 4.4.4 a 4.8 y el formato oficial de los Sprint Goals. |
+| Summary | Tras la revisión de AV1/Sprint 2, el equipo identificó cuatro mejoras prioritarias: (1) sustituir prototipos y mocks por un backend DDD y CQRS empresarial en Java 21 y Spring Boot en el repositorio oficial `TechFlow-Backend`, (2) implementar autenticación stateless por JWT y separación estricta de roles (`ROLE_USER` / `ROLE_ADMIN`), (3) incorporar persistencia hexagonal desacoplada de JPA (ADR-0002) y Transactional Outbox (`outbox_events`) (ADR-0008) para garantizar entrega confiable de eventos entre los 9 contextos delimitados, y (4) automatizar pruebas unitarias de dominio (14 test suites), empaquetado Docker y despliegue CI/CD a Azure App Service vía GitHub Actions. |
 | **Sprint Goal & User Stories** | |
-| Sprint 3 Goal | **Our focus is on** integrating server-backed authentication, role-based customer/admin workflows, sandbox subscription payments, and DDD RESTful backend services across the TechnoLoad platform while aligning architectural documentation and UX validation for AV2.<br><br>**We believe it delivers** secure multi-role fleet management, verifiable end-to-end subscription checkout, and consistent API persistence **to** heavy machinery rental companies and construction contractors.<br><br>**This will be confirmed when** users authenticate against the deployed platform API, complete catalog checkout and sandbox payment approval/rejection flows in the Angular Web Application, backend unit tests pass for domain rules, and target users validate the platform in structured heuristic sessions. |
-| User Stories | `US-001`, `US-002`, `US-003`, `US-004`, `US-007`, `US-019`, `US-026`, `US-027`, `US-041`, `US-042`, `TS-001`, `TS-004`, `TS-005` |
+| Sprint 3 Goal | **Our focus is on** delivering the official enterprise DDD and CQRS RESTful backend in Spring Boot (Java 21) within `TechFlow-Backend`, integrating stateless JWT authentication, multi-role fleet, rental, maintenance, operations, subscription and billing workflows, and establishing automated CI/CD and interactive OpenAPI documentation for AV2.<br><br>**We believe it delivers** robust, secure, and decoupled fleet management and rental booking capabilities with transactional integrity **to** heavy machinery rental companies and civil construction contractors.<br><br>**This will be confirmed when** users authenticate with JWT tokens, navigate role-separated views, execute machinery, rental and maintenance commands with domain validation and transactional outbox recording, all 14 unit test suites pass in the automated GitHub Actions pipeline, and the API is accessible via Swagger UI and deployed to Azure App Service. |
+| User Stories | `US-001`, `US-002`, `US-003`, `US-004`, `US-007`, `US-019`, `US-026`, `US-027`, `US-041`, `US-042`, `TS-001`, `TS-002`, `TS-003`, `TS-004`, `TS-005` |
 | Sprint 3 Velocity | 38 Story Points |
 | Sum of Story Points | 38 Story Points |
 
@@ -2606,7 +2610,7 @@ El Sprint 3 corresponde al ciclo de desarrollo para la entrega **AV2 (Semana 12)
 
 A continuación se presenta la matriz Leadership-and-Collaboration (LACX) del equipo TechnoLoad durante el desarrollo del Sprint 3. Se utiliza `L` para líder y `C` para colaborador:
 
-| Team Member | GitHub Username / Git Author | Web App Angular & Pagos | RESTful Web Services (Node / .NET / Spring) | Landing Page & Auth UI | Diagramas 4.4.4–4.8 & Reporte | Validación UX & Videos | Cloud Azure & SCM |
+| Team Member | GitHub Username / Git Author | Web App Angular & Pagos | RESTful Web Services (Java 21 / Spring Boot DDD en `TechFlow-Backend`) | Landing Page & Auth UI | Diagramas 4.4.4–4.8 & Reporte | Validación UX & Videos | Cloud Azure & CI/CD |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|
 | Tantalean Granda, Nicolas | `NicolasTantalean` (u202410728) | L | C | C | C | C | L |
 | Gutiérrez Lizarbe, Wilmer Sebastián | `WILMER SEBASTIAN` / `sebas` (u202412044) | C | L | C | C | C | C |
@@ -2619,29 +2623,42 @@ El tablero de seguimiento del Sprint 3 se gestiona en GitHub Projects ([https://
 
 | Sprint | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---:|---|---|
-| Sprint 3 | US-026 / US-027 | Registrar cuenta e iniciar sesión | S3-T01 | Autenticación servidor y roles en Angular | Conectar la Web App Angular con `/api/v1/auth/*`, reemplazar el login local y habilitar separación de vistas cliente/administrador. | 8 | Tantalean Granda, Nicolas | Done |
+| Sprint 3 | US-026 / US-027 | Registrar cuenta e iniciar sesión | S3-T01 | Autenticación servidor y roles en Angular | Conectar la Web App Angular con `/api/v1/authentication/*`, almacenar token JWT Bearer, reemplazar login local y separar vistas cliente/administrador. | 8 | Tantalean Granda, Nicolas | Done |
 | Sprint 3 | US-041 / US-042 | Consultar y contratar plan de suscripción | S3-T02 | Checkout de catálogo y pagos sandbox | Implementar formulario de pago sandbox en `technoload-webapp` con simulación de aprobación y rechazo de pagos y feedback de servidor. | 8 | Tantalean Granda, Nicolas | Done |
-| Sprint 3 | TS-001 / TS-005 | API RESTful y seguridad de sesión | S3-T03 | Documentación y flujo auth en Node API | Actualizar `technoload-platform` (`server.js`) con flujos de autenticación por token Bearer, catálogo, alquileres, pagos e incidencias. | 8 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
-| Sprint 3 | US-001 / TS-004 | Registrar maquinaria y validar API | S3-T04 | Backend DDD en ASP.NET Core 8 (.NET 8) | Implementar capas Domain, Application, EF Core MySQL, `MachinesController` (`/api/v1/machines`), `ProblemDetails` y `MachineServiceTests`. | 10 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
-| Sprint 3 | US-002 / US-003 / US-004 | Disponibilidad, mantenimiento y reservas | S3-T05 | Backend DDD en Spring Boot | Implementar contextos delimitados `fleet`, `maintenance`, `rental` y `shared` con patrón Command/Query y pruebas de dominio en `spring/`. | 10 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
-| Sprint 3 | US-013 / US-027 | Propuesta de valor y acceso desde Landing | S3-T06 | Rediseño de Landing y modal de auth | Mejorar diseño visual, navegación y modal de autenticación/gestión de usuarios en `technoload-website`. | 7 | Díaz Caruzo, Edgard Daniel | Done |
-| Sprint 3 | — | Corrección arquitectural AV1 → AV2 | S3-T07 | Actualización de diagramas 2.3.5 y 4.4.4–4.8 | Incorporar Big Picture Event Storming, User Flows, Design-Level Event Storming, C4, Diagramas de Clases y Base de Datos renderizados en PNG sin bloques Mermaid. | 8 | Castillo Guevara, Mathias Alejandro | Done |
-| Sprint 3 | — | Validación UX con segmentos objetivo | S3-T08 | Guía de entrevistas y evaluación Anexo D | Definir tareas de validación para ambos segmentos y ejecutar la evaluación heurística (Usabilidad, Diseño Inclusivo y Arquitectura de Información). | 6 | Castillo Guevara, Mathias Alejandro | Done |
-| Sprint 3 | — | Consolidación AV2 y entregables audiovisuales | S3-T09 | Informe AV2 y estructura de videos | Consolidar Sprint 3, Student Outcome, Sprint Goals Scrum.org, Bibliografía, Anexos y preparación de videos About-the-Product y About-the-Team. | 7 | Díaz Caruzo, Edgard Daniel | Done |
+| Sprint 3 | TS-001 / TS-005 | Arquitectura base DDD/CQRS, Outbox y seguridad JWT en Spring Boot | S3-T03 | Foundation DDD, JWT y Outbox en `TechFlow-Backend` | Configurar proyecto Maven con Java 21, Spring Boot, Spring Security (JJWT 0.13.0), Transactional Outbox (`outbox_events`), Result<T, E> y ProblemDetail RFC 9457 en `TechFlow-Backend`. | 10 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 3 | US-001 / US-002 / TS-004 | Registrar maquinaria, gestionar categorías y reservas | S3-T04 | Bounded Contexts IAM, Profiles, Fleet y Rental | Implementar agregados, value objects, persistencia hexagonal, `AuthenticationController`, `ProfilesController`, `MachineryController`, `RentalsController` y Command/Query services en `TechFlow-Backend`. | 12 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 3 | US-003 / US-004 / US-007 | Mantenimiento, averías, operaciones y suscripciones | S3-T05 | Bounded Contexts Maintenance, Operations, Subscription y Billing | Implementar `MaintenancesController`, `BreakdownReportsController`, `ServiceOperationsController`, `PlansController`, `SubscriptionsController`, `InvoicesController` y adaptadores ACL simulados. | 10 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 3 | TS-002 / TS-003 | Pipeline CI/CD y contenedor Docker | S3-T06 | Docker Compose local y CI/CD en GitHub Actions | Crear Dockerfile multi-stage, `compose.yaml` (MySQL 8 + dev profile), workflow `deploy-azure.yml` y despliegue automatizado a Azure App Service (`techflow-backend`). | 8 | Gutiérrez Lizarbe, Wilmer Sebastián | Done |
+| Sprint 3 | US-013 / US-027 | Propuesta de valor y acceso desde Landing | S3-T07 | Rediseño de Landing y modal de auth | Mejorar diseño visual responsivo, navegación y modal de autenticación/gestión de usuarios en `technoload-website`. | 7 | Díaz Caruzo, Edgard Daniel | Done |
+| Sprint 3 | — | Corrección arquitectural AV1 → AV2 | S3-T08 | Actualización de diagramas 2.3.5 y 4.4.4–4.8 | Incorporar Big Picture Event Storming, User Flows, Design-Level Event Storming, C4, Diagramas de Clases DDD y Base de Datos renderizados en PNG sin bloques Mermaid. | 8 | Castillo Guevara, Mathias Alejandro | Done |
+| Sprint 3 | — | Validación UX con segmentos objetivo | S3-T09 | Guía de entrevistas y evaluación Anexo D | Definir tareas de validación para ambos segmentos y ejecutar la evaluación heurística (Usabilidad, Diseño Inclusivo y Arquitectura de Información) según Anexo D. | 6 | Castillo Guevara, Mathias Alejandro | Done |
+| Sprint 3 | — | Consolidación AV2 y entregables audiovisuales | S3-T10 | Informe AV2 y estructura de videos | Consolidar Sprint 3, Student Outcome, Sprint Goals Scrum.org, Bibliografía, Anexos y preparación de videos About-the-Product y About-the-Team. | 7 | Díaz Caruzo, Edgard Daniel | Done |
 
-- **Repositorio de Web Services:** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
-- **Repositorio de Web App:** [https://github.com/TechnoLoad-TechFlow/technoload-webapp](https://github.com/TechnoLoad-TechFlow/technoload-webapp)
+- **Repositorio de Web Services (RESTful API):** [https://github.com/TechnoLoad-TechFlow/TechFlow-Backend](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend)
+- **Repositorio de Web App (Angular 21):** [https://github.com/TechnoLoad-TechFlow/technoload-webapp](https://github.com/TechnoLoad-TechFlow/technoload-webapp)
 - **Repositorio de Landing Page:** [https://github.com/TechnoLoad-TechFlow/technoload-website](https://github.com/TechnoLoad-TechFlow/technoload-website)
 - **Repositorio del Reporte:** [https://github.com/TechnoLoad-TechFlow/TechFlow-report](https://github.com/TechnoLoad-TechFlow/TechFlow-report)
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
-Durante el Sprint 3 se registraron avances verificables en los cuatro repositorios de la organización `TechnoLoad-TechFlow`: implementación del flujo completo de autenticación, checkout y pagos sandbox en la Web App Angular (`technoload-webapp`), mejoras de navegación y modal de autenticación en la Landing Page (`technoload-website`), consolidación de servicios RESTful en Node.js junto con los módulos DDD en ASP.NET Core 8 y Spring Boot en `technoload-platform`, y estandarización del informe para AV2 en `TechFlow-report`.
+Durante el Sprint 3 se registraron avances verificables en los cuatro repositorios de la organización `TechnoLoad-TechFlow`: implementación del backend DDD/CQRS en Java 21 y Spring Boot en `TechFlow-Backend`, integración de autenticación real, checkout y pagos sandbox en la Web App Angular (`technoload-webapp`), rediseño y modal de autenticación en la Landing Page (`technoload-website`), y consolidación integral del informe para AV2 en `TechFlow-report`.
 
 La siguiente tabla documenta commits reales y verificables registrados durante este ciclo:
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on |
 |---|---|---|---|---|---|
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `9a70c33` | `chore: initialize backend foundation` | Set up Maven wrapper, Spring Boot 4 structure, JPA, Security and shared DDD infrastructure | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `376dfde` | `refactor: rename platform packages for TechFlow` | Align package namespace under `com.technoload.techflow.platform` and configure application properties | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `bf4a331` | `fix: restrict profile access to the account owner` | Add ownership verification in `ProfilesController` and enforce user account scoping | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `a06bb37` | `security: require JWT secrets and restrict CORS origins` | Configure HMAC-SHA256 signature requirements, token expiration and environment-driven CORS | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `c65c25e` | `build: validate the production database schema` | Enforce `ddl-auto=validate` for `prod` profile and verify MySQL 8 schema constraints | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `506bdfe` | `ci: run backend validation on pull requests` | Configure GitHub Actions CI to execute unit tests and verify build integrity on PRs | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `65cf39a` | `ci: pass the verified artifact to deployment` | Enable artifact packaging and transfer verified JAR to Azure App Service deployment job | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `f40dbc7` | `docs: describe the TechFlow backend and its boundaries` | Document bounded contexts, CQRS services, OpenAPI endpoints and architecture principles | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `1af30c0` | `docs: align project governance with TechFlow` | Update project licensing, contributing guide and team author attribution | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `6db13d1` | `build: add a local TechFlow development stack` | Create multi-stage Dockerfile and `compose.yaml` with MySQL 8 service and healthchecks | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `5bf489c` | `docs: document the local container workflow` | Document Docker Compose startup instructions, environment variables and database seeding | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-Backend` | `main` | `a7e0fec` | `fix: use the profile aggregate identifier` | Ensure correct profile ID mapping in command handlers and domain event publishing | 2026-11-14 |
 | `TechnoLoad-TechFlow/technoload-webapp` | `main` | `e52bc8d` | `feat(styles): add authentication and user session styles` | Add responsive styles for authentication panels and session controls | 2026-10-09 |
 | `TechnoLoad-TechFlow/technoload-webapp` | `main` | `7d628ab` | `feat(webapp): connect authentication to platform api` | Configure `.env.production` API base URL and authentication requests | 2026-10-09 |
 | `TechnoLoad-TechFlow/technoload-webapp` | `main` | `e4f0fd2` | `feat(auth): replace local login with server authentication` | Persist Bearer session token and validate active user via `/auth/me` | 2026-10-09 |
@@ -2651,169 +2668,334 @@ La siguiente tabla documenta commits reales y verificables registrados durante e
 | `TechnoLoad-TechFlow/technoload-webapp` | `main` | `0d720df` | `feat(payments): simulate payment approval and rejection` | Handle approved and declined sandbox payment scenarios with UI feedback | 2026-10-09 |
 | `TechnoLoad-TechFlow/technoload-website` | `main` | `3a007b6` | `feat(website): improve landing page design and navigation` | Refine layout, responsive navigation and segment call-to-actions | 2026-10-09 |
 | `TechnoLoad-TechFlow/technoload-website` | `main` | `68abd9e` | `feat(auth): implement authentication modal and user management logic` | Add interactive authentication modal connected to platform flows | 2026-10-09 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `b354958` | `Document API authentication and release flow` | Update platform README with Bearer auth, Azure steps and checklist | 2026-11-05 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `ddd1791` | `feat(dotnet): add DDD domain model` | Implement .NET 8 domain entities, operational states and business rules | 2026-11-12 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `8b7837b` | `feat(dotnet): add application and EF Core persistence layers` | Add DTOs, service handlers, DbContext and MySQL repositories | 2026-11-12 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `5c9d651` | `feat(dotnet): expose versioned REST API with cross-cutting services` | Add `MachinesController`, JWT/CORS config and ProblemDetails middleware | 2026-11-12 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `dff4c34` | `docs(dotnet): document migration and runtime configuration` | Document EF Core migrations, environment variables and Swagger usage | 2026-11-12 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `32a1938` | `test(dotnet): cover machine application service rules` | Add unit tests in `MachineServiceTests` for machine creation and rules | 2026-11-12 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `1cea387` | `feat(spring): bootstrap TechnoLoad Spring Boot backend` | Initialize Spring Boot Maven structure and shared configuration | 2026-11-12 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `4d900eb` | `feat(spring): add fleet DDD context and REST API` | Implement `/api/v1/machinery` endpoints with Command/Query services | 2026-11-12 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `54b3426` | `feat(spring): add maintenance and rental contexts` | Implement `/api/v1/maintenance-orders` and `/api/v1/rentals` APIs | 2026-11-12 |
-| `TechnoLoad-TechFlow/technoload-platform` | `main` | `fc6013d` | `test(spring): document and cover fleet domain behavior` | Add Spring Boot README and fleet unit tests | 2026-11-12 |
 | `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `e268b3b` | `docs(readme): update course code` | Standardize course code `1ASI0730` across report cover | 2026-10-20 |
 | `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `868f888` | `docs(readme): update source code management` | Align repository table and GitFlow documentation in Chapter V | 2026-10-21 |
 | `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `fb5e843` | `docs(cover): standardize report cover, update version record and add student outcome matrix` | Update cover layout, NRC 8093 and ABET SO5 matrix | 2026-11-11 |
 | `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `c74a8bd` | `docs(deployment): resolve web service URLs, deployment configuration and fix broken links` | Configure Azure deployment URLs and repair TOC links | 2026-11-11 |
 | `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `8ac4f43` | `docs(sprint): format sprint goals, add sprint 3 documentation and validation interviews for AV2` | Standardize Scrum.org Sprint Goals and Sprint 3 structure | 2026-11-11 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `ba3ed8f` | `docs(architecture): update event storming and C4 diagrams for AV2` | Integrate rendered PNG architecture diagrams for AV2 milestone | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `56a7f41` | `docs(design): add user flow, DDD class and database diagrams` | Add rendered high-resolution PNGs for UX flows, classes and relational database | 2026-11-14 |
+| `TechnoLoad-TechFlow/TechFlow-report` | `develop` | `c0f4bfd` | `docs(sprint-3): update Sprint 3, Chapter IV diagrams and AV2 sections in README` | Align Chapter IV and Chapter V documentation with rendered assets | 2026-11-14 |
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 3 se integraron y verificaron los flujos de extremo a extremo entre la Landing Page, la Web Application Angular y los RESTful Web Services de `technoload-platform`:
+Durante el Sprint 3 se verificó la integración de extremo a extremo entre la Landing Page (`technoload-website`), la Frontend Web Application Angular (`technoload-webapp`) y los RESTful Web Services empresariales de `TechFlow-Backend`:
 
-1. **Autenticación y separación de roles (`USER` y `ADMIN`):**
-   - El visitante accede desde la Landing Page (`technoload-website`) y utiliza el modal de acceso o ingresa a la Web Application (`technoload-webapp`).
-   - El formulario de inicio de sesión autentica contra `POST /api/v1/auth/login`, almacena el token Bearer y consulta `GET /api/v1/auth/me` para presentar el panel de cliente (`USER`) o el panel de administración de flota (`ADMIN`).
-2. **Gestión de flota, mantenimiento y alquileres:**
-   - En el panel administrativo, el usuario consulta el estado operativo en `/api/v1/assets`, registra nuevas unidades, gestiona órdenes en `/api/v1/maintenance` y aprueba o rechaza solicitudes de alquiler (`/api/v1/admin/rentals/{id}/decision`).
-   - En los servicios DDD de `technoload-platform`, se implementaron además los controladores versionados `/api/v1/machines` (ASP.NET Core 8 con pruebas `MachineServiceTests`) y `/api/v1/machinery`, `/api/v1/maintenance-orders`, `/api/v1/rentals` (Spring Boot con pruebas de dominio).
-3. **Catálogo de alquiler y pagos sandbox de suscripciones:**
-   - El usuario contratista explora el catálogo disponible (`GET /api/v1/catalog/assets`), envía solicitudes de alquiler (`POST /api/v1/rentals`), selecciona un plan de suscripción (`Starter`, `Professional`, `Enterprise`) y ejecuta el formulario de pago sandbox (`POST /api/v1/subscriptions/checkout`) simulando escenarios de aprobación y rechazo con mensajes de respuesta provenientes del servidor.
+1. **Flujo de Identidad y Acceso (IAM y Profiles):**
+   - El visitante accede a la Landing Page y utiliza el modal de registro o inicio de sesión.
+   - El frontend despacha `POST /api/v1/authentication/sign-up` o `POST /api/v1/authentication/sign-in`. El servicio valida las credenciales y genera un token JWT stateless firmado con algoritmo HMAC-SHA256.
+   - El cliente Angular almacena el token Bearer en almacenamiento local seguro y consulta `GET /api/v1/user-accounts/me` y `GET /api/v1/profiles/me` para obtener el perfil del usuario y su rol (`ROLE_USER` para clientes contratistas o `ROLE_ADMIN` para administradores de flota), bifurcando dinámicamente la navegación hacia las vistas correspondientes.
+2. **Flujo de Inventario de Maquinaria y Categorías (Fleet):**
+   - El administrador consulta las categorías en `GET /api/v1/categories` y registra nuevas unidades con `POST /api/v1/machinery` especificando marca, modelo, número de serie, tarifa por hora y ubicación inicial.
+   - El comando ejecuta `MachineryCommandService.handle(CreateMachineryCommand)`, validando unicidad y guardando la entidad mediante el adaptador hexagonal `MachineryRepositoryImpl`. En la misma transacción, el `DomainEventPublisher` serializa el evento `MachineryCreatedEvent` en la tabla `outbox_events`.
+   - El administrador visualiza sus equipos propios con `GET /api/v1/machinery/mine` y actualiza estados operativos (`AVAILABLE`, `RENTED`, `MAINTENANCE`, `OUT_OF_SERVICE`) mediante `PATCH /api/v1/machinery/{machineryId}/status`.
+3. **Flujo de Alquileres y Disponibilidad (Rental):**
+   - El cliente consulta disponibilidad mediante `GET /api/v1/rentals/availability?machineryId={id}&startDate={d1}&endDate={d2}`, asegurando la ausencia de traslapes en el cronograma.
+   - Envía su solicitud de alquiler con `POST /api/v1/rentals`, quedando en estado `REQUESTED`.
+   - El contratista monitorea sus solicitudes en `GET /api/v1/rentals/my-reservations`, mientras que el administrador revisa la bandeja `GET /api/v1/rentals/pending-requests` y toma la decisión (`CONFIRMED` o `CANCELLED`) mediante `PATCH /api/v1/rentals/{rentalId}/status`. Al confirmarse, el `RentalConfirmedEvent` se enruta asíncronamente vía Outbox para actualizar el estado del equipo en el contexto de flota.
+4. **Flujo de Mantenimiento y Reportes de Avería (Maintenance):**
+   - Los operadores de campo o administradores reportan averías imprevistas con `POST /api/v1/breakdown-reports` (descripción, severidad, horómetro).
+   - El taller programa órdenes de mantenimiento preventivo o correctivo con `POST /api/v1/maintenances`, consulta órdenes pendientes en `GET /api/v1/maintenances/pending` y actualiza estados de atención en `PATCH /api/v1/maintenances/{maintenanceId}/status`.
+5. **Flujo de Operaciones de Campo (Operations):**
+   - Se crean registros de despacho y servicios con `POST /api/v1/service-operations`.
+   - Se ingresan horómetros y horas trabajadas con `POST /api/v1/service-operations/{operationId}/worked-hours`, validados posteriormente por el supervisor mediante `PATCH /status`.
+6. **Flujo de Suscripciones y Facturación (Subscription & Billing):**
+   - El cliente consulta los planes en `GET /api/v1/plans` (`Starter`, `Professional`, `Enterprise`), contrata mediante `POST /api/v1/subscriptions` y procesa pagos en `POST /api/v1/subscriptions/{subscriptionId}/payments`.
+   - Los adaptadores ACL de facturación procesan la emisión de comprobantes `GET /api/v1/invoices` y penalidades por demora en retorno de maquinaria `GET /api/v1/late-penalties`.
 
 | Producto | URL de ejecución configurada | Plataforma Cloud | Estado |
 |---|---|---|---|
 | **Landing Page** | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | Azure App Service (Linux) | Publicada en rama `main` |
-| **Web Application (Angular 21)** | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Azure App Service (Linux) | Publicada en rama `main` (`VITE_API_BASE_URL` en `.env.production`) |
-| **RESTful Web Services** | [https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1/health](https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1/health) | Azure App Service (Linux) / Local (.NET 8 & Spring Boot) | Desplegado en rama `main` |
+| **Web Application (Angular 21)** | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | Azure App Service (Linux) | Publicada en rama `main` (`.env.production`) |
+| **RESTful Web Services** | [https://techflow-backend-u202410728.azurewebsites.net/health](https://techflow-backend-u202410728.azurewebsites.net/health) | Azure App Service (Linux) / Local Docker Compose | Desplegado en rama `main` (`TechFlow-Backend`) |
 
 > [!NOTE]
-> **[Pendiente de completar por el equipo antes de la entrega AV2]:** Insertar aquí las capturas de pantalla de la ejecución del Sprint 3 (login/roles en Angular, panel de cliente, formulario de pagos sandbox y gestión de flota) junto con el enlace en Microsoft Stream del video de navegación del producto (`upc-pre-202620-1asi0730-8093-technoload-productnavigation-sprint-3.mp4`).
+> **[Pendiente de completar por el equipo antes de la entrega AV2]:** Insertar aquí las capturas de pantalla de la ejecución del Sprint 3 (login JWT y roles en Angular, panel de cliente, formulario de pagos sandbox, gestión de flota e inventario) junto con el enlace en Microsoft Stream del video de navegación del producto (`upc-pre-202620-1asi0730-8093-technoload-productnavigation-sprint-3.mp4`).
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-Los RESTful Web Services de TechnoLoad en el repositorio [TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform) comprenden: (1) el servicio REST en Node.js desplegado en Azure App Service y consumido por la Web Application Angular, (2) el servicio DDD en ASP.NET Core 8 (`dotnet/`) documentado con OpenAPI / Swagger UI y (3) el servicio DDD en Spring Boot (`spring/`) documentado con Swagger UI.
+La documentación interactiva de los RESTful Web Services se genera automáticamente mediante **SpringDoc OpenAPI 3.2.0** (`springdoc-openapi-starter-webmvc-ui`) y se publica en `/swagger-ui/index.html`. El backend implementa **16 controladores RESTful** distribuidos en **9 contextos delimitados** bajo Domain-Driven Design (DDD) y CQRS:
 
-* **Base URL de Producción Cloud (Node.js en Azure):** `https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1`
-* **Base URL Local (Node.js / Spring Boot):** `http://localhost:8080/api/v1`
-* **Swagger UI (ASP.NET Core 8 local):** `https://localhost:<puerto>/swagger`
-* **Swagger UI (Spring Boot local):** `http://localhost:8080/swagger-ui.html`
-* **Repositorio oficial de Web Services:** [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform)
-* **Commits de documentación de servicios en Sprint 3:** `b354958` (`README.md` principal), `dff4c34` (`dotnet/README.md` y migraciones), `fc6013d` (`spring/README.md` y pruebas).
+* **Repositorio oficial de Web Services:** [https://github.com/TechnoLoad-TechFlow/TechFlow-Backend](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend)
+* **Base URL de Producción Cloud (Azure App Service):** `https://techflow-backend-u202410728.azurewebsites.net/api/v1`
+* **Health Check Endpoint Cloud:** `https://techflow-backend-u202410728.azurewebsites.net/health`
+* **Swagger UI Cloud:** `https://techflow-backend-u202410728.azurewebsites.net/swagger-ui/index.html`
+* **Base URL Local (Docker / Maven):** `http://localhost:8080/api/v1`
+* **Swagger UI Local:** `http://localhost:8080/swagger-ui/index.html`
+* **OpenAPI Schema (JSON v3):** `http://localhost:8080/v3/api-docs`
+* **Commits de documentación y arquitectura en Sprint 3:** `f40dbc7` (`docs: describe the TechFlow backend and its boundaries`), `1af30c0` (`docs: align project governance with TechFlow`), `6db13d1` (`build: add a local TechFlow development stack`), `5bf489c` (`docs: document the local container workflow`) y `a7e0fec` (`fix: use the profile aggregate identifier`).
 
-**Endpoints implementados en el servicio en la nube (`server.js` — Node.js):**
+##### Registros de Decisiones de Arquitectura (ADRs)
 
-| Bounded Context | Endpoint | Verbo HTTP | Parámetros / Payload | Descripción y Códigos de Respuesta |
-|---|---|:---:|---|---|
-| **Shared / Health** | `/api/v1/health` | `GET` | Ninguno | Verifica disponibilidad operativa del servicio (`200 OK`). |
-| **Identity & Access** | `/api/v1/auth/register` | `POST` | `{ name, email, password, organization, role }` | Registra una cuenta nueva y crea sesión (`201 Created`, `400 Bad Request`, `409 Conflict`). |
-| **Identity & Access** | `/api/v1/auth/login` | `POST` | `{ email, password }` | Autentica credenciales y devuelve usuario + token Bearer (`200 OK`, `401 Unauthorized`). |
-| **Identity & Access** | `/api/v1/auth/me` | `GET` | Header `Authorization: Bearer <token>` | Obtiene el perfil autenticado actual (`200 OK`, `401 Unauthorized`). |
-| **Fleet / Catalog** | `/api/v1/catalog/assets` | `GET` | Opcional query de filtro | Lista el catálogo público de equipos para clientes (`200 OK`). |
-| **Fleet Management** | `/api/v1/assets` | `GET`, `POST`, `PUT`, `DELETE` | `/api/v1/assets/{id}` en actualización/eliminación | Gestiona el inventario de activos (`200 OK`, `201 Created`, `404 Not Found`). |
-| **Maintenance** | `/api/v1/maintenance` | `GET`, `POST`, `PUT`, `DELETE` | `{ assetId, type, scheduledAt, status }` | Registra y actualiza órdenes de mantenimiento (`200 OK`, `201 Created`). |
-| **Operations** | `/api/v1/operations` | `GET`, `POST`, `PUT`, `DELETE` | `{ route, assetId, driver, status }` | Registra despachos y rutas operativas (`200 OK`, `201 Created`). |
-| **Rental Management** | `/api/v1/rentals` | `POST` | Header Bearer + `{ assetId, startDate, endDate, projectName }` | Crea solicitud de alquiler desde cliente autenticado (`201 Created`, `401 Unauthorized`). |
-| **Rental / Admin** | `/api/v1/admin/rentals/{id}/decision` | `POST` | Header Bearer (`ADMIN`) + `{ decision }` | Aprueba o rechaza una solicitud de alquiler (`200 OK`, `403 Forbidden`). |
-| **Subscriptions & Billing** | `/api/v1/subscriptions/checkout` | `POST` | Header Bearer + `{ planId, outcome, cardLast4 }` | Procesa pago sandbox de suscripción (`200 OK`, `402 Payment Required` / error simulado). |
+El diseño del backend se rige por ocho Decisiones de Arquitectura (ADRs) documentadas en `docs/adrs.md`:
 
-**Endpoints implementados en los backends DDD (.NET 8 y Spring Boot):**
+| ADR | Título | Estado | Decisión y Beneficio Arquitectural |
+|---|---|:---:|---|
+| **ADR-0001** | `Result<T, E>` para flujos Railway-Oriented en lugar de excepciones | Accepted | Los handlers de comando retornan tipos sellados `Success` o `Failure` con `ApplicationError`, mapeados a RFC 9457 `ProblemDetail`. Evita el costo y opacidad de excepciones no controladas. |
+| **ADR-0002** | Persistencia Hexagonal: el modelo de dominio no porta anotaciones JPA | Accepted | Los agregados de dominio (`Machinery`, `Rental`, etc.) no tienen `@Entity`. El mapeo a base de datos se realiza a través de entidades paralelas `*PersistenceEntity` y ensambladores `*PersistenceAssembler`. |
+| **ADR-0003** | Value Objects para todo primitivo con regla de validación | Accepted | Records inmutables (`MachineryLocation`, `RentalPeriod`, `DocumentNumber`, etc.) que validan invariantes en su constructor compacto. Previene instanciar datos inválidos en cualquier capa. |
+| **ADR-0004** | Integración inter-contexto mediante fachadas ACL y eventos de integración | Accepted | Ningún contexto importa paquetes `domain` de otro contexto. Se comunican mediante fachadas en `interfaces.acl` y eventos en `interfaces.events`. |
+| **ADR-0005** | El `save()` del adaptador entrega eventos a `DomainEventPublisher` | Accepted | Cada `*RepositoryImpl.save()` entrega los eventos de dominio capturados por el agregado a `DomainEventPublisher` dentro de la misma transacción de base de datos. |
+| **ADR-0006** | Autenticación JWT stateless en lugar de sesiones en servidor | Accepted | Tokens Bearer firmados con HMAC-SHA256 emitidos en `/sign-in`. Permite escalamiento horizontal sin almacenamiento de sesión en servidor. |
+| **ADR-0007** | CQRS: Servicios de Comando y Consulta con contratos separados | Accepted | Cada agregado expone un `*CommandService` (para escrituras) y un `*QueryService` (para lecturas), manteniendo correspondencia 1:1 con el Event Storming del informe. |
+| **ADR-0008** | Transactional Outbox para publicación confiable de eventos de dominio | Accepted | Los eventos se persisten como JSON en la tabla `outbox_events` dentro de la transacción original y el componente en segundo plano `OutboxEventRelay` los despacha asíncronamente a los handlers `@EventListener`. |
 
-| Implementación | Endpoint | Verbo HTTP | Parámetros / Payload | Descripción y Códigos de Respuesta |
-|---|---|---:|---|---|
-| **ASP.NET Core 8 (`dotnet/`)** | `/api/v1/machines` | `GET`, `POST` | `{ "code": "EXC-001", "name": "Excavadora principal", "model": "CAT 320" }` | Lista o registra máquinas validando unicidad de código (`200 OK`, `201 Created`, `400 Bad Request`). |
-| **ASP.NET Core 8 (`dotnet/`)** | `/api/v1/machines/{id}` | `GET`, `PUT`, `DELETE` | `id` (UUID) + `{ name, model, status }` | Consulta, actualiza o elimina una máquina (`200 OK`, `204 No Content`, `404 Not Found`). |
-| **Spring Boot (`spring/`)** | `/api/v1/machinery` | `GET`, `POST` | `{ serialNumber, model, brand, type, hourlyRate }` | Lista o registra maquinaria mediante `MachineryCommandService` / `MachineryQueryService` (`200 OK`, `201 Created`). |
-| **Spring Boot (`spring/`)** | `/api/v1/machinery/{machineryId}` | `GET`, `PUT`, `DELETE` | `machineryId` (Long) | Consulta o actualiza el estado de maquinaria (`200 OK`, `404 Not Found`). |
-| **Spring Boot (`spring/`)** | `/api/v1/maintenance-orders` | `GET`, `POST` | `{ machineryId, maintenanceType, description, scheduledDate }` | Lista y crea órdenes de mantenimiento asociadas a maquinaria (`200 OK`, `201 Created`). |
-| **Spring Boot (`spring/`)** | `/api/v1/rentals` | `GET`, `POST` | `{ machineryId, contractorId, startDate, endDate }` | Lista y registra contratos de alquiler (`200 OK`, `201 Created`). |
+##### Catálogo de Endpoints OpenAPI por Bounded Context
 
-**Ejemplo de solicitud y respuesta en ASP.NET Core 8 (`POST /api/v1/machines`):**
+| Bounded Context | Controlador / Módulo | Verbo HTTP | Endpoint | Parámetros / Payload de Entrada | Descripción y Códigos de Respuesta |
+|---|---|:---:|---|---|---|
+| **Shared** | `HealthController` | `GET` | `/health` | Ninguno | Estado de operatividad del backend (`200 OK` con `{ "status": "UP" }`). |
+| **IAM** | `AuthenticationController` | `POST` | `/api/v1/authentication/sign-up` | `{ username, password, roles }` | Registra una nueva cuenta de usuario (`201 Created`, `400 Bad Request`, `409 Conflict`). |
+| **IAM** | `AuthenticationController` | `POST` | `/api/v1/authentication/sign-in` | `{ username, password }` | Autentica credenciales y emite token JWT (`200 OK` con token y perfil, `401 Unauthorized`). |
+| **IAM** | `RolesController` | `GET` | `/api/v1/roles` | Ninguno | Lista los roles de seguridad del sistema (`200 OK`). |
+| **IAM** | `UserAccountsController` | `GET` | `/api/v1/user-accounts/me` | Bearer Token | Obtiene la cuenta del usuario autenticado (`200 OK`, `401 Unauthorized`). |
+| **Profiles** | `ProfilesController` | `POST` | `/api/v1/profiles` | `{ firstName, lastName, email, documentNumber, organizationId }` | Crea el perfil asociado al usuario autenticado (`201 Created`, `400 Bad Request`). |
+| **Profiles** | `ProfilesController` | `PUT` | `/api/v1/profiles/{profileId}` | `profileId` + `{ firstName, lastName, email }` | Actualiza los datos de un perfil (`200 OK`, `404 Not Found`). |
+| **Profiles** | `ProfilesController` | `GET` | `/api/v1/profiles/me` | Bearer Token | Obtiene el perfil del usuario autenticado en la sesión (`200 OK`, `401 Unauthorized`). |
+| **Profiles** | `ProfilesController` | `GET` | `/api/v1/profiles/{profileId}` | `profileId` (Long) | Consulta un perfil por su identificador (`200 OK`, `404 Not Found`). |
+| **Profiles** | `OrganizationsController` | `POST` | `/api/v1/organizations` | `{ businessName, ruc, address }` | Registra una empresa de alquiler o contratista (`201 Created`, `409 Conflict`). |
+| **Profiles** | `OrganizationsController` | `PUT` | `/api/v1/organizations/{organizationId}` | `organizationId` + `{ businessName, address }` | Actualiza información de la organización (`200 OK`, `404 Not Found`). |
+| **Profiles** | `OrganizationsController` | `GET` | `/api/v1/organizations/{organizationId}` | `organizationId` (Long) | Consulta datos de una organización (`200 OK`, `404 Not Found`). |
+| **Fleet** | `CategoriesController` | `POST` | `/api/v1/categories` | `{ name, description }` | Registra una categoría de maquinaria (`201 Created`, `400 Bad Request`). |
+| **Fleet** | `CategoriesController` | `GET` | `/api/v1/categories` | Ninguno | Lista todas las categorías registradas (`200 OK`). |
+| **Fleet** | `CategoriesController` | `GET` | `/api/v1/categories/{categoryId}` | `categoryId` (Long) | Consulta una categoría específica (`200 OK`, `404 Not Found`). |
+| **Fleet** | `CategoriesController` | `PUT` | `/api/v1/categories/{categoryId}` | `categoryId` + `{ name, description }` | Actualiza una categoría de flota (`200 OK`, `404 Not Found`). |
+| **Fleet** | `CategoriesController` | `DELETE` | `/api/v1/categories/{categoryId}` | `categoryId` (Long) | Elimina una categoría sin maquinaria asociada (`204 No Content`, `404 Not Found`). |
+| **Fleet** | `MachineryController` | `POST` | `/api/v1/machinery` | `{ serialNumber, model, brand, categoryId, hourlyRate, initialHours, location }` | Registra maquinaria validando unicidad de serie (`201 Created`, `400 Bad Request`, `409 Conflict`). |
+| **Fleet** | `MachineryController` | `GET` | `/api/v1/machinery` | Opcional query de filtrado | Lista todo el inventario de maquinaria (`200 OK`). |
+| **Fleet** | `MachineryController` | `GET` | `/api/v1/machinery/mine` | Bearer Token | Lista las unidades pertenecientes a la organización del usuario (`200 OK`). |
+| **Fleet** | `MachineryController` | `GET` | `/api/v1/machinery/{machineryId}` | `machineryId` (Long) | Consulta el detalle técnico y estado de una unidad (`200 OK`, `404 Not Found`). |
+| **Fleet** | `MachineryController` | `PUT` | `/api/v1/machinery/{machineryId}` | `machineryId` + `{ model, brand, hourlyRate, location }` | Actualiza la información técnica de la maquinaria (`200 OK`, `404 Not Found`). |
+| **Fleet** | `MachineryController` | `PATCH` | `/api/v1/machinery/{machineryId}/status` | `machineryId` + `{ status }` | Modifica el estado operativo (`AVAILABLE`, `RENTED`, `MAINTENANCE`, `OUT_OF_SERVICE`) (`200 OK`, `400 Bad Request`). |
+| **Fleet** | `MachineryController` | `DELETE` | `/api/v1/machinery/{machineryId}` | `machineryId` (Long) | Da de baja una maquinaria de la flota (`204 No Content`, `404 Not Found`). |
+| **Rental** | `RentalsController` | `POST` | `/api/v1/rentals` | `{ machineryId, startDate, endDate, deliveryLocation }` | Crea una solicitud de alquiler en estado `REQUESTED` (`201 Created`, `400 Bad Request`, `409 Conflict`). |
+| **Rental** | `RentalsController` | `GET` | `/api/v1/rentals/availability` | `machineryId`, `startDate`, `endDate` | Verifica si la maquinaria está disponible en el rango de fechas (`200 OK` con boolean `available`). |
+| **Rental** | `RentalsController` | `GET` | `/api/v1/rentals/my-reservations` | Bearer Token | Lista los alquileres solicitados por el contratista autenticado (`200 OK`). |
+| **Rental** | `RentalsController` | `GET` | `/api/v1/rentals/pending-requests` | Bearer Token (`ROLE_ADMIN`) | Lista solicitudes pendientes de aprobación para el administrador (`200 OK`). |
+| **Rental** | `RentalsController` | `GET` | `/api/v1/rentals/fleet-rentals` | Bearer Token (`ROLE_ADMIN`) | Lista el histórico de alquileres de toda la flota administrada (`200 OK`). |
+| **Rental** | `RentalsController` | `GET` | `/api/v1/rentals/{rentalId}` | `rentalId` (Long) | Consulta el contrato y detalle de un alquiler (`200 OK`, `404 Not Found`). |
+| **Rental** | `RentalsController` | `PATCH` | `/api/v1/rentals/{rentalId}/status` | `rentalId` + `{ status: "CONFIRMED" | "CANCELLED" }` | Aprueba o cancela un alquiler activando eventos Outbox (`200 OK`, `400 Bad Request`). |
+| **Maintenance** | `BreakdownReportsController` | `POST` | `/api/v1/breakdown-reports` | `{ machineryId, description, severity, reportedOperatingHours }` | Registra una incidencia o avería de maquinaria en obra (`201 Created`, `400 Bad Request`). |
+| **Maintenance** | `BreakdownReportsController` | `GET` | `/api/v1/breakdown-reports` | Opcional `machineryId` | Lista los reportes de averías registrados (`200 OK`). |
+| **Maintenance** | `MaintenancesController` | `POST` | `/api/v1/maintenances` | `{ machineryId, maintenanceType, description, scheduledDate, estimatedCost }` | Programa una orden de mantenimiento preventivo/correctivo (`201 Created`, `400 Bad Request`). |
+| **Maintenance** | `MaintenancesController` | `GET` | `/api/v1/maintenances` | Opcional query de filtro | Lista todas las órdenes de mantenimiento (`200 OK`). |
+| **Maintenance** | `MaintenancesController` | `GET` | `/api/v1/maintenances/pending` | Ninguno | Filtra las órdenes programadas pendientes de ejecución (`200 OK`). |
+| **Maintenance** | `MaintenancesController` | `GET` | `/api/v1/maintenances/history` | Opcional `machineryId` | Consulta el histórico de mantenimientos ejecutados (`200 OK`). |
+| **Maintenance** | `MaintenancesController` | `GET` | `/api/v1/maintenances/{maintenanceId}` | `maintenanceId` (Long) | Obtiene el detalle técnico de un mantenimiento (`200 OK`, `404 Not Found`). |
+| **Maintenance** | `MaintenancesController` | `PATCH` | `/api/v1/maintenances/{maintenanceId}/status` | `maintenanceId` + `{ status, actualCost, completionNotes }` | Actualiza estado (`IN_PROGRESS`, `COMPLETED`, `CANCELLED`) (`200 OK`, `400 Bad Request`). |
+| **Operations** | `ServiceOperationsController` | `POST` | `/api/v1/service-operations` | `{ rentalId, operatorName, initialHourMeter, siteAddress }` | Registra el inicio de operaciones de campo para un servicio (`201 Created`, `400 Bad Request`). |
+| **Operations** | `ServiceOperationsController` | `POST` | `/api/v1/service-operations/{operationId}/worked-hours` | `operationId` + `{ date, hours, taskDescription }` | Registra jornada y horas de trabajo en obra (`201 Created`, `400 Bad Request`). |
+| **Operations** | `ServiceOperationsController` | `PATCH` | `/api/v1/service-operations/{operationId}/worked-hours/{workedHoursId}/status` | `operationId`, `workedHoursId` + `{ status: "VALIDATED" }` | Supervisor valida horas operativas registradas (`200 OK`, `400 Bad Request`). |
+| **Operations** | `ServiceOperationsController` | `PATCH` | `/api/v1/service-operations/{operationId}/status` | `operationId` + `{ status: "CLOSED", finalHourMeter }` | Cierra formalmente la operación y totaliza horómetros (`200 OK`, `400 Bad Request`). |
+| **Operations** | `ServiceOperationsController` | `GET` | `/api/v1/service-operations` | Opcional query de filtro | Lista operaciones de campo activas e históricas (`200 OK`). |
+| **Operations** | `ServiceOperationsController` | `GET` | `/api/v1/service-operations/{operationId}` | `operationId` (Long) | Consulta el estado y detalle de una operación (`200 OK`, `404 Not Found`). |
+| **Operations** | `ServiceOperationsController` | `GET` | `/api/v1/service-operations/{operationId}/worked-hours` | `operationId` (Long) | Lista las bitácoras de horas trabajadas para la operación (`200 OK`). |
+| **Subscription** | `PlansController` | `GET` | `/api/v1/plans` | Ninguno | Lista los planes de suscripción disponibles (`Starter`, `Professional`, `Enterprise`) (`200 OK`). |
+| **Subscription** | `PlansController` | `GET` | `/api/v1/plans/{planId}` | `planId` (Long) | Consulta tarifas, cuotas de equipos y características de un plan (`200 OK`, `404 Not Found`). |
+| **Subscription** | `SubscriptionsController` | `POST` | `/api/v1/subscriptions` | `{ planId, billingCycle }` | Suscribe la organización a un plan de la plataforma (`201 Created`, `400 Bad Request`). |
+| **Subscription** | `SubscriptionsController` | `POST` | `/api/v1/subscriptions/{subscriptionId}/payments` | `subscriptionId` + `{ paymentMethod, amount, transactionRef }` | Procesa un pago de suscripción (`200 OK`, `400 Bad Request`). |
+| **Subscription** | `SubscriptionsController` | `PATCH` | `/api/v1/subscriptions/{subscriptionId}/status` | `subscriptionId` + `{ status: "ACTIVE" | "SUSPENDED" | "CANCELLED" }` | Actualiza el estado de suscripción de la cuenta (`200 OK`, `400 Bad Request`). |
+| **Subscription** | `SubscriptionsController` | `GET` | `/api/v1/subscriptions` | Bearer Token | Consulta la suscripción vigente de la organización (`200 OK`). |
+| **Subscription** | `SubscriptionsController` | `GET` | `/api/v1/subscriptions/{subscriptionId}` | `subscriptionId` (Long) | Consulta el detalle y ciclo de una suscripción (`200 OK`, `404 Not Found`). |
+| **Subscription** | `SubscriptionsController` | `GET` | `/api/v1/subscriptions/{subscriptionId}/payments` | `subscriptionId` (Long) | Historial de pagos y recibos asociados a la suscripción (`200 OK`). |
+| **Billing** | `InvoicesController` | `GET` | `/api/v1/invoices` | Opcional `rentalId` o `subscriptionId` | Lista comprobantes fiscales emitidos con cálculo IGV (`200 OK`). |
+| **Billing** | `InvoicesController` | `GET` | `/api/v1/invoices/{invoiceId}` | `invoiceId` (Long) | Consulta detalle de factura electrónica simulada (`200 OK`, `404 Not Found`). |
+| **Billing** | `InvoicesController` | `PATCH` | `/api/v1/invoices/{invoiceId}/status` | `invoiceId` + `{ status: "PAID" | "VOID" }` | Actualiza estado fiscal del comprobante (`200 OK`, `400 Bad Request`). |
+| **Billing** | `LatePenaltiesController` | `GET` | `/api/v1/late-penalties` | Opcional `rentalId` | Lista cargos por retraso en devolución de maquinaria (`200 OK`). |
+| **Billing** | `LatePenaltiesController` | `GET` | `/api/v1/late-penalties/{penaltyId}` | `penaltyId` (Long) | Consulta el detalle y cálculo de una penalidad por mora (`200 OK`, `404 Not Found`). |
+
+##### Ejemplos de Solicitudes y Respuestas JSON
+
+**1. Autenticación exitosa (`POST /api/v1/authentication/sign-in`):**
 
 ```json
 // Request
 {
-  "code": "EXC-001",
-  "name": "Excavadora principal",
-  "model": "CAT 320"
+  "username": "wilmer.gutierrez@technoload.com",
+  "password": "Password123!"
 }
 
-// Response 201 Created (MachineResponse)
+// Response 200 OK (AuthenticatedUserResource)
 {
-  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "code": "EXC-001",
-  "name": "Excavadora principal",
-  "model": "CAT 320",
-  "status": "AVAILABLE",
-  "createdAtUtc": "2026-11-12T18:20:00Z"
+  "id": 1,
+  "username": "wilmer.gutierrez@technoload.com",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE3MzE2MjY0MDAsImV4cCI6MTczMjIzMTIwMH0.d9Xz...k2A",
+  "roles": [
+    "ROLE_ADMIN"
+  ]
 }
 ```
 
-**Ejemplo de respuesta en el servicio cloud (`GET /api/v1/assets`):**
+**2. Registro de Maquinaria (`POST /api/v1/machinery`):**
 
 ```json
-[
-  {
-    "id": "A-001",
-    "name": "CAT 320 Excavator",
-    "type": "Machinery",
-    "usage": 1842,
-    "status": "AVAILABLE"
-  },
-  {
-    "id": "A-002",
-    "name": "Volvo FMX Dump Truck",
-    "type": "Dump truck",
-    "usage": 64500,
-    "status": "IN_OPERATION"
-  },
-  {
-    "id": "A-003",
-    "name": "XCMG QY25K Crane",
-    "type": "Crane",
-    "usage": 3250,
-    "status": "IN_MAINTENANCE"
-  }
-]
+// Request (CreateMachineryResource)
+{
+  "serialNumber": "CAT-320D-2024-PE01",
+  "model": "320D",
+  "brand": "Caterpillar",
+  "categoryId": 1,
+  "hourlyRate": 185.50,
+  "initialHours": 1250.0,
+  "location": "Av. Néstor Gambetta Km 4.5, Callao, Lima"
+}
+
+// Response 201 Created (MachineryResource)
+{
+  "id": 12,
+  "serialNumber": "CAT-320D-2024-PE01",
+  "model": "320D",
+  "brand": "Caterpillar",
+  "categoryId": 1,
+  "status": "AVAILABLE",
+  "hourlyRate": 185.50,
+  "operatingHours": 1250.0,
+  "location": "Av. Néstor Gambetta Km 4.5, Callao, Lima",
+  "createdAt": "2026-11-14T18:40:00Z"
+}
 ```
 
+**3. Solicitud de Alquiler de Maquinaria (`POST /api/v1/rentals`):**
+
+```json
+// Request (CreateRentalResource)
+{
+  "machineryId": 12,
+  "startDate": "2026-11-20",
+  "endDate": "2026-11-30",
+  "deliveryLocation": "Obra Línea 2 del Metro, Estación Central, Lima"
+}
+
+// Response 201 Created (RentalResource)
+{
+  "id": 5,
+  "machineryId": 12,
+  "contractorId": 3,
+  "startDate": "2026-11-20",
+  "endDate": "2026-11-30",
+  "totalDays": 10,
+  "estimatedAmount": 14840.00,
+  "status": "REQUESTED",
+  "deliveryLocation": "Obra Línea 2 del Metro, Estación Central, Lima",
+  "createdAt": "2026-11-14T19:15:20Z"
+}
+```
+
+**4. Formato de Error Estandarizado (RFC 9457 `ProblemDetail`):**
+
+```json
+// Response 409 Conflict (ProblemDetail)
+{
+  "type": "https://api.techflow.pe/errors/duplicate-serial-number",
+  "title": "Conflicto en regla de negocio",
+  "status": 409,
+  "detail": "Ya existe una maquinaria registrada con el número de serie 'CAT-320D-2024-PE01'.",
+  "instance": "/api/v1/machinery"
+}
+```
+
+##### Pruebas Unitarias de Dominio (14 Test Suites)
+
+En `src/test/java`, el backend cuenta con 14 suites de pruebas unitarias que verifican reglas de negocio, invariantes de agregados y consistencia de value objects sin dependencias acopladas a la base de datos:
+
+| Suite de Prueba | Contexto Delimitado | Clase / Agregado Evaluado | Invariantes y Reglas Verificadas |
+|---|---|---|---|
+| `TechFlowBackendApplicationTests` | Cross-cutting | `TechFlowBackendApplication` | Carga íntegra del ApplicationContext de Spring Boot y dependencias bean. |
+| `InvoiceTest` | `billing` | `Invoice` | Cálculo de montos brutos, impuestos y transiciones de estado (`ISSUED`, `PAID`, `VOID`). |
+| `LatePenaltyTest` | `billing` | `LatePenalty` | Invariantes de cálculo de penalidad por retorno tardío y tarifas diarias punitivas. |
+| `MachineryTest` | `fleet` | `Machinery` | Máquina de estados (`AVAILABLE`, `RENTED`, `MAINTENANCE`, `OUT_OF_SERVICE`) y lectura de horómetros. |
+| `MachineryLocationTest` | `fleet` | `MachineryLocation` | Inmutabilidad de Value Object y validación de dirección y coordenadas operativas. |
+| `UserAccountTest` | `iam` | `UserAccount` | Encriptación de credenciales con BCrypt, asignación de roles y unicidad de username. |
+| `RoleNameTest` | `iam` | `RoleName` | Mapeo estricto del enum de roles de seguridad (`ROLE_USER`, `ROLE_ADMIN`). |
+| `MaintenanceTest` | `maintenance` | `Maintenance` | Validación de fechas futuras de programación, transiciones de orden y registro de costos. |
+| `ServiceOperationTest` | `operations` | `ServiceOperation` | Acumulación de horas operativas, validación de supervisor y control de cierre de servicio. |
+| `ContactInformationTest` | `profiles` | `ContactInformation` | Expresiones regulares de validación para correo electrónico corporativo y teléfono celular. |
+| `DocumentNumberTest` | `profiles` | `DocumentNumber` | Reglas de validación para documentos de identidad peruanos (DNI 8 dígitos, RUC 11 dígitos). |
+| `RentalTest` | `rental` | `Rental` | Invariantes de contrato de alquiler, cálculo de días efectivos y validación de conflicto de reservas. |
+| `RentalPeriodTest` | `rental` | `RentalPeriod` | Verificación temporal estricta (fecha de inicio previa a fecha de término y duración positiva). |
+| `SubscriptionTest` | `subscription` | `Subscription` | Ciclo de vida de suscripción a la plataforma, cuotas de maquinaria y registro de pagos. |
+
 > [!NOTE]
-> **[Pendiente de captura por el equipo]:** Insertar capturas de pantalla ejecutando pruebas de endpoints en Swagger UI (`/swagger` o `/swagger-ui.html`) y contra `GET /api/v1/health` con datos de muestra.
+> **[Pendiente de captura por el equipo]:** Insertar capturas de pantalla de la interacción interactiva en Swagger UI (`/swagger-ui/index.html`) ejecutando peticiones reales con datos de muestra para autenticación, inventario de maquinaria y disponibilidad de alquiler.
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
 Para el hito AV2 (Semana 12), los tres productos principales de TechnoLoad cuentan con configuración de despliegue independiente en **Microsoft Azure App Service (Linux)** conectada a la rama `main` de sus respectivos repositorios:
 
+##### 1. Pipeline CI/CD en GitHub Actions (`deploy-azure.yml`)
+
+El backend `TechFlow-Backend` automatiza su ciclo de integración y despliegue continuo mediante el workflow [deploy-azure.yml](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend/blob/main/.github/workflows/deploy-azure.yml):
+
+* **Disparadores (Triggers):** Push a la rama `main`, Pull Request a la rama `main` y ejecución manual por `workflow_dispatch`.
+* **Job `build` (Ubuntu Latest):**
+  1. `actions/checkout@v4`: Descarga del código fuente del repositorio.
+  2. `actions/setup-java@v4`: Configuración del entorno JDK 21 distribución Temurin con caché para dependencias de Maven.
+  3. Ejecución de pruebas unitarias y compilación: `./mvnw -B package -Dtest='!TechFlowBackendApplicationTests' -Dsurefire.failIfNoSpecifiedTests=false`.
+  4. `actions/upload-artifact@v4`: Empaquetado y subida del artefacto JAR ejecutable generado en `target/*.jar`.
+* **Job `deploy` (Azure App Service):**
+  1. Condicionado a commits confirmados en `refs/heads/main`.
+  2. `actions/download-artifact@v4`: Recuperación del artefacto verificado en el job previo.
+  3. `azure/webapps-deploy@v3`: Publicación directa del paquete JAR en el servicio `AZURE_WEBAPP_NAME: techflow-backend` utilizando el publish profile configurado en GitHub Secrets (`AZURE_WEBAPP_PUBLISH_PROFILE`).
+
+##### 2. Contenedorización Local con Docker Compose
+
+Para reproducir fielmente el entorno en estaciones de desarrollo, el repositorio incluye un `Dockerfile` multi-stage y una configuración orquestada en `compose.yaml`:
+
+* **`Dockerfile` multi-etapa:**
+  - *Etapa 1 (Build):* Imagen base `eclipse-temurin:21-jdk` Alpine, descarga dependencias offline con Maven Wrapper y compila el paquete JAR.
+  - *Etapa 2 (Runtime):* Imagen base ligera `eclipse-temurin:21-jre`, ejecución bajo usuario no root `spring`, asignación de perfil `SPRING_PROFILES_ACTIVE=prod` y puerto expuesto 8080.
+* **`compose.yaml`:**
+  - *Servicio `mysql`:* Imagen `mysql:8.4` con base `techflow`, usuario/contraseña configurados, volumen persistente `techflow-mysql-data` y healthcheck por `mysqladmin ping`.
+  - *Servicio `api`:* Depende de la salud de `mysql` (`condition: service_healthy`), levanta con perfil `dev` y mapea el puerto `8080:8080`.
+
+##### 3. Matriz de Variables de Entorno y Perfiles
+
+| Variable de Entorno | Perfil `dev` (Local) | Perfil `prod` (Azure Cloud) | Propósito y Restricción de Seguridad |
+|---|---|---|---|
+| `DATABASE_URL` | `localhost` / `mysql` | Host MySQL Azure | Host de la base de datos relacional. |
+| `DATABASE_PORT` | `3306` | `3306` | Puerto de conexión a MySQL. |
+| `DATABASE_NAME` | `techflow` | `techflow` | Nombre de la base de datos. |
+| `DATABASE_USER` | `root` / `techflow` | Usuario administrado | Credencial de usuario de base de datos. |
+| `DATABASE_PASSWORD` | Credencial local | Secret en Azure KeyVault | Contraseña segura nunca expuesta en Git. |
+| `JWT_SECRET` | Clave local de prueba | Secret ≥ 32 caracteres | Clave de firma simétrica HMAC-SHA256 para emisión y validación de tokens. |
+| `CORS_ALLOWED_ORIGINS` | `http://localhost:4200,http://localhost:3000` | Dominio Web App en Azure | Lista blanca de orígenes HTTP autorizados para interactuar con la API. |
+| `PORT` | `8080` | `8080` | Puerto HTTP del servidor embebido Tomcat. |
+| `spring.jpa.hibernate.ddl-auto` | `update` | `validate` | En producción valida el esquema relacional sin realizar modificaciones destructivas. |
+
+##### 4. Resumen de Despliegue de Productos Digitales
+
 | Componente | Plataforma Cloud | Repositorio GitHub | URL Pública Configurada | Variables de Entorno Clave |
 |---|---|---|---|---|
 | **Landing Page** | Azure App Service (Linux) | [TechnoLoad-TechFlow/technoload-website](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) | HTTPS Only habilitado |
-| **Web Application (Angular 21)** | Azure App Service (Linux) | [TechnoLoad-TechFlow/technoload-webapp](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | `VITE_API_BASE_URL` apuntando a `technoload-platform-.../api/v1` |
-| **RESTful Web Services** | Azure App Service (Linux) | [TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform) | [https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1](https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1) | `PORT`, `AUTH_SESSION_TTL_HOURS`, `STRIPE_SECRET_KEY`, `ConnectionStrings__TechnoLoad`, `DB_URL`, `CORS_ALLOWED_ORIGINS` |
+| **Web Application (Angular 21)** | Azure App Service (Linux) | [TechnoLoad-TechFlow/technoload-webapp](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) | `VITE_API_BASE_URL` apuntando a `techflow-backend.../api/v1` |
+| **RESTful Web Services** | Azure App Service (Linux) | [TechnoLoad-TechFlow/TechFlow-Backend](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend) | [https://techflow-backend-u202410728.azurewebsites.net/api/v1](https://techflow-backend-u202410728.azurewebsites.net/api/v1) | `PORT`, `DATABASE_URL`, `DATABASE_NAME`, `DATABASE_USER`, `DATABASE_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS` |
 
 > [!NOTE]
-> **[Pendiente de verificación y captura por el equipo]:** Verificar que los tres App Services de Azure for Students estén activos en el portal al momento de la revisión e insertar las capturas de pantalla del estado de despliegue y respuesta `/api/v1/health`.
+> **[Pendiente de verificación y captura por el equipo]:** Verificar que los tres App Services de Azure for Students estén activos en el portal al momento de la revisión e insertar las capturas de pantalla del estado de despliegue y respuesta `GET /health`.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
-A partir del historial real de Git (excluyendo commits de merge) en los cuatro repositorios oficiales de `TechnoLoad-TechFlow`, se contabilizaron **54 commits** en la ventana del Sprint 3 / post-TB1 (desde el 9 de octubre de 2026) y **194 commits acumulados** en todo el ciclo del proyecto:
+A partir del historial real de Git (excluyendo commits de merge) en los cuatro repositorios oficiales de la organización `TechnoLoad-TechFlow`, se contabilizaron **52 commits** en la ventana del Sprint 3 / post-TB1 (desde el 9 de octubre hasta el 14 de noviembre de 2026) y **192 commits acumulados** en todo el ciclo del proyecto:
 
 **Actividad verificada en la ventana del Sprint 3 (desde `2026-10-09`, sin merges):**
 
-| Integrante / Identidad Git | `TechFlow-report` | `technoload-platform` | `technoload-webapp` | `technoload-website` | Commits Sprint 3 | Total histórico (4 repos) |
+| Integrante / Identidad Git | `TechFlow-report` | `TechFlow-Backend` | `technoload-webapp` | `technoload-website` | Commits Sprint 3 | Total histórico (4 repos) |
 |---|---:|---:|---:|---:|---:|---:|
-| Gutiérrez Lizarbe, Wilmer Sebastián (`WILMER SEBASTIAN` / `sebas`) | 0 | 14 | 4 | 0 | **18** | **74** |
+| Gutiérrez Lizarbe, Wilmer Sebastián (`WILMER SEBASTIAN` / `sebas`) | 0 | 12 | 4 | 0 | **16** | **72** |
 | Castillo Guevara, Mathias Alejandro (`mathias9939`) | 8 | 0 | 5 | 4 | **17** | **44** |
 | Tantalean Granda, Nicolas (`NicolasTantalean`) | 4 | 0 | 10 | 2 | **16** | **49** |
 | Díaz Caruzo, Edgard Daniel (`Dan-trax` / `Daniel`) | 3 | 0 | 0 | 0 | **3** | **27** |
-| **Total del equipo** | **15** | **14** | **19** | **6** | **54** | **194** |
+| **Total del equipo** | **15** | **12** | **19** | **6** | **52** | **192** |
+
+Durante este ciclo, Gutiérrez Lizarbe lideró el desarrollo integral del backend empresarial en Java 21 y Spring Boot dentro de `TechFlow-Backend`, implementando los 9 contextos delimitados, la seguridad por tokens JWT stateless, el patrón Transactional Outbox, las 14 suites de pruebas unitarias y el pipeline CI/CD en GitHub Actions. Tantalean Granda encabezó la integración de la Frontend Web Application en Angular 21, conectando las vistas de cliente y administrador contra los endpoints de autenticación y checkout sandbox, además de coordinar el despliegue cloud en Microsoft Azure App Service. Castillo Guevara lideró la corrección y renderización en alta resolución de todos los diagramas arquitecturales del Capítulo IV (secciones 4.4.4 a 4.8), la estandarización del informe bajo directrices ABET y el diseño de la evaluación heurística con usuarios. Díaz Caruzo condujo el rediseño responsivo de la Landing Page, el modal de autenticación interactivo y la estructuración de los entregables audiovisuales de navegación y sustentación.
 
 > [!NOTE]
-> **[Pendiente de captura por el equipo]:** Insertar capturas de pantalla actualizadas de *GitHub Insights → Contributors* de `TechFlow-report`, `technoload-platform`, `technoload-webapp` y `technoload-website` correspondientes al Sprint 3.
-
+> **[Pendiente de captura por el equipo]:** Insertar capturas de pantalla actualizadas de *GitHub Insights → Contributors* de `TechFlow-report`, `TechFlow-Backend`, `technoload-webapp` y `technoload-website` correspondientes al Sprint 3.
 ---
 
 ## 5.3. Validation Interviews
 
-En esta sección el equipo documenta las sesiones de validación realizadas con usuarios pertenecientes a los dos segmentos objetivo, evaluando su interacción con la Landing Page (`technoload-website`) y la Web Application (`technoload-webapp`) integradas con `technoload-platform`.
+En esta sección el equipo documenta las sesiones de validación realizadas con usuarios pertenecientes a los dos segmentos objetivo, evaluando su interacción con la Landing Page (`technoload-website`) y la Web Application (`technoload-webapp`) integradas con `TechFlow-Backend`.
 
 ### 5.3.1. Diseño de Entrevistas
 
@@ -2949,7 +3131,7 @@ En esta sección se documenta el **Video About-the-Product** de **TechnoLoad** (
 * **Estructura de contenido:**
   1. **Introducción (`00:00:00` – `00:00:40`):** Presentación del problema de paradas imprevistas, baja trazabilidad de horómetros y conflictos en reservas.
   2. **Propuesta de valor (`00:00:40` – `00:01:25`):** Explicación de TechnoLoad como plataforma integral para inventario, mantenimiento preventivo, alquileres y control de suscripciones.
-  3. **Demostración en vivo del producto (`00:01:25` – `00:03:15`):** Recorrido por la Landing Page, inicio de sesión en la Web Application Angular, gestión de flota (`ADMIN`), catálogo y checkout sandbox (`USER`) conectado a `technoload-platform`.
+  3. **Demostración en vivo del producto (`00:01:25` – `00:03:15`):** Recorrido por la Landing Page, inicio de sesión en la Web Application Angular, gestión de flota (`ADMIN`), catálogo y checkout sandbox (`USER`) conectado a `TechFlow-Backend`.
   4. **Cierre comercial (`00:03:15` – `00:03:45`):** Planes de suscripción y llamado a la acción en la Landing Page.
 
 * **Enlace en Microsoft Stream:** *[Pendiente de carga del equipo — insertar URL de Microsoft Stream]*
@@ -2968,7 +3150,7 @@ En esta sección se documenta el **Video About-the-Product** de **TechnoLoad** (
    - El cumplimiento completo de los criterios de éxito cuantitativos (tasa de finalización de tareas sin asistencia y tiempos de respuesta en validación) quedará consolidado al concluir la grabación y análisis de las 3 a 5 entrevistas formales por cada segmento en el hito AV2.
 2. **Consolidación arquitectural e implementación técnica (Sprints 1, 2 y 3):**
    - La estandarización de los artefactos de diseño (Big Picture Event Storming, User Flows `UF-01`–`UF-06`, Design-Level Event Storming para los 8 Bounded Contexts, diagramas C4, diagramas de clases DDD y diagramas de base de datos sin bloques Mermaid sin renderizar) garantiza trazabilidad directa entre requisitos y código.
-   - Durante el Sprint 3 se evolucionó de prototipos estáticos hacia una Web Application en **Angular 21** conectada a autenticación real por token Bearer y checkout sandbox en `technoload-platform`, complementada por backends DDD estructurados en **ASP.NET Core 8** (`dotnet/` con EF Core y `MachineServiceTests`) y **Spring Boot** (`spring/` con contextos `fleet`, `maintenance`, `rental` y pruebas de dominio).
+   - Durante el Sprint 3 se evolucionó de prototipos estáticos hacia una Web Application en **Angular 21** conectada a autenticación real por token JWT Bearer y checkout sandbox en el backend empresarial **Java 21 / Spring Boot** (`TechFlow-Backend`), estructurado bajo Domain-Driven Design (DDD) con persistencia hexagonal, CQRS, Transactional Outbox y 14 suites de pruebas unitarias de dominio.
 3. **Roadmap recomendado para la entrega final (Sprint 4 / TB2):**
    - Unificar la capa de producción backend sobre una base de datos relacional administrada (MySQL 8 / PostgreSQL en Azure) ejecutando las migraciones de EF Core o JPA sobre la instancia cloud única.
    - Incorporar alertas automáticas por umbral de horómetro, historial gráfico de utilización de flota, reportes descargables (CSV/PDF) y corrección de los 5 hallazgos heurísticos priorizados (especialmente el indicador de estado de red de severidad 3 y mejoras de contraste/ARIA).
@@ -3033,7 +3215,7 @@ En esta sección el equipo presenta el **Video About-the-Team**, resumiendo el p
 | **Project Report (`TechFlow-report`)** | [https://github.com/TechnoLoad-TechFlow/TechFlow-report](https://github.com/TechnoLoad-TechFlow/TechFlow-report) | Rama `develop` (avance AV2) / `main` |
 | **Landing Page (`technoload-website`)** | [https://github.com/TechnoLoad-TechFlow/technoload-website](https://github.com/TechnoLoad-TechFlow/technoload-website) | [https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/](https://technoload-website-u202410728-hxegc4f8a5e4dvgw.westus-01.azurewebsites.net/) |
 | **Frontend Web Application (`technoload-webapp`)** | [https://github.com/TechnoLoad-TechFlow/technoload-webapp](https://github.com/TechnoLoad-TechFlow/technoload-webapp) | [https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/](https://technoload-webapp-u202410728-afg8gjamfue2ghf5.westus-01.azurewebsites.net/) |
-| **RESTful Web Services (`technoload-platform`)** | [https://github.com/TechnoLoad-TechFlow/technoload-platform](https://github.com/TechnoLoad-TechFlow/technoload-platform) | `https://technoload-platform-u202410728-e3hpgzdgf7g5daaq.westus-01.azurewebsites.net/api/v1` |
+| **RESTful Web Services (`TechFlow-Backend`)** | [https://github.com/TechnoLoad-TechFlow/TechFlow-Backend](https://github.com/TechnoLoad-TechFlow/TechFlow-Backend) | `https://techflow-backend-u202410728.azurewebsites.net/api/v1` |
 
 ## Anexo: Videos de Exposiciones
 
