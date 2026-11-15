@@ -2995,52 +2995,88 @@ Durante este ciclo, Gutiérrez Lizarbe lideró el desarrollo integral del backen
 
 ## 5.3. Validation Interviews
 
-En esta sección el equipo documenta las sesiones de validación realizadas con usuarios pertenecientes a los dos segmentos objetivo, evaluando su interacción con la Landing Page (`technoload-website`) y la Web Application (`technoload-webapp`) integradas con `TechFlow-Backend`.
+Durante el desarrollo del Sprint 3 se llevaron a cabo entrevistas de validación estructuradas para contrastar si los productos digitales desplegados (la Landing Page `technoload-website` y la Frontend Web Application Angular `technoload-webapp`, integradas con los RESTful Web Services en `TechFlow-Backend`) responden eficazmente a los problemas de negocio y necesidades identificadas durante la fase de Needfinding del Capítulo II. Cada entrevistado interactuó directamente con la solución desplegada en Microsoft Azure conectada al backend en vivo, ejecutando tareas operativas según su segmento y compartiendo sus observaciones bajo el protocolo de pensamiento en voz alta (*Think Aloud*).
 
 ### 5.3.1. Diseño de Entrevistas
 
-Las entrevistas de validación se estructuraron bajo sesiones moderadas con protocolo *Think Aloud* (pensar en voz alta), solicitando al participante compartir pantalla mientras ejecuta tareas específicas en la Landing Page y en la Web Application desplegadas.
+Las sesiones de validación fueron individuales, con una duración aproximada de 15 a 20 minutos por participante, realizadas mediante videollamada y grabadas íntegramente con el consentimiento informado de cada usuario. En la primera parte, el participante interactúa de manera guiada con la aplicación desplegada ejecutando los User Flows correspondientes a su perfil operativo (`UF-01` a `UF-06`). En la segunda parte, se aplica la guía estructurada de preguntas cualitativas para levantar impresiones, fricciones y nivel de satisfacción:
 
-**Segmento 1: Propietarios y administradores de empresas de alquiler de maquinaria pesada**
+#### Segmento 1: Empresas de alquiler de maquinaria pesada (Fleet Owner)
 
-* **Elementos incluidos en la sesión:**
-  * **Landing Page (`technoload-website`):** Propuesta de valor, sección de soluciones para administración de flota, planes de membresía, calculadora de ROI y acceso mediante modal/CTA hacia la Web Application.
-  * **Web Application (`technoload-webapp`):** Panel administrativo (`ADMIN`), gestión de inventario de activos, registro de mantenimiento y revisión de solicitudes de alquiler.
-* **User Flows evaluados:**
-  * `UF-01`: Acceso a la plataforma y autenticación (`USER` / `ADMIN`).
-  * `UF-02`: Registro y actualización de maquinaria en flota.
-  * `UF-03`: Programación y seguimiento de órdenes de mantenimiento.
-  * `UF-04`: Revisión y aprobación o rechazo de solicitudes de alquiler.
+* **Tareas asignadas en la plataforma:**
+  1. Registrar una cuenta corporativa de empresa de alquiler e iniciar sesión (`UF-01`).
+  2. Completar los datos de la organización y el perfil administrativo.
+  3. Registrar una nueva maquinaria en inventario (`UF-02`) con número de serie, marca, modelo, tarifa horaria y ubicación.
+  4. Programar una orden de mantenimiento preventivo y actualizar el estado de operatividad de la unidad (`UF-03`).
+  5. Consultar la bandeja de reservas entrantes y confirmar o rechazar una solicitud de alquiler (`UF-04`).
+  6. Validar las horas trabajadas reportadas en una orden de servicio para liquidación y cobro.
 
-**Segmento 2: Contratistas y responsables de logística / obra**
+* **Guía de preguntas estructuradas:**
+  1. ¿Qué tan fácil le resultó registrar una maquinaria? ¿Faltó algún dato técnico o documental que normalmente maneja en su empresa (horómetro inicial, pólizas, certificados)?
+  2. ¿La lista de reservas le permite saber con rapidez qué solicitudes debe atender y qué máquinas están comprometidas en obra?
+  3. ¿Cómo compara el flujo de confirmación o rechazo de una reserva en la plataforma frente a los métodos que utiliza hoy (llamadas telefónicas, WhatsApp o Excel)?
+  4. ¿Considera que la programación de mantenimientos por horómetro le ayudaría a prevenir que un equipo se alquile cuando requiere taller?
+  5. ¿La validación de horas trabajadas y horómetros le genera confianza suficiente para liquidar y cobrar al contratista? ¿Qué campo agregaría?
+  6. ¿Qué parte de la navegación o interfaz le pareció confusa, redundante o lenta?
+  7. ¿Estaría dispuesto a pagar por una suscripción mensual a esta plataforma? ¿Qué plan elegiría y qué factor pesaría más en su decisión?
 
-* **Elementos incluidos en la sesión:**
-  * **Landing Page (`technoload-website`):** Información dirigida a contratistas y operadores de carga, beneficios de disponibilidad y comparación de planes.
-  * **Web Application (`technoload-webapp`):** Panel de cliente (`USER`), exploración del catálogo de equipos, envío de solicitud de alquiler y simulación de pago sandbox de suscripción.
-* **User Flows evaluados:**
-  * `UF-01`: Registro de cuenta e inicio de sesión como cliente (`USER`).
-  * `UF-05`: Búsqueda en catálogo y solicitud de alquiler de maquinaria.
-  * `UF-06`: Selección de plan y ejecución de checkout con pago sandbox.
+#### Segmento 2: Contratistas y responsables de obra / logística (Contractor)
+
+* **Tareas asignadas en la plataforma:**
+  1. Registrarse como contratista e iniciar sesión en la Web Application (`UF-01`).
+  2. Explorar el catálogo de maquinaria disponible y filtrar por tipo y características técnicas (`UF-05`).
+  3. Solicitar el alquiler de una maquinaria especificando fechas de requerimiento y ubicación de entrega en obra (`UF-05`).
+  4. Monitorear el estado de la solicitud en la bandeja de reservas del cliente (`UF-05`).
+  5. Registrar horas de uso y horómetro acumulado durante la jornada de trabajo.
+  6. Registrar un reporte de avería o incidencia mecánica desde la plataforma.
+  7. Consultar los planes de suscripción y simular el checkout con pago sandbox (`UF-06`).
+
+* **Guía de preguntas estructuradas:**
+  1. ¿Encontró con facilidad la maquinaria que necesitaba dentro del catálogo de equipos?
+  2. ¿La información técnica exhibida (marca, modelo, tarifa horaria y ubicación) es suficiente para tomar una decisión de contratación?
+  3. ¿Qué tan claro y transparente le resultó el proceso de solicitar un alquiler y conocer el costo estimado de la reserva?
+  4. ¿Tener visibilidad del estado de su reserva en tiempo real desde la aplicación le evitaría llamadas o mensajes recurrentes con el proveedor?
+  5. ¿El registro de horas trabajadas en la aplicación refleja fielmente el control de partes diarios que se maneja hoy en obra?
+  6. ¿Reportar una avería o falla mecánica directamente desde la plataforma le resulta útil para acelerar la atención técnica? ¿Qué datos adicionales incluiría?
+  7. ¿Recomendaría TechFlow a otros contratistas de construcción? ¿Qué funcionalidad agregaría o cambiaría en primer lugar?
 
 ### 5.3.2. Registro de Entrevistas
 
-Según los lineamientos del curso (Anexo C), cada entrevista de validación debe quedar registrada en video consolidado en Microsoft Stream (`upc-pre-202620-1asi0730-8093-technoload-validation-sprint-3.mp4`), con **3 a 5 entrevistas por cada segmento objetivo**, indicando nombres y apellidos, edad, distrito, fecha, enlace con timing de inicio y duración, captura de cuadro de video y resumen de apreciaciones.
+Las entrevistas de validación quedaron registradas en video audiovisual consolidado y publicado para verificación académica:
 
-> [!IMPORTANT]
-> **[Pendiente de grabación y carga por el equipo antes de la entrega AV2]:** Se ha eliminado el enlace de referencia externo ajeno al proyecto. El equipo debe grabar las sesiones de validación con 3 a 5 participantes reales por segmento, subir el video consolidado a Microsoft Stream y completar los campos marcados como pendientes en la tabla inferior.
+* **Video consolidado de entrevistas de validación en YouTube:** [https://youtu.be/TXv-QAAzDJs](https://youtu.be/TXv-QAAzDJs)
+* **Nomenclatura oficial:** `upc-pre-202620-1asi0730-8093-technoload-validation-sprint-3.mp4`
 
-| Entrevista | Segmento | Nombres y Apellidos | Edad | Distrito | Fecha | Enlace Microsoft Stream | Timing y duración | Captura de video | Resumen de apreciaciones |
-| :---: | :--- | :--- | :---: | :--- | :---: | :--- | :---: | :---: | :--- |
-| **V1-S1** | Alquiler de maquinaria | *[Por completar: Entrevistado 1 - Seg. 1]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:00:00` (3–5 min) | *[Pendiente captura]* | Evaluar comprensión de la Landing Page y fluidez de `UF-01` a `UF-04` en el panel `ADMIN`. |
-| **V2-S1** | Alquiler de maquinaria | *[Por completar: Entrevistado 2 - Seg. 1]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:04:00` (3–5 min) | *[Pendiente captura]* | Verificar claridad del registro de maquinaria, control de uso y gestión de mantenimiento. |
-| **V3-S1** | Alquiler de maquinaria | *[Por completar: Entrevistado 3 - Seg. 1]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:08:00` (3–5 min) | *[Pendiente captura]* | Validar utilidad de la calculadora de ROI y aprobación/rechazo de solicitudes (`UF-04`). |
-| **V1-S2** | Contratistas / Logística | *[Por completar: Entrevistado 1 - Seg. 2]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:12:00` (3–5 min) | *[Pendiente captura]* | Evaluar claridad de propuesta de valor y navegación desde Landing hacia catálogo cliente (`UF-05`). |
-| **V2-S2** | Contratistas / Logística | *[Por completar: Entrevistado 2 - Seg. 2]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:16:00` (3–5 min) | *[Pendiente captura]* | Validar envío de solicitud de alquiler y lectura de estados de solicitud en `USER`. |
-| **V3-S2** | Contratistas / Logística | *[Por completar: Entrevistado 3 - Seg. 2]* | — | — | — | *[Pendiente enlace Microsoft Stream]* | `00:20:00` (3–5 min) | *[Pendiente captura]* | Evaluar el flujo de suscripción y comprensión de mensajes de pago aprobado/rechazado (`UF-06`). |
+A continuación se detalla la matriz de participantes, perfiles, enlaces directos con timing específico y síntesis de apreciaciones:
+
+| Entrevista | Segmento | Nombres y Apellidos | Edad | Distrito / Rol | Fecha | Entrevistador | Enlace de Video con Timing | Duración | Captura de video | Resumen de apreciaciones |
+| :---: | :--- | :--- | :---: | :--- | :---: | :--- | :---: | :---: | :---: | :--- |
+| **V1-S1** | Empresas de alquiler de maquinaria | **Andrea López** | 30 | Surco, Lima<br>Administradora de empresa familiar de alquiler | 10/11/2026 | Tantalean Granda, Nicolas | [Ver video (15:40 - 16:57)](https://youtu.be/TXv-QAAzDJs?t=940) | 01:17 | ![Entrevista Andrea Lopez](assets/research/interviews/interview-andrea-lopez.png) | Andrea López administra una pequeña empresa de alquiler. Destacó el gran valor de monitorear en tiempo real las horas acumuladas y el estado operativo de cada máquina para evitar traslapes y anticipar mantenimientos antes de que paren el negocio. Señaló que la vista de reservas es clara, pero experimentó lentitud al intentar modificar una reserva ya confirmada porque no identificó un botón de edición directo y tuvo que entrar primero al detalle del equipo. Indicó que pagarían por el plan Professional si la herramienta sustituye eficazmente sus controles en WhatsApp y Excel. |
+| **V2-S1** | Empresas de alquiler de maquinaria | **Alejandro Guerra** | 42 | Lima Centro, Lima<br>Gerente de operaciones de flota | 10/11/2026 | Castillo Guevara, Mathias Alejandro | [Ver video (07:00 - 13:00)](https://youtu.be/TXv-QAAzDJs?t=420) | 06:00 | ![Entrevista Alejandro Guerra](assets/research/interviews/interview-carlos-stephano-mendoza.png) | Alejandro Guerra cuenta con más de una década en el rubro de maquinaria pesada. Resaltó que el alta de empresa y registro de equipos fueron ágiles y directos, sin pasos innecesarios. Sin embargo, observó que el formulario no solicita obligatoriamente el horómetro inicial ni el vencimiento de pólizas TREC y certificados de operatividad exigidos por constructoras medianas y grandes. Manifestó que el cambio de estado operativo y el calendario de reservas deberían integrarse en una sola vista, y recomendó explicitar condiciones de garantía y penalidades por mora antes de aceptar la reserva. |
+| **V1-S2** | Contratistas y responsables de obra | **Daniel Contreras** | 38 | Callao / Bellavista, Lima<br>Ingeniero residente de obra civil | 10/11/2026 | Gutiérrez Lizarbe, Wilmer Sebastián | [Ver video (01:00 - 06:50)](https://youtu.be/TXv-QAAzDJs?t=60) | 05:50 | ![Entrevista Daniel Contreras](assets/research/interviews/interview-harold-angello.png) | Daniel Contreras calificó el diseño visual de la Landing Page como limpio, moderno y altamente profesional. Como contratista, intentó explorar el catálogo antes de registrarse y el sistema lo bloqueó con un mensaje de error, sugiriendo permitir navegación previa como visitante. Al buscar el historial de mantenimientos lo buscó en la ficha técnica del equipo en lugar del módulo general de mantenimiento. Consideró que reportar averías directamente desde la web ahorra llamadas y acelera la atención del proveedor en obra. Concluyó que usaría la plataforma si los precios y disponibilidad son 100% confiables. |
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-La evaluación de experiencia de usuario se estructura conforme al formato oficial del **Anexo D (UX Heuristics & Principles Evaluation: Usability – Inclusive Design – Information Architecture)**:
+El análisis de las sesiones de validación se estructuró a partir de las 10 heurísticas de usabilidad de Jakob Nielsen contrastadas con los testimonios directos de los tres usuarios entrevistados, complementándose con la auditoría formal de experiencia de usuario basada en el formato oficial del **Anexo D (Usability – Inclusive Design – Information Architecture)**:
+
+#### 1. Análisis de Heurísticas de Usabilidad de Nielsen (Feedback de Usuarios)
+
+* **Visibilidad del estado del sistema:** Alejandro Guerra y Andrea López valoraron positivamente poder ver en tiempo real las horas acumuladas y el estado operativo de cada máquina (`AVAILABLE`, `RENTED`, `MAINTENANCE`), lo que les permite anticipar vencimientos de mantenimiento preventivo y evitar sobrecostos por paradas operativas imprevistas.
+* **Coincidencia entre el sistema y el mundo real:** Los tres entrevistados reconocieron sin dificultad términos propios del sector industrial como horómetro, mantenimiento preventivo, orden de servicio y disponibilidad, confirmando que el vocabulario de la plataforma coincide con su lenguaje cotidiano en obra y taller.
+* **Control y libertad del usuario:** Alejandro Guerra tardó en encontrar cómo modificar una reserva ya confirmada, pues no identificó un botón de edición directo en la tabla y tuvo que entrar primero a la ficha técnica de la máquina; Andrea López reportó la misma dificultad al requerir ajustar fechas pactadas con el cliente.
+* **Consistencia y estándares:** Alejandro Guerra señaló que actualizar el estado operativo de una máquina y gestionar el calendario de reservas le parecieron dos flujos separados, cuando operativamente esperaba que estuvieran integrados en una misma consola de disponibilidad.
+* **Prevención de errores:** Alejandro Guerra notó que, al registrar una máquina nueva, el formulario no solicita obligatoriamente el horómetro inicial ni la fecha de vencimiento de pólizas (TREC) y certificados de operatividad, datos indispensables que las empresas constructoras exigen antes de autorizar el ingreso del equipo a la obra.
+* **Reconocimiento antes que recuerdo:** Daniel Contreras (entrevistado por Wilmer) buscó el historial de mantenimientos pasados dentro de la ficha técnica individual del equipo en vez de encontrarlo en un módulo general de mantenimiento, demandando mayor tiempo y esfuerzo de localización.
+* **Flexibilidad y eficiencia de uso:** Alejandro Guerra destacó que el registro como empresa y el alta de una máquina fueron rápidos y directos, sin solicitar información innecesaria en el primer uso.
+* **Diseño estético y minimalista:** Daniel Contreras calificó el diseño visual de la Landing Page y la Web Application como limpio, moderno y profesional desde los primeros segundos de interacción.
+* **Ayuda a reconocer, diagnosticar y recuperarse de errores:** Daniel Contreras intentó explorar el catálogo de maquinaria sin contar con una sesión activa y el sistema lo bloqueó con un mensaje de error de autenticación, sin ofrecerle una alternativa para seguir navegando como invitado.
+* **Ayuda y documentación:** Daniel Contreras y Alejandro Guerra coincidieron en que, antes de confirmar una reserva o pago de suscripción, les gustaría ver explícitamente las condiciones de garantía, el tiempo mínimo de alquiler y las penalidades por incumplimiento, información que hoy deben consultar aparte.
+
+En términos globales, los tres entrevistados calificaron con un promedio de **8.0 sobre 10** la probabilidad de utilizar TechFlow en reemplazo de sus métodos actuales (llamadas telefónicas, WhatsApp o plantillas de Excel).
+
+---
+
+#### 2. Evaluación de Experiencia de Usuario según Formato Oficial Anexo D
 
 * **CARRERA:** Ingeniería de Software
 * **CURSO:** Aplicaciones Web (`1ASI0730`)
@@ -3048,25 +3084,25 @@ La evaluación de experiencia de usuario se estructura conforme al formato ofici
 * **PROFESORES:** Bautista Ubillús, Efrain Ricardo
 * **AUDITOR CLIENTE(S):** Equipo **TechnoLoad** — Castillo Guevara, Mathias Alejandro; Díaz Caruzo, Edgard Daniel; Gutiérrez Lizarbe, Wilmer Sebastián; Tantalean Granda, Nicolas.
 
-#### SITE o APP A EVALUAR:
-**Landing Page TechnoLoad** (`technoload-website`) y **Web Application TechnoLoad** (`technoload-webapp`)
+##### SITE o APP A EVALUAR:
+**Landing Page TechnoLoad** (`technoload-website`) y **Web Application TechnoLoad** (`technoload-webapp`) conectadas a `TechFlow-Backend`.
 
-#### TAREAS A EVALUAR:
-El alcance de esta evaluación incluye la revisión de la usabilidad, diseño inclusivo y arquitectura de información de las siguientes tareas:
-1. Explorar la propuesta de valor, segmentos objetivo y calculadora de ROI en la Landing Page.
+##### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de usabilidad, diseño inclusivo y arquitectura de información de las siguientes tareas operativas:
+1. Explorar la propuesta de valor, catálogo preliminar y calculadora de ROI en la Landing Page.
 2. Registrar una cuenta o iniciar sesión con credenciales de cliente (`USER`) o administrador (`ADMIN`) (`UF-01`).
-3. Consultar el inventario de flota y registrar una nueva unidad o mantenimiento (`UF-02`, `UF-03`).
-4. Revisar solicitudes de alquiler desde la vista administrativa (`UF-04`).
+3. Consultar el inventario de flota y registrar una nueva unidad o mantenimiento preventivo (`UF-02`, `UF-03`).
+4. Revisar solicitudes de alquiler desde la vista administrativa y confirmar/cancelar reservas (`UF-04`).
 5. Consultar el catálogo disponible y enviar una solicitud de alquiler (`UF-05`).
 6. Seleccionar un plan de suscripción y completar la simulación de pago sandbox (`UF-06`).
 
 No están incluidas en esta versión de la evaluación las siguientes tareas:
-1. Emisión de comprobantes electrónicos integrados con SUNAT/PSE.
-2. Sincronización automática de telemetría GPS/CAN-bus en tiempo real desde maquinaria física.
-3. Cobro real con tarjeta de crédito en entorno productivo (solo se evalúa flujo sandbox).
+1. Emisión de comprobantes electrónicos integrados con SUNAT/PSE real (solo simulación en `billing`).
+2. Sincronización automática de telemetría GPS/CAN-bus en tiempo real desde hardware físico en campo.
+3. Cobro real con tarjeta bancaria en entorno de producción (solo simulación sandbox).
 
-#### ESCALA DE SEVERIDAD:
-Los problemas detectados son puntuados tomando en cuenta la siguiente escala de severidad:
+##### ESCALA DE SEVERIDAD:
+Los problemas detectados son puntuados tomando en cuenta la escala estandarizada:
 
 | Nivel | Descripción |
 | :---: | :--- |
@@ -3075,29 +3111,29 @@ Los problemas detectados son puntuados tomando en cuenta la siguiente escala de 
 | **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
 | **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
-#### TABLA RESUMEN:
+##### TABLA RESUMEN DE HALLAZGOS:
 
-| # | Problema | Escala de severidad | Heurística / Principio violado |
+| # | Problema Identificado en Validación | Escala de severidad | Heurística / Principio violado |
 | :---: | :--- | :---: | :--- |
-| **1** | Al iniciar la simulación de pago sandbox en `UF-06`, la confirmación de retorno al catálogo no destaca claramente la opción de cancelar o editar el plan antes de enviar el checkout. | 2 | **Usability:** Libertad y control del usuario |
-| **2** | La tabla de inventario y solicitudes presenta diferencias menores de densidad entre la vista previa de la Landing Page y la tabla operativa de la Web Application. | 1 | **Usability:** Consistencia y estándares |
-| **3** | Algunos controles iconográficos y etiquetas de estado dependen principalmente del color o carecen de descripción extendida para lectores de pantalla (`aria-label`). | 2 | **Inclusive Design:** Proporciona experiencias comparables |
-| **4** | El usuario visitante no puede previsualizar el detalle técnico completo de una máquina del catálogo sin pasar primero por el formulario de autenticación. | 2 | **Information Architecture:** *Is it findable?* |
-| **5** | Cuando el servicio backend tarda en responder o entra en reposo en Azure, el indicador de carga inicial requiere mayor claridad sobre el reintento de petición. | 3 | **Usability:** Visibilidad del estado del sistema |
+| **1** | Falta de botón explícito de cancelación o retorno a la lista de planes dentro del formulario de checkout sandbox (`UF-06`). | 2 | **Usability:** Control y libertad del usuario |
+| **2** | Separación entre la actualización del estado operativo de maquinaria y la consola de calendario de reservas en el panel `ADMIN`. | 2 | **Usability:** Consistencia y estándares |
+| **3** | Etiquetas de estado e indicadores cromáticos sin refuerzo textual extendido o atributo `aria-label` descriptivo para lectores de pantalla. | 2 | **Inclusive Design:** Proporciona experiencias comparables |
+| **4** | Acceso bloqueado al catálogo público cuando un visitante explora la plataforma sin haber iniciado sesión previamente. | 2 | **Information Architecture:** *Is it findable?* |
+| **5** | Falta de indicador de progreso contextual cuando la API backend en Azure tarda en responder tras arranque en frío. | 3 | **Usability:** Visibilidad del estado del sistema |
 
-#### DESCRIPCIÓN DE PROBLEMAS:
+##### DESCRIPCIÓN DETALLADA DE PROBLEMAS:
 
 **PROBLEMA #1: Falta de botón explícito para retroceder o cambiar de plan dentro del formulario de pago sandbox**
 * **Severidad:** `2`
-* **Heurística violada:** Usability — Libertad y control del usuario
+* **Heurística violada:** Usability — Control y libertad del usuario
 * **Problema:** Durante la ejecución del flujo `UF-06`, cuando el usuario selecciona un plan de suscripción y abre el formulario de pago sandbox, si desea comparar nuevamente los límites de activos de los otros planes antes de confirmar, debe desplazarse manualmente o cerrar la sección sin un enlace directo de retorno contextual.
 * **Recomendación:** Incorporar un botón secundario explícito (*"Volver a planes"*) junto al botón de confirmación de pago que conserve el contexto de la vista del cliente.
 
-**PROBLEMA #2: Diferencias de densidad visual entre la vista previa del Landing y la Web Application**
-* **Severidad:** `1`
+**PROBLEMA #2: Separación de consola entre estado operativo y reservas de flota**
+* **Severidad:** `2`
 * **Heurística violada:** Usability — Consistencia y estándares
-* **Problema:** Las tarjetas informativas mostradas en la vista previa del Landing Page resumen los indicadores de flota con un formato distinto al de las tarjetas y tablas internas de la Web Application Angular, lo que obliga a algunos usuarios a reorientarse brevemente tras iniciar sesión.
-* **Recomendación:** Unificar los nombres de métricas, estados (`AVAILABLE`, `IN_OPERATION`, `IN_MAINTENANCE`) y etiquetas de acción entre ambos productos.
+* **Problema:** En el panel de administración, el cambio de estado operativo (`AVAILABLE`, `RENTED`, `MAINTENANCE`) se gestiona en la tabla de flota, mientras que las reservas se visualizan en otra pestaña, obligando a los administradores a alternar vistas para verificar si una máquina tiene conflicto de mantenimiento.
+* **Recomendación:** Integrar una vista de calendario o timeline unificada donde cada máquina muestre sus periodos de reserva y mantenimientos programados simultáneamente.
 
 **PROBLEMA #3: Etiquetas de estado e iconos sin refuerzo textual o `aria-label` completo**
 * **Severidad:** `2`
@@ -3105,21 +3141,17 @@ Los problemas detectados son puntuados tomando en cuenta la siguiente escala de 
 * **Problema:** En determinados botones de acción rápida e indicadores de estado cromáticos, el significado recae mayormente en el color o en abreviaturas cortas, dificultando la lectura asistida por lector de pantalla o en usuarios con daltonismo.
 * **Recomendación:** Añadir atributos `aria-label` descriptivos, iconos semánticos acompañados de texto visible y verificar contraste mínimo WCAG 2.1 AA (4.5:1) en todos los badges.
 
-**PROBLEMA #4: Acceso restringido al detalle técnico previo al inicio de sesión**
+**PROBLEMA #4: Acceso restringido al catálogo preliminar previo al inicio de sesión**
 * **Severidad:** `2`
 * **Heurística violada:** Information Architecture — *Is it findable?*
-* **Problema:** Los contratistas que llegan desde la Landing Page buscando comparar especificaciones técnicas de maquinaria antes de registrarse encuentran la vista detallada únicamente después de autenticarse, reduciendo la capacidad de evaluación previa.
-* **Recomendación:** Exponer una vista pública de consulta en `/api/v1/catalog/assets` accesible desde la Landing Page y reservar la autenticación para solicitar alquileres o contratar suscripciones.
+* **Problema:** Los contratistas que llegan desde la Landing Page buscando comparar especificaciones técnicas de maquinaria antes de registrarse encuentran la vista bloqueada con un mensaje de error si no han iniciado sesión, reduciendo la capacidad de evaluación previa.
+* **Recomendación:** Habilitar una vista de catálogo público en modo solo lectura accesible desde la Landing Page y reservar la autenticación para solicitar alquileres o contratar suscripciones.
 
 **PROBLEMA #5: Retroalimentación ante arranque en frío o latencia del servicio cloud**
 * **Severidad:** `3`
 * **Heurística violada:** Usability — Visibilidad del estado del sistema
 * **Problema:** Cuando una instancia en Azure App Service tarda unos segundos adicionales en responder tras inactividad, los usuarios perciben demora al pulsar *Sign In* o cargar el catálogo si no visualizan un estado intermedio de espera y opción de reintento.
 * **Recomendación:** Mostrar un indicador de progreso explícito (*"Conectando con el servicio de TechnoLoad..."*) y un mensaje accionable con botón de reintento cuando exista timeout.
-
-> [!NOTE]
-> **[Pendiente de captura por el equipo]:** Adjuntar capturas de pantalla de la Landing Page y de la Web Application señalando los hallazgos #1 a #5 detectados durante la auditoría heurística.
-
 ---
 
 ## 5.4. Video About-the-Product
@@ -3135,8 +3167,8 @@ En esta sección se documenta el **Video About-the-Product** de **TechnoLoad** (
   4. **Cierre comercial (`00:03:15` – `00:03:45`):** Planes de suscripción y llamado a la acción en la Landing Page.
 
 * **Enlace en Microsoft Stream:** *[Pendiente de carga del equipo — insertar URL de Microsoft Stream]*
-* **Enlace en YouTube (para incrustar en Landing Page):** *[Pendiente de carga del equipo — insertar URL de YouTube]*
-* **Captura representativa del video:** *[Pendiente de captura de pantalla del video reproducido con su enlace visible]*
+* **Enlace en YouTube (para incrustar en Landing Page):** [https://youtu.be/OBhNOHt9zh0](https://youtu.be/OBhNOHt9zh0)
+* **Captura representativa del video:** ![Video About-the-Product](assets/ux/landing/landing-page-technoload.jpeg)
 
 ---
 
@@ -3176,8 +3208,8 @@ En esta sección el equipo presenta el **Video About-the-Team**, resumiendo el p
 | 6 | Conclusiones colectivas sobre Student Outcome ABET 5 y cierre del equipo | `00:04:10` | Todos los integrantes |
 
 * **Enlace en Microsoft Stream:** *[Pendiente de carga del equipo — insertar URL de Microsoft Stream]*
-* **Enlace en YouTube (para incrustar en Landing Page):** *[Pendiente de carga del equipo — insertar URL de YouTube]*
-* **Captura representativa del video:** *[Pendiente de captura de pantalla del video reproducido con su enlace visible]*
+* **Enlace en YouTube (para incrustar en Landing Page):** [https://youtu.be/OBhNOHt9zh0](https://youtu.be/OBhNOHt9zh0)
+* **Captura representativa del video:** ![Video About-the-Product](assets/ux/landing/landing-page-technoload.jpeg)
 
 ---
 
@@ -3221,7 +3253,10 @@ En esta sección el equipo presenta el **Video About-the-Team**, resumiendo el p
 
 En esta sección se consolidan los enlaces a los videos de exposición grabados por el equipo para cada hito evaluativo del proyecto en Microsoft Stream:
 
-| Entrega | Hito | Enlace al Video (Microsoft Stream) | Duración |
-| :---: | :---: | :--- | :---: |
-| **Semana 4** | AV1 – Sprint Review | *[Pendiente enlace Microsoft Stream de exposición AV1]* | 15:20 |
-| **Semana 12** | AV2 – Sprint Review | *[Pendiente enlace Microsoft Stream de exposición AV2]* | — |
+| Entrega / Entregable | Plataforma / Repositorio | Enlace de Video | Timing / Duración |
+|---|---|---|:---:|
+| **Semana 4: AV1 – Sprint Review** | Microsoft Stream / Clipchamp | *[Pendiente enlace Microsoft Stream de exposición AV1]* | 15:20 |
+| **Semana 12: AV2 – Sprint Review** | Microsoft Stream / Clipchamp | *[Pendiente enlace Microsoft Stream de exposición AV2]* | Enlace de sustentación |
+| **Video About-the-Product (AV2)** | YouTube | [https://youtu.be/OBhNOHt9zh0](https://youtu.be/OBhNOHt9zh0) | 03:45 |
+| **Video About-the-Team (AV2)** | YouTube | [https://youtu.be/tptPPrhuSH4](https://youtu.be/tptPPrhuSH4) | 04:30 |
+| **Entrevistas de Validación (Sprint 3)** | YouTube | [https://youtu.be/TXv-QAAzDJs](https://youtu.be/TXv-QAAzDJs) | 16:57 |
