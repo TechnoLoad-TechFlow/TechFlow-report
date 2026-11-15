@@ -784,7 +784,7 @@ El siguiente Empathy Map representa a Luis Herrera, User Persona del Segmento 1.
 
 #### Segmento 2: Contratistas independientes y responsables de obras de construcción
 
-![Empathy Map - Harold Angello](https://drive.google.com/uc?export=view&id=1xUHDVfrey9nS7Pa2JBtn1eJHNfApmlNr)
+![Empathy Map - Harold Angello](assets/research/empathy-maps/empathy-map-harold-angello.png)
 
 | Cuadrante | Descripción y Hallazgos Clave |
 | :--- | :--- |
