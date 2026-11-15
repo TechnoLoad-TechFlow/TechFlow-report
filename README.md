@@ -3160,7 +3160,7 @@ En esta sección se documenta el **Video About-the-Product** de **TechnoLoad** (
   4. **Cierre comercial (`00:03:15` – `00:03:45`):** Planes de suscripción y llamado a la acción en la Landing Page.
 
 * **Enlace en Microsoft Stream:** *[Pendiente de carga del equipo — insertar URL de Microsoft Stream]*
-* **Enlace en YouTube (para incrustar en Landing Page):** [https://youtu.be/OBhNOHt9zh0](https://youtu.be/OBhNOHt9zh0)
+* **Enlace en YouTube (para incrustar en Landing Page):** [https://youtu.be/QLYYR5deLZY](https://youtu.be/QLYYR5deLZY)
 * **Captura representativa del video:** ![Video About-the-Product](assets/ux/landing/landing-page-technoload.jpeg)
 
 ---
@@ -3201,8 +3201,8 @@ En esta sección el equipo presenta el **Video About-the-Team**, resumiendo el p
 | 6 | Conclusiones colectivas sobre Student Outcome ABET 5 y cierre del equipo | `00:04:10` | Todos los integrantes |
 
 * **Enlace en Microsoft Stream:** *[Pendiente de carga del equipo — insertar URL de Microsoft Stream]*
-* **Enlace en YouTube (para incrustar en Landing Page):** [https://youtu.be/OBhNOHt9zh0](https://youtu.be/OBhNOHt9zh0)
-* **Captura representativa del video:** ![Video About-the-Product](assets/ux/landing/landing-page-technoload.jpeg)
+* **Enlace en YouTube (para incrustar en Landing Page):** [https://youtu.be/tptPPrhuSH4](https://youtu.be/tptPPrhuSH4)
+* **Captura representativa del video:** ![Video About-the-Team](assets/ux/landing/landing-page-technoload.jpeg)
 
 ---
 
@@ -3249,7 +3249,7 @@ En esta sección se consolidan los enlaces a los videos de exposición grabados 
 | Entrega / Entregable | Plataforma / Repositorio | Enlace de Video | Timing / Duración |
 |---|---|---|:---:|
 | **Semana 4: AV1 – Sprint Review** | Microsoft Stream / Clipchamp | *[Pendiente enlace Microsoft Stream de exposición AV1]* | 15:20 |
-| **Semana 12: AV2 – Sprint Review** | Microsoft Stream / Clipchamp | *[Pendiente enlace Microsoft Stream de exposición AV2]* | Enlace de sustentación |
-| **Video About-the-Product (AV2)** | YouTube | [https://youtu.be/OBhNOHt9zh0](https://youtu.be/OBhNOHt9zh0) | 03:45 |
+| **Semana 12: AV2 – Sprint Review** | Microsoft Stream / Clipchamp | *[Pendiente enlace Microsoft Stream de exposición AV2]* | 17:34 |
+| **Video About-the-Product (AV2)** | YouTube | [https://youtu.be/QLYYR5deLZY](https://youtu.be/QLYYR5deLZY) | 03:45 |
 | **Video About-the-Team (AV2)** | YouTube | [https://youtu.be/tptPPrhuSH4](https://youtu.be/tptPPrhuSH4) | 04:30 |
 | **Entrevistas de Validación (Sprint 3)** | YouTube | [https://youtu.be/TXv-QAAzDJs](https://youtu.be/TXv-QAAzDJs) | 16:57 |
