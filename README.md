@@ -707,12 +707,6 @@ Luis Herrera representa al administrador de una pequeña empresa dedicada al alq
 
 ![User Persona - Luis Herrera](assets/research/personas/user-persona-luis-herrera.png)
 
-##### User Persona - Coordinador Logístico
-##### Harold Angello
-
-Harold Angello representa al contratista responsable de pequeñas obras que necesita asegurar maquinaria disponible y mantener el control operativo de sus proyectos.
-
-![User Persona - Harold Angello](https://drive.google.com/uc?export=view&id=1upOL-SUfHb9zqnYesjOgERQdI3wfDt0F)
 
 #### User Persona Contratistas independientes y responsables de obras de construcción
 
@@ -766,7 +760,6 @@ De manera general, el proceso actual considera las siguientes etapas:
 
 Los principales puntos de fricción se relacionan con la necesidad de consultar diferentes medios para conocer la disponibilidad de las unidades, la comunicación mediante llamadas o mensajería y la falta de información centralizada para tomar decisiones rápidamente.
 
-![User Journey Map - Harold Angello](https://drive.google.com/uc?export=view&id=1mEbEbfmUMl4W5BJVEFg18EAV93pycqXV)
 
 El siguiente User Journey Map fue elaborado en la plataforma UXPressia para el User Persona Renzo Huamán. El recorrido documenta la experiencia completa en el escenario actual (*As-Is*) cuando Renzo necesita contratar una retroexcavadora para una obra de zanjado y habilitación urbana, enfrentando la falta de transparencia en costos, la informalidad en las reservas y las averías no previstas.
 
